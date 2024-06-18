@@ -168,7 +168,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4" data-path="figure-4.html"><a href="figure-4.html"><i class="fa fa-check"></i><b>4</b> Figure 4</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="figure-4.html"><a href="figure-4.html#b.-crc-single-cell-mhap"><i class="fa fa-check"></i><b>4.1</b> (B). CRC single-cell mHap</a></li>
-<li class="chapter" data-level="4.2" data-path="figure-4.html"><a href="figure-4.html#c.-crc-single-cell-mhbs"><i class="fa fa-check"></i><b>4.2</b> (C). CRC single-cell MHBs</a></li>
+<li class="chapter" data-level="4.2" data-path="figure-4.html"><a href="figure-4.html#c.-single-cell-mhbs-calling"><i class="fa fa-check"></i><b>4.2</b> (C). single-cell MHBs Calling</a></li>
 <li class="chapter" data-level="4.3" data-path="figure-4.html"><a href="figure-4.html#d-single-cell-mhb-vs-bulk-mhb"><i class="fa fa-check"></i><b>4.3</b> (D) Single cell MHB vs bulk MHB</a></li>
 <li class="chapter" data-level="4.4" data-path="figure-4.html"><a href="figure-4.html#e.-association-between-gene-expression-and-the-present-of-mhbs-in-promoter-regions."><i class="fa fa-check"></i><b>4.4</b> (E). Association between gene expression and the present of MHBs in promoter regions.</a></li>
 <li class="chapter" data-level="4.5" data-path="figure-4.html"><a href="figure-4.html#f.-association-of-gene-expression-and-methylation-levels-of-mhb-regions"><i class="fa fa-check"></i><b>4.5</b> (F). Association of gene expression and methylation levels of MHB regions</a></li>
@@ -225,50 +225,49 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </p>
 </div>
 </div>
-<div id="c.-crc-single-cell-mhbs" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> (C). CRC single-cell MHBs<a href="figure-4.html#c.-crc-single-cell-mhbs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="c.-single-cell-mhbs-calling" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> (C). single-cell MHBs Calling<a href="figure-4.html#c.-single-cell-mhbs-calling" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The single-cell DNA Methylation haplotype blocks (MHBs) were identified by <a href="https://github.com/yoyoong/mHapSc">mHapSc</a></p>
 <div class="sourceCode" id="cb25"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb25-1"><a href="figure-4.html#cb25-1" tabindex="-1"></a><span class="co"># CRC single cell MHB calling.</span></span>
 <span id="cb25-2"><a href="figure-4.html#cb25-2" tabindex="-1"></a><span class="co"># ============ shell command ============= </span></span>
 <span id="cb25-3"><a href="figure-4.html#cb25-3" tabindex="-1"></a><span class="co"># Input</span></span>
-<span id="cb25-4"><a href="figure-4.html#cb25-4" tabindex="-1"></a><span class="va">mhap</span><span class="op">=</span>CRC_GSE97693.mhap.gz</span>
-<span id="cb25-5"><a href="figure-4.html#cb25-5" tabindex="-1"></a><span class="va">bed</span><span class="op">=</span>hg19_1000CpG.bed</span>
-<span id="cb25-6"><a href="figure-4.html#cb25-6" tabindex="-1"></a><span class="va">hg19_CpG</span><span class="op">=</span>hg19_CpG.gz</span>
-<span id="cb25-7"><a href="figure-4.html#cb25-7" tabindex="-1"></a><span class="co"># call MHB</span></span>
-<span id="cb25-8"><a href="figure-4.html#cb25-8" tabindex="-1"></a><span class="va">binary</span><span class="op">=</span>mHapSc-1.0-jar-with-dependencies.jar</span>
-<span id="cb25-9"><a href="figure-4.html#cb25-9" tabindex="-1"></a><span class="va">outputDir</span><span class="op">=</span>MHB/CRC</span>
-<span id="cb25-10"><a href="figure-4.html#cb25-10" tabindex="-1"></a></span>
-<span id="cb25-11"><a href="figure-4.html#cb25-11" tabindex="-1"></a><span class="co"># All CRC single cell</span></span>
-<span id="cb25-12"><a href="figure-4.html#cb25-12" tabindex="-1"></a><span class="va">bcFile</span><span class="op">=</span>scMHB_GSE97693/Anno/GSE97693_scMethyl_tumor_id.txt     <span class="co">#cell barcode</span></span>
-<span id="cb25-13"><a href="figure-4.html#cb25-13" tabindex="-1"></a><span class="va">$java8</span> <span class="at">-jar</span> <span class="va">$binary</span> MHBDiscovery <span class="at">-mHapPath</span> <span class="va">$mhap</span> <span class="at">-bedFile</span> <span class="va">$bed</span> <span class="dt">\</span></span>
-<span id="cb25-14"><a href="figure-4.html#cb25-14" tabindex="-1"></a>          <span class="at">-cpgPath</span> <span class="va">$hg19_CpG</span>  <span class="at">-bcFile</span> <span class="va">$bcFile</span> <span class="at">-window</span> 5 <span class="at">-r2</span> 0.5 <span class="at">-pvalue</span> 0.05 <span class="dt">\</span></span>
-<span id="cb25-15"><a href="figure-4.html#cb25-15" tabindex="-1"></a>          <span class="at">-outputDir</span> <span class="va">$outputDir</span> <span class="at">-tag</span> CRC_Tumor_MHB </span>
-<span id="cb25-16"><a href="figure-4.html#cb25-16" tabindex="-1"></a><span class="co"># Normal</span></span>
-<span id="cb25-17"><a href="figure-4.html#cb25-17" tabindex="-1"></a><span class="va">bcFile</span><span class="op">=</span>scMHB_GSE97693/Anno/GSE97693_scMethyl_NC_id.txt</span>
-<span id="cb25-18"><a href="figure-4.html#cb25-18" tabindex="-1"></a><span class="va">$java8</span> <span class="at">-jar</span> <span class="va">$binary</span> MHBDiscovery <span class="at">-mHapPath</span> <span class="va">$mhap</span> <span class="at">-bedFile</span> <span class="va">$bed</span> <span class="dt">\</span></span>
-<span id="cb25-19"><a href="figure-4.html#cb25-19" tabindex="-1"></a>          <span class="at">-cpgPath</span> <span class="va">$hg19_CpG</span>  <span class="at">-bcFile</span> <span class="va">$bcFile</span> <span class="at">-window</span> 5 <span class="at">-r2</span> 0.5 <span class="at">-pvalue</span> 0.05 <span class="dt">\</span></span>
-<span id="cb25-20"><a href="figure-4.html#cb25-20" tabindex="-1"></a>          <span class="at">-outputDir</span> <span class="va">$outputDir</span> <span class="at">-tag</span> CRC_MHB_NC</span>
-<span id="cb25-21"><a href="figure-4.html#cb25-21" tabindex="-1"></a><span class="co"># PT</span></span>
-<span id="cb25-22"><a href="figure-4.html#cb25-22" tabindex="-1"></a><span class="va">bcFile</span><span class="op">=</span>scMHB_GSE97693/Anno/GSE97693_scMethyl_PT_id.txt</span>
-<span id="cb25-23"><a href="figure-4.html#cb25-23" tabindex="-1"></a><span class="va">$java8</span> <span class="at">-jar</span> <span class="va">$binary</span> MHBDiscovery <span class="at">-mHapPath</span> <span class="va">$mhap</span> <span class="at">-bedFile</span> <span class="va">$bed</span> <span class="dt">\</span></span>
-<span id="cb25-24"><a href="figure-4.html#cb25-24" tabindex="-1"></a>          <span class="at">-cpgPath</span> <span class="va">$hg19_CpG</span>  <span class="at">-bcFile</span> <span class="va">$bcFile</span> <span class="at">-window</span> 5 <span class="at">-r2</span> 0.5 <span class="dt">\</span></span>
-<span id="cb25-25"><a href="figure-4.html#cb25-25" tabindex="-1"></a>          <span class="at">-pvalue</span> 0.05 <span class="at">-outputDir</span> <span class="va">$outputDir</span> <span class="at">-tag</span> CRC_MHB_PT</span>
-<span id="cb25-26"><a href="figure-4.html#cb25-26" tabindex="-1"></a><span class="co"># LN</span></span>
-<span id="cb25-27"><a href="figure-4.html#cb25-27" tabindex="-1"></a><span class="va">bcFile</span><span class="op">=</span>scMHB_GSE97693/Anno/GSE97693_scMethyl_LN_id.txt</span>
-<span id="cb25-28"><a href="figure-4.html#cb25-28" tabindex="-1"></a><span class="va">$java8</span> <span class="at">-jar</span> <span class="va">$binary</span> MHBDiscovery <span class="at">-mHapPath</span> <span class="va">$mhap</span> <span class="at">-bedFile</span> <span class="va">$bed</span> <span class="dt">\</span></span>
-<span id="cb25-29"><a href="figure-4.html#cb25-29" tabindex="-1"></a>          <span class="at">-cpgPath</span> <span class="va">$hg19_CpG</span>  <span class="at">-bcFile</span> <span class="va">$bcFile</span>  <span class="at">-window</span> 5 <span class="at">-r2</span> 0.5 <span class="at">-pvalue</span> 0.05 <span class="dt">\</span></span>
-<span id="cb25-30"><a href="figure-4.html#cb25-30" tabindex="-1"></a>          <span class="at">-outputDir</span> <span class="va">$outputDir</span> <span class="at">-tag</span> CRC_MHB_LN</span>
-<span id="cb25-31"><a href="figure-4.html#cb25-31" tabindex="-1"></a><span class="co"># ML</span></span>
-<span id="cb25-32"><a href="figure-4.html#cb25-32" tabindex="-1"></a><span class="va">bcFile</span><span class="op">=</span>scMHB_GSE97693/Anno/GSE97693_scMethyl_ML_id.txt</span>
-<span id="cb25-33"><a href="figure-4.html#cb25-33" tabindex="-1"></a><span class="va">$java8</span> <span class="at">-jar</span> <span class="va">$binary</span> MHBDiscovery <span class="at">-mHapPath</span> <span class="va">$mhap</span> <span class="at">-bedFile</span> <span class="va">$bed</span> <span class="dt">\</span></span>
-<span id="cb25-34"><a href="figure-4.html#cb25-34" tabindex="-1"></a>          <span class="at">-cpgPath</span> <span class="va">$hg19_CpG</span>  <span class="at">-bcFile</span> <span class="va">$bcFile</span> <span class="at">-window</span> 5 <span class="at">-r2</span> 0.5 <span class="at">-pvalue</span> 0.05 <span class="dt">\</span></span>
-<span id="cb25-35"><a href="figure-4.html#cb25-35" tabindex="-1"></a>          <span class="at">-outputDir</span> <span class="va">$outputDir</span> <span class="at">-tag</span> CRC_MHB_ML</span>
-<span id="cb25-36"><a href="figure-4.html#cb25-36" tabindex="-1"></a><span class="co"># MP</span></span>
-<span id="cb25-37"><a href="figure-4.html#cb25-37" tabindex="-1"></a><span class="va">bcFile</span><span class="op">=</span>scMHB_GSE97693/Anno/GSE97693_scMethyl_MP_id.txt</span>
-<span id="cb25-38"><a href="figure-4.html#cb25-38" tabindex="-1"></a><span class="va">$java8</span> <span class="at">-jar</span> <span class="va">$binary</span> MHBDiscovery <span class="at">-mHapPath</span> <span class="va">$mhap</span> <span class="at">-bedFile</span> <span class="va">$bed</span> <span class="dt">\</span></span>
-<span id="cb25-39"><a href="figure-4.html#cb25-39" tabindex="-1"></a>          <span class="at">-cpgPath</span> <span class="va">$hg19_CpG</span>  <span class="at">-bcFile</span> <span class="va">$bcFile</span> <span class="at">-window</span> 5 <span class="at">-r2</span> 0.5 <span class="at">-pvalue</span> 0.05 <span class="dt">\</span></span>
-<span id="cb25-40"><a href="figure-4.html#cb25-40" tabindex="-1"></a>          <span class="at">-outputDir</span> <span class="va">$outputDir</span> <span class="at">-tag</span> CRC_MHB_MP</span>
-<span id="cb25-41"><a href="figure-4.html#cb25-41" tabindex="-1"></a><span class="co"># veen diagram (interveen)</span></span>
-<span id="cb25-42"><a href="figure-4.html#cb25-42" tabindex="-1"></a><span class="ex">intervene</span> venn <span class="at">-i</span> <span class="va">$outputDir</span>/<span class="pp">*</span>bed <span class="at">--output</span> MHB_venn</span></code></pre></div>
+<span id="cb25-4"><a href="figure-4.html#cb25-4" tabindex="-1"></a><span class="va">mhap</span><span class="op">=</span><span class="st">&quot;CRC_GSE97693.mhap.gz&quot;</span></span>
+<span id="cb25-5"><a href="figure-4.html#cb25-5" tabindex="-1"></a><span class="va">bed</span><span class="op">=</span><span class="st">&quot;hg19_1000CpG.bed&quot;</span></span>
+<span id="cb25-6"><a href="figure-4.html#cb25-6" tabindex="-1"></a><span class="va">hg19_CpG</span><span class="op">=</span><span class="st">&quot;hg19_CpG.gz&quot;</span></span>
+<span id="cb25-7"><a href="figure-4.html#cb25-7" tabindex="-1"></a><span class="va">outputDir</span><span class="op">=</span><span class="st">&quot;MHB/CRC&quot;</span></span>
+<span id="cb25-8"><a href="figure-4.html#cb25-8" tabindex="-1"></a><span class="co"># call MHB</span></span>
+<span id="cb25-9"><a href="figure-4.html#cb25-9" tabindex="-1"></a><span class="co"># All CRC single cell</span></span>
+<span id="cb25-10"><a href="figure-4.html#cb25-10" tabindex="-1"></a><span class="va">bcFile</span><span class="op">=</span>scMHB_GSE97693/Anno/GSE97693_scMethyl_tumor_id.txt     <span class="co">#cell barcode</span></span>
+<span id="cb25-11"><a href="figure-4.html#cb25-11" tabindex="-1"></a><span class="ex">java</span> <span class="at">-jar</span> mHapSc-1.0-jar-with-dependencies.jar MHBDiscovery <span class="at">-mHapPath</span> <span class="va">$mhap</span> <span class="at">-bedFile</span> <span class="va">$bed</span> <span class="dt">\</span></span>
+<span id="cb25-12"><a href="figure-4.html#cb25-12" tabindex="-1"></a>          <span class="at">-cpgPath</span> <span class="va">$hg19_CpG</span>  <span class="at">-bcFile</span> <span class="va">$bcFile</span> <span class="at">-window</span> 5 <span class="at">-r2</span> 0.5 <span class="at">-pvalue</span> 0.05 <span class="dt">\</span></span>
+<span id="cb25-13"><a href="figure-4.html#cb25-13" tabindex="-1"></a>          <span class="at">-outputDir</span> <span class="va">$outputDir</span> <span class="at">-tag</span> CRC_Tumor_MHB </span>
+<span id="cb25-14"><a href="figure-4.html#cb25-14" tabindex="-1"></a><span class="co"># Normal</span></span>
+<span id="cb25-15"><a href="figure-4.html#cb25-15" tabindex="-1"></a><span class="va">bcFile</span><span class="op">=</span>scMHB_GSE97693/Anno/GSE97693_scMethyl_NC_id.txt</span>
+<span id="cb25-16"><a href="figure-4.html#cb25-16" tabindex="-1"></a><span class="ex">java</span> <span class="at">-jar</span> mHapSc-1.0-jar-with-dependencies.jar MHBDiscovery <span class="at">-mHapPath</span> <span class="va">$mhap</span> <span class="at">-bedFile</span> <span class="va">$bed</span> <span class="dt">\</span></span>
+<span id="cb25-17"><a href="figure-4.html#cb25-17" tabindex="-1"></a>          <span class="at">-cpgPath</span> <span class="va">$hg19_CpG</span>  <span class="at">-bcFile</span> <span class="va">$bcFile</span> <span class="at">-window</span> 5 <span class="at">-r2</span> 0.5 <span class="at">-pvalue</span> 0.05 <span class="dt">\</span></span>
+<span id="cb25-18"><a href="figure-4.html#cb25-18" tabindex="-1"></a>          <span class="at">-outputDir</span> <span class="va">$outputDir</span> <span class="at">-tag</span> CRC_MHB_NC</span>
+<span id="cb25-19"><a href="figure-4.html#cb25-19" tabindex="-1"></a><span class="co"># PT</span></span>
+<span id="cb25-20"><a href="figure-4.html#cb25-20" tabindex="-1"></a><span class="va">bcFile</span><span class="op">=</span>scMHB_GSE97693/Anno/GSE97693_scMethyl_PT_id.txt</span>
+<span id="cb25-21"><a href="figure-4.html#cb25-21" tabindex="-1"></a><span class="ex">java</span> <span class="at">-jar</span> mHapSc-1.0-jar-with-dependencies.jar MHBDiscovery <span class="at">-mHapPath</span> <span class="va">$mhap</span> <span class="at">-bedFile</span> <span class="va">$bed</span> <span class="dt">\</span></span>
+<span id="cb25-22"><a href="figure-4.html#cb25-22" tabindex="-1"></a>          <span class="at">-cpgPath</span> <span class="va">$hg19_CpG</span>  <span class="at">-bcFile</span> <span class="va">$bcFile</span> <span class="at">-window</span> 5 <span class="at">-r2</span> 0.5 <span class="dt">\</span></span>
+<span id="cb25-23"><a href="figure-4.html#cb25-23" tabindex="-1"></a>          <span class="at">-pvalue</span> 0.05 <span class="at">-outputDir</span> <span class="va">$outputDir</span> <span class="at">-tag</span> CRC_MHB_PT</span>
+<span id="cb25-24"><a href="figure-4.html#cb25-24" tabindex="-1"></a><span class="co"># LN</span></span>
+<span id="cb25-25"><a href="figure-4.html#cb25-25" tabindex="-1"></a><span class="va">bcFile</span><span class="op">=</span>scMHB_GSE97693/Anno/GSE97693_scMethyl_LN_id.txt</span>
+<span id="cb25-26"><a href="figure-4.html#cb25-26" tabindex="-1"></a><span class="ex">java</span> <span class="at">-jar</span> mHapSc-1.0-jar-with-dependencies.jar MHBDiscovery <span class="at">-mHapPath</span> <span class="va">$mhap</span> <span class="at">-bedFile</span> <span class="va">$bed</span> <span class="dt">\</span></span>
+<span id="cb25-27"><a href="figure-4.html#cb25-27" tabindex="-1"></a>          <span class="at">-cpgPath</span> <span class="va">$hg19_CpG</span>  <span class="at">-bcFile</span> <span class="va">$bcFile</span>  <span class="at">-window</span> 5 <span class="at">-r2</span> 0.5 <span class="at">-pvalue</span> 0.05 <span class="dt">\</span></span>
+<span id="cb25-28"><a href="figure-4.html#cb25-28" tabindex="-1"></a>          <span class="at">-outputDir</span> <span class="va">$outputDir</span> <span class="at">-tag</span> CRC_MHB_LN</span>
+<span id="cb25-29"><a href="figure-4.html#cb25-29" tabindex="-1"></a><span class="co"># ML</span></span>
+<span id="cb25-30"><a href="figure-4.html#cb25-30" tabindex="-1"></a><span class="va">bcFile</span><span class="op">=</span>scMHB_GSE97693/Anno/GSE97693_scMethyl_ML_id.txt</span>
+<span id="cb25-31"><a href="figure-4.html#cb25-31" tabindex="-1"></a><span class="ex">java</span> <span class="at">-jar</span> mHapSc-1.0-jar-with-dependencies.jar MHBDiscovery <span class="at">-mHapPath</span> <span class="va">$mhap</span> <span class="at">-bedFile</span> <span class="va">$bed</span> <span class="dt">\</span></span>
+<span id="cb25-32"><a href="figure-4.html#cb25-32" tabindex="-1"></a>          <span class="at">-cpgPath</span> <span class="va">$hg19_CpG</span>  <span class="at">-bcFile</span> <span class="va">$bcFile</span> <span class="at">-window</span> 5 <span class="at">-r2</span> 0.5 <span class="at">-pvalue</span> 0.05 <span class="dt">\</span></span>
+<span id="cb25-33"><a href="figure-4.html#cb25-33" tabindex="-1"></a>          <span class="at">-outputDir</span> <span class="va">$outputDir</span> <span class="at">-tag</span> CRC_MHB_ML</span>
+<span id="cb25-34"><a href="figure-4.html#cb25-34" tabindex="-1"></a><span class="co"># MP</span></span>
+<span id="cb25-35"><a href="figure-4.html#cb25-35" tabindex="-1"></a><span class="va">bcFile</span><span class="op">=</span>scMHB_GSE97693/Anno/GSE97693_scMethyl_MP_id.txt</span>
+<span id="cb25-36"><a href="figure-4.html#cb25-36" tabindex="-1"></a><span class="ex">java</span> <span class="at">-jar</span> mHapSc-1.0-jar-with-dependencies.jar MHBDiscovery <span class="at">-mHapPath</span> <span class="va">$mhap</span> <span class="at">-bedFile</span> <span class="va">$bed</span> <span class="dt">\</span></span>
+<span id="cb25-37"><a href="figure-4.html#cb25-37" tabindex="-1"></a>          <span class="at">-cpgPath</span> <span class="va">$hg19_CpG</span>  <span class="at">-bcFile</span> <span class="va">$bcFile</span> <span class="at">-window</span> 5 <span class="at">-r2</span> 0.5 <span class="at">-pvalue</span> 0.05 <span class="dt">\</span></span>
+<span id="cb25-38"><a href="figure-4.html#cb25-38" tabindex="-1"></a>          <span class="at">-outputDir</span> <span class="va">$outputDir</span> <span class="at">-tag</span> CRC_MHB_MP</span>
+<span id="cb25-39"><a href="figure-4.html#cb25-39" tabindex="-1"></a><span class="co"># veen diagram (interveen)</span></span>
+<span id="cb25-40"><a href="figure-4.html#cb25-40" tabindex="-1"></a><span class="ex">intervene</span> venn <span class="at">-i</span> <span class="va">$outputDir</span>/<span class="pp">*</span>bed <span class="at">--output</span> MHB_venn</span></code></pre></div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-47"></span>
 <img src="Data/Figures/Fig4/Fig4.C.png" alt="Fig4.C" width="80%" id="fig-unnamed-chunk-47-1" />
 <p class="caption">
