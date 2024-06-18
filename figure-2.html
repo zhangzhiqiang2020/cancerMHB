@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title> 2 Figure 2 | CancerMHBs</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content=" 2 Figure 2 | CancerMHBs" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content=" 2 Figure 2 | CancerMHBs" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Zhiqiang Zhang,Yuyang Hong, Hai Fang, Jiantao Shi" />
+
+
+<meta name="date" content="2024-06-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="figure-3.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://jiantaoshi.github.io/cancermhaps/index.html">CancerMHBs</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Figure 1</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#cancer-mhb-calling"><i class="fa fa-check"></i><b>1.1</b> Cancer MHB Calling</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#c-e.-mhb-annotation"><i class="fa fa-check"></i><b>1.2</b> (C-E). MHB annotation</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#f.-mhb-map"><i class="fa fa-check"></i><b>1.3</b> (F). MHB Map</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#g.-cancer-mhbs-vs-normal-mhbs"><i class="fa fa-check"></i><b>1.4</b> (G). Cancer MHBs vs Normal MHBs</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#h.-correlation-of-methylation-on-the-same-mhb"><i class="fa fa-check"></i><b>1.5</b> (H). Correlation of methylation on the same MHB</a></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#i.-enrichment-of-mhbs-in-genomic-features."><i class="fa fa-check"></i><b>1.6</b> (I). Enrichment of MHBs in genomic features.</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="figure-2.html"><a href="figure-2.html"><i class="fa fa-check"></i><b>2</b> Figure 2</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="figure-2.html"><a href="figure-2.html#a.-cancer-mhbs-and-open-chromatin"><i class="fa fa-check"></i><b>2.1</b> (A). Cancer MHBs and open chromatin</a></li>
+<li class="chapter" data-level="2.2" data-path="figure-2.html"><a href="figure-2.html#b.-cancer-mhbs-and-dnam-features"><i class="fa fa-check"></i><b>2.2</b> (B). Cancer MHBs and DNAm features</a></li>
+<li class="chapter" data-level="2.3" data-path="figure-2.html"><a href="figure-2.html#c-d.-enrichment-of-cancer-mhbs-in-dnam-feature-lola"><i class="fa fa-check"></i><b>2.3</b> (C-D). Enrichment of Cancer MHBs in DNAm feature (LOLA)</a></li>
+<li class="chapter" data-level="2.4" data-path="figure-2.html"><a href="figure-2.html#e.-genomic-features-with-mhbs-in-open-chromatin"><i class="fa fa-check"></i><b>2.4</b> (E). Genomic features with MHBs in open chromatin</a></li>
+<li class="chapter" data-level="2.5" data-path="figure-2.html"><a href="figure-2.html#f.-enrichment-of-mhbs-in-chia-pet-in-a-disease-status-specific-manner."><i class="fa fa-check"></i><b>2.5</b> (F). Enrichment of MHBs in ChIA-PET in a disease status-specific manner.</a></li>
+<li class="chapter" data-level="2.6" data-path="figure-2.html"><a href="figure-2.html#g.-enrichment-of-chia-pet-tags-in-mhbs."><i class="fa fa-check"></i><b>2.6</b> (G). Enrichment of ChIA-PET tags in MHBs.</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="figure-3.html"><a href="figure-3.html"><i class="fa fa-check"></i><b>3</b> Figure 3</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="figure-3.html"><a href="figure-3.html#a.-mhb-vs-dmr"><i class="fa fa-check"></i><b>3.1</b> (A). MHB vs DMR</a></li>
+<li class="chapter" data-level="3.2" data-path="figure-3.html"><a href="figure-3.html#b-c.-enrichment-of-cancer-mhbs-in-dmr-lola"><i class="fa fa-check"></i><b>3.2</b> (B-C). Enrichment of Cancer MHBs in DMR (LOLA)</a></li>
+<li class="chapter" data-level="3.3" data-path="figure-3.html"><a href="figure-3.html#d-e.-escc-dnam-and-rna-profiles-gse149608"><i class="fa fa-check"></i><b>3.3</b> (D-E). ESCC DNAm and RNA profiles (GSE149608)</a></li>
+<li class="chapter" data-level="3.4" data-path="figure-3.html"><a href="figure-3.html#f-g.-tf-activities"><i class="fa fa-check"></i><b>3.4</b> (F-G). TF activities</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="figure-4.html"><a href="figure-4.html"><i class="fa fa-check"></i><b>4</b> Figure 4</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="figure-4.html"><a href="figure-4.html#b.-crc-single-cell-mhap"><i class="fa fa-check"></i><b>4.1</b> (B). CRC single-cell mHap</a></li>
+<li class="chapter" data-level="4.2" data-path="figure-4.html"><a href="figure-4.html#c.-crc-single-cell-mhbs"><i class="fa fa-check"></i><b>4.2</b> (C). CRC single-cell MHBs</a></li>
+<li class="chapter" data-level="4.3" data-path="figure-4.html"><a href="figure-4.html#d-single-cell-mhb-vs-bulk-mhb"><i class="fa fa-check"></i><b>4.3</b> (D) Single cell MHB vs bulk MHB</a></li>
+<li class="chapter" data-level="4.4" data-path="figure-4.html"><a href="figure-4.html#e.-association-between-gene-expression-and-the-present-of-mhbs-in-promoter-regions."><i class="fa fa-check"></i><b>4.4</b> (E). Association between gene expression and the present of MHBs in promoter regions.</a></li>
+<li class="chapter" data-level="4.5" data-path="figure-4.html"><a href="figure-4.html#f.-association-of-gene-expression-and-methylation-levels-of-mhb-regions"><i class="fa fa-check"></i><b>4.5</b> (F). Association of gene expression and methylation levels of MHB regions</a></li>
+<li class="chapter" data-level="4.6" data-path="figure-4.html"><a href="figure-4.html#i-j.-mhbs-and-dysregulation-of-gene-expression-in-crc."><i class="fa fa-check"></i><b>4.6</b> (I-J). MHBs and dysregulation of gene expression in CRC.</a></li>
+<li class="chapter" data-level="4.7" data-path="figure-4.html"><a href="figure-4.html#k.-tcga-coad-dataset-validation"><i class="fa fa-check"></i><b>4.7</b> (K). TCGA-COAD dataset Validation</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="figure-5.html"><a href="figure-5.html"><i class="fa fa-check"></i><b>5</b> Figure 5</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="figure-5.html"><a href="figure-5.html#a-b.-enrichment-of-dmr-or-mhb-associated-genes-in-degs"><i class="fa fa-check"></i><b>5.1</b> (A-B). Enrichment of DMR or MHB-associated genes in DEGs</a></li>
+<li class="chapter" data-level="5.2" data-path="figure-5.html"><a href="figure-5.html#c.-pathway-enrichment-of-mhb-associated-genes-in-pan-cancer"><i class="fa fa-check"></i><b>5.2</b> (C). Pathway enrichment of MHB-associated genes in pan-cancer</a></li>
+<li class="chapter" data-level="5.3" data-path="figure-5.html"><a href="figure-5.html#e.-kegg-pathway-crosstalk-analysis-for-pan-cancer"><i class="fa fa-check"></i><b>5.3</b> (E). KEGG Pathway crosstalk analysis for pan-cancer</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="figure-6.html"><a href="figure-6.html"><i class="fa fa-check"></i><b>6</b> Figure 6</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="figure-6.html"><a href="figure-6.html#a-b.-aging-associate-with-the-mhb"><i class="fa fa-check"></i><b>6.1</b> (A-B). Aging associate with the MHB</a></li>
+<li class="chapter" data-level="6.2" data-path="figure-6.html"><a href="figure-6.html#c.-aging-associated-mhb-in-tcga-dataset"><i class="fa fa-check"></i><b>6.2</b> (C). Aging associated mhb in TCGA dataset</a></li>
+<li class="chapter" data-level="6.3" data-path="figure-6.html"><a href="figure-6.html#d-m-aging-associated-mhb-functions-in-early-cancer-detection-hm450k"><i class="fa fa-check"></i><b>6.3</b> (D-M) Aging associated MHB functions in Early Cancer Detection (HM450K)</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://jiantaoshi.github.io/cancermhaps/index.html" target="blank"> The mHap map of cancers</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">CancerMHBs</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="figure-2" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number"> 2</span> Figure 2<a href="figure-2.html#figure-2" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><img src="Data/Figures/Figure2.png" width="80%" style="display: block; margin: auto;" />
+<strong>Figure 2. MHBs are enriched in accessible chromatin regions in cancers</strong>. (A) Overlapping of cancer MHBs with regions of open chromatin in matched cancer types. ATAC-seq peaks were defined previously and downloaded from NCI’s Genomic Data Commons (See methods). (B) Annotation of MHBs to regions of DNA methylation states, including UMR, LMR, PDR, and HMR. UMR, unmethylated region. LMR, low-methylation region. PMD, partially methylated domains. HMR, high-methylation region. (C-D) The enrichment of MHBs in LMR and PMD, respectively. Enrichment test was performed by R package LOLA, using the union of MHBs as the background. The resulting p-values for significant enrichment were ranked across all cancer types (FDR &lt; 0.01). Nonsignificant results are shown in grey. (E) Genomic regions with MHBs are more enriched in regions of open chromatin regardless of mean methylation levels. The enrichment score was calculated as the percentage of CpGs covered by regions of open chromatin. (F) Enrichment of MHBs in ChIA-PET in a disease status-specific manner. The enrichment score was defined as the ratio of observed and expected numbers of overlapping regions between MHBs and ChIA-PET regions. (G) Enrichment of ChIA-PET tags in MHBs. We divided the Pol II ChIA-PET tags into 10 groups, LMR, UMR, PMD, HMR and a combination of any two of them. Permutation test (100 times) was performed to evaluate the fold enrichment of MHBs from BRCA and normal tissues in MCF-7 and MCF-10A ChIA-PET tags. (H) An example genomic track shows that chromatin interaction tends to occur in MHB regions. In this region (chr7: 99,707,000 - 99,774,000), tracks of gene annotation, CpG density, CpG island, Hi-C compartment, mean methylation, MHBs, genomic features, Pol II ChIP-seq and chromatin interaction were shown for breast cancer (MCF-7) and normal (MCF-10A) samples.</p>
+<div id="a.-cancer-mhbs-and-open-chromatin" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> (A). Cancer MHBs and open chromatin<a href="figure-2.html#a.-cancer-mhbs-and-open-chromatin" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="figure-2.html#cb8-1" tabindex="-1"></a><span class="fu">library</span>(regioneR)</span>
+<span id="cb8-2"><a href="figure-2.html#cb8-2" tabindex="-1"></a><span class="fu">library</span>(ChIPseeker)</span>
+<span id="cb8-3"><a href="figure-2.html#cb8-3" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb8-4"><a href="figure-2.html#cb8-4" tabindex="-1"></a><span class="co"># MHB regions</span></span>
+<span id="cb8-5"><a href="figure-2.html#cb8-5" tabindex="-1"></a>mhb_cluster<span class="ot">=</span><span class="st">&quot;Data/Processed_data/MHB/tumor&quot;</span></span>
+<span id="cb8-6"><a href="figure-2.html#cb8-6" tabindex="-1"></a><span class="co"># Remove Pancreatic and Ovary cancer</span></span>
+<span id="cb8-7"><a href="figure-2.html#cb8-7" tabindex="-1"></a>samples<span class="ot">=</span><span class="fu">list.files</span>(mhb_cluster)</span>
+<span id="cb8-8"><a href="figure-2.html#cb8-8" tabindex="-1"></a>samples<span class="ot">=</span>samples[<span class="sc">!</span><span class="fu">grepl</span>(<span class="st">&quot;PACA&quot;</span>,samples)]</span>
+<span id="cb8-9"><a href="figure-2.html#cb8-9" tabindex="-1"></a>samples<span class="ot">=</span>samples[<span class="sc">!</span><span class="fu">grepl</span>(<span class="st">&quot;OV&quot;</span>,samples)]</span>
+<span id="cb8-10"><a href="figure-2.html#cb8-10" tabindex="-1"></a>samples<span class="ot">=</span><span class="fu">gsub</span>(<span class="st">&quot;MHB_&quot;</span>,<span class="st">&quot;&quot;</span>,<span class="fu">gsub</span>(<span class="st">&quot;.bed&quot;</span>,<span class="st">&quot;&quot;</span>,samples))</span>
+<span id="cb8-11"><a href="figure-2.html#cb8-11" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb8-12"><a href="figure-2.html#cb8-12" tabindex="-1"></a>mn <span class="ot">=</span> <span class="fu">list</span>()</span>
+<span id="cb8-13"><a href="figure-2.html#cb8-13" tabindex="-1"></a><span class="cf">for</span> ( sample <span class="cf">in</span> samples ){</span>
+<span id="cb8-14"><a href="figure-2.html#cb8-14" tabindex="-1"></a>    mhb_peak <span class="ot">=</span> <span class="fu">readPeakFile</span>(<span class="fu">paste0</span>(mhb_cluster,<span class="st">&quot;/MHB_&quot;</span>,sample,<span class="st">&quot;.bed&quot;</span>))</span>
+<span id="cb8-15"><a href="figure-2.html#cb8-15" tabindex="-1"></a>    mhb_tag <span class="ot">=</span> sample</span>
+<span id="cb8-16"><a href="figure-2.html#cb8-16" tabindex="-1"></a>  <span class="co"># Read the TCGA cancer type ATAC Peaks</span></span>
+<span id="cb8-17"><a href="figure-2.html#cb8-17" tabindex="-1"></a>  ATAC_path<span class="ot">=</span><span class="st">&quot;Data/Processed_data/ATAC/cancer_type_peak/&quot;</span></span>
+<span id="cb8-18"><a href="figure-2.html#cb8-18" tabindex="-1"></a>        <span class="cf">if</span> (mhb_tag <span class="sc">==</span> <span class="st">&quot;BRCA&quot;</span>){</span>
+<span id="cb8-19"><a href="figure-2.html#cb8-19" tabindex="-1"></a>            i <span class="ot">=</span> <span class="st">&quot;BRCA_hg19_peak.bed&quot;</span></span>
+<span id="cb8-20"><a href="figure-2.html#cb8-20" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span>(mhb_tag <span class="sc">==</span> <span class="st">&quot;CESC&quot;</span>){</span>
+<span id="cb8-21"><a href="figure-2.html#cb8-21" tabindex="-1"></a>            i <span class="ot">=</span> <span class="st">&quot;CESC_hg19_peak.bed&quot;</span></span>
+<span id="cb8-22"><a href="figure-2.html#cb8-22" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span> (mhb_tag <span class="sc">==</span> <span class="st">&quot;COAD&quot;</span>){</span>
+<span id="cb8-23"><a href="figure-2.html#cb8-23" tabindex="-1"></a>            i <span class="ot">=</span> <span class="st">&quot;COAD_hg19_peak.bed&quot;</span></span>
+<span id="cb8-24"><a href="figure-2.html#cb8-24" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span> (mhb_tag <span class="sc">==</span> <span class="st">&quot;ESCA&quot;</span>){</span>
+<span id="cb8-25"><a href="figure-2.html#cb8-25" tabindex="-1"></a>            i <span class="ot">=</span> <span class="st">&quot;ESCA_hg19_peak.bed&quot;</span></span>
+<span id="cb8-26"><a href="figure-2.html#cb8-26" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span> (mhb_tag <span class="sc">==</span><span class="st">&quot;HNSC&quot;</span>){</span>
+<span id="cb8-27"><a href="figure-2.html#cb8-27" tabindex="-1"></a>            i <span class="ot">=</span> <span class="st">&quot;HNSC_hg19_peak.bed&quot;</span></span>
+<span id="cb8-28"><a href="figure-2.html#cb8-28" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span> (mhb_tag <span class="sc">==</span> <span class="st">&quot;LIHC&quot;</span>){</span>
+<span id="cb8-29"><a href="figure-2.html#cb8-29" tabindex="-1"></a>            i <span class="ot">=</span> <span class="st">&quot;LIHC_hg19_peak.bed&quot;</span></span>
+<span id="cb8-30"><a href="figure-2.html#cb8-30" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span>(mhb_tag <span class="sc">==</span> <span class="st">&quot;NSCLC&quot;</span>){</span>
+<span id="cb8-31"><a href="figure-2.html#cb8-31" tabindex="-1"></a>            i <span class="ot">=</span> <span class="st">&quot;LUAD_hg19_peak.bed&quot;</span></span>
+<span id="cb8-32"><a href="figure-2.html#cb8-32" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span> (mhb_tag <span class="sc">==</span> <span class="st">&quot;STAD&quot;</span>){</span>
+<span id="cb8-33"><a href="figure-2.html#cb8-33" tabindex="-1"></a>            i <span class="ot">=</span> <span class="st">&quot;STAD_hg19_peak.bed&quot;</span></span>
+<span id="cb8-34"><a href="figure-2.html#cb8-34" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span>(mhb_tag <span class="sc">==</span> <span class="st">&quot;THCA&quot;</span>){</span>
+<span id="cb8-35"><a href="figure-2.html#cb8-35" tabindex="-1"></a>            i <span class="ot">=</span> <span class="st">&quot;THCA_hg19_peak.bed&quot;</span></span>
+<span id="cb8-36"><a href="figure-2.html#cb8-36" tabindex="-1"></a>        }</span>
+<span id="cb8-37"><a href="figure-2.html#cb8-37" tabindex="-1"></a>    tag <span class="ot">=</span> <span class="fu">strsplit</span>(i,<span class="st">&quot;_&quot;</span>)[[<span class="dv">1</span>]][<span class="dv">1</span>]</span>
+<span id="cb8-38"><a href="figure-2.html#cb8-38" tabindex="-1"></a>    <span class="co"># ATAC-seq peaks</span></span>
+<span id="cb8-39"><a href="figure-2.html#cb8-39" tabindex="-1"></a>    <span class="fu">assign</span>(tag,<span class="fu">readPeakFile</span>(<span class="fu">paste0</span>(ATAC_path,i)))</span>
+<span id="cb8-40"><a href="figure-2.html#cb8-40" tabindex="-1"></a>    <span class="co"># Cancer specific MHB</span></span>
+<span id="cb8-41"><a href="figure-2.html#cb8-41" tabindex="-1"></a>    x<span class="ot">=</span><span class="fu">findOverlaps</span>(<span class="fu">get</span>(tag),mhb_peak,<span class="at">type =</span> <span class="st">&quot;any&quot;</span>, <span class="at">ignore.strand =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb8-42"><a href="figure-2.html#cb8-42" tabindex="-1"></a>    <span class="co"># Overlapped</span></span>
+<span id="cb8-43"><a href="figure-2.html#cb8-43" tabindex="-1"></a>    cM<span class="ot">=</span><span class="fu">length</span>(<span class="fu">unique</span>(<span class="fu">subjectHits</span>(x)))</span>
+<span id="cb8-44"><a href="figure-2.html#cb8-44" tabindex="-1"></a>    <span class="co"># total MHB </span></span>
+<span id="cb8-45"><a href="figure-2.html#cb8-45" tabindex="-1"></a>    cL<span class="ot">=</span><span class="fu">length</span>(mhb_peak)</span>
+<span id="cb8-46"><a href="figure-2.html#cb8-46" tabindex="-1"></a>    m <span class="ot">=</span> <span class="fu">round</span>(<span class="dv">100</span><span class="sc">*</span>cM<span class="sc">/</span>cL,<span class="dv">2</span>)</span>
+<span id="cb8-47"><a href="figure-2.html#cb8-47" tabindex="-1"></a>    mn[[tag]] <span class="ot">=</span> m</span>
+<span id="cb8-48"><a href="figure-2.html#cb8-48" tabindex="-1"></a>}</span>
+<span id="cb8-49"><a href="figure-2.html#cb8-49" tabindex="-1"></a><span class="co"># add LUSC</span></span>
+<span id="cb8-50"><a href="figure-2.html#cb8-50" tabindex="-1"></a>    i<span class="ot">=</span><span class="st">&quot;LUSC_hg19_peak.bed&quot;</span></span>
+<span id="cb8-51"><a href="figure-2.html#cb8-51" tabindex="-1"></a>    tag <span class="ot">=</span> <span class="fu">strsplit</span>(i,<span class="st">&quot;_&quot;</span>)[[<span class="dv">1</span>]][<span class="dv">1</span>]</span>
+<span id="cb8-52"><a href="figure-2.html#cb8-52" tabindex="-1"></a>    <span class="fu">assign</span>(tag,<span class="fu">readPeakFile</span>(<span class="fu">paste0</span>(ATAC_path,i)))</span>
+<span id="cb8-53"><a href="figure-2.html#cb8-53" tabindex="-1"></a>    x<span class="ot">=</span><span class="fu">findOverlaps</span>(<span class="fu">get</span>(tag),mhb_peak,<span class="at">type =</span> <span class="st">&quot;any&quot;</span>, <span class="at">ignore.strand =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb8-54"><a href="figure-2.html#cb8-54" tabindex="-1"></a>    cM<span class="ot">=</span><span class="fu">length</span>(<span class="fu">unique</span>(<span class="fu">subjectHits</span>(x)))</span>
+<span id="cb8-55"><a href="figure-2.html#cb8-55" tabindex="-1"></a>    cL<span class="ot">=</span><span class="fu">length</span>(mhb_peak)</span>
+<span id="cb8-56"><a href="figure-2.html#cb8-56" tabindex="-1"></a>    m <span class="ot">=</span> <span class="fu">round</span>(<span class="dv">100</span><span class="sc">*</span>cM<span class="sc">/</span>cL,<span class="dv">2</span>)</span>
+<span id="cb8-57"><a href="figure-2.html#cb8-57" tabindex="-1"></a>    mn[[tag]] <span class="ot">=</span> m</span>
+<span id="cb8-58"><a href="figure-2.html#cb8-58" tabindex="-1"></a></span>
+<span id="cb8-59"><a href="figure-2.html#cb8-59" tabindex="-1"></a>MHB_OV_ATAC<span class="ot">=</span><span class="fu">as.data.frame</span>(<span class="fu">do.call</span>(rbind,mn))</span>
+<span id="cb8-60"><a href="figure-2.html#cb8-60" tabindex="-1"></a>MHB_OV_ATAC<span class="sc">$</span>type <span class="ot">=</span> <span class="fu">rownames</span>(MHB_OV_ATAC)</span>
+<span id="cb8-61"><a href="figure-2.html#cb8-61" tabindex="-1"></a>MHB_OV_ATAC <span class="ot">=</span> MHB_OV_ATAC[<span class="fu">order</span>(<span class="fu">rownames</span>(MHB_OV_ATAC)),]</span>
+<span id="cb8-62"><a href="figure-2.html#cb8-62" tabindex="-1"></a><span class="co"># PLOT</span></span>
+<span id="cb8-63"><a href="figure-2.html#cb8-63" tabindex="-1"></a><span class="fu">pdf</span>(<span class="at">file=</span><span class="st">&quot;Data/Figures/Fig2/Fig2.A.pdf&quot;</span>,<span class="at">width=</span><span class="dv">5</span>,<span class="at">height=</span><span class="dv">4</span>)</span>
+<span id="cb8-64"><a href="figure-2.html#cb8-64" tabindex="-1"></a>p<span class="ot">&lt;-</span><span class="fu">ggplot</span>(MHB_OV_ATAC,<span class="fu">aes</span>(type,V1)) <span class="sc">+</span> </span>
+<span id="cb8-65"><a href="figure-2.html#cb8-65" tabindex="-1"></a>        <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">fill=</span><span class="st">&quot;steelblue&quot;</span>,<span class="at">width=</span><span class="fl">0.8</span>)<span class="sc">+</span></span>
+<span id="cb8-66"><a href="figure-2.html#cb8-66" tabindex="-1"></a>        <span class="fu">scale_y_continuous</span>(<span class="at">expand=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>),<span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">80</span>))<span class="sc">+</span></span>
+<span id="cb8-67"><a href="figure-2.html#cb8-67" tabindex="-1"></a>        <span class="fu">labs</span>(<span class="at">y=</span><span class="st">&quot;The Frequency of Cancer-type MHBs</span><span class="sc">\n</span><span class="st"> Overlap with TCGA ATAC peaks (%)&quot;</span>)<span class="sc">+</span></span>
+<span id="cb8-68"><a href="figure-2.html#cb8-68" tabindex="-1"></a>        <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb8-69"><a href="figure-2.html#cb8-69" tabindex="-1"></a>        <span class="fu">theme</span>(<span class="at">panel.grid=</span> <span class="fu">element_blank</span>(),<span class="at">panel.background=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb8-70"><a href="figure-2.html#cb8-70" tabindex="-1"></a>              <span class="at">panel.border=</span><span class="fu">element_blank</span>(),<span class="at">axis.line=</span><span class="fu">element_line</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>),</span>
+<span id="cb8-71"><a href="figure-2.html#cb8-71" tabindex="-1"></a>              <span class="at">axis.title.x=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb8-72"><a href="figure-2.html#cb8-72" tabindex="-1"></a>              <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>,<span class="at">size=</span><span class="dv">10</span>,<span class="at">angle=</span><span class="dv">45</span>,<span class="at">vjust=</span><span class="dv">1</span>,<span class="at">hjust=</span><span class="dv">1</span>),</span>
+<span id="cb8-73"><a href="figure-2.html#cb8-73" tabindex="-1"></a>              <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>,<span class="at">size=</span><span class="dv">10</span>)) <span class="sc">+</span></span>
+<span id="cb8-74"><a href="figure-2.html#cb8-74" tabindex="-1"></a>        <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label=</span><span class="fu">paste0</span>(V1,<span class="st">&quot;%&quot;</span>)), <span class="at">vjust=</span><span class="sc">-</span><span class="fl">0.3</span>, <span class="at">size=</span><span class="fl">3.5</span>,<span class="at">color=</span><span class="st">&quot;black&quot;</span>)</span>
+<span id="cb8-75"><a href="figure-2.html#cb8-75" tabindex="-1"></a><span class="fu">print</span>(p)</span>
+<span id="cb8-76"><a href="figure-2.html#cb8-76" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-16"></span>
+<img src="Data/Figures/Fig2/Fig2.A.png" alt="Fig2.A" width="80%" id="fig-unnamed-chunk-16-1" />
+<p class="caption">
+ 2.1: Fig2.A
+</p>
+</div>
+</div>
+<div id="b.-cancer-mhbs-and-dnam-features" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> (B). Cancer MHBs and DNAm features<a href="figure-2.html#b.-cancer-mhbs-and-dnam-features" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb9-1"><a href="figure-2.html#cb9-1" tabindex="-1"></a><span class="co"># Call DNAme features using WGBS data by R package MethylSeekR</span></span>
+<span id="cb9-2"><a href="figure-2.html#cb9-2" tabindex="-1"></a><span class="ex">library</span><span class="er">(</span><span class="ex">MethylSeekR</span><span class="kw">)</span></span>
+<span id="cb9-3"><a href="figure-2.html#cb9-3" tabindex="-1"></a><span class="ex">library</span><span class="er">(</span><span class="st">&quot;BSgenome.Hsapiens.UCSC.hg19&quot;</span><span class="kw">)</span></span>
+<span id="cb9-4"><a href="figure-2.html#cb9-4" tabindex="-1"></a><span class="va">sLengths</span><span class="op">=</span>seqlengths<span class="kw">(</span><span class="ex">Hsapiens</span><span class="kw">)</span></span>
+<span id="cb9-5"><a href="figure-2.html#cb9-5" tabindex="-1"></a><span class="ex">library</span><span class="er">(</span><span class="ex">parallel</span><span class="kw">)</span></span>
+<span id="cb9-6"><a href="figure-2.html#cb9-6" tabindex="-1"></a><span class="ex">library</span><span class="er">(</span><span class="ex">rtracklayer</span><span class="kw">)</span></span>
+<span id="cb9-7"><a href="figure-2.html#cb9-7" tabindex="-1"></a><span class="ex">set.seed</span><span class="er">(</span><span class="ex">123</span><span class="kw">)</span></span>
+<span id="cb9-8"><a href="figure-2.html#cb9-8" tabindex="-1"></a><span class="cf">if</span> <span class="kw">(</span><span class="ex">!file.exists</span><span class="er">(</span><span class="st">&quot;train&quot;</span><span class="kw">)){</span></span>
+<span id="cb9-9"><a href="figure-2.html#cb9-9" tabindex="-1"></a>    <span class="ex">dir.create</span><span class="er">(</span><span class="st">&quot;train&quot;</span><span class="kw">)</span></span>
+<span id="cb9-10"><a href="figure-2.html#cb9-10" tabindex="-1"></a>    <span class="ex">dir.create</span><span class="er">(</span><span class="st">&quot;res&quot;</span><span class="kw">)</span></span>
+<span id="cb9-11"><a href="figure-2.html#cb9-11" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb9-12"><a href="figure-2.html#cb9-12" tabindex="-1"></a><span class="co"># Input</span></span>
+<span id="cb9-13"><a href="figure-2.html#cb9-13" tabindex="-1"></a><span class="va">data_path</span><span class="op">=</span><span class="st">&quot;merged_CpG/&quot;</span></span>
+<span id="cb9-14"><a href="figure-2.html#cb9-14" tabindex="-1"></a><span class="va">samples</span><span class="op">=</span>list.files<span class="kw">(</span><span class="ex">data_path,pattern=</span><span class="st">&quot;Count_CpG.bedGraph&quot;</span><span class="kw">)</span></span>
+<span id="cb9-15"><a href="figure-2.html#cb9-15" tabindex="-1"></a><span class="co"># hg19 CGI</span></span>
+<span id="cb9-16"><a href="figure-2.html#cb9-16" tabindex="-1"></a>    <span class="ex">session</span> <span class="op">&lt;</span>- browserSession<span class="er">(</span><span class="kw">)</span></span>
+<span id="cb9-17"><a href="figure-2.html#cb9-17" tabindex="-1"></a>    <span class="ex">genome</span><span class="er">(</span><span class="ex">session</span><span class="kw">)</span> <span class="op">&lt;</span>- <span class="st">&quot;hg19&quot;</span></span>
+<span id="cb9-18"><a href="figure-2.html#cb9-18" tabindex="-1"></a>    <span class="ex">query</span> <span class="op">&lt;</span>- ucscTableQuery<span class="er">(</span><span class="ex">session,</span> table = <span class="st">&quot;cpgIslandExt&quot;</span><span class="kw">)</span></span>
+<span id="cb9-19"><a href="figure-2.html#cb9-19" tabindex="-1"></a>    <span class="ex">CpGislands.gr</span> <span class="op">&lt;</span>- track<span class="er">(</span><span class="ex">query</span><span class="kw">)</span></span>
+<span id="cb9-20"><a href="figure-2.html#cb9-20" tabindex="-1"></a>    <span class="ex">genome</span><span class="er">(</span><span class="ex">CpGislands.gr</span><span class="kw">)</span> <span class="op">&lt;</span>- <span class="ex">NA</span></span>
+<span id="cb9-21"><a href="figure-2.html#cb9-21" tabindex="-1"></a></span>
+<span id="cb9-22"><a href="figure-2.html#cb9-22" tabindex="-1"></a>    <span class="co"># Remove CGI +/-5K CpGs</span></span>
+<span id="cb9-23"><a href="figure-2.html#cb9-23" tabindex="-1"></a>    <span class="ex">CpGislands.gr</span> <span class="op">&lt;</span>-suppressWarnings<span class="er">(</span><span class="ex">resize</span><span class="er">(</span><span class="ex">CpGislands.gr,</span> 5000, fix=<span class="st">&quot;center&quot;</span><span class="kw">))</span></span>
+<span id="cb9-24"><a href="figure-2.html#cb9-24" tabindex="-1"></a>    </span>
+<span id="cb9-25"><a href="figure-2.html#cb9-25" tabindex="-1"></a>    <span class="cf">for</span> <span class="kw">(</span> <span class="ex">i</span> in samples<span class="kw">){</span></span>
+<span id="cb9-26"><a href="figure-2.html#cb9-26" tabindex="-1"></a></span>
+<span id="cb9-27"><a href="figure-2.html#cb9-27" tabindex="-1"></a>    <span class="co"># Load GR</span></span>
+<span id="cb9-28"><a href="figure-2.html#cb9-28" tabindex="-1"></a>        <span class="ex">x</span> <span class="op">&lt;</span>- toGRanges<span class="er">(</span><span class="ex">paste0</span><span class="er">(</span><span class="ex">data_path,i</span><span class="kw">))</span></span>
+<span id="cb9-29"><a href="figure-2.html#cb9-29" tabindex="-1"></a>        <span class="ex">names</span><span class="er">(</span><span class="ex">mcols</span><span class="er">(</span><span class="ex">x</span><span class="kw">))</span> <span class="ex">=</span> c<span class="er">(</span><span class="st">&quot;M&quot;</span><span class="ex">,</span><span class="st">&quot;Um&quot;</span><span class="kw">)</span></span>
+<span id="cb9-30"><a href="figure-2.html#cb9-30" tabindex="-1"></a>        <span class="ex">mcols</span><span class="er">(</span><span class="ex">x</span><span class="kw">)</span><span class="ex">[,</span><span class="st">&quot;T&quot;</span><span class="ex">]</span> = mcols<span class="er">(</span><span class="ex">x</span><span class="kw">)</span><span class="ex">[,1]</span> + mcols<span class="er">(</span><span class="ex">x</span><span class="kw">)</span><span class="ex">[,2]</span></span>
+<span id="cb9-31"><a href="figure-2.html#cb9-31" tabindex="-1"></a>        <span class="ex">ranges</span><span class="er">(</span><span class="ex">x</span><span class="kw">)</span> <span class="op">&lt;</span>- <span class="ex">end</span><span class="er">(</span><span class="ex">x</span><span class="kw">)</span></span>
+<span id="cb9-32"><a href="figure-2.html#cb9-32" tabindex="-1"></a>        <span class="ex">mcols</span><span class="er">(</span><span class="ex">x</span><span class="kw">)</span> <span class="op">&lt;</span>- <span class="ex">mcols</span><span class="er">(</span><span class="ex">x</span><span class="kw">)</span><span class="ex">[,c</span><span class="er">(</span><span class="st">&quot;T&quot;</span><span class="ex">,</span><span class="st">&quot;M&quot;</span><span class="kw">)</span><span class="ex">]</span></span>
+<span id="cb9-33"><a href="figure-2.html#cb9-33" tabindex="-1"></a>        <span class="ex">tag</span> <span class="op">&lt;</span>- gsub<span class="er">(</span><span class="st">&quot;_Merged_Count_CpG.bedGraph&quot;</span><span class="ex">,</span><span class="st">&quot;&quot;</span><span class="ex">,i</span><span class="kw">)</span></span>
+<span id="cb9-34"><a href="figure-2.html#cb9-34" tabindex="-1"></a>    <span class="co"># PMD</span></span>
+<span id="cb9-35"><a href="figure-2.html#cb9-35" tabindex="-1"></a>       <span class="ex">PMDsegments</span><span class="op">&lt;</span>-segmentPMDs<span class="er">(</span><span class="va">m</span><span class="op">=</span>x, <span class="ex">chr.sel=</span><span class="st">&quot;chr22&quot;</span><span class="ex">,</span></span>
+<span id="cb9-36"><a href="figure-2.html#cb9-36" tabindex="-1"></a>             <span class="va">seqLengths</span><span class="op">=</span>sLengths,num.cores=10<span class="kw">)</span></span>
+<span id="cb9-37"><a href="figure-2.html#cb9-37" tabindex="-1"></a>      <span class="co"># FDR cut-off</span></span>
+<span id="cb9-38"><a href="figure-2.html#cb9-38" tabindex="-1"></a>      <span class="ex">stats</span> <span class="op">&lt;</span>- suppressWarnings<span class="er">(</span><span class="ex">calculateFDRs</span><span class="er">(</span><span class="va">m</span><span class="op">=</span>x, <span class="va">CGIs</span><span class="op">=</span>CpGislands.gr,</span>
+<span id="cb9-39"><a href="figure-2.html#cb9-39" tabindex="-1"></a>                            <span class="va">PMDs</span><span class="op">=</span>PMDsegments, <span class="ex">num.cores=10</span><span class="kw">))</span></span>
+<span id="cb9-40"><a href="figure-2.html#cb9-40" tabindex="-1"></a></span>
+<span id="cb9-41"><a href="figure-2.html#cb9-41" tabindex="-1"></a>    <span class="ex">FDR.cutoff</span> <span class="op">&lt;</span>- 5</span>
+<span id="cb9-42"><a href="figure-2.html#cb9-42" tabindex="-1"></a>    <span class="ex">m.sel</span> <span class="op">&lt;</span>- 0.5</span>
+<span id="cb9-43"><a href="figure-2.html#cb9-43" tabindex="-1"></a>    <span class="ex">n.sel=as.integer</span><span class="er">(</span><span class="ex">names</span><span class="er">(</span><span class="ex">stats</span><span class="va">$FDRs</span><span class="ex">[as.character</span><span class="er">(</span><span class="ex">m.sel</span><span class="kw">)</span><span class="ex">,</span> ]</span>
+<span id="cb9-44"><a href="figure-2.html#cb9-44" tabindex="-1"></a>        <span class="ex">[stats</span><span class="va">$FDRs</span><span class="ex">[as.character</span><span class="er">(</span><span class="ex">m.sel</span><span class="kw">)</span><span class="ex">,</span> ]<span class="op">&lt;</span>FDR.cutoff]<span class="kw">)</span><span class="ex">[1]</span><span class="kw">)</span></span>
+<span id="cb9-45"><a href="figure-2.html#cb9-45" tabindex="-1"></a></span>
+<span id="cb9-46"><a href="figure-2.html#cb9-46" tabindex="-1"></a>    <span class="co">###UMR LMR</span></span>
+<span id="cb9-47"><a href="figure-2.html#cb9-47" tabindex="-1"></a>    <span class="ex">UMRLMRsegments</span> <span class="op">&lt;</span>- segmentUMRsLMRs<span class="er">(</span><span class="va">m</span><span class="op">=</span>x, <span class="ex">meth.cutoff=m.sel,</span></span>
+<span id="cb9-48"><a href="figure-2.html#cb9-48" tabindex="-1"></a>                        <span class="ex">nCpG.cutoff=n.sel,</span> PMDs=PMDsegments,</span>
+<span id="cb9-49"><a href="figure-2.html#cb9-49" tabindex="-1"></a>                        <span class="ex">num.cores=10,</span> myGenomeSeq=Hsapiens,minCover=5,</span>
+<span id="cb9-50"><a href="figure-2.html#cb9-50" tabindex="-1"></a>                        <span class="va">seqLengths</span><span class="op">=</span>sLengths<span class="kw">)</span></span>
+<span id="cb9-51"><a href="figure-2.html#cb9-51" tabindex="-1"></a>    <span class="co"># Saving</span></span>
+<span id="cb9-52"><a href="figure-2.html#cb9-52" tabindex="-1"></a>    <span class="co"># PMD</span></span>
+<span id="cb9-53"><a href="figure-2.html#cb9-53" tabindex="-1"></a>    <span class="ex">write.table</span><span class="er">(</span><span class="ex">as.data.frame</span><span class="er">(</span><span class="va">PMDsegments</span><span class="op">[</span>PMDsegments<span class="va">$type</span>==<span class="st">&quot;PMD&quot;</span><span class="op">]</span><span class="kw">)</span><span class="ex">[c</span><span class="er">(</span><span class="ex">1:3</span><span class="kw">)</span><span class="ex">],file=paste0</span><span class="er">(</span><span class="st">&quot;res/&quot;</span><span class="ex">,tag,</span><span class="st">&quot;_PMDs.txt&quot;</span><span class="kw">)</span><span class="ex">,</span></span>
+<span id="cb9-54"><a href="figure-2.html#cb9-54" tabindex="-1"></a>                <span class="va">sep</span><span class="op">=</span><span class="st">&quot;\t&quot;</span>,quote=F,col.names=F,row.names=F<span class="kw">)</span></span>
+<span id="cb9-55"><a href="figure-2.html#cb9-55" tabindex="-1"></a>    <span class="co"># LMR &amp; UMR </span></span>
+<span id="cb9-56"><a href="figure-2.html#cb9-56" tabindex="-1"></a>    <span class="ex">write.table</span><span class="er">(</span><span class="ex">granges</span><span class="er">(</span><span class="va">UMRLMRsegments</span><span class="op">[</span>UMRLMRsegments<span class="va">$type</span>==<span class="st">&quot;LMR&quot;</span>,<span class="op">]</span><span class="kw">)</span><span class="ex">,file=paste0</span><span class="er">(</span><span class="st">&quot;res/&quot;</span><span class="ex">,tag,</span><span class="st">&quot;_LMRs.txt&quot;</span><span class="kw">)</span><span class="ex">,</span></span>
+<span id="cb9-57"><a href="figure-2.html#cb9-57" tabindex="-1"></a>                <span class="va">sep</span><span class="op">=</span><span class="st">&quot;\t&quot;</span>,quote=F,col.names=F,row.names=F<span class="kw">)</span></span>
+<span id="cb9-58"><a href="figure-2.html#cb9-58" tabindex="-1"></a>    <span class="ex">write.table</span><span class="er">(</span><span class="ex">granges</span><span class="er">(</span><span class="va">UMRLMRsegments</span><span class="op">[</span>UMRLMRsegments<span class="va">$type</span>==<span class="st">&quot;UMR&quot;</span>,<span class="op">]</span><span class="kw">)</span><span class="ex">,file=paste0</span><span class="er">(</span><span class="st">&quot;res/&quot;</span><span class="ex">,tag,</span><span class="st">&quot;_UMRs.txt&quot;</span><span class="kw">)</span><span class="ex">,</span></span>
+<span id="cb9-59"><a href="figure-2.html#cb9-59" tabindex="-1"></a>                <span class="va">sep</span><span class="op">=</span><span class="st">&quot;\t&quot;</span>,quote=F,col.names=F,row.names=F<span class="kw">)</span></span>
+<span id="cb9-60"><a href="figure-2.html#cb9-60" tabindex="-1"></a><span class="kw">}</span></span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="figure-2.html#cb10-1" tabindex="-1"></a><span class="co"># Show the percent of MHB in UMR HMR LMR PMD  regions</span></span>
+<span id="cb10-2"><a href="figure-2.html#cb10-2" tabindex="-1"></a>mhb_cluster<span class="ot">=</span><span class="st">&quot;Data/Processed_data/MHB/tumor&quot;</span></span>
+<span id="cb10-3"><a href="figure-2.html#cb10-3" tabindex="-1"></a>samples<span class="ot">=</span><span class="fu">list.files</span>(mhb_cluster)</span>
+<span id="cb10-4"><a href="figure-2.html#cb10-4" tabindex="-1"></a>mn <span class="ot">=</span><span class="fu">list</span>()</span>
+<span id="cb10-5"><a href="figure-2.html#cb10-5" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> samples) {</span>
+<span id="cb10-6"><a href="figure-2.html#cb10-6" tabindex="-1"></a>  mhb_beta <span class="ot">=</span> <span class="fu">readPeakFile</span>(<span class="fu">paste0</span>(mhb_cluster,<span class="st">&quot;/&quot;</span>,i))</span>
+<span id="cb10-7"><a href="figure-2.html#cb10-7" tabindex="-1"></a>    mhb_tag <span class="ot">=</span> <span class="fu">gsub</span>(<span class="st">&quot;.bed&quot;</span>,<span class="st">&quot;&quot;</span>,<span class="fu">gsub</span>(<span class="st">&quot;MHB_&quot;</span>,<span class="st">&quot;&quot;</span>,i))</span>
+<span id="cb10-8"><a href="figure-2.html#cb10-8" tabindex="-1"></a>    <span class="co"># Read the cancer type PMD HMR LMR UMR regions</span></span>
+<span id="cb10-9"><a href="figure-2.html#cb10-9" tabindex="-1"></a>    MR_path<span class="ot">=</span><span class="st">&quot;Data/Processed_data/MR/GR&quot;</span></span>
+<span id="cb10-10"><a href="figure-2.html#cb10-10" tabindex="-1"></a>    <span class="cf">if</span> (mhb_tag <span class="sc">==</span> <span class="st">&quot;BRCA&quot;</span>){</span>
+<span id="cb10-11"><a href="figure-2.html#cb10-11" tabindex="-1"></a>        tag <span class="ot">=</span> <span class="st">&quot;breast_T&quot;</span></span>
+<span id="cb10-12"><a href="figure-2.html#cb10-12" tabindex="-1"></a>    }<span class="cf">else</span> <span class="cf">if</span>(mhb_tag <span class="sc">==</span> <span class="st">&quot;CESC&quot;</span>){</span>
+<span id="cb10-13"><a href="figure-2.html#cb10-13" tabindex="-1"></a>        tag <span class="ot">=</span> <span class="st">&quot;cervix_T&quot;</span></span>
+<span id="cb10-14"><a href="figure-2.html#cb10-14" tabindex="-1"></a>    }<span class="cf">else</span> <span class="cf">if</span> (mhb_tag <span class="sc">==</span> <span class="st">&quot;COAD&quot;</span>){</span>
+<span id="cb10-15"><a href="figure-2.html#cb10-15" tabindex="-1"></a>        tag <span class="ot">=</span> <span class="st">&quot;colon_T&quot;</span></span>
+<span id="cb10-16"><a href="figure-2.html#cb10-16" tabindex="-1"></a>    }<span class="cf">else</span> <span class="cf">if</span> (mhb_tag <span class="sc">==</span> <span class="st">&quot;ESCA&quot;</span>){</span>
+<span id="cb10-17"><a href="figure-2.html#cb10-17" tabindex="-1"></a>        tag <span class="ot">=</span> <span class="st">&quot;esophagus_T&quot;</span></span>
+<span id="cb10-18"><a href="figure-2.html#cb10-18" tabindex="-1"></a>    }<span class="cf">else</span> <span class="cf">if</span> (mhb_tag <span class="sc">==</span><span class="st">&quot;HNSC&quot;</span>){</span>
+<span id="cb10-19"><a href="figure-2.html#cb10-19" tabindex="-1"></a>        tag <span class="ot">=</span> <span class="st">&quot;head_and_neck_T&quot;</span></span>
+<span id="cb10-20"><a href="figure-2.html#cb10-20" tabindex="-1"></a>    }<span class="cf">else</span> <span class="cf">if</span> (mhb_tag <span class="sc">==</span> <span class="st">&quot;LIHC&quot;</span>){</span>
+<span id="cb10-21"><a href="figure-2.html#cb10-21" tabindex="-1"></a>        tag <span class="ot">=</span> <span class="st">&quot;liver_T&quot;</span></span>
+<span id="cb10-22"><a href="figure-2.html#cb10-22" tabindex="-1"></a>    }<span class="cf">else</span> <span class="cf">if</span>(mhb_tag <span class="sc">==</span> <span class="st">&quot;NSCLC&quot;</span>){</span>
+<span id="cb10-23"><a href="figure-2.html#cb10-23" tabindex="-1"></a>        tag <span class="ot">=</span> <span class="st">&quot;lung_T&quot;</span></span>
+<span id="cb10-24"><a href="figure-2.html#cb10-24" tabindex="-1"></a>    }<span class="cf">else</span> <span class="cf">if</span> (mhb_tag <span class="sc">==</span> <span class="st">&quot;STAD&quot;</span>){</span>
+<span id="cb10-25"><a href="figure-2.html#cb10-25" tabindex="-1"></a>        tag <span class="ot">=</span> <span class="st">&quot;stomach_T&quot;</span></span>
+<span id="cb10-26"><a href="figure-2.html#cb10-26" tabindex="-1"></a>    }<span class="cf">else</span> <span class="cf">if</span>(mhb_tag <span class="sc">==</span> <span class="st">&quot;THCA&quot;</span>){</span>
+<span id="cb10-27"><a href="figure-2.html#cb10-27" tabindex="-1"></a>        tag <span class="ot">=</span> <span class="st">&quot;thyroid_T&quot;</span></span>
+<span id="cb10-28"><a href="figure-2.html#cb10-28" tabindex="-1"></a>    }<span class="cf">else</span> <span class="cf">if</span>(mhb_tag <span class="sc">==</span> <span class="st">&quot;OV&quot;</span>){</span>
+<span id="cb10-29"><a href="figure-2.html#cb10-29" tabindex="-1"></a>        tag <span class="ot">=</span> <span class="st">&quot;ovary_T&quot;</span></span>
+<span id="cb10-30"><a href="figure-2.html#cb10-30" tabindex="-1"></a>    }<span class="cf">else</span> <span class="cf">if</span>(mhb_tag <span class="sc">==</span> <span class="st">&quot;PACA&quot;</span>){</span>
+<span id="cb10-31"><a href="figure-2.html#cb10-31" tabindex="-1"></a>        tag <span class="ot">=</span> <span class="st">&quot;pancreas_T&quot;</span></span>
+<span id="cb10-32"><a href="figure-2.html#cb10-32" tabindex="-1"></a>    }</span>
+<span id="cb10-33"><a href="figure-2.html#cb10-33" tabindex="-1"></a>  <span class="co"># Genomic feature regions</span></span>
+<span id="cb10-34"><a href="figure-2.html#cb10-34" tabindex="-1"></a>    PMD <span class="ot">=</span> <span class="fu">readPeakFile</span>(<span class="fu">paste0</span>(MR_path,tag,<span class="st">&quot;_PMDs.bed&quot;</span>))</span>
+<span id="cb10-35"><a href="figure-2.html#cb10-35" tabindex="-1"></a>    HMR <span class="ot">=</span> <span class="fu">readPeakFile</span>(<span class="fu">paste0</span>(MR_path,tag,<span class="st">&quot;_HMRs.bed&quot;</span>))</span>
+<span id="cb10-36"><a href="figure-2.html#cb10-36" tabindex="-1"></a>    LMR <span class="ot">=</span> <span class="fu">readPeakFile</span>(<span class="fu">paste0</span>(MR_path,tag,<span class="st">&quot;_LMRs.bed&quot;</span>))</span>
+<span id="cb10-37"><a href="figure-2.html#cb10-37" tabindex="-1"></a>    UMR <span class="ot">=</span> <span class="fu">readPeakFile</span>(<span class="fu">paste0</span>(MR_path,tag,<span class="st">&quot;_UMRs.bed&quot;</span>))</span>
+<span id="cb10-38"><a href="figure-2.html#cb10-38" tabindex="-1"></a>    <span class="co"># Cancer-type MHB overlaps</span></span>
+<span id="cb10-39"><a href="figure-2.html#cb10-39" tabindex="-1"></a>    x1<span class="ot">=</span><span class="fu">findOverlaps</span>(PMD,mhb_beta,<span class="at">type =</span> <span class="st">&quot;any&quot;</span>, <span class="at">ignore.strand =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb10-40"><a href="figure-2.html#cb10-40" tabindex="-1"></a>    m1<span class="ot">=</span><span class="fu">length</span>(<span class="fu">unique</span>(<span class="fu">subjectHits</span>(x1)))</span>
+<span id="cb10-41"><a href="figure-2.html#cb10-41" tabindex="-1"></a>    x2<span class="ot">=</span><span class="fu">findOverlaps</span>(HMR,mhb_beta,<span class="at">type =</span> <span class="st">&quot;any&quot;</span>, <span class="at">ignore.strand =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb10-42"><a href="figure-2.html#cb10-42" tabindex="-1"></a>    m2<span class="ot">=</span><span class="fu">length</span>(<span class="fu">unique</span>(<span class="fu">subjectHits</span>(x2)))</span>
+<span id="cb10-43"><a href="figure-2.html#cb10-43" tabindex="-1"></a>    x3<span class="ot">=</span><span class="fu">findOverlaps</span>(LMR,mhb_beta,<span class="at">type =</span> <span class="st">&quot;any&quot;</span>, <span class="at">ignore.strand =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb10-44"><a href="figure-2.html#cb10-44" tabindex="-1"></a>    m3<span class="ot">=</span><span class="fu">length</span>(<span class="fu">unique</span>(<span class="fu">subjectHits</span>(x3)))</span>
+<span id="cb10-45"><a href="figure-2.html#cb10-45" tabindex="-1"></a>    x4<span class="ot">=</span><span class="fu">findOverlaps</span>(UMR,mhb_beta,<span class="at">type =</span> <span class="st">&quot;any&quot;</span>, <span class="at">ignore.strand =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb10-46"><a href="figure-2.html#cb10-46" tabindex="-1"></a>    m4<span class="ot">=</span><span class="fu">length</span>(<span class="fu">unique</span>(<span class="fu">subjectHits</span>(x4)))</span>
+<span id="cb10-47"><a href="figure-2.html#cb10-47" tabindex="-1"></a></span>
+<span id="cb10-48"><a href="figure-2.html#cb10-48" tabindex="-1"></a>    m <span class="ot">=</span> <span class="fu">data.frame</span>(<span class="at">freq =</span> <span class="fu">c</span>(m1,m2,m3,m4)<span class="sc">/</span><span class="fu">sum</span>(m1<span class="sc">+</span>m2<span class="sc">+</span>m3<span class="sc">+</span>m4))</span>
+<span id="cb10-49"><a href="figure-2.html#cb10-49" tabindex="-1"></a>    <span class="fu">rownames</span>(m) <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;PMD&quot;</span>,<span class="st">&quot;HMR&quot;</span>,<span class="st">&quot;LMR&quot;</span>,<span class="st">&quot;UMR&quot;</span>)</span>
+<span id="cb10-50"><a href="figure-2.html#cb10-50" tabindex="-1"></a>    <span class="fu">names</span>(m) <span class="ot">=</span> tag</span>
+<span id="cb10-51"><a href="figure-2.html#cb10-51" tabindex="-1"></a>    mn[[tag]] <span class="ot">=</span> m</span>
+<span id="cb10-52"><a href="figure-2.html#cb10-52" tabindex="-1"></a>}</span>
+<span id="cb10-53"><a href="figure-2.html#cb10-53" tabindex="-1"></a>res <span class="ot">=</span> <span class="fu">do.call</span>(cbind,mn)</span>
+<span id="cb10-54"><a href="figure-2.html#cb10-54" tabindex="-1"></a><span class="co"># PLOT</span></span>
+<span id="cb10-55"><a href="figure-2.html#cb10-55" tabindex="-1"></a>res<span class="sc">$</span>Genomic <span class="ot">=</span> <span class="fu">rownames</span>(res)</span>
+<span id="cb10-56"><a href="figure-2.html#cb10-56" tabindex="-1"></a>data <span class="ot">=</span> <span class="fu">melt</span>(res)</span>
+<span id="cb10-57"><a href="figure-2.html#cb10-57" tabindex="-1"></a><span class="fu">pdf</span>(<span class="at">file=</span><span class="st">&quot;Data/Figures/Fig2/Fig2.B.pdf&quot;</span>,<span class="at">width=</span><span class="dv">5</span>,<span class="at">height=</span><span class="dv">5</span>)</span>
+<span id="cb10-58"><a href="figure-2.html#cb10-58" tabindex="-1"></a>p<span class="ot">&lt;-</span><span class="fu">ggplot</span>(data,<span class="fu">aes</span>(<span class="at">x=</span>variable,<span class="at">y=</span>value<span class="sc">*</span><span class="dv">100</span>,</span>
+<span id="cb10-59"><a href="figure-2.html#cb10-59" tabindex="-1"></a>                <span class="at">fill=</span><span class="fu">factor</span>(Genomic,<span class="at">level=</span><span class="fu">c</span>(<span class="st">&quot;HMR&quot;</span>,<span class="st">&quot;PMD&quot;</span>,<span class="st">&quot;LMR&quot;</span>,<span class="st">&quot;UMR&quot;</span>))))<span class="sc">+</span></span>
+<span id="cb10-60"><a href="figure-2.html#cb10-60" tabindex="-1"></a>        <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;stack&quot;</span>)<span class="sc">+</span></span>
+<span id="cb10-61"><a href="figure-2.html#cb10-61" tabindex="-1"></a>        <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">&quot;Set1&quot;</span>) <span class="sc">+</span></span>
+<span id="cb10-62"><a href="figure-2.html#cb10-62" tabindex="-1"></a>        <span class="fu">ggtitle</span>(<span class="st">&quot;The Genomic distribution of Cancer-type MHBs&quot;</span>)<span class="sc">+</span></span>
+<span id="cb10-63"><a href="figure-2.html#cb10-63" tabindex="-1"></a>        <span class="fu">labs</span>(<span class="at">x=</span><span class="st">&quot;&quot;</span>,<span class="at">y=</span><span class="st">&quot;Percent (%)&quot;</span>) <span class="sc">+</span></span>
+<span id="cb10-64"><a href="figure-2.html#cb10-64" tabindex="-1"></a>        <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb10-65"><a href="figure-2.html#cb10-65" tabindex="-1"></a>        <span class="fu">theme</span>(</span>
+<span id="cb10-66"><a href="figure-2.html#cb10-66" tabindex="-1"></a>          <span class="at">panel.grid =</span> <span class="fu">element_blank</span>(),<span class="at">panel.background=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb10-67"><a href="figure-2.html#cb10-67" tabindex="-1"></a>          <span class="at">axis.ticks.length=</span><span class="fu">unit</span>(<span class="dv">5</span>,<span class="st">&#39;pt&#39;</span>),<span class="at">axis.line=</span><span class="fu">element_line</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>),</span>
+<span id="cb10-68"><a href="figure-2.html#cb10-68" tabindex="-1"></a>            <span class="at">axis.title.x=</span><span class="fu">element_blank</span>(),<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>,<span class="at">size=</span><span class="dv">10</span>,</span>
+<span id="cb10-69"><a href="figure-2.html#cb10-69" tabindex="-1"></a>                                                                    <span class="at">angle=</span><span class="dv">45</span>,<span class="at">vjust=</span><span class="dv">1</span>,<span class="at">hjust=</span><span class="dv">1</span>),</span>
+<span id="cb10-70"><a href="figure-2.html#cb10-70" tabindex="-1"></a>            <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>,<span class="at">size=</span><span class="dv">10</span>),</span>
+<span id="cb10-71"><a href="figure-2.html#cb10-71" tabindex="-1"></a>            <span class="at">axis.ticks =</span> <span class="fu">element_line</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>)) <span class="sc">+</span> </span>
+<span id="cb10-72"><a href="figure-2.html#cb10-72" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill=</span><span class="fu">guide_legend</span>(<span class="at">title=</span><span class="cn">NULL</span>))</span>
+<span id="cb10-73"><a href="figure-2.html#cb10-73" tabindex="-1"></a><span class="fu">print</span>(p)</span>
+<span id="cb10-74"><a href="figure-2.html#cb10-74" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-19"></span>
+<img src="Data/Figures/Fig2/Fig2.B.png" alt="Fig2.B" width="80%" id="fig-unnamed-chunk-19-1" />
+<p class="caption">
+ 2.2: Fig2.B
+</p>
+</div>
+</div>
+<div id="c-d.-enrichment-of-cancer-mhbs-in-dnam-feature-lola" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> (C-D). Enrichment of Cancer MHBs in DNAm feature (LOLA)<a href="figure-2.html#c-d.-enrichment-of-cancer-mhbs-in-dnam-feature-lola" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="figure-2.html#cb11-1" tabindex="-1"></a><span class="co"># LOLA enrichment (MHB vs LMR, UMR, HMR, PMD)</span></span>
+<span id="cb11-2"><a href="figure-2.html#cb11-2" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;LOLA&quot;</span>)</span>
+<span id="cb11-3"><a href="figure-2.html#cb11-3" tabindex="-1"></a>mhb_clusters<span class="ot">=</span><span class="st">&quot;Data/Processed_data/MHB/tumor/&quot;</span></span>
+<span id="cb11-4"><a href="figure-2.html#cb11-4" tabindex="-1"></a>background<span class="ot">=</span><span class="st">&quot;Data/Processed_data/MHB/MHB_11_cancers_clusters.bed&quot;</span></span>
+<span id="cb11-5"><a href="figure-2.html#cb11-5" tabindex="-1"></a><span class="co"># MHB regions</span></span>
+<span id="cb11-6"><a href="figure-2.html#cb11-6" tabindex="-1"></a>files <span class="ot">=</span> <span class="fu">list.files</span>(mhb_clusters)</span>
+<span id="cb11-7"><a href="figure-2.html#cb11-7" tabindex="-1"></a>locResults <span class="ot">=</span> <span class="fu">lapply</span>(files,<span class="cf">function</span>(i){</span>
+<span id="cb11-8"><a href="figure-2.html#cb11-8" tabindex="-1"></a>  mhb<span class="ot">=</span><span class="fu">readBed</span>(<span class="fu">paste0</span>(mhb_clusters,i))</span>
+<span id="cb11-9"><a href="figure-2.html#cb11-9" tabindex="-1"></a>  <span class="co"># Universe_Sets Background</span></span>
+<span id="cb11-10"><a href="figure-2.html#cb11-10" tabindex="-1"></a>    universe_set<span class="ot">=</span><span class="fu">readBed</span>(background)</span>
+<span id="cb11-11"><a href="figure-2.html#cb11-11" tabindex="-1"></a>    <span class="co"># Genomic features</span></span>
+<span id="cb11-12"><a href="figure-2.html#cb11-12" tabindex="-1"></a>    states<span class="ot">=</span><span class="fu">loadRegionDB</span>(<span class="st">&quot;Data/Processed_data/MR/LOLA_DB&quot;</span>)</span>
+<span id="cb11-13"><a href="figure-2.html#cb11-13" tabindex="-1"></a>    <span class="co"># Runing LOLA</span></span>
+<span id="cb11-14"><a href="figure-2.html#cb11-14" tabindex="-1"></a>    <span class="fu">runLOLA</span>(mhb, universe_set, states, <span class="at">cores=</span><span class="dv">10</span>)</span>
+<span id="cb11-15"><a href="figure-2.html#cb11-15" tabindex="-1"></a>  })</span>
+<span id="cb11-16"><a href="figure-2.html#cb11-16" tabindex="-1"></a><span class="co"># data output</span></span>
+<span id="cb11-17"><a href="figure-2.html#cb11-17" tabindex="-1"></a>data <span class="ot">=</span> <span class="fu">lapply</span>(<span class="fu">names</span>(locResults),<span class="cf">function</span>(i){</span>
+<span id="cb11-18"><a href="figure-2.html#cb11-18" tabindex="-1"></a>    mx <span class="ot">=</span> locResults[[i]][,<span class="fu">c</span>(<span class="st">&quot;pValueLog&quot;</span>,<span class="st">&quot;filename&quot;</span>)]</span>
+<span id="cb11-19"><a href="figure-2.html#cb11-19" tabindex="-1"></a>    mx<span class="sc">$</span>Type <span class="ot">=</span> i</span>
+<span id="cb11-20"><a href="figure-2.html#cb11-20" tabindex="-1"></a>    mx </span>
+<span id="cb11-21"><a href="figure-2.html#cb11-21" tabindex="-1"></a>})</span>
+<span id="cb11-22"><a href="figure-2.html#cb11-22" tabindex="-1"></a>data <span class="ot">=</span> <span class="fu">as.data.frame</span>(<span class="fu">do.call</span>(rbind,data))</span>
+<span id="cb11-23"><a href="figure-2.html#cb11-23" tabindex="-1"></a><span class="co"># adjusted P values</span></span>
+<span id="cb11-24"><a href="figure-2.html#cb11-24" tabindex="-1"></a>p_adjust <span class="ot">=</span> <span class="cf">function</span>(x){</span>
+<span id="cb11-25"><a href="figure-2.html#cb11-25" tabindex="-1"></a>    FDR<span class="ot">=</span><span class="fu">p.adjust</span>(<span class="at">p=</span><span class="dv">10</span><span class="sc">^-</span>x,<span class="at">method=</span><span class="st">&quot;fdr&quot;</span>,<span class="at">n=</span><span class="dv">10</span>)</span>
+<span id="cb11-26"><a href="figure-2.html#cb11-26" tabindex="-1"></a>    <span class="fu">return</span>(FDR)</span>
+<span id="cb11-27"><a href="figure-2.html#cb11-27" tabindex="-1"></a>}</span>
+<span id="cb11-28"><a href="figure-2.html#cb11-28" tabindex="-1"></a>data<span class="sc">$</span>fdr <span class="ot">=</span> <span class="fu">apply</span>(data[<span class="dv">1</span>],<span class="dv">1</span>,p_adjust)</span>
+<span id="cb11-29"><a href="figure-2.html#cb11-29" tabindex="-1"></a>data <span class="ot">=</span> data[<span class="sc">-</span><span class="dv">1</span>]</span>
+<span id="cb11-30"><a href="figure-2.html#cb11-30" tabindex="-1"></a><span class="co"># data reshape</span></span>
+<span id="cb11-31"><a href="figure-2.html#cb11-31" tabindex="-1"></a>dta <span class="ot">=</span> <span class="fu">dcast</span>(data,Type<span class="sc">~</span>filename)</span>
+<span id="cb11-32"><a href="figure-2.html#cb11-32" tabindex="-1"></a><span class="fu">rownames</span>(dta) <span class="ot">=</span> dta<span class="sc">$</span>Type;dta<span class="sc">$</span>Type<span class="ot">=</span><span class="cn">NULL</span></span>
+<span id="cb11-33"><a href="figure-2.html#cb11-33" tabindex="-1"></a>dta_t <span class="ot">=</span> <span class="sc">-</span><span class="fu">log10</span>(dta)</span>
+<span id="cb11-34"><a href="figure-2.html#cb11-34" tabindex="-1"></a><span class="co"># filter FDR &lt; 0.01 </span></span>
+<span id="cb11-35"><a href="figure-2.html#cb11-35" tabindex="-1"></a>dta_t[dta_t<span class="sc">&lt;</span><span class="dv">2</span>]<span class="ot">&lt;-</span><span class="cn">NA</span></span>
+<span id="cb11-36"><a href="figure-2.html#cb11-36" tabindex="-1"></a>rank_t <span class="ot">=</span> <span class="cf">function</span>(x) {</span>
+<span id="cb11-37"><a href="figure-2.html#cb11-37" tabindex="-1"></a>    m <span class="ot">=</span> <span class="fu">rank</span>(<span class="fu">array</span>(<span class="sc">-</span>x),<span class="at">na.last=</span><span class="st">&quot;keep&quot;</span>,<span class="at">ties.method =</span> <span class="st">&quot;min&quot;</span>)</span>
+<span id="cb11-38"><a href="figure-2.html#cb11-38" tabindex="-1"></a>    <span class="fu">return</span>(m)</span>
+<span id="cb11-39"><a href="figure-2.html#cb11-39" tabindex="-1"></a>}</span>
+<span id="cb11-40"><a href="figure-2.html#cb11-40" tabindex="-1"></a><span class="co"># Order by the Genomic features</span></span>
+<span id="cb11-41"><a href="figure-2.html#cb11-41" tabindex="-1"></a>c1 <span class="ot">=</span> dta_t[<span class="fu">grepl</span>(<span class="st">&quot;UMR&quot;</span>,<span class="fu">colnames</span>(dta_t))]</span>
+<span id="cb11-42"><a href="figure-2.html#cb11-42" tabindex="-1"></a>c2 <span class="ot">=</span> dta_t[<span class="fu">grepl</span>(<span class="st">&quot;LMR&quot;</span>,<span class="fu">colnames</span>(dta_t))]</span>
+<span id="cb11-43"><a href="figure-2.html#cb11-43" tabindex="-1"></a>c3 <span class="ot">=</span> dta_t[<span class="fu">grepl</span>(<span class="st">&quot;PMD&quot;</span>,<span class="fu">colnames</span>(dta_t))]</span>
+<span id="cb11-44"><a href="figure-2.html#cb11-44" tabindex="-1"></a>c4 <span class="ot">=</span> dta_t[<span class="fu">grepl</span>(<span class="st">&quot;HMR&quot;</span>,<span class="fu">colnames</span>(dta_t))]</span>
+<span id="cb11-45"><a href="figure-2.html#cb11-45" tabindex="-1"></a></span>
+<span id="cb11-46"><a href="figure-2.html#cb11-46" tabindex="-1"></a>c1_rank<span class="ot">=</span> <span class="fu">as.data.frame</span>(<span class="fu">t</span>(<span class="fu">apply</span>(c1,<span class="dv">1</span>,rank_t)))</span>
+<span id="cb11-47"><a href="figure-2.html#cb11-47" tabindex="-1"></a><span class="fu">names</span>(c1_rank) <span class="ot">=</span> <span class="fu">names</span>(c1)</span>
+<span id="cb11-48"><a href="figure-2.html#cb11-48" tabindex="-1"></a>c2_rank<span class="ot">=</span> <span class="fu">as.data.frame</span>(<span class="fu">t</span>(<span class="fu">apply</span>(c2,<span class="dv">1</span>,rank_t)))</span>
+<span id="cb11-49"><a href="figure-2.html#cb11-49" tabindex="-1"></a><span class="fu">names</span>(c2_rank) <span class="ot">=</span> <span class="fu">names</span>(c2)</span>
+<span id="cb11-50"><a href="figure-2.html#cb11-50" tabindex="-1"></a>c3_rank<span class="ot">=</span> <span class="fu">as.data.frame</span>(<span class="fu">t</span>(<span class="fu">apply</span>(c3,<span class="dv">1</span>,rank_t)))</span>
+<span id="cb11-51"><a href="figure-2.html#cb11-51" tabindex="-1"></a><span class="fu">names</span>(c3_rank) <span class="ot">=</span> <span class="fu">names</span>(c3)</span>
+<span id="cb11-52"><a href="figure-2.html#cb11-52" tabindex="-1"></a>c4_rank<span class="ot">=</span> <span class="fu">as.data.frame</span>(<span class="fu">t</span>(<span class="fu">apply</span>(c4,<span class="dv">1</span>,rank_t)))</span>
+<span id="cb11-53"><a href="figure-2.html#cb11-53" tabindex="-1"></a><span class="fu">names</span>(c4_rank) <span class="ot">=</span> <span class="fu">names</span>(c4)</span>
+<span id="cb11-54"><a href="figure-2.html#cb11-54" tabindex="-1"></a><span class="do">## LMR </span></span>
+<span id="cb11-55"><a href="figure-2.html#cb11-55" tabindex="-1"></a><span class="fu">pdf</span>(<span class="at">file=</span><span class="st">&quot;Data/Figures/Fig2/Fig2.C.pdf&quot;</span>,<span class="at">width=</span><span class="dv">4</span>,<span class="at">height=</span><span class="dv">4</span>)</span>
+<span id="cb11-56"><a href="figure-2.html#cb11-56" tabindex="-1"></a>p<span class="ot">&lt;-</span> <span class="fu">pheatmap</span>(c2_rank,</span>
+<span id="cb11-57"><a href="figure-2.html#cb11-57" tabindex="-1"></a>             <span class="at">main=</span><span class="st">&quot;Cancer type MHBs Overlap with LMRs&quot;</span>,</span>
+<span id="cb11-58"><a href="figure-2.html#cb11-58" tabindex="-1"></a>             <span class="at">show_colnames=</span>T,<span class="at">show_rownames=</span>T,</span>
+<span id="cb11-59"><a href="figure-2.html#cb11-59" tabindex="-1"></a>             <span class="at">cluster_rows=</span>F,<span class="at">cluster_cols=</span>F,</span>
+<span id="cb11-60"><a href="figure-2.html#cb11-60" tabindex="-1"></a>             <span class="at">scale=</span><span class="st">&quot;none&quot;</span>,<span class="at">angle_col=</span><span class="dv">45</span>,</span>
+<span id="cb11-61"><a href="figure-2.html#cb11-61" tabindex="-1"></a>             <span class="at">color=</span><span class="fu">colorRampPalette</span>(<span class="at">colors =</span> <span class="fu">c</span>(<span class="st">&quot;firebrick&quot;</span>,<span class="st">&quot;white&quot;</span>,<span class="st">&quot;darkblue&quot;</span>))(<span class="dv">1000</span>))</span>
+<span id="cb11-62"><a href="figure-2.html#cb11-62" tabindex="-1"></a><span class="fu">print</span>(p)</span>
+<span id="cb11-63"><a href="figure-2.html#cb11-63" tabindex="-1"></a><span class="fu">dev.off</span>()</span>
+<span id="cb11-64"><a href="figure-2.html#cb11-64" tabindex="-1"></a><span class="do">## PMD</span></span>
+<span id="cb11-65"><a href="figure-2.html#cb11-65" tabindex="-1"></a><span class="fu">pdf</span>(<span class="at">file=</span><span class="st">&quot;Data/Figures/Fig2/Fig2.D.pdf&quot;</span>,<span class="at">width=</span><span class="dv">4</span>,<span class="at">height=</span><span class="dv">4</span>)</span>
+<span id="cb11-66"><a href="figure-2.html#cb11-66" tabindex="-1"></a>p<span class="ot">&lt;-</span> <span class="fu">pheatmap</span>(c3_rank,</span>
+<span id="cb11-67"><a href="figure-2.html#cb11-67" tabindex="-1"></a>             <span class="at">main=</span><span class="st">&quot;Cancer type MHBs Overlap with PMDs&quot;</span>,</span>
+<span id="cb11-68"><a href="figure-2.html#cb11-68" tabindex="-1"></a>             <span class="at">show_colnames=</span>T,<span class="at">show_rownames=</span>T,</span>
+<span id="cb11-69"><a href="figure-2.html#cb11-69" tabindex="-1"></a>             <span class="at">cluster_rows=</span>F,<span class="at">cluster_cols=</span>F,</span>
+<span id="cb11-70"><a href="figure-2.html#cb11-70" tabindex="-1"></a>             <span class="at">scale=</span><span class="st">&quot;none&quot;</span>,<span class="at">angle_col=</span><span class="dv">45</span>,</span>
+<span id="cb11-71"><a href="figure-2.html#cb11-71" tabindex="-1"></a>             <span class="at">color=</span><span class="fu">colorRampPalette</span>(<span class="at">colors =</span> <span class="fu">c</span>(<span class="st">&quot;firebrick&quot;</span>,<span class="st">&quot;white&quot;</span>,<span class="st">&quot;darkblue&quot;</span>))(<span class="dv">1000</span>))</span>
+<span id="cb11-72"><a href="figure-2.html#cb11-72" tabindex="-1"></a><span class="fu">print</span>(p)</span>
+<span id="cb11-73"><a href="figure-2.html#cb11-73" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-21"></span>
+<img src="Data/Figures/Fig2/Fig2.C.png" alt="Fig2.C-D" width="40%" id="fig-unnamed-chunk-21-1" /><img src="Data/Figures/Fig2/Fig2.D.png" alt="Fig2.C-D" width="40%" id="fig-unnamed-chunk-21-2" />
+<p class="caption">
+ 2.3: Fig2.C-D
+</p>
+</div>
+</div>
+<div id="e.-genomic-features-with-mhbs-in-open-chromatin" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> (E). Genomic features with MHBs in open chromatin<a href="figure-2.html#e.-genomic-features-with-mhbs-in-open-chromatin" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb12"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb12-1"><a href="figure-2.html#cb12-1" tabindex="-1"></a><span class="co"># ==== shell command =====</span></span>
+<span id="cb12-2"><a href="figure-2.html#cb12-2" tabindex="-1"></a><span class="co">#show the ATAC overlap the Genomic segments base pairs percentage</span></span>
+<span id="cb12-3"><a href="figure-2.html#cb12-3" tabindex="-1"></a><span class="va">segments_path</span><span class="op">=</span><span class="st">&quot;PMD_UMR_LMR/res&quot;</span></span>
+<span id="cb12-4"><a href="figure-2.html#cb12-4" tabindex="-1"></a><span class="co">##Cancer Type ATAC-seq Peak</span></span>
+<span id="cb12-5"><a href="figure-2.html#cb12-5" tabindex="-1"></a><span class="va">ATAC_path</span><span class="op">=</span><span class="st">&quot;TCGA/ATAC/cancer_type_peak&quot;</span></span>
+<span id="cb12-6"><a href="figure-2.html#cb12-6" tabindex="-1"></a><span class="co">####CpG sites</span></span>
+<span id="cb12-7"><a href="figure-2.html#cb12-7" tabindex="-1"></a><span class="va">hg19_CpG</span><span class="op">=</span><span class="st">&quot;hg19_CpG.bed&quot;</span></span>
+<span id="cb12-8"><a href="figure-2.html#cb12-8" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="kw">`</span><span class="fu">ls</span> <span class="va">${segments_path}</span>/<span class="pp">*</span>_T_MHB_genomic_segments.bed<span class="kw">`</span></span>
+<span id="cb12-9"><a href="figure-2.html#cb12-9" tabindex="-1"></a><span class="cf">do</span></span>
+<span id="cb12-10"><a href="figure-2.html#cb12-10" tabindex="-1"></a>      <span class="va">a</span><span class="op">=</span><span class="va">${i</span><span class="op">##</span><span class="pp">*</span>/<span class="va">}</span></span>
+<span id="cb12-11"><a href="figure-2.html#cb12-11" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">[[</span> <span class="st">&quot;</span><span class="va">${a}</span><span class="st">&quot;</span> <span class="ot">==</span> <span class="pp">*</span><span class="st">&quot;breast&quot;</span><span class="pp">*</span> <span class="kw">]];</span><span class="cf">then</span></span>
+<span id="cb12-12"><a href="figure-2.html#cb12-12" tabindex="-1"></a>        <span class="va">tag</span><span class="op">=</span><span class="st">&quot;BRCA_hg19_peak.bed&quot;</span></span>
+<span id="cb12-13"><a href="figure-2.html#cb12-13" tabindex="-1"></a>    <span class="cf">elif</span> <span class="kw">[[</span> <span class="st">&quot;</span><span class="va">${a}</span><span class="st">&quot;</span> <span class="ot">==</span> <span class="pp">*</span><span class="st">&quot;cervix&quot;</span><span class="pp">*</span> <span class="kw">]];</span><span class="cf">then</span></span>
+<span id="cb12-14"><a href="figure-2.html#cb12-14" tabindex="-1"></a>        <span class="va">tag</span><span class="op">=</span><span class="st">&quot;CESC_hg19_peak.bed&quot;</span></span>
+<span id="cb12-15"><a href="figure-2.html#cb12-15" tabindex="-1"></a>    <span class="cf">elif</span> <span class="kw">[[</span> <span class="st">&quot;</span><span class="va">${a}</span><span class="st">&quot;</span> <span class="ot">==</span> <span class="pp">*</span><span class="st">&quot;colon&quot;</span><span class="pp">*</span> <span class="kw">]];</span><span class="cf">then</span></span>
+<span id="cb12-16"><a href="figure-2.html#cb12-16" tabindex="-1"></a>        <span class="va">tag</span><span class="op">=</span><span class="st">&quot;COAD_hg19_peak.bed&quot;</span></span>
+<span id="cb12-17"><a href="figure-2.html#cb12-17" tabindex="-1"></a>    <span class="cf">elif</span> <span class="kw">[[</span> <span class="st">&quot;</span><span class="va">${a}</span><span class="st">&quot;</span> <span class="ot">==</span> <span class="pp">*</span><span class="st">&quot;esophagus&quot;</span><span class="pp">*</span> <span class="kw">]];</span><span class="cf">then</span></span>
+<span id="cb12-18"><a href="figure-2.html#cb12-18" tabindex="-1"></a>        <span class="va">tag</span><span class="op">=</span><span class="st">&quot;ESCA_hg19_peak.bed&quot;</span></span>
+<span id="cb12-19"><a href="figure-2.html#cb12-19" tabindex="-1"></a>    <span class="cf">elif</span> <span class="kw">[[</span> <span class="st">&quot;</span><span class="va">${a}</span><span class="st">&quot;</span> <span class="ot">==</span> <span class="pp">*</span><span class="st">&quot;head_and_neck&quot;</span><span class="pp">*</span> <span class="kw">]];</span><span class="cf">then</span></span>
+<span id="cb12-20"><a href="figure-2.html#cb12-20" tabindex="-1"></a>        <span class="va">tag</span><span class="op">=</span><span class="st">&quot;HNSC_hg19_peak.bed&quot;</span></span>
+<span id="cb12-21"><a href="figure-2.html#cb12-21" tabindex="-1"></a>    <span class="cf">elif</span> <span class="kw">[[</span> <span class="st">&quot;</span><span class="va">${a}</span><span class="st">&quot;</span> <span class="ot">==</span> <span class="pp">*</span><span class="st">&quot;lung&quot;</span><span class="pp">*</span> <span class="kw">]];</span><span class="cf">then</span></span>
+<span id="cb12-22"><a href="figure-2.html#cb12-22" tabindex="-1"></a>        <span class="va">tag</span><span class="op">=</span><span class="st">&quot;LUAD_hg19_peak.bed&quot;</span></span>
+<span id="cb12-23"><a href="figure-2.html#cb12-23" tabindex="-1"></a>    <span class="cf">elif</span> <span class="kw">[[</span> <span class="st">&quot;</span><span class="va">${a}</span><span class="st">&quot;</span> <span class="ot">==</span> <span class="pp">*</span><span class="st">&quot;liver&quot;</span><span class="pp">*</span> <span class="kw">]];</span><span class="cf">then</span></span>
+<span id="cb12-24"><a href="figure-2.html#cb12-24" tabindex="-1"></a>        <span class="va">tag</span><span class="op">=</span><span class="st">&quot;LIHC_hg19_peak.bed&quot;</span></span>
+<span id="cb12-25"><a href="figure-2.html#cb12-25" tabindex="-1"></a>    <span class="cf">elif</span> <span class="kw">[[</span> <span class="st">&quot;</span><span class="va">${a}</span><span class="st">&quot;</span> <span class="ot">==</span> <span class="pp">*</span><span class="st">&quot;stomach&quot;</span><span class="pp">*</span> <span class="kw">]];</span><span class="cf">then</span></span>
+<span id="cb12-26"><a href="figure-2.html#cb12-26" tabindex="-1"></a>        <span class="va">tag</span><span class="op">=</span><span class="st">&quot;STAD_hg19_peak.bed&quot;</span></span>
+<span id="cb12-27"><a href="figure-2.html#cb12-27" tabindex="-1"></a>    <span class="cf">elif</span> <span class="kw">[[</span> <span class="st">&quot;</span><span class="va">${a}</span><span class="st">&quot;</span> <span class="ot">==</span> <span class="pp">*</span><span class="st">&quot;thyroid&quot;</span><span class="pp">*</span> <span class="kw">]];</span><span class="cf">then</span></span>
+<span id="cb12-28"><a href="figure-2.html#cb12-28" tabindex="-1"></a>        <span class="va">tag</span><span class="op">=</span><span class="st">&quot;THCA_hg19_peak.bed&quot;</span></span>
+<span id="cb12-29"><a href="figure-2.html#cb12-29" tabindex="-1"></a>    <span class="cf">fi</span></span>
+<span id="cb12-30"><a href="figure-2.html#cb12-30" tabindex="-1"></a>    <span class="co"># MHB LMR UMR PMD HMR</span></span>
+<span id="cb12-31"><a href="figure-2.html#cb12-31" tabindex="-1"></a>    <span class="fu">less</span> <span class="va">${i}</span> <span class="kw">|</span><span class="fu">grep</span> MHB <span class="kw">|</span> <span class="ex">bedtools</span> intersect <span class="at">-a</span> <span class="va">${hg19_CpG}</span> <span class="at">-b</span> <span class="at">-</span> <span class="kw">|</span> <span class="ex">bedtools</span> coverage <span class="at">-a</span> <span class="at">-</span>  <span class="at">-b</span> <span class="va">${ATAC_path}</span>/<span class="va">${tag}</span>  <span class="op">&gt;</span> Genomic_segments_ATAC_bp_CpG/<span class="va">${tag</span><span class="op">%%</span>_<span class="pp">*</span><span class="va">}</span>_segments_ATAC_MHB_coverage.bed </span>
+<span id="cb12-32"><a href="figure-2.html#cb12-32" tabindex="-1"></a>    <span class="fu">less</span> <span class="va">${i}</span> <span class="kw">|</span><span class="fu">grep</span> LMR <span class="kw">|</span> <span class="ex">bedtools</span> intersect <span class="at">-a</span> <span class="va">${hg19_CpG}</span> <span class="at">-b</span> <span class="at">-</span> <span class="kw">|</span> <span class="ex">bedtools</span> coverage <span class="at">-a</span> <span class="at">-</span>  <span class="at">-b</span> <span class="va">${ATAC_path}</span>/<span class="va">${tag}</span>  <span class="op">&gt;</span> Genomic_segments_ATAC_bp_CpG/<span class="va">${tag</span><span class="op">%%</span>_<span class="pp">*</span><span class="va">}</span>_segments_ATAC_LMR_coverage.bed </span>
+<span id="cb12-33"><a href="figure-2.html#cb12-33" tabindex="-1"></a>    <span class="fu">less</span> <span class="va">${i}</span> <span class="kw">|</span><span class="fu">grep</span> UMR <span class="kw">|</span> <span class="ex">bedtools</span> intersect <span class="at">-a</span> <span class="va">${hg19_CpG}</span> <span class="at">-b</span> <span class="at">-</span> <span class="kw">|</span> <span class="ex">bedtools</span> coverage <span class="at">-a</span> <span class="at">-</span>  <span class="at">-b</span> <span class="va">${ATAC_path}</span>/<span class="va">${tag}</span>  <span class="op">&gt;</span> Genomic_segments_ATAC_bp_CpG/<span class="va">${tag</span><span class="op">%%</span>_<span class="pp">*</span><span class="va">}</span>_segments_ATAC_UMR_coverage.bed </span>
+<span id="cb12-34"><a href="figure-2.html#cb12-34" tabindex="-1"></a>    <span class="fu">less</span> <span class="va">${i}</span> <span class="kw">|</span><span class="fu">grep</span> PMD <span class="kw">|</span> <span class="ex">bedtools</span> intersect <span class="at">-a</span> <span class="va">${hg19_CpG}</span> <span class="at">-b</span> <span class="at">-</span> <span class="kw">|</span> <span class="ex">bedtools</span> coverage <span class="at">-a</span> <span class="at">-</span>  <span class="at">-b</span> <span class="va">${ATAC_path}</span>/<span class="va">${tag}</span>  <span class="op">&gt;</span> Genomic_segments_ATAC_bp_CpG/<span class="va">${tag</span><span class="op">%%</span>_<span class="pp">*</span><span class="va">}</span>_segments_ATAC_PMD_coverage.bed </span>
+<span id="cb12-35"><a href="figure-2.html#cb12-35" tabindex="-1"></a>    <span class="fu">less</span> <span class="va">${i}</span> <span class="kw">|</span><span class="fu">grep</span> HMR <span class="kw">|</span> <span class="ex">bedtools</span> intersect <span class="at">-a</span> <span class="va">${hg19_CpG}</span> <span class="at">-b</span> <span class="at">-</span> <span class="kw">|</span> <span class="ex">bedtools</span> coverage <span class="at">-a</span> <span class="at">-</span>  <span class="at">-b</span> <span class="va">${ATAC_path}</span>/<span class="va">${tag}</span>  <span class="op">&gt;</span> Genomic_segments_ATAC_bp_CpG/<span class="va">${tag</span><span class="op">%%</span>_<span class="pp">*</span><span class="va">}</span>_segments_ATAC_HMR_coverage.bed </span>
+<span id="cb12-36"><a href="figure-2.html#cb12-36" tabindex="-1"></a><span class="cf">done</span></span>
+<span id="cb12-37"><a href="figure-2.html#cb12-37" tabindex="-1"></a><span class="co"># add LUSC</span></span>
+<span id="cb12-38"><a href="figure-2.html#cb12-38" tabindex="-1"></a>    <span class="fu">less</span> <span class="va">${segments_path}</span>/lung_T_MHB_genomic_segments.bed <span class="kw">|</span><span class="fu">grep</span> MHB <span class="kw">|</span> <span class="ex">bedtools</span> intersect <span class="at">-a</span> <span class="va">${hg19_CpG}</span> <span class="at">-b</span> <span class="at">-</span> <span class="kw">|</span> <span class="ex">bedtools</span> coverage <span class="at">-a</span> <span class="at">-</span>  <span class="at">-b</span> <span class="va">${ATAC_path}</span>/LUSC_hg19_peak.bed  <span class="op">&gt;</span> Genomic_segments_ATAC_bp_CpG/LUSC_segments_ATAC_MHB_coverage.bed </span>
+<span id="cb12-39"><a href="figure-2.html#cb12-39" tabindex="-1"></a>    <span class="fu">less</span> <span class="va">${segments_path}</span>/lung_T_MHB_genomic_segments.bed <span class="kw">|</span><span class="fu">grep</span> LMR <span class="kw">|</span> <span class="ex">bedtools</span> intersect <span class="at">-a</span> <span class="va">${hg19_CpG}</span> <span class="at">-b</span> <span class="at">-</span> <span class="kw">|</span> <span class="ex">bedtools</span> coverage <span class="at">-a</span> <span class="at">-</span>  <span class="at">-b</span> <span class="va">${ATAC_path}</span>/LUSC_hg19_peak.bed  <span class="op">&gt;</span> Genomic_segments_ATAC_bp_CpG/LUSC_segments_ATAC_LMR_coverage.bed </span>
+<span id="cb12-40"><a href="figure-2.html#cb12-40" tabindex="-1"></a>    <span class="fu">less</span> <span class="va">${segments_path}</span>/lung_T_MHB_genomic_segments.bed <span class="kw">|</span><span class="fu">grep</span> UMR <span class="kw">|</span> <span class="ex">bedtools</span> intersect <span class="at">-a</span> <span class="va">${hg19_CpG}</span> <span class="at">-b</span> <span class="at">-</span> <span class="kw">|</span> <span class="ex">bedtools</span> coverage <span class="at">-a</span> <span class="at">-</span>  <span class="at">-b</span> <span class="va">${ATAC_path}</span>/LUSC_hg19_peak.bed  <span class="op">&gt;</span> Genomic_segments_ATAC_bp_CpG/LUSC_segments_ATAC_UMR_coverage.bed </span>
+<span id="cb12-41"><a href="figure-2.html#cb12-41" tabindex="-1"></a>    <span class="fu">less</span> <span class="va">${segments_path}</span>/lung_T_MHB_genomic_segments.bed <span class="kw">|</span><span class="fu">grep</span> PMD <span class="kw">|</span> <span class="ex">bedtools</span> intersect <span class="at">-a</span> <span class="va">${hg19_CpG}</span> <span class="at">-b</span> <span class="at">-</span> <span class="kw">|</span> <span class="ex">bedtools</span> coverage <span class="at">-a</span> <span class="at">-</span>  <span class="at">-b</span> <span class="va">${ATAC_path}</span>/LUSC_hg19_peak.bed  <span class="op">&gt;</span> Genomic_segments_ATAC_bp_CpG/LUSC_segments_ATAC_PMD_coverage.bed </span>
+<span id="cb12-42"><a href="figure-2.html#cb12-42" tabindex="-1"></a>    <span class="fu">less</span> <span class="va">${segments_path}</span>/lung_T_MHB_genomic_segments.bed <span class="kw">|</span><span class="fu">grep</span> HMR <span class="kw">|</span> <span class="ex">bedtools</span> intersect <span class="at">-a</span> <span class="va">${hg19_CpG}</span> <span class="at">-b</span> <span class="at">-</span> <span class="kw">|</span> <span class="ex">bedtools</span> coverage <span class="at">-a</span> <span class="at">-</span>  <span class="at">-b</span> <span class="va">${ATAC_path}</span>/LUSC_hg19_peak.bed  <span class="op">&gt;</span> Genomic_segments_ATAC_bp_CpG/LUSC_segments_ATAC_HMR_coverage.bed </span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="figure-2.html#cb13-1" tabindex="-1"></a><span class="co"># The Genomic segments overlap TCGA ATAC-seq peaks in base pairs levels</span></span>
+<span id="cb13-2"><a href="figure-2.html#cb13-2" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb13-3"><a href="figure-2.html#cb13-3" tabindex="-1"></a><span class="fu">library</span>(pbapply)</span>
+<span id="cb13-4"><a href="figure-2.html#cb13-4" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb13-5"><a href="figure-2.html#cb13-5" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
+<span id="cb13-6"><a href="figure-2.html#cb13-6" tabindex="-1"></a>samples<span class="ot">=</span>samples<span class="ot">=</span><span class="fu">list.files</span>(<span class="st">&quot;./&quot;</span>,<span class="at">pattern=</span><span class="st">&quot;_MHB_coverage.bed&quot;</span>)</span>
+<span id="cb13-7"><a href="figure-2.html#cb13-7" tabindex="-1"></a><span class="do">##base pair beta value</span></span>
+<span id="cb13-8"><a href="figure-2.html#cb13-8" tabindex="-1"></a>beta_path<span class="ot">=</span><span class="st">&quot;Data/Processed_data/MM/&quot;</span></span>
+<span id="cb13-9"><a href="figure-2.html#cb13-9" tabindex="-1"></a>CpG_segment_ATAC_rate<span class="ot">&lt;-</span>pbapply<span class="sc">::</span><span class="fu">pblapply</span>(samples,<span class="cf">function</span>(x){</span>
+<span id="cb13-10"><a href="figure-2.html#cb13-10" tabindex="-1"></a>    <span class="cf">if</span>(<span class="fu">str_detect</span>(x,<span class="st">&quot;BRCA&quot;</span>)){</span>
+<span id="cb13-11"><a href="figure-2.html#cb13-11" tabindex="-1"></a>        beta<span class="ot">&lt;-</span><span class="fu">paste0</span>(beta_path,<span class="st">&quot;breast_T_Merged_CpG.bedGraph&quot;</span>)</span>
+<span id="cb13-12"><a href="figure-2.html#cb13-12" tabindex="-1"></a>    }<span class="cf">else</span> <span class="cf">if</span>(<span class="fu">str_detect</span>(x,<span class="st">&quot;CESC&quot;</span>)){</span>
+<span id="cb13-13"><a href="figure-2.html#cb13-13" tabindex="-1"></a>        beta<span class="ot">&lt;-</span><span class="fu">paste0</span>(beta_path,<span class="st">&quot;cervix_T_Merged_CpG.bedGraph&quot;</span>)</span>
+<span id="cb13-14"><a href="figure-2.html#cb13-14" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span>(<span class="fu">str_detect</span>(x,<span class="st">&quot;COAD&quot;</span>)){</span>
+<span id="cb13-15"><a href="figure-2.html#cb13-15" tabindex="-1"></a>        beta<span class="ot">&lt;-</span><span class="fu">paste0</span>(beta_path,<span class="st">&quot;colon_T_Merged_CpG.bedGraph&quot;</span>)</span>
+<span id="cb13-16"><a href="figure-2.html#cb13-16" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span>(<span class="fu">str_detect</span>(x,<span class="st">&quot;ESCA&quot;</span>)){</span>
+<span id="cb13-17"><a href="figure-2.html#cb13-17" tabindex="-1"></a>        beta<span class="ot">&lt;-</span><span class="fu">paste0</span>(beta_path,<span class="st">&quot;esophagus_T_Merged_CpG.bedGraph&quot;</span>)</span>
+<span id="cb13-18"><a href="figure-2.html#cb13-18" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span>(<span class="fu">str_detect</span>(x,<span class="st">&quot;HNSC&quot;</span>)){</span>
+<span id="cb13-19"><a href="figure-2.html#cb13-19" tabindex="-1"></a>        beta<span class="ot">&lt;-</span><span class="fu">paste0</span>(beta_path,<span class="st">&quot;head_and_neck_T_Merged_CpG.bedGraph&quot;</span>)</span>
+<span id="cb13-20"><a href="figure-2.html#cb13-20" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span>(<span class="fu">str_detect</span>(x,<span class="st">&quot;LIHC&quot;</span>)){</span>
+<span id="cb13-21"><a href="figure-2.html#cb13-21" tabindex="-1"></a>        beta<span class="ot">&lt;-</span><span class="fu">paste0</span>(beta_path,<span class="st">&quot;liver_T_Merged_CpG.bedGraph&quot;</span>)</span>
+<span id="cb13-22"><a href="figure-2.html#cb13-22" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span>(<span class="fu">str_detect</span>(x,<span class="st">&quot;LUAD&quot;</span>)){</span>
+<span id="cb13-23"><a href="figure-2.html#cb13-23" tabindex="-1"></a>        beta<span class="ot">&lt;-</span><span class="fu">paste0</span>(beta_path,<span class="st">&quot;lung_T_Merged_CpG.bedGraph&quot;</span>)</span>
+<span id="cb13-24"><a href="figure-2.html#cb13-24" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span>(<span class="fu">str_detect</span>(x,<span class="st">&quot;LUSC&quot;</span>)){</span>
+<span id="cb13-25"><a href="figure-2.html#cb13-25" tabindex="-1"></a>        beta<span class="ot">&lt;-</span><span class="fu">paste0</span>(beta_path,<span class="st">&quot;lung_T_Merged_CpG.bedGraph&quot;</span>)</span>
+<span id="cb13-26"><a href="figure-2.html#cb13-26" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span>(<span class="fu">str_detect</span>(x,<span class="st">&quot;STAD&quot;</span>)){</span>
+<span id="cb13-27"><a href="figure-2.html#cb13-27" tabindex="-1"></a>        beta<span class="ot">&lt;-</span><span class="fu">paste0</span>(beta_path,<span class="st">&quot;stomach_T_Merged_CpG.bedGraph&quot;</span>)</span>
+<span id="cb13-28"><a href="figure-2.html#cb13-28" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span>(<span class="fu">str_detect</span>(x,<span class="st">&quot;THCA&quot;</span>)){</span>
+<span id="cb13-29"><a href="figure-2.html#cb13-29" tabindex="-1"></a>        beta<span class="ot">&lt;-</span><span class="fu">paste0</span>(beta_path,<span class="st">&quot;thyroid_T_Merged_CpG.bedGraph&quot;</span>)</span>
+<span id="cb13-30"><a href="figure-2.html#cb13-30" tabindex="-1"></a>    }</span>
+<span id="cb13-31"><a href="figure-2.html#cb13-31" tabindex="-1"></a>    <span class="co"># read mhb data </span></span>
+<span id="cb13-32"><a href="figure-2.html#cb13-32" tabindex="-1"></a>    mhb_coverage<span class="ot">&lt;-</span> <span class="fu">fread</span>(x) <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>)) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">MHB=</span><span class="st">&quot;MHB&quot;</span>)</span>
+<span id="cb13-33"><a href="figure-2.html#cb13-33" tabindex="-1"></a>    <span class="co"># Genomic features were divided into MHB overlapping or not  </span></span>
+<span id="cb13-34"><a href="figure-2.html#cb13-34" tabindex="-1"></a>    gf <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;LMR&quot;</span>,<span class="st">&quot;UMR&quot;</span>,<span class="st">&quot;PMD&quot;</span>,<span class="st">&quot;HMR&quot;</span>)</span>
+<span id="cb13-35"><a href="figure-2.html#cb13-35" tabindex="-1"></a>    Genomic_coverage <span class="ot">&lt;-</span> <span class="fu">lapply</span>(gf, <span class="cf">function</span>(m) { </span>
+<span id="cb13-36"><a href="figure-2.html#cb13-36" tabindex="-1"></a>                            tag<span class="ot">&lt;-</span><span class="fu">str_replace_all</span>(x,<span class="st">&quot;MHB&quot;</span>,m)</span>
+<span id="cb13-37"><a href="figure-2.html#cb13-37" tabindex="-1"></a>                            <span class="fu">fread</span>(tag) <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">7</span>)) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">Type=</span>m) <span class="sc">%&gt;%</span></span>
+<span id="cb13-38"><a href="figure-2.html#cb13-38" tabindex="-1"></a>                            <span class="fu">left_join</span>(mhb_coverage,<span class="at">by=</span><span class="fu">c</span>(<span class="st">&quot;V1&quot;</span>,<span class="st">&quot;V2&quot;</span>,<span class="st">&quot;V3&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-39"><a href="figure-2.html#cb13-39" tabindex="-1"></a>                            <span class="fu">mutate</span>(<span class="at">MHB =</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(MHB),<span class="fu">paste0</span>(m,<span class="st">&quot;_NonMHB&quot;</span>),<span class="fu">paste0</span>(m,<span class="st">&quot;_MHB&quot;</span>)))</span>
+<span id="cb13-40"><a href="figure-2.html#cb13-40" tabindex="-1"></a>                            })</span>
+<span id="cb13-41"><a href="figure-2.html#cb13-41" tabindex="-1"></a>    coverage <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind,Genomic_coverage) <span class="sc">%&gt;%</span> <span class="fu">as.data.frame</span>()</span>
+<span id="cb13-42"><a href="figure-2.html#cb13-42" tabindex="-1"></a>    MM <span class="ot">&lt;-</span> <span class="fu">fread</span>(beta)</span>
+<span id="cb13-43"><a href="figure-2.html#cb13-43" tabindex="-1"></a>    <span class="co"># merge</span></span>
+<span id="cb13-44"><a href="figure-2.html#cb13-44" tabindex="-1"></a>    <span class="fu">left_join</span>(coverage,MM,<span class="at">by=</span><span class="fu">intersect</span>(<span class="fu">names</span>(coverage),<span class="fu">names</span>(MM))) <span class="sc">%&gt;%</span> <span class="fu">drop_na</span>()</span>
+<span id="cb13-45"><a href="figure-2.html#cb13-45" tabindex="-1"></a>})</span>
+<span id="cb13-46"><a href="figure-2.html#cb13-46" tabindex="-1"></a><span class="fu">names</span>(CpG_segment_ATAC_rate) <span class="ot">&lt;-</span> samples <span class="sc">%&gt;%</span> <span class="fu">str_split_i</span>(<span class="at">pattern=</span><span class="st">&quot;_&quot;</span>,<span class="at">i=</span><span class="dv">1</span>)</span>
+<span id="cb13-47"><a href="figure-2.html#cb13-47" tabindex="-1"></a><span class="co"># In cancer type </span></span>
+<span id="cb13-48"><a href="figure-2.html#cb13-48" tabindex="-1"></a>Cancer_segment_ATAC<span class="ot">&lt;-</span><span class="fu">list</span>()</span>
+<span id="cb13-49"><a href="figure-2.html#cb13-49" tabindex="-1"></a><span class="cf">for</span> ( i <span class="cf">in</span> <span class="fu">names</span>(CpG_segment_ATAC_rate)) {</span>
+<span id="cb13-50"><a href="figure-2.html#cb13-50" tabindex="-1"></a>    tag <span class="ot">&lt;-</span> i</span>
+<span id="cb13-51"><a href="figure-2.html#cb13-51" tabindex="-1"></a>    x <span class="ot">=</span> CpG_segment_ATAC_rate[[i]] <span class="sc">%&gt;%</span> </span>
+<span id="cb13-52"><a href="figure-2.html#cb13-52" tabindex="-1"></a>         <span class="fu">rename</span>(<span class="st">&quot;olen&quot;</span><span class="ot">=</span><span class="st">&quot;V6&quot;</span>,<span class="st">&quot;tlen&quot;</span><span class="ot">=</span><span class="st">&quot;V7&quot;</span>,<span class="st">&quot;Beta&quot;</span><span class="ot">=</span><span class="st">&quot;V4&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-53"><a href="figure-2.html#cb13-53" tabindex="-1"></a>         <span class="fu">arrange</span>(Beta)</span>
+<span id="cb13-54"><a href="figure-2.html#cb13-54" tabindex="-1"></a>    Cancer_segment_ATAC[[tag]] <span class="ot">&lt;-</span> x</span>
+<span id="cb13-55"><a href="figure-2.html#cb13-55" tabindex="-1"></a>    <span class="co"># Divided into 10 clusters based on Beta value</span></span>
+<span id="cb13-56"><a href="figure-2.html#cb13-56" tabindex="-1"></a>    <span class="do">### HMR</span></span>
+<span id="cb13-57"><a href="figure-2.html#cb13-57" tabindex="-1"></a>    HMR <span class="ot">=</span> x[x<span class="sc">$</span>Type <span class="sc">==</span> <span class="st">&quot;HMR&quot;</span>,] <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(Beta)</span>
+<span id="cb13-58"><a href="figure-2.html#cb13-58" tabindex="-1"></a>    HMR<span class="sc">$</span>Cluster <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">&quot;cluster_&quot;</span>,<span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,<span class="at">each=</span><span class="fu">trunc</span>(<span class="fu">nrow</span>(HMR)<span class="sc">/</span><span class="dv">10</span>)<span class="sc">+</span><span class="dv">1</span>))[<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(HMR)]</span>
+<span id="cb13-59"><a href="figure-2.html#cb13-59" tabindex="-1"></a>    rHMR <span class="ot">=</span> <span class="fu">as.data.frame</span>(HMR[<span class="fu">c</span>(<span class="st">&quot;olen&quot;</span>,<span class="st">&quot;tlen&quot;</span>,<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)] <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Cluster,MHB) <span class="sc">%&gt;%</span> <span class="fu">summarise_each</span>(<span class="at">funs=</span>sum))</span>
+<span id="cb13-60"><a href="figure-2.html#cb13-60" tabindex="-1"></a>    cluster_HMR <span class="ot">=</span> <span class="fu">as.data.frame</span>(HMR[<span class="fu">c</span>(<span class="st">&quot;Beta&quot;</span>,<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)] <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Cluster,MHB) <span class="sc">%&gt;%</span> <span class="fu">summarise_each</span>(<span class="at">funs=</span>median))</span>
+<span id="cb13-61"><a href="figure-2.html#cb13-61" tabindex="-1"></a>    rHMR <span class="ot">=</span> <span class="fu">inner_join</span>(rHMR,cluster_HMR,<span class="at">by=</span><span class="fu">c</span>(<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">Freq=</span><span class="dv">100</span><span class="sc">*</span><span class="fu">round</span>(olen<span class="sc">/</span>tlen,<span class="dv">4</span>))</span>
+<span id="cb13-62"><a href="figure-2.html#cb13-62" tabindex="-1"></a>    <span class="do">### PMD</span></span>
+<span id="cb13-63"><a href="figure-2.html#cb13-63" tabindex="-1"></a>    PMD <span class="ot">=</span> x[x<span class="sc">$</span>Type <span class="sc">==</span> <span class="st">&quot;PMD&quot;</span>,]<span class="sc">%&gt;%</span> <span class="fu">arrange</span>(Beta)</span>
+<span id="cb13-64"><a href="figure-2.html#cb13-64" tabindex="-1"></a>    PMD<span class="sc">$</span>Cluster <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">&quot;cluster_&quot;</span>,<span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,<span class="at">each=</span><span class="fu">trunc</span>(<span class="fu">nrow</span>(PMD)<span class="sc">/</span><span class="dv">10</span>)<span class="sc">+</span><span class="dv">1</span>))[<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(PMD)]</span>
+<span id="cb13-65"><a href="figure-2.html#cb13-65" tabindex="-1"></a>    rPMD <span class="ot">=</span> <span class="fu">as.data.frame</span>(PMD[<span class="fu">c</span>(<span class="st">&quot;olen&quot;</span>,<span class="st">&quot;tlen&quot;</span>,<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)] <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Cluster,MHB) <span class="sc">%&gt;%</span> <span class="fu">summarise_each</span>(<span class="at">funs=</span>sum))</span>
+<span id="cb13-66"><a href="figure-2.html#cb13-66" tabindex="-1"></a>    cluster_PMD <span class="ot">=</span> <span class="fu">as.data.frame</span>(PMD[<span class="fu">c</span>(<span class="st">&quot;Beta&quot;</span>,<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)] <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Cluster,MHB) <span class="sc">%&gt;%</span> <span class="fu">summarise_each</span>(<span class="at">funs=</span>median))</span>
+<span id="cb13-67"><a href="figure-2.html#cb13-67" tabindex="-1"></a>    rPMD <span class="ot">=</span> <span class="fu">inner_join</span>(rPMD,cluster_PMD,<span class="at">by=</span><span class="fu">c</span>(<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">Freq=</span><span class="dv">100</span><span class="sc">*</span><span class="fu">round</span>(olen<span class="sc">/</span>tlen,<span class="dv">4</span>))</span>
+<span id="cb13-68"><a href="figure-2.html#cb13-68" tabindex="-1"></a>    <span class="do">### LMR</span></span>
+<span id="cb13-69"><a href="figure-2.html#cb13-69" tabindex="-1"></a>    LMR <span class="ot">=</span> x[x<span class="sc">$</span>Type <span class="sc">==</span> <span class="st">&quot;LMR&quot;</span>,] <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(Beta)</span>
+<span id="cb13-70"><a href="figure-2.html#cb13-70" tabindex="-1"></a>    LMR<span class="sc">$</span>Cluster <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">&quot;cluster_&quot;</span>,<span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,<span class="at">each=</span><span class="fu">trunc</span>(<span class="fu">nrow</span>(LMR)<span class="sc">/</span><span class="dv">10</span>)<span class="sc">+</span><span class="dv">1</span>))[<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(LMR)]</span>
+<span id="cb13-71"><a href="figure-2.html#cb13-71" tabindex="-1"></a>    rLMR <span class="ot">=</span> <span class="fu">as.data.frame</span>(LMR[<span class="fu">c</span>(<span class="st">&quot;olen&quot;</span>,<span class="st">&quot;tlen&quot;</span>,<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)] <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Cluster,MHB) <span class="sc">%&gt;%</span> <span class="fu">summarise_each</span>(<span class="at">funs=</span>sum))</span>
+<span id="cb13-72"><a href="figure-2.html#cb13-72" tabindex="-1"></a>    cluster_LMR <span class="ot">=</span> <span class="fu">as.data.frame</span>(LMR[<span class="fu">c</span>(<span class="st">&quot;Beta&quot;</span>,<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)] <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Cluster,MHB) <span class="sc">%&gt;%</span> <span class="fu">summarise_each</span>(<span class="at">funs=</span>median))</span>
+<span id="cb13-73"><a href="figure-2.html#cb13-73" tabindex="-1"></a>    rLMR <span class="ot">=</span> <span class="fu">inner_join</span>(rLMR,cluster_LMR,<span class="at">by=</span><span class="fu">c</span>(<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">Freq=</span><span class="dv">100</span><span class="sc">*</span><span class="fu">round</span>(olen<span class="sc">/</span>tlen,<span class="dv">4</span>))</span>
+<span id="cb13-74"><a href="figure-2.html#cb13-74" tabindex="-1"></a>    <span class="do">###UMR</span></span>
+<span id="cb13-75"><a href="figure-2.html#cb13-75" tabindex="-1"></a>    UMR <span class="ot">=</span> x[x<span class="sc">$</span>Type <span class="sc">==</span> <span class="st">&quot;UMR&quot;</span>,] <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(Beta)</span>
+<span id="cb13-76"><a href="figure-2.html#cb13-76" tabindex="-1"></a>    UMR<span class="sc">$</span>Cluster <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">&quot;cluster_&quot;</span>,<span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,<span class="at">each=</span><span class="fu">trunc</span>(<span class="fu">nrow</span>(UMR)<span class="sc">/</span><span class="dv">10</span>)<span class="sc">+</span><span class="dv">1</span>))[<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(UMR)]</span>
+<span id="cb13-77"><a href="figure-2.html#cb13-77" tabindex="-1"></a>    rUMR <span class="ot">=</span> <span class="fu">as.data.frame</span>(UMR[<span class="fu">c</span>(<span class="st">&quot;olen&quot;</span>,<span class="st">&quot;tlen&quot;</span>,<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)] <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Cluster,MHB) <span class="sc">%&gt;%</span> <span class="fu">summarise_each</span>(<span class="at">funs=</span>sum))</span>
+<span id="cb13-78"><a href="figure-2.html#cb13-78" tabindex="-1"></a>    cluster_UMR <span class="ot">=</span> <span class="fu">as.data.frame</span>(UMR[<span class="fu">c</span>(<span class="st">&quot;Beta&quot;</span>,<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)] <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Cluster,MHB) <span class="sc">%&gt;%</span> <span class="fu">summarise_each</span>(<span class="at">funs=</span>median))</span>
+<span id="cb13-79"><a href="figure-2.html#cb13-79" tabindex="-1"></a>    rUMR <span class="ot">=</span> <span class="fu">inner_join</span>(rUMR,cluster_UMR,<span class="at">by=</span><span class="fu">c</span>(<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">Freq=</span><span class="dv">100</span><span class="sc">*</span><span class="fu">round</span>(olen<span class="sc">/</span>tlen,<span class="dv">4</span>))</span>
+<span id="cb13-80"><a href="figure-2.html#cb13-80" tabindex="-1"></a></span>
+<span id="cb13-81"><a href="figure-2.html#cb13-81" tabindex="-1"></a>    <span class="fu">assign</span>(tag,<span class="fu">list</span>(<span class="st">&quot;UMR&quot;</span><span class="ot">=</span>rUMR,<span class="st">&quot;LMR&quot;</span><span class="ot">=</span>rLMR,<span class="st">&quot;PMD&quot;</span><span class="ot">=</span>rPMD,<span class="st">&quot;HMR&quot;</span><span class="ot">=</span>rHMR))</span>
+<span id="cb13-82"><a href="figure-2.html#cb13-82" tabindex="-1"></a>    <span class="co"># PLOT</span></span>
+<span id="cb13-83"><a href="figure-2.html#cb13-83" tabindex="-1"></a>    data <span class="ot">=</span> <span class="fu">do.call</span>(rbind,<span class="fu">get</span>(tag))</span>
+<span id="cb13-84"><a href="figure-2.html#cb13-84" tabindex="-1"></a>    data<span class="sc">$</span>Segment <span class="ot">=</span> <span class="fu">sapply</span>(<span class="fu">strsplit</span>(<span class="fu">rownames</span>(data),<span class="st">&quot;</span><span class="sc">\\</span><span class="st">.&quot;</span>),<span class="cf">function</span>(x) x[<span class="dv">1</span>])</span>
+<span id="cb13-85"><a href="figure-2.html#cb13-85" tabindex="-1"></a>    data<span class="sc">$</span>Cluster <span class="ot">=</span> <span class="fu">factor</span>(data<span class="sc">$</span>Cluster,<span class="at">level=</span><span class="fu">c</span>(<span class="fu">paste0</span>(<span class="st">&quot;cluster_&quot;</span>,<span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>))))</span>
+<span id="cb13-86"><a href="figure-2.html#cb13-86" tabindex="-1"></a>    <span class="fu">pdf</span>(<span class="at">file=</span><span class="fu">paste0</span>(<span class="st">&quot;Data/Figures/Fig2/&quot;</span>,tag,<span class="st">&quot;_segments_beta_cluster.pdf&quot;</span>),<span class="at">width=</span><span class="dv">6</span>,<span class="at">height=</span><span class="dv">4</span>)</span>
+<span id="cb13-87"><a href="figure-2.html#cb13-87" tabindex="-1"></a>    p1<span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">Type=</span><span class="fu">str_split_i</span>(MHB,<span class="at">pattern=</span><span class="st">&quot;_&quot;</span>,<span class="at">i=</span><span class="dv">2</span>),<span class="at">Segment=</span><span class="fu">fct_inorder</span>(Segment)) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-88"><a href="figure-2.html#cb13-88" tabindex="-1"></a>        <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Beta,<span class="at">y=</span>Freq,<span class="at">color=</span>Type)) <span class="sc">+</span> </span>
+<span id="cb13-89"><a href="figure-2.html#cb13-89" tabindex="-1"></a>            <span class="fu">geom_smooth</span>(<span class="fu">aes</span>(<span class="at">color=</span>Type),<span class="at">se=</span>F,<span class="at">linewidth=</span><span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb13-90"><a href="figure-2.html#cb13-90" tabindex="-1"></a>            <span class="fu">scale_y_continuous</span>(<span class="at">expand=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>),<span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">80</span>))<span class="sc">+</span></span>
+<span id="cb13-91"><a href="figure-2.html#cb13-91" tabindex="-1"></a>            <span class="fu">scale_x_continuous</span>(<span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>))<span class="sc">+</span></span>
+<span id="cb13-92"><a href="figure-2.html#cb13-92" tabindex="-1"></a>            <span class="fu">scale_color_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">&quot;#df8f44&quot;</span>,<span class="st">&quot;#00a1d5&quot;</span>)) <span class="sc">+</span> </span>
+<span id="cb13-93"><a href="figure-2.html#cb13-93" tabindex="-1"></a>            <span class="fu">labs</span>(<span class="at">x=</span><span class="st">&quot;Mean Methylation&quot;</span>,</span>
+<span id="cb13-94"><a href="figure-2.html#cb13-94" tabindex="-1"></a>                <span class="at">y=</span><span class="st">&quot;The Percentage of Genomic segments </span><span class="sc">\n</span><span class="st"> overlap with ATAC Peaks(%)&quot;</span>,<span class="at">title=</span>tag)<span class="sc">+</span></span>
+<span id="cb13-95"><a href="figure-2.html#cb13-95" tabindex="-1"></a>            <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb13-96"><a href="figure-2.html#cb13-96" tabindex="-1"></a>            <span class="fu">theme</span>(<span class="at">panel.grid =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb13-97"><a href="figure-2.html#cb13-97" tabindex="-1"></a>                  <span class="at">panel.background =</span> <span class="fu">element_blank</span>(),<span class="at">axis.ticks.length=</span><span class="fu">unit</span>(<span class="dv">5</span>,<span class="st">&#39;pt&#39;</span>),</span>
+<span id="cb13-98"><a href="figure-2.html#cb13-98" tabindex="-1"></a>                  <span class="at">axis.line=</span><span class="fu">element_line</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>),<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust=</span><span class="fl">0.5</span>,<span class="at">vjust=</span><span class="fl">0.5</span>),</span>
+<span id="cb13-99"><a href="figure-2.html#cb13-99" tabindex="-1"></a>                  <span class="at">strip.background.x =</span> <span class="fu">element_rect</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>, </span>
+<span id="cb13-100"><a href="figure-2.html#cb13-100" tabindex="-1"></a>                                                <span class="at">fill=</span><span class="st">&quot;gray&quot;</span>, <span class="at">size=</span><span class="fl">0.8</span>, <span class="at">linetype=</span><span class="st">&quot;solid&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb13-101"><a href="figure-2.html#cb13-101" tabindex="-1"></a>            <span class="fu">facet_wrap</span>(<span class="sc">~</span>Segment,<span class="at">scales=</span><span class="st">&quot;fixed&quot;</span>)</span>
+<span id="cb13-102"><a href="figure-2.html#cb13-102" tabindex="-1"></a>    <span class="fu">print</span>(p1)</span>
+<span id="cb13-103"><a href="figure-2.html#cb13-103" tabindex="-1"></a>    <span class="fu">dev.off</span>()</span>
+<span id="cb13-104"><a href="figure-2.html#cb13-104" tabindex="-1"></a>}</span>
+<span id="cb13-105"><a href="figure-2.html#cb13-105" tabindex="-1"></a><span class="co"># All the Cancer merged</span></span>
+<span id="cb13-106"><a href="figure-2.html#cb13-106" tabindex="-1"></a>    Tx<span class="ot">=</span><span class="fu">do.call</span>(rbind,Cancer_segment_ATAC)</span>
+<span id="cb13-107"><a href="figure-2.html#cb13-107" tabindex="-1"></a>    Tx<span class="sc">$</span>Tag <span class="ot">=</span> <span class="fu">sapply</span>(<span class="fu">strsplit</span>(<span class="fu">rownames</span>(Tx),<span class="st">&quot;</span><span class="sc">\\</span><span class="st">.&quot;</span>),<span class="cf">function</span>(x) x[<span class="dv">1</span>])</span>
+<span id="cb13-108"><a href="figure-2.html#cb13-108" tabindex="-1"></a>    <span class="do">### HMR</span></span>
+<span id="cb13-109"><a href="figure-2.html#cb13-109" tabindex="-1"></a>    tHMR <span class="ot">=</span> Tx[Tx<span class="sc">$</span>Type <span class="sc">==</span> <span class="st">&quot;HMR&quot;</span>,] <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(Beta)</span>
+<span id="cb13-110"><a href="figure-2.html#cb13-110" tabindex="-1"></a>    tHMR<span class="sc">$</span>Cluster <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">&quot;cluster_&quot;</span>,<span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,<span class="at">each=</span><span class="fu">trunc</span>(<span class="fu">nrow</span>(tHMR)<span class="sc">/</span><span class="dv">10</span>)<span class="sc">+</span><span class="dv">1</span>))[<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(tHMR)]</span>
+<span id="cb13-111"><a href="figure-2.html#cb13-111" tabindex="-1"></a>    trHMR <span class="ot">=</span> <span class="fu">as.data.frame</span>(tHMR[<span class="fu">c</span>(<span class="st">&quot;olen&quot;</span>,<span class="st">&quot;tlen&quot;</span>,<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)] <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Cluster,MHB) <span class="sc">%&gt;%</span> <span class="fu">summarise_each</span>(<span class="at">funs=</span>sum))</span>
+<span id="cb13-112"><a href="figure-2.html#cb13-112" tabindex="-1"></a>    cluster_tHMR <span class="ot">=</span> <span class="fu">as.data.frame</span>(tHMR[<span class="fu">c</span>(<span class="st">&quot;Beta&quot;</span>,<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)] <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Cluster,MHB) <span class="sc">%&gt;%</span> <span class="fu">summarise_each</span>(<span class="at">funs=</span>median))</span>
+<span id="cb13-113"><a href="figure-2.html#cb13-113" tabindex="-1"></a>    trHMR <span class="ot">=</span> <span class="fu">inner_join</span>(trHMR,cluster_tHMR,<span class="at">by=</span><span class="fu">c</span>(<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">Freq=</span><span class="dv">100</span><span class="sc">*</span><span class="fu">round</span>(olen<span class="sc">/</span>tlen,<span class="dv">4</span>))</span>
+<span id="cb13-114"><a href="figure-2.html#cb13-114" tabindex="-1"></a>    <span class="do">### PMD </span></span>
+<span id="cb13-115"><a href="figure-2.html#cb13-115" tabindex="-1"></a>    tPMD <span class="ot">=</span> Tx[Tx<span class="sc">$</span>Type <span class="sc">==</span> <span class="st">&quot;PMD&quot;</span>,] <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(Beta)</span>
+<span id="cb13-116"><a href="figure-2.html#cb13-116" tabindex="-1"></a>    tPMD<span class="sc">$</span>Cluster <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">&quot;cluster_&quot;</span>,<span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,<span class="at">each=</span><span class="fu">trunc</span>(<span class="fu">nrow</span>(tPMD)<span class="sc">/</span><span class="dv">10</span>)<span class="sc">+</span><span class="dv">1</span>))[<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(tPMD)]</span>
+<span id="cb13-117"><a href="figure-2.html#cb13-117" tabindex="-1"></a>    trPMD <span class="ot">=</span> <span class="fu">as.data.frame</span>(tPMD[<span class="fu">c</span>(<span class="st">&quot;olen&quot;</span>,<span class="st">&quot;tlen&quot;</span>,<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)] <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Cluster,MHB) <span class="sc">%&gt;%</span> <span class="fu">summarise_each</span>(<span class="at">funs=</span>sum))</span>
+<span id="cb13-118"><a href="figure-2.html#cb13-118" tabindex="-1"></a>    cluster_tPMD <span class="ot">=</span> <span class="fu">as.data.frame</span>(tPMD[<span class="fu">c</span>(<span class="st">&quot;Beta&quot;</span>,<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)] <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Cluster,MHB) <span class="sc">%&gt;%</span> <span class="fu">summarise_each</span>(<span class="at">funs=</span>median))</span>
+<span id="cb13-119"><a href="figure-2.html#cb13-119" tabindex="-1"></a>    trPMD <span class="ot">=</span> <span class="fu">inner_join</span>(trPMD,cluster_tPMD,<span class="at">by=</span><span class="fu">c</span>(<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">Freq=</span><span class="dv">100</span><span class="sc">*</span><span class="fu">round</span>(olen<span class="sc">/</span>tlen,<span class="dv">4</span>))</span>
+<span id="cb13-120"><a href="figure-2.html#cb13-120" tabindex="-1"></a>    <span class="do">### LMR</span></span>
+<span id="cb13-121"><a href="figure-2.html#cb13-121" tabindex="-1"></a>    tLMR <span class="ot">=</span> Tx[Tx<span class="sc">$</span>Type <span class="sc">==</span> <span class="st">&quot;LMR&quot;</span>,] <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(Beta)</span>
+<span id="cb13-122"><a href="figure-2.html#cb13-122" tabindex="-1"></a>    tLMR<span class="sc">$</span>Cluster <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">&quot;cluster_&quot;</span>,<span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,<span class="at">each=</span><span class="fu">trunc</span>(<span class="fu">nrow</span>(tLMR)<span class="sc">/</span><span class="dv">10</span>)<span class="sc">+</span><span class="dv">1</span>))[<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(tLMR)]</span>
+<span id="cb13-123"><a href="figure-2.html#cb13-123" tabindex="-1"></a>    trLMR <span class="ot">=</span> <span class="fu">as.data.frame</span>(tLMR[<span class="fu">c</span>(<span class="st">&quot;olen&quot;</span>,<span class="st">&quot;tlen&quot;</span>,<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)] <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Cluster,MHB) <span class="sc">%&gt;%</span> <span class="fu">summarise_each</span>(<span class="at">funs=</span>sum))</span>
+<span id="cb13-124"><a href="figure-2.html#cb13-124" tabindex="-1"></a>    cluster_tLMR <span class="ot">=</span> <span class="fu">as.data.frame</span>(tLMR[<span class="fu">c</span>(<span class="st">&quot;Beta&quot;</span>,<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)] <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Cluster,MHB) <span class="sc">%&gt;%</span> <span class="fu">summarise_each</span>(<span class="at">funs=</span>median))</span>
+<span id="cb13-125"><a href="figure-2.html#cb13-125" tabindex="-1"></a>    trLMR <span class="ot">=</span> <span class="fu">inner_join</span>(trLMR,cluster_tLMR,<span class="at">by=</span><span class="fu">c</span>(<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">Freq=</span><span class="dv">100</span><span class="sc">*</span><span class="fu">round</span>(olen<span class="sc">/</span>tlen,<span class="dv">4</span>))</span>
+<span id="cb13-126"><a href="figure-2.html#cb13-126" tabindex="-1"></a>    <span class="do">###UMR</span></span>
+<span id="cb13-127"><a href="figure-2.html#cb13-127" tabindex="-1"></a>    tUMR <span class="ot">=</span> Tx[Tx<span class="sc">$</span>Type <span class="sc">==</span> <span class="st">&quot;UMR&quot;</span>,] <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(Beta)</span>
+<span id="cb13-128"><a href="figure-2.html#cb13-128" tabindex="-1"></a>    tUMR<span class="sc">$</span>Cluster <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">&quot;cluster_&quot;</span>,<span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,<span class="at">each=</span><span class="fu">trunc</span>(<span class="fu">nrow</span>(tUMR)<span class="sc">/</span><span class="dv">10</span>)<span class="sc">+</span><span class="dv">1</span>))[<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(tUMR)]</span>
+<span id="cb13-129"><a href="figure-2.html#cb13-129" tabindex="-1"></a>    trUMR <span class="ot">=</span> <span class="fu">as.data.frame</span>(tUMR[<span class="fu">c</span>(<span class="st">&quot;olen&quot;</span>,<span class="st">&quot;tlen&quot;</span>,<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)] <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Cluster,MHB) <span class="sc">%&gt;%</span> <span class="fu">summarise_each</span>(<span class="at">funs=</span>sum))</span>
+<span id="cb13-130"><a href="figure-2.html#cb13-130" tabindex="-1"></a>    cluster_tUMR <span class="ot">=</span> <span class="fu">as.data.frame</span>(tUMR[<span class="fu">c</span>(<span class="st">&quot;Beta&quot;</span>,<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)] <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Cluster,MHB) <span class="sc">%&gt;%</span> <span class="fu">summarise_each</span>(<span class="at">funs=</span>median))</span>
+<span id="cb13-131"><a href="figure-2.html#cb13-131" tabindex="-1"></a>    trUMR <span class="ot">=</span> <span class="fu">inner_join</span>(trUMR,cluster_tUMR,<span class="at">by=</span><span class="fu">c</span>(<span class="st">&quot;Cluster&quot;</span>,<span class="st">&quot;MHB&quot;</span>)) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">Freq=</span><span class="dv">100</span><span class="sc">*</span><span class="fu">round</span>(olen<span class="sc">/</span>tlen,<span class="dv">4</span>))</span>
+<span id="cb13-132"><a href="figure-2.html#cb13-132" tabindex="-1"></a></span>
+<span id="cb13-133"><a href="figure-2.html#cb13-133" tabindex="-1"></a>    TMR<span class="ot">=</span> <span class="fu">do.call</span>(rbind,<span class="fu">list</span>(<span class="st">&quot;UMR&quot;</span><span class="ot">=</span>trUMR,<span class="st">&quot;LMR&quot;</span><span class="ot">=</span>trLMR,<span class="st">&quot;PMD&quot;</span><span class="ot">=</span>trPMD,<span class="st">&quot;HMR&quot;</span><span class="ot">=</span>trHMR))</span>
+<span id="cb13-134"><a href="figure-2.html#cb13-134" tabindex="-1"></a>    TMR<span class="sc">$</span>Segment <span class="ot">=</span> <span class="fu">factor</span>(<span class="fu">sapply</span>(<span class="fu">strsplit</span>(<span class="fu">rownames</span>(TMR),<span class="st">&quot;</span><span class="sc">\\</span><span class="st">.&quot;</span>),<span class="cf">function</span>(x) x[<span class="dv">1</span>]),<span class="at">levels=</span><span class="fu">c</span>(<span class="st">&quot;UMR&quot;</span>,<span class="st">&quot;LMR&quot;</span>,<span class="st">&quot;PMD&quot;</span>,<span class="st">&quot;HMR&quot;</span>))</span>
+<span id="cb13-135"><a href="figure-2.html#cb13-135" tabindex="-1"></a>  <span class="co">#PLOT</span></span>
+<span id="cb13-136"><a href="figure-2.html#cb13-136" tabindex="-1"></a><span class="fu">pdf</span>(<span class="at">file=</span><span class="fu">paste0</span>(<span class="st">&quot;Data/Figures/Fig2/Fig2.E.pdf&quot;</span>),<span class="at">width=</span><span class="dv">6</span>,<span class="at">height=</span><span class="dv">4</span>)</span>
+<span id="cb13-137"><a href="figure-2.html#cb13-137" tabindex="-1"></a>p3<span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">Type=</span><span class="fu">str_split_i</span>(MHB,<span class="at">pattern=</span><span class="st">&quot;_&quot;</span>,<span class="at">i=</span><span class="dv">2</span>),<span class="at">Segment=</span><span class="fu">fct_inorder</span>(Segment)) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-138"><a href="figure-2.html#cb13-138" tabindex="-1"></a>        <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Beta,<span class="at">y=</span>Freq,<span class="at">color=</span>Type)) <span class="sc">+</span> </span>
+<span id="cb13-139"><a href="figure-2.html#cb13-139" tabindex="-1"></a>        <span class="fu">geom_smooth</span>(<span class="fu">aes</span>(<span class="at">color=</span>Type),<span class="at">se=</span>F,<span class="at">linewidth=</span><span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb13-140"><a href="figure-2.html#cb13-140" tabindex="-1"></a>        <span class="fu">scale_y_continuous</span>(<span class="at">expand=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>),<span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">80</span>))<span class="sc">+</span></span>
+<span id="cb13-141"><a href="figure-2.html#cb13-141" tabindex="-1"></a>        <span class="fu">scale_x_continuous</span>(<span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>))<span class="sc">+</span></span>
+<span id="cb13-142"><a href="figure-2.html#cb13-142" tabindex="-1"></a>        <span class="fu">scale_color_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">&quot;#df8f44&quot;</span>,<span class="st">&quot;#00a1d5&quot;</span>)) <span class="sc">+</span> </span>
+<span id="cb13-143"><a href="figure-2.html#cb13-143" tabindex="-1"></a>        <span class="fu">labs</span>(<span class="at">x=</span><span class="st">&quot;Mean Methylation&quot;</span>,</span>
+<span id="cb13-144"><a href="figure-2.html#cb13-144" tabindex="-1"></a>            <span class="at">y=</span><span class="st">&quot;The Percentage of CpGs covered by TCGA ATAC-seq Peaks(%)&quot;</span>,<span class="at">title=</span><span class="st">&quot;Pan-Cancer&quot;</span>)<span class="sc">+</span></span>
+<span id="cb13-145"><a href="figure-2.html#cb13-145" tabindex="-1"></a>        <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb13-146"><a href="figure-2.html#cb13-146" tabindex="-1"></a>        <span class="fu">theme</span>(<span class="at">panel.grid =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb13-147"><a href="figure-2.html#cb13-147" tabindex="-1"></a>              <span class="at">panel.background =</span> <span class="fu">element_blank</span>(),<span class="at">axis.ticks.length=</span><span class="fu">unit</span>(<span class="dv">5</span>,<span class="st">&#39;pt&#39;</span>),</span>
+<span id="cb13-148"><a href="figure-2.html#cb13-148" tabindex="-1"></a>              <span class="at">axis.line=</span><span class="fu">element_line</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>),</span>
+<span id="cb13-149"><a href="figure-2.html#cb13-149" tabindex="-1"></a>              <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust=</span><span class="fl">0.5</span>,<span class="at">vjust=</span><span class="fl">0.5</span>),</span>
+<span id="cb13-150"><a href="figure-2.html#cb13-150" tabindex="-1"></a>              <span class="at">strip.background.x =</span> <span class="fu">element_rect</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>, </span>
+<span id="cb13-151"><a href="figure-2.html#cb13-151" tabindex="-1"></a>                                            <span class="at">fill=</span><span class="st">&quot;gray&quot;</span>, <span class="at">size=</span><span class="fl">0.8</span>, <span class="at">linetype=</span><span class="st">&quot;solid&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb13-152"><a href="figure-2.html#cb13-152" tabindex="-1"></a>        <span class="fu">geom_vline</span>(<span class="fu">aes</span>(<span class="at">xintercept =</span> <span class="fl">0.05</span>),<span class="at">colour=</span><span class="st">&quot;black&quot;</span>,<span class="at">linetype=</span><span class="st">&quot;dashed&quot;</span>) <span class="sc">+</span></span>
+<span id="cb13-153"><a href="figure-2.html#cb13-153" tabindex="-1"></a>        <span class="fu">facet_wrap</span>(<span class="sc">~</span>Segment,<span class="at">scales=</span><span class="st">&quot;fixed&quot;</span>)</span>
+<span id="cb13-154"><a href="figure-2.html#cb13-154" tabindex="-1"></a>    <span class="fu">print</span>(p3)</span>
+<span id="cb13-155"><a href="figure-2.html#cb13-155" tabindex="-1"></a>    <span class="fu">dev.off</span>()</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-24"></span>
+<img src="Data/Figures/Fig2/Fig2.E.png" alt="Fig2.E" width="80%" id="fig-unnamed-chunk-24-1" />
+<p class="caption">
+ 2.4: Fig2.E
+</p>
+</div>
+</div>
+<div id="f.-enrichment-of-mhbs-in-chia-pet-in-a-disease-status-specific-manner." class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> (F). Enrichment of MHBs in ChIA-PET in a disease status-specific manner.<a href="figure-2.html#f.-enrichment-of-mhbs-in-chia-pet-in-a-disease-status-specific-manner." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb14"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb14-1"><a href="figure-2.html#cb14-1" tabindex="-1"></a><span class="co"># ======== shell command ======</span></span>
+<span id="cb14-2"><a href="figure-2.html#cb14-2" tabindex="-1"></a><span class="co"># Permutation test of Breast cancer or normal MHB in Pol 2 ChIA-PET data</span></span>
+<span id="cb14-3"><a href="figure-2.html#cb14-3" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> BRCA Breast</span>
+<span id="cb14-4"><a href="figure-2.html#cb14-4" tabindex="-1"></a><span class="cf">do</span></span>
+<span id="cb14-5"><a href="figure-2.html#cb14-5" tabindex="-1"></a>  <span class="ex">Rscript</span> ChIApet_enrichment.R  <span class="dt">\</span></span>
+<span id="cb14-6"><a href="figure-2.html#cb14-6" tabindex="-1"></a>                <span class="at">--forward</span> <span class="va">${i}</span>_P11.bed <span class="dt">\</span></span>
+<span id="cb14-7"><a href="figure-2.html#cb14-7" tabindex="-1"></a>                <span class="at">--reverse</span> <span class="va">${i}</span>_P21.bed <span class="dt">\</span></span>
+<span id="cb14-8"><a href="figure-2.html#cb14-8" tabindex="-1"></a>                <span class="at">--genome</span> hg19.chrom.sizes <span class="dt">\</span></span>
+<span id="cb14-9"><a href="figure-2.html#cb14-9" tabindex="-1"></a>                <span class="at">--testBED</span>  <span class="st">&quot;BRCA_MHB or Breast_MHB&quot;</span> <span class="dt">\</span></span>
+<span id="cb14-10"><a href="figure-2.html#cb14-10" tabindex="-1"></a>                <span class="at">--nTimes</span>  1000 <span class="dt">\</span></span>
+<span id="cb14-11"><a href="figure-2.html#cb14-11" tabindex="-1"></a>                <span class="at">--tmp</span> ./  <span class="dt">\</span></span>
+<span id="cb14-12"><a href="figure-2.html#cb14-12" tabindex="-1"></a>                <span class="at">--outFile</span>  <span class="va">${i}</span>_MHB_ChIA_enrichment.txt</span>
+<span id="cb14-13"><a href="figure-2.html#cb14-13" tabindex="-1"></a><span class="cf">done</span></span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="figure-2.html#cb15-1" tabindex="-1"></a><span class="co"># Enrichment score ChIA-PET MCF7/MCF-10A</span></span>
+<span id="cb15-2"><a href="figure-2.html#cb15-2" tabindex="-1"></a><span class="co"># The scores are estimated by the fold enrichment of between MHB in Pol II ChIA-PET and random regions.</span></span>
+<span id="cb15-3"><a href="figure-2.html#cb15-3" tabindex="-1"></a>MCF7_N<span class="ot">=</span><span class="fl">28.17</span>;MCF7_T<span class="ot">=</span><span class="fl">40.06</span></span>
+<span id="cb15-4"><a href="figure-2.html#cb15-4" tabindex="-1"></a>MCF10A_N<span class="ot">=</span><span class="dv">60</span>;MCF10A_T<span class="ot">=</span><span class="fl">53.62</span></span>
+<span id="cb15-5"><a href="figure-2.html#cb15-5" tabindex="-1"></a></span>
+<span id="cb15-6"><a href="figure-2.html#cb15-6" tabindex="-1"></a>data <span class="ot">=</span> <span class="fu">data.frame</span>(<span class="at">MCF7=</span><span class="fu">c</span>(MCF7_N,MCF7_T),<span class="at">MCF10A=</span><span class="fu">c</span>(MCF10A_N,MCF10A_T))</span>
+<span id="cb15-7"><a href="figure-2.html#cb15-7" tabindex="-1"></a>data<span class="sc">$</span>Type <span class="ot">=</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">&quot;Normal_MHB&quot;</span>,<span class="st">&quot;Tumor_MHB&quot;</span>),<span class="at">levels=</span><span class="fu">c</span>(<span class="st">&quot;Tumor_MHB&quot;</span>,<span class="st">&quot;Normal_MHB&quot;</span>))</span>
+<span id="cb15-8"><a href="figure-2.html#cb15-8" tabindex="-1"></a>dat <span class="ot">=</span> <span class="fu">melt</span>(data)</span>
+<span id="cb15-9"><a href="figure-2.html#cb15-9" tabindex="-1"></a><span class="fu">pdf</span>(<span class="at">file=</span><span class="st">&quot;Data/Figures/Fig2/Fig2.F.pdf&quot;</span>,<span class="at">width=</span><span class="dv">5</span>,<span class="at">height=</span><span class="dv">4</span>)</span>
+<span id="cb15-10"><a href="figure-2.html#cb15-10" tabindex="-1"></a>p<span class="ot">&lt;-</span><span class="fu">ggplot</span>(<span class="at">data =</span> dat,<span class="fu">aes</span>(<span class="at">x=</span>variable,<span class="at">y=</span>value,<span class="at">fill=</span>Type))<span class="sc">+</span></span>
+<span id="cb15-11"><a href="figure-2.html#cb15-11" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>, <span class="at">position=</span><span class="fu">position_dodge</span>()) <span class="sc">+</span></span>
+<span id="cb15-12"><a href="figure-2.html#cb15-12" tabindex="-1"></a>    <span class="fu">scale_fill_brewer</span>(<span class="at">palette=</span><span class="st">&quot;Set1&quot;</span>) <span class="sc">+</span></span>
+<span id="cb15-13"><a href="figure-2.html#cb15-13" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">y=</span><span class="st">&quot;Enrichment Score&quot;</span>)<span class="sc">+</span></span>
+<span id="cb15-14"><a href="figure-2.html#cb15-14" tabindex="-1"></a>      <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb15-15"><a href="figure-2.html#cb15-15" tabindex="-1"></a>      <span class="fu">theme</span>(<span class="at">panel.grid=</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb15-16"><a href="figure-2.html#cb15-16" tabindex="-1"></a>          <span class="at">panel.background=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb15-17"><a href="figure-2.html#cb15-17" tabindex="-1"></a>          <span class="at">panel.border=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb15-18"><a href="figure-2.html#cb15-18" tabindex="-1"></a>          <span class="at">axis.line=</span><span class="fu">element_line</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>),</span>
+<span id="cb15-19"><a href="figure-2.html#cb15-19" tabindex="-1"></a>          <span class="at">axis.title.x=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb15-20"><a href="figure-2.html#cb15-20" tabindex="-1"></a>          <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>,<span class="at">size=</span><span class="dv">10</span>,</span>
+<span id="cb15-21"><a href="figure-2.html#cb15-21" tabindex="-1"></a>                                    <span class="at">angle=</span><span class="dv">45</span>,<span class="at">vjust=</span><span class="dv">1</span>,<span class="at">hjust=</span><span class="dv">1</span>),</span>
+<span id="cb15-22"><a href="figure-2.html#cb15-22" tabindex="-1"></a>          <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>,<span class="at">size=</span><span class="dv">10</span>),</span>
+<span id="cb15-23"><a href="figure-2.html#cb15-23" tabindex="-1"></a>          <span class="at">axis.ticks =</span> <span class="fu">element_line</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>),</span>
+<span id="cb15-24"><a href="figure-2.html#cb15-24" tabindex="-1"></a>          <span class="at">axis.ticks.length =</span> <span class="fu">unit</span>(<span class="dv">5</span>, <span class="st">&quot;pt&quot;</span>) )<span class="sc">+</span></span>
+<span id="cb15-25"><a href="figure-2.html#cb15-25" tabindex="-1"></a>    <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label=</span>value), <span class="at">vjust=</span><span class="sc">-</span><span class="fl">0.3</span>, <span class="at">size=</span><span class="fl">3.5</span>,<span class="at">color=</span><span class="st">&quot;black&quot;</span>)</span>
+<span id="cb15-26"><a href="figure-2.html#cb15-26" tabindex="-1"></a><span class="fu">print</span>(p)</span>
+<span id="cb15-27"><a href="figure-2.html#cb15-27" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-27"></span>
+<img src="Data/Figures/Fig2/Fig2.F.png" alt="Fig2.F" width="80%" id="fig-unnamed-chunk-27-1" />
+<p class="caption">
+ 2.5: Fig2.F
+</p>
+</div>
+</div>
+<div id="g.-enrichment-of-chia-pet-tags-in-mhbs." class="section level2 hasAnchor" number="2.6">
+<h2><span class="header-section-number">2.6</span> (G). Enrichment of ChIA-PET tags in MHBs.<a href="figure-2.html#g.-enrichment-of-chia-pet-tags-in-mhbs." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="figure-2.html#cb16-1" tabindex="-1"></a><span class="co"># We divided the Pol II ChIA-PET tags into 10 groups, LMR, UMR, PMD, HMR and a combination of </span></span>
+<span id="cb16-2"><a href="figure-2.html#cb16-2" tabindex="-1"></a><span class="co"># any two of them. Permutation test (100 times) was performed to evaluate the fold enrichment </span></span>
+<span id="cb16-3"><a href="figure-2.html#cb16-3" tabindex="-1"></a><span class="co"># of MHBs from BRCA and normal tissues in MCF-7 and MCF-10A ChIA-PET tags.</span></span>
+<span id="cb16-4"><a href="figure-2.html#cb16-4" tabindex="-1"></a><span class="co"># cpg site</span></span>
+<span id="cb16-5"><a href="figure-2.html#cb16-5" tabindex="-1"></a>CpG <span class="ot">&lt;-</span> <span class="fu">fread</span>(<span class="st">&quot;~/genome/CpG/hg19/hg19_CpG.gz&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">toGRanges</span>()</span>
+<span id="cb16-6"><a href="figure-2.html#cb16-6" tabindex="-1"></a><span class="co"># BRCA Genomic Features lmr/umr/pmd ...</span></span>
+<span id="cb16-7"><a href="figure-2.html#cb16-7" tabindex="-1"></a>GF_BRCA <span class="ot">&lt;-</span> <span class="fu">fread</span>(<span class="st">&quot;/sibcb2/bioinformatics2/zhangzhiqiang/MHB_WGBS/BAM/MHB_out/MHB_Cancer2/PMD_UMR_LMR/res/breast_T_genomic_segments.bed&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">toGRanges</span>()</span>
+<span id="cb16-8"><a href="figure-2.html#cb16-8" tabindex="-1"></a>Tx <span class="ot">&lt;-</span> <span class="fu">findOverlaps</span>(CpG,GF_BRCA,<span class="at">type=</span><span class="st">&quot;any&quot;</span>,<span class="at">ignore.strand=</span>T)</span>
+<span id="cb16-9"><a href="figure-2.html#cb16-9" tabindex="-1"></a>GF <span class="ot">&lt;-</span> CpG[<span class="fu">queryHits</span>(Tx)]</span>
+<span id="cb16-10"><a href="figure-2.html#cb16-10" tabindex="-1"></a><span class="fu">mcols</span>(GF)<span class="sc">$</span>Type <span class="ot">&lt;-</span> <span class="fu">mcols</span>(GF_BRCA[<span class="fu">subjectHits</span>(Tx)])<span class="sc">$</span>V4</span>
+<span id="cb16-11"><a href="figure-2.html#cb16-11" tabindex="-1"></a><span class="co"># ChIA-PET BRCA </span></span>
+<span id="cb16-12"><a href="figure-2.html#cb16-12" tabindex="-1"></a><span class="co"># forward</span></span>
+<span id="cb16-13"><a href="figure-2.html#cb16-13" tabindex="-1"></a>Chia_pet_BRCA_F <span class="ot">&lt;-</span> <span class="fu">fread</span>(<span class="st">&quot;/sibcb2/bioinformatics2/zhangzhiqiang/MHB_WGBS/BAM/MHB_out/3D_genome/ChIA-PET/PolII/processed_hg19/MCF-7_rep2_P11.bed&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">toGRanges</span>() </span>
+<span id="cb16-14"><a href="figure-2.html#cb16-14" tabindex="-1"></a>Td_F <span class="ot">&lt;-</span> <span class="fu">findOverlaps</span>(Chia_pet_BRCA_F,GF,<span class="at">type=</span><span class="st">&quot;any&quot;</span>,<span class="at">ignore.strand=</span>T)</span>
+<span id="cb16-15"><a href="figure-2.html#cb16-15" tabindex="-1"></a>Chia_GF_F <span class="ot">&lt;-</span> GF[<span class="fu">subjectHits</span>(Td_F)] <span class="sc">%&gt;%</span> <span class="fu">unique</span>()</span>
+<span id="cb16-16"><a href="figure-2.html#cb16-16" tabindex="-1"></a><span class="co"># reverse</span></span>
+<span id="cb16-17"><a href="figure-2.html#cb16-17" tabindex="-1"></a>Chia_pet_BRCA_R <span class="ot">&lt;-</span> <span class="fu">fread</span>(<span class="st">&quot;/sibcb2/bioinformatics2/zhangzhiqiang/MHB_WGBS/BAM/MHB_out/3D_genome/ChIA-PET/PolII/processed_hg19/MCF-7_rep2_P21.bed&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">toGRanges</span>()</span>
+<span id="cb16-18"><a href="figure-2.html#cb16-18" tabindex="-1"></a>Td_R <span class="ot">&lt;-</span> <span class="fu">findOverlaps</span>(Chia_pet_BRCA_R,GF,<span class="at">type=</span><span class="st">&quot;any&quot;</span>,<span class="at">ignore.strand=</span>T)</span>
+<span id="cb16-19"><a href="figure-2.html#cb16-19" tabindex="-1"></a>Chia_GF_R <span class="ot">&lt;-</span> GF[<span class="fu">subjectHits</span>(Td_R)] <span class="sc">%&gt;%</span> <span class="fu">unique</span>()</span>
+<span id="cb16-20"><a href="figure-2.html#cb16-20" tabindex="-1"></a><span class="do">#####################</span></span>
+<span id="cb16-21"><a href="figure-2.html#cb16-21" tabindex="-1"></a><span class="co"># BRCA MHB</span></span>
+<span id="cb16-22"><a href="figure-2.html#cb16-22" tabindex="-1"></a>MHB_BRCA <span class="ot">&lt;-</span> <span class="fu">fread</span>(<span class="st">&quot;/sibcb2/bioinformatics2/zhangzhiqiang/MHB_WGBS/BAM/MHB_out/MHB_Cancer2/MHB_RES/tumor/MHB_BRCA.bed&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">toGRanges</span>()</span>
+<span id="cb16-23"><a href="figure-2.html#cb16-23" tabindex="-1"></a>Th <span class="ot">&lt;-</span> <span class="fu">findOverlaps</span>(CpG,MHB_BRCA,<span class="at">type=</span><span class="st">&quot;any&quot;</span>,<span class="at">ignore.strand=</span>T)</span>
+<span id="cb16-24"><a href="figure-2.html#cb16-24" tabindex="-1"></a>MHB_CpG <span class="ot">&lt;-</span> CpG[<span class="fu">queryHits</span>(Th)]</span>
+<span id="cb16-25"><a href="figure-2.html#cb16-25" tabindex="-1"></a><span class="co"># enrichment </span></span>
+<span id="cb16-26"><a href="figure-2.html#cb16-26" tabindex="-1"></a>genomic_enrichment <span class="ot">&lt;-</span> <span class="cf">function</span>(Chia_GF_F,Chia_GF_R,MHB,CpG_sites,<span class="at">ntimes=</span><span class="dv">100</span>) {</span>
+<span id="cb16-27"><a href="figure-2.html#cb16-27" tabindex="-1"></a>    <span class="do">### input features</span></span>
+<span id="cb16-28"><a href="figure-2.html#cb16-28" tabindex="-1"></a>    <span class="do">## Forward</span></span>
+<span id="cb16-29"><a href="figure-2.html#cb16-29" tabindex="-1"></a>    T.F <span class="ot">&lt;-</span> <span class="fu">findOverlaps</span>(MHB,Chia_GF_F,<span class="at">type=</span><span class="st">&quot;any&quot;</span>,<span class="at">ignore.strand=</span>T)</span>
+<span id="cb16-30"><a href="figure-2.html#cb16-30" tabindex="-1"></a>    a <span class="ot">=</span> <span class="fu">queryHits</span>(T.F) <span class="sc">%&gt;%</span> <span class="fu">length</span>() </span>
+<span id="cb16-31"><a href="figure-2.html#cb16-31" tabindex="-1"></a>    <span class="do">## Reverse</span></span>
+<span id="cb16-32"><a href="figure-2.html#cb16-32" tabindex="-1"></a>    T.R <span class="ot">&lt;-</span> <span class="fu">findOverlaps</span>(MHB,Chia_GF_R,<span class="at">type=</span><span class="st">&quot;any&quot;</span>,<span class="at">ignore.strand=</span>T)</span>
+<span id="cb16-33"><a href="figure-2.html#cb16-33" tabindex="-1"></a>    b <span class="ot">=</span> <span class="fu">queryHits</span>(T.R) <span class="sc">%&gt;%</span> <span class="fu">length</span>() </span>
+<span id="cb16-34"><a href="figure-2.html#cb16-34" tabindex="-1"></a>    <span class="do">## Observe</span></span>
+<span id="cb16-35"><a href="figure-2.html#cb16-35" tabindex="-1"></a>    obs <span class="ot">=</span> a <span class="sc">+</span> b </span>
+<span id="cb16-36"><a href="figure-2.html#cb16-36" tabindex="-1"></a>    <span class="co"># MHB random times: Random_fold_enrichment</span></span>
+<span id="cb16-37"><a href="figure-2.html#cb16-37" tabindex="-1"></a>    xx <span class="ot">&lt;-</span> <span class="fu">seqnames</span>(MHB) <span class="sc">%&gt;%</span> <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(value) <span class="sc">%&gt;%</span> <span class="fu">count</span>() <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="st">&quot;chr&quot;</span><span class="ot">=</span><span class="st">&quot;value&quot;</span>,<span class="st">&quot;count&quot;</span><span class="ot">=</span><span class="st">&quot;n&quot;</span>)</span>
+<span id="cb16-38"><a href="figure-2.html#cb16-38" tabindex="-1"></a>    chrom <span class="ot">&lt;-</span> xx <span class="sc">%&gt;%</span> <span class="fu">pull</span>(chr) <span class="sc">%&gt;%</span> <span class="fu">as.character</span>()</span>
+<span id="cb16-39"><a href="figure-2.html#cb16-39" tabindex="-1"></a></span>
+<span id="cb16-40"><a href="figure-2.html#cb16-40" tabindex="-1"></a>    RFE <span class="ot">&lt;-</span> pbapply<span class="sc">::</span><span class="fu">pblapply</span>(<span class="dv">1</span><span class="sc">:</span>ntimes,<span class="cf">function</span>(times){</span>
+<span id="cb16-41"><a href="figure-2.html#cb16-41" tabindex="-1"></a>          z <span class="ot">&lt;-</span><span class="fu">lapply</span>(chrom,<span class="cf">function</span>(y){</span>
+<span id="cb16-42"><a href="figure-2.html#cb16-42" tabindex="-1"></a>                <span class="do">##chromsome counts </span></span>
+<span id="cb16-43"><a href="figure-2.html#cb16-43" tabindex="-1"></a>                size <span class="ot">&lt;-</span>  xx <span class="sc">%&gt;%</span> <span class="fu">filter</span>(chr<span class="sc">==</span>y) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(count)</span>
+<span id="cb16-44"><a href="figure-2.html#cb16-44" tabindex="-1"></a>                CpG_sites <span class="sc">%&gt;%</span> plyranges<span class="sc">::</span><span class="fu">filter</span>(seqnames<span class="sc">==</span>y) <span class="sc">%&gt;%</span> <span class="fu">sample</span>(<span class="at">size=</span>size)</span>
+<span id="cb16-45"><a href="figure-2.html#cb16-45" tabindex="-1"></a></span>
+<span id="cb16-46"><a href="figure-2.html#cb16-46" tabindex="-1"></a>              })</span>
+<span id="cb16-47"><a href="figure-2.html#cb16-47" tabindex="-1"></a>        <span class="co"># random regions </span></span>
+<span id="cb16-48"><a href="figure-2.html#cb16-48" tabindex="-1"></a>        random.MHB <span class="ot">&lt;-</span> <span class="fu">GRangesList</span>(z) <span class="sc">%&gt;%</span> <span class="fu">unlist</span>()</span>
+<span id="cb16-49"><a href="figure-2.html#cb16-49" tabindex="-1"></a>        <span class="co"># random.MHB overlap with ChIA-PET forward &amp; reverse</span></span>
+<span id="cb16-50"><a href="figure-2.html#cb16-50" tabindex="-1"></a>        <span class="co"># Forward</span></span>
+<span id="cb16-51"><a href="figure-2.html#cb16-51" tabindex="-1"></a>        T.RF <span class="ot">&lt;-</span> <span class="fu">findOverlaps</span>(random.MHB,Chia_GF_F,<span class="at">type=</span><span class="st">&quot;any&quot;</span>,<span class="at">ignore.strand=</span>T)</span>
+<span id="cb16-52"><a href="figure-2.html#cb16-52" tabindex="-1"></a>        a1 <span class="ot">=</span> <span class="fu">queryHits</span>(T.RF) <span class="sc">%&gt;%</span> <span class="fu">length</span>() </span>
+<span id="cb16-53"><a href="figure-2.html#cb16-53" tabindex="-1"></a>        <span class="co"># Reverse</span></span>
+<span id="cb16-54"><a href="figure-2.html#cb16-54" tabindex="-1"></a>        T.RR <span class="ot">&lt;-</span> <span class="fu">findOverlaps</span>(random.MHB,Chia_GF_R,<span class="at">type=</span><span class="st">&quot;any&quot;</span>,<span class="at">ignore.strand=</span>T)</span>
+<span id="cb16-55"><a href="figure-2.html#cb16-55" tabindex="-1"></a>        b1 <span class="ot">=</span> <span class="fu">queryHits</span>(T.RR) <span class="sc">%&gt;%</span> <span class="fu">length</span>() </span>
+<span id="cb16-56"><a href="figure-2.html#cb16-56" tabindex="-1"></a>        <span class="co"># expect </span></span>
+<span id="cb16-57"><a href="figure-2.html#cb16-57" tabindex="-1"></a>        exp <span class="ot">&lt;-</span> a1 <span class="sc">+</span> b1</span>
+<span id="cb16-58"><a href="figure-2.html#cb16-58" tabindex="-1"></a>   })</span>
+<span id="cb16-59"><a href="figure-2.html#cb16-59" tabindex="-1"></a>    <span class="co"># random test : median enrichemt score </span></span>
+<span id="cb16-60"><a href="figure-2.html#cb16-60" tabindex="-1"></a>    random <span class="ot">&lt;-</span> <span class="fu">unlist</span>(RFE) <span class="sc">%&gt;%</span> <span class="fu">median</span>()</span>
+<span id="cb16-61"><a href="figure-2.html#cb16-61" tabindex="-1"></a>    res <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">&quot;obs&quot;</span><span class="ot">=</span> obs,<span class="st">&quot;random&quot;</span><span class="ot">=</span>random) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">fold_enrichment =</span> (obs<span class="sc">+</span><span class="dv">1</span>)<span class="sc">/</span>(random<span class="sc">+</span><span class="dv">1</span>) )</span>
+<span id="cb16-62"><a href="figure-2.html#cb16-62" tabindex="-1"></a>    <span class="fu">return</span>(res)</span>
+<span id="cb16-63"><a href="figure-2.html#cb16-63" tabindex="-1"></a>}</span>
+<span id="cb16-64"><a href="figure-2.html#cb16-64" tabindex="-1"></a><span class="do">## combine features </span></span>
+<span id="cb16-65"><a href="figure-2.html#cb16-65" tabindex="-1"></a>features<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;HMR&quot;</span>,<span class="st">&quot;PMD&quot;</span>,<span class="st">&quot;UMR&quot;</span>,<span class="st">&quot;LMR&quot;</span>)</span>
+<span id="cb16-66"><a href="figure-2.html#cb16-66" tabindex="-1"></a>features <span class="ot">&lt;-</span> <span class="fu">combn</span>(features,<span class="at">m=</span><span class="dv">2</span>,<span class="at">simplify=</span> F) <span class="sc">%&gt;%</span> <span class="fu">c</span>(features)</span>
+<span id="cb16-67"><a href="figure-2.html#cb16-67" tabindex="-1"></a><span class="do">## Do enrichment BRCA MHB &amp; BRCA ChIA-PET  </span></span>
+<span id="cb16-68"><a href="figure-2.html#cb16-68" tabindex="-1"></a>genomic_enrichment <span class="ot">=</span> <span class="fu">lapply</span>(features,<span class="cf">function</span>(x){</span>
+<span id="cb16-69"><a href="figure-2.html#cb16-69" tabindex="-1"></a>       y <span class="ot">&lt;-</span>  Chia_GF_F <span class="sc">%&gt;%</span> plyranges<span class="sc">::</span><span class="fu">filter</span>(Type <span class="sc">%in%</span> x )</span>
+<span id="cb16-70"><a href="figure-2.html#cb16-70" tabindex="-1"></a>       z <span class="ot">&lt;-</span>  Chia_GF_R <span class="sc">%&gt;%</span> plyranges<span class="sc">::</span><span class="fu">filter</span>(Type <span class="sc">%in%</span> x )</span>
+<span id="cb16-71"><a href="figure-2.html#cb16-71" tabindex="-1"></a>       <span class="fu">genomic_enrichment</span>(y,z,MHB_CpG,<span class="at">CpG_sites=</span>CpG,<span class="at">ntimes=</span><span class="dv">100</span>)</span>
+<span id="cb16-72"><a href="figure-2.html#cb16-72" tabindex="-1"></a>})</span>
+<span id="cb16-73"><a href="figure-2.html#cb16-73" tabindex="-1"></a><span class="fu">names</span>(genomic_enrichment) <span class="ot">&lt;-</span> <span class="fu">sapply</span>(features,<span class="cf">function</span>(x){<span class="fu">paste0</span>(x,<span class="at">collapse=</span><span class="st">&quot;_&quot;</span>)})</span>
+<span id="cb16-74"><a href="figure-2.html#cb16-74" tabindex="-1"></a>res.TT <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind,genomic_enrichment) <span class="sc">%&gt;%</span><span class="fu">rownames_to_column</span>(<span class="at">var=</span><span class="st">&quot;Type&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">fold_enrichment=</span>obs<span class="sc">/</span>random)</span>
+<span id="cb16-75"><a href="figure-2.html#cb16-75" tabindex="-1"></a><span class="fu">fwrite</span>(res.TT,<span class="at">file=</span><span class="st">&quot;res/BRCA_ChIA-PET_GF_T_MHB_T_enrichment100.txt&quot;</span>,<span class="at">sep=</span><span class="st">&quot;</span><span class="sc">\t</span><span class="st">&quot;</span>,<span class="at">quote=</span>F,<span class="at">row.names=</span>F)</span>
+<span id="cb16-76"><a href="figure-2.html#cb16-76" tabindex="-1"></a><span class="co"># BRCA MHB &amp; normal breast ChIA-PET</span></span>
+<span id="cb16-77"><a href="figure-2.html#cb16-77" tabindex="-1"></a><span class="co"># breast nomral Genomic Features lmr/umr/pmd ...</span></span>
+<span id="cb16-78"><a href="figure-2.html#cb16-78" tabindex="-1"></a>GF_breast <span class="ot">&lt;-</span> <span class="fu">fread</span>(<span class="st">&quot;/sibcb2/bioinformatics2/zhangzhiqiang/MHB_WGBS/BAM/MHB_out/MHB_Cancer2/PMD_UMR_LMR/res/breast_N_genomic_segments.bed&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">toGRanges</span>()</span>
+<span id="cb16-79"><a href="figure-2.html#cb16-79" tabindex="-1"></a>Tx.N <span class="ot">&lt;-</span> <span class="fu">findOverlaps</span>(CpG,GF_breast,<span class="at">type=</span><span class="st">&quot;any&quot;</span>,<span class="at">ignore.strand=</span>T)</span>
+<span id="cb16-80"><a href="figure-2.html#cb16-80" tabindex="-1"></a>GF.N <span class="ot">&lt;-</span> CpG[<span class="fu">queryHits</span>(Tx.N)]</span>
+<span id="cb16-81"><a href="figure-2.html#cb16-81" tabindex="-1"></a><span class="fu">mcols</span>(GF.N)<span class="sc">$</span>Type <span class="ot">&lt;-</span> <span class="fu">mcols</span>(GF_breast[<span class="fu">subjectHits</span>(Tx.N)])<span class="sc">$</span>V4</span>
+<span id="cb16-82"><a href="figure-2.html#cb16-82" tabindex="-1"></a><span class="co"># ChIA-PET normal</span></span>
+<span id="cb16-83"><a href="figure-2.html#cb16-83" tabindex="-1"></a><span class="co"># forward</span></span>
+<span id="cb16-84"><a href="figure-2.html#cb16-84" tabindex="-1"></a>Chia_pet_N_F <span class="ot">&lt;-</span> <span class="fu">fread</span>(<span class="st">&quot;/sibcb2/bioinformatics2/zhangzhiqiang/MHB_WGBS/BAM/MHB_out/3D_genome/ChIA-PET/PolII/processed_hg19/MCF-10A_rep2_P11.bed&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">toGRanges</span>() </span>
+<span id="cb16-85"><a href="figure-2.html#cb16-85" tabindex="-1"></a>Td_NF <span class="ot">&lt;-</span> <span class="fu">findOverlaps</span>(Chia_pet_N_F,GF.N,<span class="at">type=</span><span class="st">&quot;any&quot;</span>,<span class="at">ignore.strand=</span>T)</span>
+<span id="cb16-86"><a href="figure-2.html#cb16-86" tabindex="-1"></a>Chia_GF_NF <span class="ot">&lt;-</span> GF.N[<span class="fu">subjectHits</span>(Td_NF)] <span class="sc">%&gt;%</span> <span class="fu">unique</span>()</span>
+<span id="cb16-87"><a href="figure-2.html#cb16-87" tabindex="-1"></a><span class="co"># reverse</span></span>
+<span id="cb16-88"><a href="figure-2.html#cb16-88" tabindex="-1"></a>Chia_pet_N_R <span class="ot">&lt;-</span> <span class="fu">fread</span>(<span class="st">&quot;/sibcb2/bioinformatics2/zhangzhiqiang/MHB_WGBS/BAM/MHB_out/3D_genome/ChIA-PET/PolII/processed_hg19/MCF-10A_rep2_P21.bed&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">toGRanges</span>()</span>
+<span id="cb16-89"><a href="figure-2.html#cb16-89" tabindex="-1"></a>Td_NR <span class="ot">&lt;-</span> <span class="fu">findOverlaps</span>(Chia_pet_N_R,GF.N,<span class="at">type=</span><span class="st">&quot;any&quot;</span>,<span class="at">ignore.strand=</span>T)</span>
+<span id="cb16-90"><a href="figure-2.html#cb16-90" tabindex="-1"></a>Chia_GF_NR <span class="ot">&lt;-</span> GF.N[<span class="fu">subjectHits</span>(Td_NR)] <span class="sc">%&gt;%</span> <span class="fu">unique</span>()</span>
+<span id="cb16-91"><a href="figure-2.html#cb16-91" tabindex="-1"></a><span class="do">## Do enrichment BRCA MHB &amp; Normal breast ChIA-PET  </span></span>
+<span id="cb16-92"><a href="figure-2.html#cb16-92" tabindex="-1"></a>genomic_enrichment <span class="ot">=</span> <span class="fu">lapply</span>(features,<span class="cf">function</span>(x){</span>
+<span id="cb16-93"><a href="figure-2.html#cb16-93" tabindex="-1"></a>       y <span class="ot">&lt;-</span>  Chia_GF_NF <span class="sc">%&gt;%</span> plyranges<span class="sc">::</span><span class="fu">filter</span>(Type <span class="sc">%in%</span> x )</span>
+<span id="cb16-94"><a href="figure-2.html#cb16-94" tabindex="-1"></a>       z <span class="ot">&lt;-</span>  Chia_GF_NR <span class="sc">%&gt;%</span> plyranges<span class="sc">::</span><span class="fu">filter</span>(Type <span class="sc">%in%</span> x )</span>
+<span id="cb16-95"><a href="figure-2.html#cb16-95" tabindex="-1"></a>       <span class="fu">genomic_enrichment</span>(y,z,MHB_CpG,<span class="at">CpG_sites=</span>CpG,<span class="at">ntimes=</span><span class="dv">100</span>)</span>
+<span id="cb16-96"><a href="figure-2.html#cb16-96" tabindex="-1"></a>})</span>
+<span id="cb16-97"><a href="figure-2.html#cb16-97" tabindex="-1"></a><span class="fu">names</span>(genomic_enrichment) <span class="ot">&lt;-</span> <span class="fu">sapply</span>(features,<span class="cf">function</span>(x){<span class="fu">paste0</span>(x,<span class="at">collapse=</span><span class="st">&quot;_&quot;</span>)})</span>
+<span id="cb16-98"><a href="figure-2.html#cb16-98" tabindex="-1"></a>res.TN <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind,genomic_enrichment) <span class="sc">%&gt;%</span><span class="fu">rownames_to_column</span>(<span class="at">var=</span><span class="st">&quot;Type&quot;</span>) </span>
+<span id="cb16-99"><a href="figure-2.html#cb16-99" tabindex="-1"></a><span class="fu">fwrite</span>(res.TN,<span class="at">file=</span><span class="st">&quot;res/BRCA_ChIA-PET_GF_N_MHB_T_enrichment100.txt&quot;</span>,<span class="at">sep=</span><span class="st">&quot;</span><span class="sc">\t</span><span class="st">&quot;</span>,<span class="at">quote=</span>F,<span class="at">row.names=</span>F)</span>
+<span id="cb16-100"><a href="figure-2.html#cb16-100" tabindex="-1"></a><span class="co"># Breast normal MHB &amp; BRCA ChIA-PET</span></span>
+<span id="cb16-101"><a href="figure-2.html#cb16-101" tabindex="-1"></a>MHB_N <span class="ot">&lt;-</span> <span class="fu">fread</span>(<span class="st">&quot;/sibcb2/bioinformatics2/zhangzhiqiang/MHB_WGBS/BAM/MHB_out/MHB_Cancer2/MHB_RES/normal/MHB_breast_normal.bed&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">toGRanges</span>()</span>
+<span id="cb16-102"><a href="figure-2.html#cb16-102" tabindex="-1"></a>Th.N <span class="ot">&lt;-</span> <span class="fu">findOverlaps</span>(CpG,MHB_N,<span class="at">type=</span><span class="st">&quot;any&quot;</span>,<span class="at">ignore.strand=</span>T)</span>
+<span id="cb16-103"><a href="figure-2.html#cb16-103" tabindex="-1"></a>MHB_CpG.N <span class="ot">&lt;-</span> CpG[<span class="fu">queryHits</span>(Th.N)]</span>
+<span id="cb16-104"><a href="figure-2.html#cb16-104" tabindex="-1"></a><span class="do">## Do enrichment breast normal MHB &amp;  BRCA ChIA-PET  </span></span>
+<span id="cb16-105"><a href="figure-2.html#cb16-105" tabindex="-1"></a>genomic_enrichment <span class="ot">&lt;-</span> <span class="fu">lapply</span>(features,<span class="cf">function</span>(x){</span>
+<span id="cb16-106"><a href="figure-2.html#cb16-106" tabindex="-1"></a>       y <span class="ot">&lt;-</span>  Chia_GF_F <span class="sc">%&gt;%</span> plyranges<span class="sc">::</span><span class="fu">filter</span>(Type <span class="sc">%in%</span> x )</span>
+<span id="cb16-107"><a href="figure-2.html#cb16-107" tabindex="-1"></a>       z <span class="ot">&lt;-</span>  Chia_GF_R <span class="sc">%&gt;%</span> plyranges<span class="sc">::</span><span class="fu">filter</span>(Type <span class="sc">%in%</span> x )</span>
+<span id="cb16-108"><a href="figure-2.html#cb16-108" tabindex="-1"></a>       <span class="fu">genomic_enrichment</span>(y,z,MHB_CpG.N,<span class="at">CpG_sites=</span>CpG,<span class="at">ntimes=</span><span class="dv">100</span>)</span>
+<span id="cb16-109"><a href="figure-2.html#cb16-109" tabindex="-1"></a>})</span>
+<span id="cb16-110"><a href="figure-2.html#cb16-110" tabindex="-1"></a><span class="fu">names</span>(genomic_enrichment) <span class="ot">&lt;-</span> <span class="fu">sapply</span>(features,<span class="cf">function</span>(x){<span class="fu">paste0</span>(x,<span class="at">collapse=</span><span class="st">&quot;_&quot;</span>)})</span>
+<span id="cb16-111"><a href="figure-2.html#cb16-111" tabindex="-1"></a>res.NT <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind,genomic_enrichment) <span class="sc">%&gt;%</span><span class="fu">rownames_to_column</span>(<span class="at">var=</span><span class="st">&quot;Type&quot;</span>) </span>
+<span id="cb16-112"><a href="figure-2.html#cb16-112" tabindex="-1"></a><span class="fu">fwrite</span>(res.NT,<span class="at">file=</span><span class="st">&quot;res/BRCA_ChIA-PET_GF_T_MHB_N_enrichment100.txt&quot;</span>,<span class="at">sep=</span><span class="st">&quot;</span><span class="sc">\t</span><span class="st">&quot;</span>,<span class="at">quote=</span>F,<span class="at">row.names=</span>F)</span>
+<span id="cb16-113"><a href="figure-2.html#cb16-113" tabindex="-1"></a><span class="co"># Do enrichment breast normal MHB &amp;  normal ChIA-PET  </span></span>
+<span id="cb16-114"><a href="figure-2.html#cb16-114" tabindex="-1"></a>genomic_enrichment <span class="ot">=</span> <span class="fu">lapply</span>(features,<span class="cf">function</span>(x){</span>
+<span id="cb16-115"><a href="figure-2.html#cb16-115" tabindex="-1"></a>       y <span class="ot">&lt;-</span>  Chia_GF_NF <span class="sc">%&gt;%</span> plyranges<span class="sc">::</span><span class="fu">filter</span>(Type <span class="sc">%in%</span> x )</span>
+<span id="cb16-116"><a href="figure-2.html#cb16-116" tabindex="-1"></a>       z <span class="ot">&lt;-</span>  Chia_GF_NR <span class="sc">%&gt;%</span> plyranges<span class="sc">::</span><span class="fu">filter</span>(Type <span class="sc">%in%</span> x )</span>
+<span id="cb16-117"><a href="figure-2.html#cb16-117" tabindex="-1"></a>       <span class="fu">genomic_enrichment</span>(y,z,MHB_CpG.N,<span class="at">CpG_sites=</span>CpG,<span class="at">ntimes=</span><span class="dv">100</span>)</span>
+<span id="cb16-118"><a href="figure-2.html#cb16-118" tabindex="-1"></a>})</span>
+<span id="cb16-119"><a href="figure-2.html#cb16-119" tabindex="-1"></a><span class="fu">names</span>(genomic_enrichment) <span class="ot">&lt;-</span> <span class="fu">sapply</span>(features,<span class="cf">function</span>(x){<span class="fu">paste0</span>(x,<span class="at">collapse=</span><span class="st">&quot;_&quot;</span>)})</span>
+<span id="cb16-120"><a href="figure-2.html#cb16-120" tabindex="-1"></a>res.NN <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind,genomic_enrichment) <span class="sc">%&gt;%</span><span class="fu">rownames_to_column</span>(<span class="at">var=</span><span class="st">&quot;Type&quot;</span>) </span>
+<span id="cb16-121"><a href="figure-2.html#cb16-121" tabindex="-1"></a><span class="fu">fwrite</span>(res.NN,<span class="at">file=</span><span class="st">&quot;res/BRCA_ChIA-PET_GF_N_MHB_N_enrichment100.txt&quot;</span>,<span class="at">sep=</span><span class="st">&quot;</span><span class="sc">\t</span><span class="st">&quot;</span>,<span class="at">quote=</span>F,<span class="at">row.names=</span>F)</span>
+<span id="cb16-122"><a href="figure-2.html#cb16-122" tabindex="-1"></a><span class="co"># read data</span></span>
+<span id="cb16-123"><a href="figure-2.html#cb16-123" tabindex="-1"></a>res.TT <span class="ot">=</span> <span class="fu">fread</span>(<span class="st">&quot;res/BRCA_ChIA-PET_GF_T_MHB_T_enrichment100.txt&quot;</span>)</span>
+<span id="cb16-124"><a href="figure-2.html#cb16-124" tabindex="-1"></a>res.TN <span class="ot">=</span> <span class="fu">fread</span>(<span class="st">&quot;res/BRCA_ChIA-PET_GF_N_MHB_T_enrichment100.txt&quot;</span>)</span>
+<span id="cb16-125"><a href="figure-2.html#cb16-125" tabindex="-1"></a>res.NT <span class="ot">=</span> <span class="fu">fread</span>(<span class="st">&quot;res/BRCA_ChIA-PET_GF_T_MHB_N_enrichment100.txt&quot;</span>)</span>
+<span id="cb16-126"><a href="figure-2.html#cb16-126" tabindex="-1"></a>res.NN <span class="ot">=</span> <span class="fu">fread</span>(<span class="st">&quot;res/BRCA_ChIA-PET_GF_N_MHB_N_enrichment100.txt&quot;</span>)</span>
+<span id="cb16-127"><a href="figure-2.html#cb16-127" tabindex="-1"></a>data  <span class="ot">&lt;-</span> <span class="fu">rbind</span>(res.TT,res.NT,res.TN,res.NN) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">Clusters =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">&quot;TT&quot;</span>,<span class="st">&quot;NT&quot;</span>,<span class="st">&quot;TN&quot;</span>,<span class="st">&quot;NN&quot;</span>),<span class="at">each=</span><span class="dv">10</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb16-128"><a href="figure-2.html#cb16-128" tabindex="-1"></a>            <span class="fu">mutate</span>(<span class="at">MHB=</span><span class="fu">str_sub</span>(Clusters,<span class="dv">1</span>,<span class="dv">1</span>),<span class="at">Tissue=</span><span class="fu">str_sub</span>(Clusters,<span class="dv">2</span>,<span class="dv">2</span>),</span>
+<span id="cb16-129"><a href="figure-2.html#cb16-129" tabindex="-1"></a>            <span class="at">Tissue=</span><span class="fu">ifelse</span>(Tissue<span class="sc">==</span><span class="st">&quot;N&quot;</span>,<span class="st">&quot;MCF10A&quot;</span>,<span class="st">&quot;MCF7&quot;</span>) <span class="sc">%&gt;%</span><span class="fu">fct_rev</span>(),</span>
+<span id="cb16-130"><a href="figure-2.html#cb16-130" tabindex="-1"></a>            <span class="at">MHB =</span> <span class="fu">ifelse</span>(MHB<span class="sc">==</span><span class="st">&quot;T&quot;</span>,<span class="st">&quot;BRCA MHBs&quot;</span>,<span class="st">&quot;Normal MHBs&quot;</span>),</span>
+<span id="cb16-131"><a href="figure-2.html#cb16-131" tabindex="-1"></a>            <span class="at">Type =</span> <span class="fu">factor</span>(Type,<span class="at">levels=</span><span class="fu">c</span>(<span class="st">&quot;LMR&quot;</span>,<span class="st">&quot;PMD&quot;</span>,<span class="st">&quot;UMR&quot;</span>,<span class="st">&quot;HMR&quot;</span>,<span class="st">&quot;PMD_LMR&quot;</span>,<span class="st">&quot;UMR_LMR&quot;</span>,<span class="st">&quot;PMD_UMR&quot;</span>,<span class="st">&quot;HMR_PMD&quot;</span>,<span class="st">&quot;HMR_UMR&quot;</span>,<span class="st">&quot;HMR_LMR&quot;</span>)))</span>
+<span id="cb16-132"><a href="figure-2.html#cb16-132" tabindex="-1"></a></span>
+<span id="cb16-133"><a href="figure-2.html#cb16-133" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data,<span class="fu">aes</span>(<span class="at">x=</span>Type,<span class="at">y=</span>fold_enrichment,<span class="at">fill=</span>MHB)) <span class="sc">+</span> </span>
+<span id="cb16-134"><a href="figure-2.html#cb16-134" tabindex="-1"></a>            <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="fu">position_dodge</span>()) <span class="sc">+</span></span>
+<span id="cb16-135"><a href="figure-2.html#cb16-135" tabindex="-1"></a>            <span class="fu">scale_fill_brewer</span>(<span class="at">palette=</span><span class="st">&quot;Set1&quot;</span>) <span class="sc">+</span></span>
+<span id="cb16-136"><a href="figure-2.html#cb16-136" tabindex="-1"></a>            <span class="fu">labs</span>(<span class="at">x=</span><span class="st">&quot;&quot;</span>,<span class="at">y=</span><span class="st">&quot;fold enrichment&quot;</span>,<span class="at">title=</span><span class="st">&quot;MHB in ChIA-PET enrichment&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb16-137"><a href="figure-2.html#cb16-137" tabindex="-1"></a>            <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">1</span>,<span class="at">linetype=</span><span class="st">&quot;dashed&quot;</span>,<span class="at">colour =</span> <span class="st">&quot;grey&quot;</span>,<span class="at">linewidth=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb16-138"><a href="figure-2.html#cb16-138" tabindex="-1"></a>            <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb16-139"><a href="figure-2.html#cb16-139" tabindex="-1"></a>            <span class="fu">theme</span>(<span class="at">axis.text.x =</span><span class="fu">element_text</span>(<span class="at">angle=</span><span class="dv">60</span>,<span class="at">hjust=</span><span class="dv">1</span>),</span>
+<span id="cb16-140"><a href="figure-2.html#cb16-140" tabindex="-1"></a>                    <span class="at">panel.background=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb16-141"><a href="figure-2.html#cb16-141" tabindex="-1"></a>                    <span class="at">panel.grid=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb16-142"><a href="figure-2.html#cb16-142" tabindex="-1"></a>                    <span class="at">plot.title=</span><span class="fu">element_text</span>(<span class="at">hjust=</span><span class="fl">0.5</span>)) <span class="sc">+</span></span>
+<span id="cb16-143"><a href="figure-2.html#cb16-143" tabindex="-1"></a>            <span class="fu">facet_wrap</span>(<span class="sc">~</span>Tissue,<span class="at">ncol=</span><span class="dv">1</span>)</span>
+<span id="cb16-144"><a href="figure-2.html#cb16-144" tabindex="-1"></a><span class="fu">ggsave</span>(p,<span class="at">filename=</span><span class="st">&quot;MHB_ChIA_PET_GF_enrichment1.pdf&quot;</span>,<span class="at">width=</span><span class="dv">4</span>,<span class="at">height=</span><span class="dv">5</span>)</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-29"></span>
+<img src="Data/Figures/Fig2/Fig2.G.png" alt="Fig2.G" width="80%" id="fig-unnamed-chunk-29-1" />
+<p class="caption">
+ 2.6: Fig2.G
+</p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="figure-3.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-intro.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

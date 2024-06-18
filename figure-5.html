@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title> 5 Figure 5 | CancerMHBs</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content=" 5 Figure 5 | CancerMHBs" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content=" 5 Figure 5 | CancerMHBs" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Zhiqiang Zhang,Yuyang Hong, Hai Fang, Jiantao Shi" />
+
+
+<meta name="date" content="2024-06-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="figure-4.html"/>
+<link rel="next" href="figure-6.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://jiantaoshi.github.io/cancermhaps/index.html">CancerMHBs</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Figure 1</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#cancer-mhb-calling"><i class="fa fa-check"></i><b>1.1</b> Cancer MHB Calling</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#c-e.-mhb-annotation"><i class="fa fa-check"></i><b>1.2</b> (C-E). MHB annotation</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#f.-mhb-map"><i class="fa fa-check"></i><b>1.3</b> (F). MHB Map</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#g.-cancer-mhbs-vs-normal-mhbs"><i class="fa fa-check"></i><b>1.4</b> (G). Cancer MHBs vs Normal MHBs</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#h.-correlation-of-methylation-on-the-same-mhb"><i class="fa fa-check"></i><b>1.5</b> (H). Correlation of methylation on the same MHB</a></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#i.-enrichment-of-mhbs-in-genomic-features."><i class="fa fa-check"></i><b>1.6</b> (I). Enrichment of MHBs in genomic features.</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="figure-2.html"><a href="figure-2.html"><i class="fa fa-check"></i><b>2</b> Figure 2</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="figure-2.html"><a href="figure-2.html#a.-cancer-mhbs-and-open-chromatin"><i class="fa fa-check"></i><b>2.1</b> (A). Cancer MHBs and open chromatin</a></li>
+<li class="chapter" data-level="2.2" data-path="figure-2.html"><a href="figure-2.html#b.-cancer-mhbs-and-dnam-features"><i class="fa fa-check"></i><b>2.2</b> (B). Cancer MHBs and DNAm features</a></li>
+<li class="chapter" data-level="2.3" data-path="figure-2.html"><a href="figure-2.html#c-d.-enrichment-of-cancer-mhbs-in-dnam-feature-lola"><i class="fa fa-check"></i><b>2.3</b> (C-D). Enrichment of Cancer MHBs in DNAm feature (LOLA)</a></li>
+<li class="chapter" data-level="2.4" data-path="figure-2.html"><a href="figure-2.html#e.-genomic-features-with-mhbs-in-open-chromatin"><i class="fa fa-check"></i><b>2.4</b> (E). Genomic features with MHBs in open chromatin</a></li>
+<li class="chapter" data-level="2.5" data-path="figure-2.html"><a href="figure-2.html#f.-enrichment-of-mhbs-in-chia-pet-in-a-disease-status-specific-manner."><i class="fa fa-check"></i><b>2.5</b> (F). Enrichment of MHBs in ChIA-PET in a disease status-specific manner.</a></li>
+<li class="chapter" data-level="2.6" data-path="figure-2.html"><a href="figure-2.html#g.-enrichment-of-chia-pet-tags-in-mhbs."><i class="fa fa-check"></i><b>2.6</b> (G). Enrichment of ChIA-PET tags in MHBs.</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="figure-3.html"><a href="figure-3.html"><i class="fa fa-check"></i><b>3</b> Figure 3</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="figure-3.html"><a href="figure-3.html#a.-mhb-vs-dmr"><i class="fa fa-check"></i><b>3.1</b> (A). MHB vs DMR</a></li>
+<li class="chapter" data-level="3.2" data-path="figure-3.html"><a href="figure-3.html#b-c.-enrichment-of-cancer-mhbs-in-dmr-lola"><i class="fa fa-check"></i><b>3.2</b> (B-C). Enrichment of Cancer MHBs in DMR (LOLA)</a></li>
+<li class="chapter" data-level="3.3" data-path="figure-3.html"><a href="figure-3.html#d-e.-escc-dnam-and-rna-profiles-gse149608"><i class="fa fa-check"></i><b>3.3</b> (D-E). ESCC DNAm and RNA profiles (GSE149608)</a></li>
+<li class="chapter" data-level="3.4" data-path="figure-3.html"><a href="figure-3.html#f-g.-tf-activities"><i class="fa fa-check"></i><b>3.4</b> (F-G). TF activities</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="figure-4.html"><a href="figure-4.html"><i class="fa fa-check"></i><b>4</b> Figure 4</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="figure-4.html"><a href="figure-4.html#b.-crc-single-cell-mhap"><i class="fa fa-check"></i><b>4.1</b> (B). CRC single-cell mHap</a></li>
+<li class="chapter" data-level="4.2" data-path="figure-4.html"><a href="figure-4.html#c.-crc-single-cell-mhbs"><i class="fa fa-check"></i><b>4.2</b> (C). CRC single-cell MHBs</a></li>
+<li class="chapter" data-level="4.3" data-path="figure-4.html"><a href="figure-4.html#d-single-cell-mhb-vs-bulk-mhb"><i class="fa fa-check"></i><b>4.3</b> (D) Single cell MHB vs bulk MHB</a></li>
+<li class="chapter" data-level="4.4" data-path="figure-4.html"><a href="figure-4.html#e.-association-between-gene-expression-and-the-present-of-mhbs-in-promoter-regions."><i class="fa fa-check"></i><b>4.4</b> (E). Association between gene expression and the present of MHBs in promoter regions.</a></li>
+<li class="chapter" data-level="4.5" data-path="figure-4.html"><a href="figure-4.html#f.-association-of-gene-expression-and-methylation-levels-of-mhb-regions"><i class="fa fa-check"></i><b>4.5</b> (F). Association of gene expression and methylation levels of MHB regions</a></li>
+<li class="chapter" data-level="4.6" data-path="figure-4.html"><a href="figure-4.html#i-j.-mhbs-and-dysregulation-of-gene-expression-in-crc."><i class="fa fa-check"></i><b>4.6</b> (I-J). MHBs and dysregulation of gene expression in CRC.</a></li>
+<li class="chapter" data-level="4.7" data-path="figure-4.html"><a href="figure-4.html#k.-tcga-coad-dataset-validation"><i class="fa fa-check"></i><b>4.7</b> (K). TCGA-COAD dataset Validation</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="figure-5.html"><a href="figure-5.html"><i class="fa fa-check"></i><b>5</b> Figure 5</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="figure-5.html"><a href="figure-5.html#a-b.-enrichment-of-dmr-or-mhb-associated-genes-in-degs"><i class="fa fa-check"></i><b>5.1</b> (A-B). Enrichment of DMR or MHB-associated genes in DEGs</a></li>
+<li class="chapter" data-level="5.2" data-path="figure-5.html"><a href="figure-5.html#c.-pathway-enrichment-of-mhb-associated-genes-in-pan-cancer"><i class="fa fa-check"></i><b>5.2</b> (C). Pathway enrichment of MHB-associated genes in pan-cancer</a></li>
+<li class="chapter" data-level="5.3" data-path="figure-5.html"><a href="figure-5.html#e.-kegg-pathway-crosstalk-analysis-for-pan-cancer"><i class="fa fa-check"></i><b>5.3</b> (E). KEGG Pathway crosstalk analysis for pan-cancer</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="figure-6.html"><a href="figure-6.html"><i class="fa fa-check"></i><b>6</b> Figure 6</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="figure-6.html"><a href="figure-6.html#a-b.-aging-associate-with-the-mhb"><i class="fa fa-check"></i><b>6.1</b> (A-B). Aging associate with the MHB</a></li>
+<li class="chapter" data-level="6.2" data-path="figure-6.html"><a href="figure-6.html#c.-aging-associated-mhb-in-tcga-dataset"><i class="fa fa-check"></i><b>6.2</b> (C). Aging associated mhb in TCGA dataset</a></li>
+<li class="chapter" data-level="6.3" data-path="figure-6.html"><a href="figure-6.html#d-m-aging-associated-mhb-functions-in-early-cancer-detection-hm450k"><i class="fa fa-check"></i><b>6.3</b> (D-M) Aging associated MHB functions in Early Cancer Detection (HM450K)</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://jiantaoshi.github.io/cancermhaps/index.html" target="blank"> The mHap map of cancers</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">CancerMHBs</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="figure-5" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number"> 5</span> Figure 5<a href="figure-5.html#figure-5" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><img src="Data/Figures/Figure5.png" width="80%" style="display: block; margin: auto;" />
+<strong>Figure 5. MHBs are associated with differentially expressed genes in pan-cancer</strong>. (A) Enrichment of DMR-associated genes in differentially expressed genes. Statistical significance was evaluated using Fisher’s exact test. The resulting p-values were adjusted for multiple testing and reported as FDR. Upregulated genes and downregulated genes are labelled in red and blue, respectively. (B) Enrichment of cancer MHB-associated genes in differentially expressed genes. The forest plot shows the enrichment of cancer MHB-associated genes, excluding DMR-related genes, in DEGs. Statistical significance was evaluated using the Fisher’s exact test, with P-value &lt; 0.05 labelled in red and P-value &gt; 0.05 labelled in blue, respectively. (C) Pathway enrichment of MHB-associated genes in pan-cancer. An integrative prioritization approach utilizing network information (see Methods) was employed to prioritize MHB-related genes shared by more than six cancer types. The upper panel displays the gene set enrichment of shared upregulated genes. The bottom panel illustrates the differences in methylation and expression profiles of selected genes, annotated in the G2M checkpoint or MYC activity pathway across cancer types. Gene set enrichment analysis was performed using the hypergeometric test implemented in the clusterProfiler R/Bioconductor package, utilizing the “H” and “C2” gene sets from the Molecular Signatures Database v6.1 (MSigDB). (D) Two example MHBs located near genes activated in multiple cancer types: one in the MYC gene locus (chr8: 128,749,850 − 128,750,150) and the other in the SLC2A1 gene locus (chr1:43,423,000-43,423,600). The upper panel displays the mean methylation levels. The middle panel depicts the DNA methylation status of individual fragments, where black and white represent methylated and unmethylated CpG sites, respectively. The bottom panel shows the genomic position of the MHBs and adjacent genes, combined with a heatmap of signed linkage disequilibrium (LD) R² values in the region of interest. (E) Pathway crosstalk analysis for pan-cancer. The optimal subnetwork was identified by integrating the target priority rating information with pathway-derived gene interactions, which were merged from KEGG pathways. (F) The Kaplan-Meier survival curves compare overall survival (OS) between patient subgroups stratified by high/low expression (median cutoff) of RRM2 and SLC2A1 genes in CESC, LIHC, LUAD, PAAD of TCGA dataset. Statistical significance was assessed using the log-rank test. P-values were calculated using the log-rank test, and hazard ratios (HRs) were computed through univariable Cox regression analysis.</p>
+<div id="a-b.-enrichment-of-dmr-or-mhb-associated-genes-in-degs" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> (A-B). Enrichment of DMR or MHB-associated genes in DEGs<a href="figure-5.html#a-b.-enrichment-of-dmr-or-mhb-associated-genes-in-degs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="figure-5.html#cb31-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb31-2"><a href="figure-5.html#cb31-2" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb31-3"><a href="figure-5.html#cb31-3" tabindex="-1"></a><span class="fu">library</span>(rGREAT)</span>
+<span id="cb31-4"><a href="figure-5.html#cb31-4" tabindex="-1"></a><span class="fu">library</span>(regioneR)</span>
+<span id="cb31-5"><a href="figure-5.html#cb31-5" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
+<span id="cb31-6"><a href="figure-5.html#cb31-6" tabindex="-1"></a><span class="co"># 1. Load data</span></span>
+<span id="cb31-7"><a href="figure-5.html#cb31-7" tabindex="-1"></a><span class="co"># 1.1 load TCGA CGI-DMR: HM450K_CGI_DMR </span></span>
+<span id="cb31-8"><a href="figure-5.html#cb31-8" tabindex="-1"></a><span class="fu">load</span>(<span class="st">&quot;TCGA_DMR/HM450K_TCGA_CGI_DMR_GR.RData&quot;</span>)</span>
+<span id="cb31-9"><a href="figure-5.html#cb31-9" tabindex="-1"></a><span class="co"># 1.2 load TCGA DEGs: TCGA_DE_res </span></span>
+<span id="cb31-10"><a href="figure-5.html#cb31-10" tabindex="-1"></a><span class="fu">load</span>(<span class="st">&quot;TCGA/Exp/res/TCGA_DE_res.RData&quot;</span>)</span>
+<span id="cb31-11"><a href="figure-5.html#cb31-11" tabindex="-1"></a><span class="co"># 1.3 Load MHB</span></span>
+<span id="cb31-12"><a href="figure-5.html#cb31-12" tabindex="-1"></a>mhb_path<span class="ot">=</span><span class="st">&quot;Data/Processed_data/MHB/tumor/&quot;</span></span>
+<span id="cb31-13"><a href="figure-5.html#cb31-13" tabindex="-1"></a>mhb <span class="ot">&lt;-</span> <span class="fu">list.files</span>(mhb_path)</span>
+<span id="cb31-14"><a href="figure-5.html#cb31-14" tabindex="-1"></a>MHB.GR <span class="ot">&lt;-</span> <span class="fu">lapply</span>(mhb,<span class="cf">function</span>(x){<span class="fu">toGRanges</span>(<span class="fu">paste0</span>(mhb_path,x))}) </span>
+<span id="cb31-15"><a href="figure-5.html#cb31-15" tabindex="-1"></a><span class="fu">names</span>(MHB.GR) <span class="ot">&lt;-</span> <span class="fu">str_split_i</span>(mhb,<span class="st">&quot;</span><span class="sc">\\</span><span class="st">.&quot;</span>,<span class="at">i=</span><span class="dv">1</span>) <span class="sc">%&gt;%</span> <span class="fu">str_split_i</span>(<span class="st">&quot;_&quot;</span>,<span class="at">i=</span><span class="dv">2</span>)</span>
+<span id="cb31-16"><a href="figure-5.html#cb31-16" tabindex="-1"></a><span class="co"># 1.4 rGREAT annotation</span></span>
+<span id="cb31-17"><a href="figure-5.html#cb31-17" tabindex="-1"></a>rGREAT_genes <span class="ot">&lt;-</span> <span class="fu">fread</span>(<span class="st">&quot;Data/Processed_data/GREATv4.genes.promoter_UD1000.hg19.bed&quot;</span>)</span>
+<span id="cb31-18"><a href="figure-5.html#cb31-18" tabindex="-1"></a><span class="co"># 2. DMR vs DEGs</span></span>
+<span id="cb31-19"><a href="figure-5.html#cb31-19" tabindex="-1"></a>id.methyl <span class="ot">&lt;-</span> <span class="fu">names</span>(<span class="fu">mcols</span>(HM450K_CGI_DMR)) <span class="sc">%&gt;%</span> <span class="fu">setdiff</span>(<span class="st">&quot;OV&quot;</span>)</span>
+<span id="cb31-20"><a href="figure-5.html#cb31-20" tabindex="-1"></a>DMEG <span class="ot">&lt;-</span> <span class="fu">lapply</span>(id.methyl,<span class="cf">function</span>(x){</span>
+<span id="cb31-21"><a href="figure-5.html#cb31-21" tabindex="-1"></a>        <span class="co"># 1. CGI-DMR</span></span>
+<span id="cb31-22"><a href="figure-5.html#cb31-22" tabindex="-1"></a>        test <span class="ot">&lt;-</span> HM450K_CGI_DMR[,x]</span>
+<span id="cb31-23"><a href="figure-5.html#cb31-23" tabindex="-1"></a>        <span class="fu">colnames</span>(<span class="fu">mcols</span>(test))<span class="ot">&lt;-</span><span class="st">&quot;Type&quot;</span></span>
+<span id="cb31-24"><a href="figure-5.html#cb31-24" tabindex="-1"></a>        DMgene <span class="ot">&lt;-</span> <span class="fu">subset</span>(test) <span class="sc">%&gt;%</span>  <span class="fu">great</span>(<span class="at">cores=</span><span class="dv">10</span>,<span class="st">&quot;msigdb:H&quot;</span>, <span class="st">&quot;GREAT:hg19&quot;</span>) <span class="sc">%&gt;%</span>  <span class="fu">getRegionGeneAssociations</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb31-25"><a href="figure-5.html#cb31-25" tabindex="-1"></a>                         <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span>  <span class="fu">mutate</span>(<span class="at">annotated_genes=</span><span class="fu">lapply</span>(annotated_genes,<span class="cf">function</span>(x){</span>
+<span id="cb31-26"><a href="figure-5.html#cb31-26" tabindex="-1"></a>                         x <span class="sc">%&gt;%</span> <span class="fu">paste</span>(<span class="at">collapse=</span><span class="st">&quot;,&quot;</span>)</span>
+<span id="cb31-27"><a href="figure-5.html#cb31-27" tabindex="-1"></a>                         }) <span class="sc">%&gt;%</span> <span class="fu">do.call</span>(rbind,.) <span class="sc">%&gt;%</span> <span class="fu">as.character</span>(),</span>
+<span id="cb31-28"><a href="figure-5.html#cb31-28" tabindex="-1"></a>                        <span class="at">dist_to_TSS =</span> <span class="fu">lapply</span>(dist_to_TSS,<span class="cf">function</span>(x){</span>
+<span id="cb31-29"><a href="figure-5.html#cb31-29" tabindex="-1"></a>                                            x <span class="sc">%&gt;%</span> <span class="fu">paste</span>(<span class="at">collapse=</span><span class="st">&quot;,&quot;</span>)</span>
+<span id="cb31-30"><a href="figure-5.html#cb31-30" tabindex="-1"></a>                        }) <span class="sc">%&gt;%</span> <span class="fu">do.call</span>(rbind,.) <span class="sc">%&gt;%</span> <span class="fu">as.character</span>()) <span class="sc">%&gt;%</span> </span>
+<span id="cb31-31"><a href="figure-5.html#cb31-31" tabindex="-1"></a>                        <span class="fu">separate_rows</span>(annotated_genes,dist_to_TSS,<span class="at">sep=</span><span class="st">&quot;,&quot;</span>,<span class="at">convert=</span><span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb31-32"><a href="figure-5.html#cb31-32" tabindex="-1"></a>                        <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb31-33"><a href="figure-5.html#cb31-33" tabindex="-1"></a>                       <span class="fu">filter</span>(<span class="fu">abs</span>(dist_to_TSS)<span class="sc">&lt;=</span><span class="dv">1000</span>) <span class="sc">%&gt;%</span>          <span class="do">### restrict to promoter regions TSS+/- 1K</span></span>
+<span id="cb31-34"><a href="figure-5.html#cb31-34" tabindex="-1"></a>                       <span class="fu">group_by</span>(annotated_genes) <span class="sc">%&gt;%</span> </span>
+<span id="cb31-35"><a href="figure-5.html#cb31-35" tabindex="-1"></a>                       <span class="fu">summarise</span>(<span class="at">annotated_genes=</span>annotated_genes,<span class="at">Type=</span><span class="fu">paste0</span>(<span class="fu">unique</span>(Type),<span class="at">collapse=</span><span class="st">&quot;,&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb31-36"><a href="figure-5.html#cb31-36" tabindex="-1"></a>                       <span class="fu">distinct</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_detect</span>(Type,<span class="st">&quot;,&quot;</span>))</span>
+<span id="cb31-37"><a href="figure-5.html#cb31-37" tabindex="-1"></a>        <span class="co"># 2. DEGs</span></span>
+<span id="cb31-38"><a href="figure-5.html#cb31-38" tabindex="-1"></a>        <span class="cf">if</span>(x<span class="sc">==</span><span class="st">&quot;PDAC&quot;</span>){</span>
+<span id="cb31-39"><a href="figure-5.html#cb31-39" tabindex="-1"></a>            Eid <span class="ot">=</span> <span class="st">&quot;PAAD&quot;</span></span>
+<span id="cb31-40"><a href="figure-5.html#cb31-40" tabindex="-1"></a>        }<span class="cf">else</span> {</span>
+<span id="cb31-41"><a href="figure-5.html#cb31-41" tabindex="-1"></a>           Eid <span class="ot">=</span> x</span>
+<span id="cb31-42"><a href="figure-5.html#cb31-42" tabindex="-1"></a>        }</span>
+<span id="cb31-43"><a href="figure-5.html#cb31-43" tabindex="-1"></a>        DEG <span class="ot">&lt;-</span> TCGA_DE_res <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="fu">c</span>(<span class="st">&quot;gene&quot;</span>,Eid)) <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">Type=</span><span class="dv">2</span>) </span>
+<span id="cb31-44"><a href="figure-5.html#cb31-44" tabindex="-1"></a>        <span class="do">#######</span></span>
+<span id="cb31-45"><a href="figure-5.html#cb31-45" tabindex="-1"></a>        <span class="co"># 2 Fisher exact test</span></span>
+<span id="cb31-46"><a href="figure-5.html#cb31-46" tabindex="-1"></a>        <span class="do">## Hypo ~ Up</span></span>
+<span id="cb31-47"><a href="figure-5.html#cb31-47" tabindex="-1"></a>        <span class="co"># Hypo + up</span></span>
+<span id="cb31-48"><a href="figure-5.html#cb31-48" tabindex="-1"></a>        aa1 <span class="ot">&lt;-</span> DMgene <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">==</span><span class="st">&quot;Hypo&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(annotated_genes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="st">&quot;Up&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene))  <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-49"><a href="figure-5.html#cb31-49" tabindex="-1"></a>        <span class="co"># Hypo + NC</span></span>
+<span id="cb31-50"><a href="figure-5.html#cb31-50" tabindex="-1"></a>        bb1 <span class="ot">&lt;-</span> DMgene <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">==</span><span class="st">&quot;Hypo&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(annotated_genes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="st">&quot;NC&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene) )  <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-51"><a href="figure-5.html#cb31-51" tabindex="-1"></a>        <span class="co"># NC + Up </span></span>
+<span id="cb31-52"><a href="figure-5.html#cb31-52" tabindex="-1"></a>        cc1 <span class="ot">&lt;-</span> DMgene <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">==</span><span class="st">&quot;NC&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(annotated_genes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="st">&quot;Up&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene) )  <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-53"><a href="figure-5.html#cb31-53" tabindex="-1"></a>        <span class="co"># NC + NC</span></span>
+<span id="cb31-54"><a href="figure-5.html#cb31-54" tabindex="-1"></a>        dd1 <span class="ot">&lt;-</span> DMgene <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">==</span><span class="st">&quot;NC&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(annotated_genes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="st">&quot;NC&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene) )  <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-55"><a href="figure-5.html#cb31-55" tabindex="-1"></a>        <span class="do">## Hyper ~ DN</span></span>
+<span id="cb31-56"><a href="figure-5.html#cb31-56" tabindex="-1"></a>        <span class="co"># Hyper + DN</span></span>
+<span id="cb31-57"><a href="figure-5.html#cb31-57" tabindex="-1"></a>        aa2 <span class="ot">&lt;-</span> DMgene <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">==</span><span class="st">&quot;Hyper&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(annotated_genes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="st">&quot;Down&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene))  <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-58"><a href="figure-5.html#cb31-58" tabindex="-1"></a>        <span class="co"># Hyper + NC</span></span>
+<span id="cb31-59"><a href="figure-5.html#cb31-59" tabindex="-1"></a>        bb2 <span class="ot">&lt;-</span> DMgene <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">==</span><span class="st">&quot;Hyper&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(annotated_genes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="st">&quot;NC&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene) )  <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-60"><a href="figure-5.html#cb31-60" tabindex="-1"></a>        <span class="co"># NC + DN</span></span>
+<span id="cb31-61"><a href="figure-5.html#cb31-61" tabindex="-1"></a>        cc2 <span class="ot">&lt;-</span> DMgene <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">==</span><span class="st">&quot;NC&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(annotated_genes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="st">&quot;Down&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene) )  <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-62"><a href="figure-5.html#cb31-62" tabindex="-1"></a>        <span class="co"># NC + NC</span></span>
+<span id="cb31-63"><a href="figure-5.html#cb31-63" tabindex="-1"></a>        dd2 <span class="ot">&lt;-</span> DMgene <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">==</span><span class="st">&quot;NC&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(annotated_genes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>( DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="st">&quot;NC&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene))  <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-64"><a href="figure-5.html#cb31-64" tabindex="-1"></a>        <span class="do">## Hyper ~ UP</span></span>
+<span id="cb31-65"><a href="figure-5.html#cb31-65" tabindex="-1"></a>        <span class="co"># Hyper + UP</span></span>
+<span id="cb31-66"><a href="figure-5.html#cb31-66" tabindex="-1"></a>        aa3 <span class="ot">&lt;-</span> DMgene <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">==</span><span class="st">&quot;Hyper&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(annotated_genes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="st">&quot;Up&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene))  <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-67"><a href="figure-5.html#cb31-67" tabindex="-1"></a>        <span class="co"># Hyper + NC</span></span>
+<span id="cb31-68"><a href="figure-5.html#cb31-68" tabindex="-1"></a>        bb3 <span class="ot">&lt;-</span> DMgene <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">==</span><span class="st">&quot;Hyper&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(annotated_genes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="st">&quot;NC&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene) )  <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-69"><a href="figure-5.html#cb31-69" tabindex="-1"></a>        <span class="co"># NC + UP</span></span>
+<span id="cb31-70"><a href="figure-5.html#cb31-70" tabindex="-1"></a>        cc3 <span class="ot">&lt;-</span> DMgene <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">==</span><span class="st">&quot;NC&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(annotated_genes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="st">&quot;Up&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene) )  <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-71"><a href="figure-5.html#cb31-71" tabindex="-1"></a>        <span class="co"># NC + NC</span></span>
+<span id="cb31-72"><a href="figure-5.html#cb31-72" tabindex="-1"></a>        dd3 <span class="ot">&lt;-</span> DMgene <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">==</span><span class="st">&quot;NC&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(annotated_genes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>( DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="st">&quot;NC&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene))  <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-73"><a href="figure-5.html#cb31-73" tabindex="-1"></a>        <span class="do">## Hypo ~ DN</span></span>
+<span id="cb31-74"><a href="figure-5.html#cb31-74" tabindex="-1"></a>        <span class="co"># Hypo + DN</span></span>
+<span id="cb31-75"><a href="figure-5.html#cb31-75" tabindex="-1"></a>        aa4 <span class="ot">&lt;-</span> DMgene <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">==</span><span class="st">&quot;Hypo&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(annotated_genes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="st">&quot;Down&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene))  <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-76"><a href="figure-5.html#cb31-76" tabindex="-1"></a>        <span class="co"># Hyper + NC</span></span>
+<span id="cb31-77"><a href="figure-5.html#cb31-77" tabindex="-1"></a>        bb4 <span class="ot">&lt;-</span> DMgene <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">==</span><span class="st">&quot;Hypo&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(annotated_genes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="st">&quot;NC&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene) )  <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-78"><a href="figure-5.html#cb31-78" tabindex="-1"></a>        <span class="co"># NC + DN</span></span>
+<span id="cb31-79"><a href="figure-5.html#cb31-79" tabindex="-1"></a>        cc4 <span class="ot">&lt;-</span> DMgene <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">==</span><span class="st">&quot;NC&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(annotated_genes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="st">&quot;Down&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene) )  <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-80"><a href="figure-5.html#cb31-80" tabindex="-1"></a>        <span class="co"># NC + NC</span></span>
+<span id="cb31-81"><a href="figure-5.html#cb31-81" tabindex="-1"></a>        dd4 <span class="ot">&lt;-</span> DMgene <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">==</span><span class="st">&quot;NC&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(annotated_genes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>( DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="st">&quot;NC&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene))  <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-82"><a href="figure-5.html#cb31-82" tabindex="-1"></a>        </span>
+<span id="cb31-83"><a href="figure-5.html#cb31-83" tabindex="-1"></a>        <span class="co"># res</span></span>
+<span id="cb31-84"><a href="figure-5.html#cb31-84" tabindex="-1"></a>        Hypo_Up <span class="ot">&lt;-</span> <span class="fu">fisher.test</span>(<span class="fu">matrix</span>(<span class="fu">c</span>(aa1,bb1,cc1,dd1),<span class="at">ncol=</span><span class="dv">2</span>,<span class="at">nrow=</span><span class="dv">2</span>)) <span class="sc">%&gt;%</span> broom<span class="sc">::</span><span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">A=</span>aa1,<span class="at">B=</span>bb1,<span class="at">C=</span>cc1,<span class="at">D=</span>dd1,<span class="at">Type=</span><span class="st">&quot;Hypo_Up&quot;</span>)</span>
+<span id="cb31-85"><a href="figure-5.html#cb31-85" tabindex="-1"></a>        Hypo_DN<span class="ot">&lt;-</span> <span class="fu">fisher.test</span>(<span class="fu">matrix</span>(<span class="fu">c</span>(aa4,bb4,cc4,dd4),<span class="at">ncol=</span><span class="dv">2</span>,<span class="at">nrow=</span><span class="dv">2</span>)) <span class="sc">%&gt;%</span> broom<span class="sc">::</span><span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">A=</span>aa4,<span class="at">B=</span>bb4,<span class="at">C=</span>cc4,<span class="at">D=</span>dd4,<span class="at">Type=</span><span class="st">&quot;Hypo_DN&quot;</span>)</span>
+<span id="cb31-86"><a href="figure-5.html#cb31-86" tabindex="-1"></a>        Hyper_DN <span class="ot">&lt;-</span> <span class="fu">fisher.test</span>(<span class="fu">matrix</span>(<span class="fu">c</span>(aa2,bb2,cc2,dd2),<span class="at">ncol=</span><span class="dv">2</span>,<span class="at">nrow=</span><span class="dv">2</span>)) <span class="sc">%&gt;%</span> broom<span class="sc">::</span><span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">A=</span>aa2,<span class="at">B=</span>bb2,<span class="at">C=</span>cc2,<span class="at">D=</span>dd2,<span class="at">Type=</span><span class="st">&quot;Hyper_DN&quot;</span>)</span>
+<span id="cb31-87"><a href="figure-5.html#cb31-87" tabindex="-1"></a>        Hyper_UP <span class="ot">&lt;-</span> <span class="fu">fisher.test</span>(<span class="fu">matrix</span>(<span class="fu">c</span>(aa3,bb3,cc3,dd3),<span class="at">ncol=</span><span class="dv">2</span>,<span class="at">nrow=</span><span class="dv">2</span>)) <span class="sc">%&gt;%</span> broom<span class="sc">::</span><span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">A=</span>aa3,<span class="at">B=</span>bb3,<span class="at">C=</span>cc3,<span class="at">D=</span>dd3,<span class="at">Type=</span><span class="st">&quot;Hyper_UP&quot;</span>)</span>
+<span id="cb31-88"><a href="figure-5.html#cb31-88" tabindex="-1"></a></span>
+<span id="cb31-89"><a href="figure-5.html#cb31-89" tabindex="-1"></a>        res <span class="ot">&lt;-</span> <span class="fu">rbind</span>(Hypo_Up,Hypo_DN,Hyper_DN,Hyper_UP)</span>
+<span id="cb31-90"><a href="figure-5.html#cb31-90" tabindex="-1"></a>})</span>
+<span id="cb31-91"><a href="figure-5.html#cb31-91" tabindex="-1"></a><span class="fu">names</span>(DMEG) <span class="ot">&lt;-</span> id.methyl</span>
+<span id="cb31-92"><a href="figure-5.html#cb31-92" tabindex="-1"></a>res_DMEG <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind,DMEG) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">tissue=</span><span class="fu">rep</span>(id.methyl,<span class="at">each=</span><span class="dv">5</span>),<span class="at">logFDR=</span><span class="sc">-</span><span class="fu">log10</span>(<span class="fu">p.adjust</span>(p.value,<span class="at">method=</span><span class="st">&quot;fdr&quot;</span>,<span class="fu">length</span>(p.value))))</span>
+<span id="cb31-93"><a href="figure-5.html#cb31-93" tabindex="-1"></a><span class="co"># 3. MHB (remove DMR) vs DEGs  </span></span>
+<span id="cb31-94"><a href="figure-5.html#cb31-94" tabindex="-1"></a>id.com <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;BRCA&quot;</span>,<span class="st">&quot;COAD&quot;</span>,<span class="st">&quot;ESCA&quot;</span>,<span class="st">&quot;COADREAD&quot;</span>,<span class="st">&quot;HNSC&quot;</span>,<span class="st">&quot;LIHC&quot;</span>,<span class="st">&quot;LUAD&quot;</span>,<span class="st">&quot;LUSC&quot;</span>,<span class="st">&quot;STES&quot;</span>,<span class="st">&quot;THCA&quot;</span>,<span class="st">&quot;PDAC&quot;</span>,<span class="st">&quot;CESC&quot;</span>)</span>
+<span id="cb31-95"><a href="figure-5.html#cb31-95" tabindex="-1"></a>nonDM <span class="ot">&lt;-</span> <span class="fu">lapply</span>(id.com,<span class="cf">function</span>(x){</span>
+<span id="cb31-96"><a href="figure-5.html#cb31-96" tabindex="-1"></a>        <span class="co"># 1.DMR</span></span>
+<span id="cb31-97"><a href="figure-5.html#cb31-97" tabindex="-1"></a>        test <span class="ot">&lt;-</span> HM450K_CGI_DMR[,x]</span>
+<span id="cb31-98"><a href="figure-5.html#cb31-98" tabindex="-1"></a>        <span class="fu">colnames</span>(<span class="fu">mcols</span>(test))<span class="ot">&lt;-</span><span class="st">&quot;Type&quot;</span></span>
+<span id="cb31-99"><a href="figure-5.html#cb31-99" tabindex="-1"></a>        DMgene <span class="ot">&lt;-</span> <span class="fu">subset</span>(test) <span class="sc">%&gt;%</span>  <span class="fu">great</span>(<span class="at">cores=</span><span class="dv">10</span>,<span class="st">&quot;msigdb:H&quot;</span>, <span class="st">&quot;GREAT:hg19&quot;</span>) <span class="sc">%&gt;%</span>  <span class="fu">getRegionGeneAssociations</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb31-100"><a href="figure-5.html#cb31-100" tabindex="-1"></a>                         <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span>  <span class="fu">mutate</span>(<span class="at">annotated_genes=</span><span class="fu">lapply</span>(annotated_genes,<span class="cf">function</span>(x){</span>
+<span id="cb31-101"><a href="figure-5.html#cb31-101" tabindex="-1"></a>                         x <span class="sc">%&gt;%</span> <span class="fu">paste</span>(<span class="at">collapse=</span><span class="st">&quot;,&quot;</span>)</span>
+<span id="cb31-102"><a href="figure-5.html#cb31-102" tabindex="-1"></a>                         }) <span class="sc">%&gt;%</span> <span class="fu">do.call</span>(rbind,.) <span class="sc">%&gt;%</span> <span class="fu">as.character</span>(),</span>
+<span id="cb31-103"><a href="figure-5.html#cb31-103" tabindex="-1"></a>                        <span class="at">dist_to_TSS =</span> <span class="fu">lapply</span>(dist_to_TSS,<span class="cf">function</span>(x){</span>
+<span id="cb31-104"><a href="figure-5.html#cb31-104" tabindex="-1"></a>                                            x <span class="sc">%&gt;%</span> <span class="fu">paste</span>(<span class="at">collapse=</span><span class="st">&quot;,&quot;</span>)</span>
+<span id="cb31-105"><a href="figure-5.html#cb31-105" tabindex="-1"></a>                        }) <span class="sc">%&gt;%</span> <span class="fu">do.call</span>(rbind,.) <span class="sc">%&gt;%</span> <span class="fu">as.character</span>()) <span class="sc">%&gt;%</span> </span>
+<span id="cb31-106"><a href="figure-5.html#cb31-106" tabindex="-1"></a>                        <span class="fu">separate_rows</span>(annotated_genes,dist_to_TSS,<span class="at">sep=</span><span class="st">&quot;,&quot;</span>,<span class="at">convert=</span><span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb31-107"><a href="figure-5.html#cb31-107" tabindex="-1"></a>                        <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb31-108"><a href="figure-5.html#cb31-108" tabindex="-1"></a>                        <span class="fu">filter</span>(<span class="fu">abs</span>(dist_to_TSS)<span class="sc">&lt;=</span><span class="dv">1000</span>) <span class="sc">%&gt;%</span>     <span class="do">### restrict to promoter regions TSS+/- 1K</span></span>
+<span id="cb31-109"><a href="figure-5.html#cb31-109" tabindex="-1"></a>                        <span class="fu">group_by</span>(annotated_genes) <span class="sc">%&gt;%</span> </span>
+<span id="cb31-110"><a href="figure-5.html#cb31-110" tabindex="-1"></a>                       <span class="fu">summarise</span>(<span class="at">annotated_genes=</span>annotated_genes,<span class="at">Type=</span><span class="fu">paste0</span>(<span class="fu">unique</span>(Type),<span class="at">collapse=</span><span class="st">&quot;,&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb31-111"><a href="figure-5.html#cb31-111" tabindex="-1"></a>                       <span class="fu">distinct</span>() <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_detect</span>(Type,<span class="st">&quot;,&quot;</span>))     </span>
+<span id="cb31-112"><a href="figure-5.html#cb31-112" tabindex="-1"></a>        NoDMG <span class="ot">&lt;-</span> DMgene <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">==</span> <span class="st">&quot;NC&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(annotated_genes)</span>
+<span id="cb31-113"><a href="figure-5.html#cb31-113" tabindex="-1"></a>        <span class="co"># 2.DEG</span></span>
+<span id="cb31-114"><a href="figure-5.html#cb31-114" tabindex="-1"></a>        <span class="cf">if</span>(x<span class="sc">==</span><span class="st">&quot;PDAC&quot;</span>){</span>
+<span id="cb31-115"><a href="figure-5.html#cb31-115" tabindex="-1"></a>            Eid <span class="ot">=</span> <span class="st">&quot;PAAD&quot;</span></span>
+<span id="cb31-116"><a href="figure-5.html#cb31-116" tabindex="-1"></a>        }<span class="cf">else</span> {</span>
+<span id="cb31-117"><a href="figure-5.html#cb31-117" tabindex="-1"></a>           Eid <span class="ot">=</span> x</span>
+<span id="cb31-118"><a href="figure-5.html#cb31-118" tabindex="-1"></a>        }</span>
+<span id="cb31-119"><a href="figure-5.html#cb31-119" tabindex="-1"></a>        DEG <span class="ot">&lt;-</span> TCGA_DE_res <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="fu">c</span>(<span class="st">&quot;gene&quot;</span>,Eid)) <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">Type=</span><span class="dv">2</span>) <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Up&quot;</span>,<span class="st">&quot;Down&quot;</span>))</span>
+<span id="cb31-120"><a href="figure-5.html#cb31-120" tabindex="-1"></a>        Exp_NC <span class="ot">&lt;-</span> TCGA_DE_res <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="fu">c</span>(<span class="st">&quot;gene&quot;</span>,Eid)) <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">Type=</span><span class="dv">2</span>) <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="st">&quot;NC&quot;</span>)</span>
+<span id="cb31-121"><a href="figure-5.html#cb31-121" tabindex="-1"></a>        <span class="co"># Non DMR + DEG</span></span>
+<span id="cb31-122"><a href="figure-5.html#cb31-122" tabindex="-1"></a>        nonDM.DEG <span class="ot">&lt;-</span> DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(gene <span class="sc">%in%</span> NoDMG)</span>
+<span id="cb31-123"><a href="figure-5.html#cb31-123" tabindex="-1"></a>        <span class="co"># 3. MHB</span></span>
+<span id="cb31-124"><a href="figure-5.html#cb31-124" tabindex="-1"></a>        <span class="cf">if</span>(x<span class="sc">==</span><span class="st">&quot;PDAC&quot;</span>){</span>
+<span id="cb31-125"><a href="figure-5.html#cb31-125" tabindex="-1"></a>            MHBid <span class="ot">=</span> <span class="st">&quot;PACA&quot;</span></span>
+<span id="cb31-126"><a href="figure-5.html#cb31-126" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span>(x<span class="sc">==</span><span class="st">&quot;COADREAD&quot;</span>) {</span>
+<span id="cb31-127"><a href="figure-5.html#cb31-127" tabindex="-1"></a>            MHBid <span class="ot">=</span> <span class="st">&quot;COAD&quot;</span></span>
+<span id="cb31-128"><a href="figure-5.html#cb31-128" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span>(x<span class="sc">==</span><span class="st">&quot;LUSC&quot;</span> <span class="sc">|</span> x <span class="sc">==</span><span class="st">&quot;LUAD&quot;</span>){</span>
+<span id="cb31-129"><a href="figure-5.html#cb31-129" tabindex="-1"></a>            MHBid <span class="ot">=</span> <span class="st">&quot;NSCLC&quot;</span></span>
+<span id="cb31-130"><a href="figure-5.html#cb31-130" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span> (x<span class="sc">==</span><span class="st">&quot;STES&quot;</span>) {</span>
+<span id="cb31-131"><a href="figure-5.html#cb31-131" tabindex="-1"></a>            MHBid <span class="ot">=</span> <span class="st">&quot;STAD&quot;</span></span>
+<span id="cb31-132"><a href="figure-5.html#cb31-132" tabindex="-1"></a>        }<span class="cf">else</span>{</span>
+<span id="cb31-133"><a href="figure-5.html#cb31-133" tabindex="-1"></a>            MHBid <span class="ot">=</span> x</span>
+<span id="cb31-134"><a href="figure-5.html#cb31-134" tabindex="-1"></a>        }</span>
+<span id="cb31-135"><a href="figure-5.html#cb31-135" tabindex="-1"></a>        data <span class="ot">&lt;-</span> MHB.GR[[MHBid]]</span>
+<span id="cb31-136"><a href="figure-5.html#cb31-136" tabindex="-1"></a>        <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(data)){</span>
+<span id="cb31-137"><a href="figure-5.html#cb31-137" tabindex="-1"></a>            MHGenes <span class="ot">&lt;-</span>  data <span class="sc">%&gt;%</span> <span class="fu">great</span>(<span class="at">cores=</span><span class="dv">10</span>,<span class="st">&quot;msigdb:H&quot;</span>, <span class="st">&quot;GREAT:hg19&quot;</span>) <span class="sc">%&gt;%</span>  <span class="fu">getRegionGeneAssociations</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb31-138"><a href="figure-5.html#cb31-138" tabindex="-1"></a>                         <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span>  <span class="fu">mutate</span>(<span class="at">annotated_genes=</span><span class="fu">lapply</span>(annotated_genes,<span class="cf">function</span>(x){</span>
+<span id="cb31-139"><a href="figure-5.html#cb31-139" tabindex="-1"></a>                         x <span class="sc">%&gt;%</span> <span class="fu">paste</span>(<span class="at">collapse=</span><span class="st">&quot;,&quot;</span>)</span>
+<span id="cb31-140"><a href="figure-5.html#cb31-140" tabindex="-1"></a>                         }) <span class="sc">%&gt;%</span> <span class="fu">do.call</span>(rbind,.) <span class="sc">%&gt;%</span> <span class="fu">as.character</span>(),</span>
+<span id="cb31-141"><a href="figure-5.html#cb31-141" tabindex="-1"></a>                        <span class="at">dist_to_TSS =</span> <span class="fu">lapply</span>(dist_to_TSS,<span class="cf">function</span>(x){</span>
+<span id="cb31-142"><a href="figure-5.html#cb31-142" tabindex="-1"></a>                                            x <span class="sc">%&gt;%</span> <span class="fu">paste</span>(<span class="at">collapse=</span><span class="st">&quot;,&quot;</span>)</span>
+<span id="cb31-143"><a href="figure-5.html#cb31-143" tabindex="-1"></a>                        }) <span class="sc">%&gt;%</span> <span class="fu">do.call</span>(rbind,.) <span class="sc">%&gt;%</span> <span class="fu">as.character</span>()) <span class="sc">%&gt;%</span> </span>
+<span id="cb31-144"><a href="figure-5.html#cb31-144" tabindex="-1"></a>                        <span class="fu">separate_rows</span>(annotated_genes,dist_to_TSS,<span class="at">sep=</span><span class="st">&quot;,&quot;</span>,<span class="at">convert=</span><span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb31-145"><a href="figure-5.html#cb31-145" tabindex="-1"></a>                        <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb31-146"><a href="figure-5.html#cb31-146" tabindex="-1"></a>                        <span class="fu">pull</span>(annotated_genes) <span class="sc">%&gt;%</span> <span class="fu">unique</span>()</span>
+<span id="cb31-147"><a href="figure-5.html#cb31-147" tabindex="-1"></a>        <span class="co"># fisher test  in NonDMR regions</span></span>
+<span id="cb31-148"><a href="figure-5.html#cb31-148" tabindex="-1"></a>        <span class="co"># MHB vs DEGs</span></span>
+<span id="cb31-149"><a href="figure-5.html#cb31-149" tabindex="-1"></a>        aa <span class="ot">&lt;-</span>  <span class="fu">intersect</span>(MHGenes,nonDM.DEG <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene)) <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-150"><a href="figure-5.html#cb31-150" tabindex="-1"></a>        bb <span class="ot">&lt;-</span>  <span class="fu">intersect</span>(MHGenes,NoDMG) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(Exp_NC <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene)) <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-151"><a href="figure-5.html#cb31-151" tabindex="-1"></a>        cc <span class="ot">&lt;-</span>  <span class="fu">setdiff</span>(NoDMG,MHGenes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(DEG <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene)) <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-152"><a href="figure-5.html#cb31-152" tabindex="-1"></a>        dd <span class="ot">&lt;-</span>  <span class="fu">setdiff</span>(NoDMG,MHGenes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(Exp_NC <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene)) <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-153"><a href="figure-5.html#cb31-153" tabindex="-1"></a>        <span class="do">##genes</span></span>
+<span id="cb31-154"><a href="figure-5.html#cb31-154" tabindex="-1"></a>        res <span class="ot">&lt;-</span> <span class="fu">intersect</span>(MHGenes,nonDM.DEG <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene))</span>
+<span id="cb31-155"><a href="figure-5.html#cb31-155" tabindex="-1"></a>        </span>
+<span id="cb31-156"><a href="figure-5.html#cb31-156" tabindex="-1"></a>        <span class="do">##MHB vs Up</span></span>
+<span id="cb31-157"><a href="figure-5.html#cb31-157" tabindex="-1"></a>        aa1 <span class="ot">&lt;-</span>  nonDM.DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(gene <span class="sc">%in%</span> MHGenes,Type<span class="sc">==</span><span class="st">&quot;Up&quot;</span>)  <span class="sc">%&gt;%</span> <span class="fu">nrow</span>()</span>
+<span id="cb31-158"><a href="figure-5.html#cb31-158" tabindex="-1"></a>        bb1 <span class="ot">&lt;-</span> <span class="fu">intersect</span>(MHGenes,NoDMG) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(Exp_NC <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene)) <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-159"><a href="figure-5.html#cb31-159" tabindex="-1"></a>        cc1<span class="ot">&lt;-</span>  nonDM.DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="sc">!</span>(gene <span class="sc">%in%</span> MHGenes),Type<span class="sc">==</span><span class="st">&quot;Up&quot;</span>)  <span class="sc">%&gt;%</span> <span class="fu">nrow</span>()</span>
+<span id="cb31-160"><a href="figure-5.html#cb31-160" tabindex="-1"></a>        dd1 <span class="ot">&lt;-</span>  <span class="fu">setdiff</span>(NoDMG,MHGenes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(Exp_NC <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene)) <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-161"><a href="figure-5.html#cb31-161" tabindex="-1"></a>        <span class="do">##genes</span></span>
+<span id="cb31-162"><a href="figure-5.html#cb31-162" tabindex="-1"></a>        res1 <span class="ot">&lt;-</span>  nonDM.DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(gene <span class="sc">%in%</span> MHGenes,Type<span class="sc">==</span><span class="st">&quot;Up&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene)</span>
+<span id="cb31-163"><a href="figure-5.html#cb31-163" tabindex="-1"></a></span>
+<span id="cb31-164"><a href="figure-5.html#cb31-164" tabindex="-1"></a>        <span class="co"># MHB vs DN</span></span>
+<span id="cb31-165"><a href="figure-5.html#cb31-165" tabindex="-1"></a>        aa2 <span class="ot">&lt;-</span>  nonDM.DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(gene <span class="sc">%in%</span> MHGenes,Type<span class="sc">==</span><span class="st">&quot;Down&quot;</span>)  <span class="sc">%&gt;%</span> <span class="fu">nrow</span>()</span>
+<span id="cb31-166"><a href="figure-5.html#cb31-166" tabindex="-1"></a>        bb2 <span class="ot">&lt;-</span>  <span class="fu">intersect</span>(MHGenes,NoDMG) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(Exp_NC <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene)) <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-167"><a href="figure-5.html#cb31-167" tabindex="-1"></a>        cc2 <span class="ot">&lt;-</span>  nonDM.DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="sc">!</span>(gene <span class="sc">%in%</span> MHGenes),Type<span class="sc">==</span><span class="st">&quot;Down&quot;</span>)  <span class="sc">%&gt;%</span> <span class="fu">nrow</span>()</span>
+<span id="cb31-168"><a href="figure-5.html#cb31-168" tabindex="-1"></a>        dd2 <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(NoDMG,MHGenes) <span class="sc">%&gt;%</span> <span class="fu">intersect</span>(Exp_NC <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene)) <span class="sc">%&gt;%</span> <span class="fu">length</span>()</span>
+<span id="cb31-169"><a href="figure-5.html#cb31-169" tabindex="-1"></a>        <span class="do">##genes</span></span>
+<span id="cb31-170"><a href="figure-5.html#cb31-170" tabindex="-1"></a>        res2 <span class="ot">&lt;-</span> nonDM.DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(gene <span class="sc">%in%</span> MHGenes,Type<span class="sc">==</span><span class="st">&quot;Down&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene)</span>
+<span id="cb31-171"><a href="figure-5.html#cb31-171" tabindex="-1"></a></span>
+<span id="cb31-172"><a href="figure-5.html#cb31-172" tabindex="-1"></a>        <span class="co"># UP vs DN  (MHB genes)</span></span>
+<span id="cb31-173"><a href="figure-5.html#cb31-173" tabindex="-1"></a>        aa3 <span class="ot">&lt;-</span>  nonDM.DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(gene <span class="sc">%in%</span> MHGenes,Type<span class="sc">==</span><span class="st">&quot;Up&quot;</span>)  <span class="sc">%&gt;%</span> <span class="fu">nrow</span>()</span>
+<span id="cb31-174"><a href="figure-5.html#cb31-174" tabindex="-1"></a>        bb3 <span class="ot">&lt;-</span>  nonDM.DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(gene <span class="sc">%in%</span> MHGenes,Type<span class="sc">==</span><span class="st">&quot;Down&quot;</span>)  <span class="sc">%&gt;%</span> <span class="fu">nrow</span>()</span>
+<span id="cb31-175"><a href="figure-5.html#cb31-175" tabindex="-1"></a>        cc3 <span class="ot">&lt;-</span>  nonDM.DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="sc">!</span>(gene <span class="sc">%in%</span> MHGenes),Type<span class="sc">==</span><span class="st">&quot;Up&quot;</span>)  <span class="sc">%&gt;%</span> <span class="fu">nrow</span>()</span>
+<span id="cb31-176"><a href="figure-5.html#cb31-176" tabindex="-1"></a>        dd3 <span class="ot">&lt;-</span> nonDM.DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="sc">!</span>(gene <span class="sc">%in%</span> MHGenes),Type<span class="sc">==</span><span class="st">&quot;Down&quot;</span>)  <span class="sc">%&gt;%</span> <span class="fu">nrow</span>()</span>
+<span id="cb31-177"><a href="figure-5.html#cb31-177" tabindex="-1"></a>        <span class="co"># genes</span></span>
+<span id="cb31-178"><a href="figure-5.html#cb31-178" tabindex="-1"></a>        res3 <span class="ot">&lt;-</span> nonDM.DEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(gene <span class="sc">%in%</span> MHGenes,Type<span class="sc">==</span><span class="st">&quot;Down&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(gene)</span>
+<span id="cb31-179"><a href="figure-5.html#cb31-179" tabindex="-1"></a></span>
+<span id="cb31-180"><a href="figure-5.html#cb31-180" tabindex="-1"></a>        signif1 <span class="ot">&lt;-</span> <span class="fu">fisher.test</span>(<span class="fu">matrix</span>(<span class="fu">c</span>(aa,bb,cc,dd),<span class="at">ncol=</span><span class="dv">2</span>,<span class="at">nrow=</span><span class="dv">2</span>)) <span class="sc">%&gt;%</span> broom<span class="sc">::</span><span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">A=</span>aa,<span class="at">B=</span>bb,<span class="at">C=</span>cc,<span class="at">D=</span>dd,<span class="at">Type=</span><span class="st">&quot;NonDMR.MHB.DEG&quot;</span>,<span class="at">NonDMR.MHB.DEG=</span> <span class="fu">paste0</span>(res,<span class="at">collapse=</span><span class="st">&quot;,&quot;</span>))</span>
+<span id="cb31-181"><a href="figure-5.html#cb31-181" tabindex="-1"></a>        signif2 <span class="ot">&lt;-</span> <span class="fu">fisher.test</span>(<span class="fu">matrix</span>(<span class="fu">c</span>(aa1,bb1,cc1,dd1),<span class="at">ncol=</span><span class="dv">2</span>,<span class="at">nrow=</span><span class="dv">2</span>)) <span class="sc">%&gt;%</span> broom<span class="sc">::</span><span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">A=</span>aa1,<span class="at">B=</span>bb1,<span class="at">C=</span>cc1,<span class="at">D=</span>dd1,<span class="at">Type=</span><span class="st">&quot;NonDMR.MHB.UP&quot;</span>,<span class="at">NonDMR.MHB.DEG=</span> <span class="fu">paste0</span>(res1,<span class="at">collapse=</span><span class="st">&quot;,&quot;</span>))</span>
+<span id="cb31-182"><a href="figure-5.html#cb31-182" tabindex="-1"></a>        signif3 <span class="ot">&lt;-</span> <span class="fu">fisher.test</span>(<span class="fu">matrix</span>(<span class="fu">c</span>(aa2,bb2,cc2,dd2),<span class="at">ncol=</span><span class="dv">2</span>,<span class="at">nrow=</span><span class="dv">2</span>)) <span class="sc">%&gt;%</span> broom<span class="sc">::</span><span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">A=</span>aa2,<span class="at">B=</span>bb2,<span class="at">C=</span>cc2,<span class="at">D=</span>dd2,<span class="at">Type=</span><span class="st">&quot;NonDMR.MHB.DN&quot;</span>,<span class="at">NonDMR.MHB.DEG=</span> <span class="fu">paste0</span>(res2,<span class="at">collapse=</span><span class="st">&quot;,&quot;</span>))</span>
+<span id="cb31-183"><a href="figure-5.html#cb31-183" tabindex="-1"></a>        signif4 <span class="ot">&lt;-</span> <span class="fu">fisher.test</span>(<span class="fu">matrix</span>(<span class="fu">c</span>(bb3,aa3,dd3,cc3),<span class="at">ncol=</span><span class="dv">2</span>,<span class="at">nrow=</span><span class="dv">2</span>)) <span class="sc">%&gt;%</span> broom<span class="sc">::</span><span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">A=</span>aa3,<span class="at">B=</span>bb3,<span class="at">C=</span>cc3,<span class="at">D=</span>dd3,<span class="at">Type=</span><span class="st">&quot;NonDMR.MHB.DN.UP&quot;</span>,<span class="at">NonDMR.MHB.DEG=</span> <span class="fu">paste0</span>(res3,<span class="at">collapse=</span><span class="st">&quot;,&quot;</span>))</span>
+<span id="cb31-184"><a href="figure-5.html#cb31-184" tabindex="-1"></a>        </span>
+<span id="cb31-185"><a href="figure-5.html#cb31-185" tabindex="-1"></a>        <span class="fu">rbind</span>(signif1,signif2,signif3,signif4)</span>
+<span id="cb31-186"><a href="figure-5.html#cb31-186" tabindex="-1"></a>        }</span>
+<span id="cb31-187"><a href="figure-5.html#cb31-187" tabindex="-1"></a>    })</span>
+<span id="cb31-188"><a href="figure-5.html#cb31-188" tabindex="-1"></a><span class="fu">names</span>(nonDM) <span class="ot">&lt;-</span> id.com</span>
+<span id="cb31-189"><a href="figure-5.html#cb31-189" tabindex="-1"></a>res_nonDM <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind,nonDM) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">tissue=</span><span class="fu">rep</span>(id.com,<span class="at">each=</span><span class="dv">4</span>))</span>
+<span id="cb31-190"><a href="figure-5.html#cb31-190" tabindex="-1"></a><span class="co"># PLOT</span></span>
+<span id="cb31-191"><a href="figure-5.html#cb31-191" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb31-192"><a href="figure-5.html#cb31-192" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb31-193"><a href="figure-5.html#cb31-193" tabindex="-1"></a><span class="co"># DMRs vs DEGs</span></span>
+<span id="cb31-194"><a href="figure-5.html#cb31-194" tabindex="-1"></a><span class="fu">pdf</span>(<span class="at">file=</span><span class="st">&quot;Data/Figures/Fig5/Fig5.A.pdf&quot;</span>,<span class="at">width=</span><span class="dv">11</span>,<span class="at">height=</span><span class="dv">8</span>)</span>
+<span id="cb31-195"><a href="figure-5.html#cb31-195" tabindex="-1"></a>res1 <span class="ot">&lt;-</span> res_DMEG <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">!=</span><span class="st">&quot;Total&quot;</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb31-196"><a href="figure-5.html#cb31-196" tabindex="-1"></a>                    <span class="fu">mutate</span>(<span class="at">logFDR =</span> <span class="fu">ifelse</span>(logFDR<span class="sc">&gt;</span><span class="dv">20</span>,<span class="dv">20</span>,logFDR),</span>
+<span id="cb31-197"><a href="figure-5.html#cb31-197" tabindex="-1"></a>                            <span class="at">DM =</span> <span class="fu">str_split_i</span>(Type,<span class="st">&quot;_&quot;</span>,<span class="at">i=</span><span class="dv">1</span>),</span>
+<span id="cb31-198"><a href="figure-5.html#cb31-198" tabindex="-1"></a>                            <span class="at">DE =</span> <span class="fu">toupper</span>(<span class="fu">str_split_i</span>(Type,<span class="st">&quot;_&quot;</span>,<span class="at">i=</span><span class="dv">2</span>))) <span class="sc">%&gt;%</span> </span>
+<span id="cb31-199"><a href="figure-5.html#cb31-199" tabindex="-1"></a>                    <span class="fu">filter</span>(tissue <span class="sc">%in%</span> id.com )</span>
+<span id="cb31-200"><a href="figure-5.html#cb31-200" tabindex="-1"></a>p1<span class="ot">&lt;-</span> <span class="fu">ggplot</span>(res1,</span>
+<span id="cb31-201"><a href="figure-5.html#cb31-201" tabindex="-1"></a>        <span class="fu">aes</span>(<span class="at">x=</span>logFDR,<span class="at">y=</span><span class="fu">fct_rev</span>(tissue),<span class="at">fill=</span>DE)) <span class="sc">+</span> </span>
+<span id="cb31-202"><a href="figure-5.html#cb31-202" tabindex="-1"></a>        <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>, <span class="at">position=</span><span class="fu">position_dodge</span>()) <span class="sc">+</span> </span>
+<span id="cb31-203"><a href="figure-5.html#cb31-203" tabindex="-1"></a>        <span class="fu">scale_fill_brewer</span>(<span class="at">palette=</span><span class="st">&quot;Set1&quot;</span>,<span class="at">direction=</span><span class="sc">-</span><span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb31-204"><a href="figure-5.html#cb31-204" tabindex="-1"></a>        <span class="fu">geom_vline</span>(<span class="fu">aes</span>(<span class="at">xintercept =</span> <span class="fl">1.3</span>),<span class="at">color=</span><span class="st">&quot;gray&quot;</span>,<span class="at">linetype=</span><span class="st">&quot;dashed&quot;</span>, <span class="at">size =</span> <span class="fl">0.5</span>)<span class="sc">+</span></span>
+<span id="cb31-205"><a href="figure-5.html#cb31-205" tabindex="-1"></a>        <span class="fu">xlab</span>(<span class="st">&#39;-log10(FDR)&#39;</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">&quot; &quot;</span>) <span class="sc">+</span> </span>
+<span id="cb31-206"><a href="figure-5.html#cb31-206" tabindex="-1"></a>        <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb31-207"><a href="figure-5.html#cb31-207" tabindex="-1"></a>        <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;top&quot;</span>,</span>
+<span id="cb31-208"><a href="figure-5.html#cb31-208" tabindex="-1"></a>              <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">15</span>,<span class="at">color=</span><span class="st">&quot;black&quot;</span>),</span>
+<span id="cb31-209"><a href="figure-5.html#cb31-209" tabindex="-1"></a>              <span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">20</span>,<span class="at">color=</span><span class="st">&quot;black&quot;</span>),</span>
+<span id="cb31-210"><a href="figure-5.html#cb31-210" tabindex="-1"></a>              <span class="at">axis.ticks.length=</span><span class="fu">unit</span>(<span class="fl">0.2</span>, <span class="st">&quot;cm&quot;</span>) ) <span class="sc">+</span></span>
+<span id="cb31-211"><a href="figure-5.html#cb31-211" tabindex="-1"></a>        <span class="fu">facet_wrap</span>(<span class="sc">~</span>DM,<span class="at">scale=</span><span class="st">&quot;free&quot;</span>) </span>
+<span id="cb31-212"><a href="figure-5.html#cb31-212" tabindex="-1"></a><span class="fu">print</span>(p1)</span>
+<span id="cb31-213"><a href="figure-5.html#cb31-213" tabindex="-1"></a><span class="fu">dev.off</span>()</span>
+<span id="cb31-214"><a href="figure-5.html#cb31-214" tabindex="-1"></a><span class="co"># MHBs(nonDMR) vs DEGs </span></span>
+<span id="cb31-215"><a href="figure-5.html#cb31-215" tabindex="-1"></a><span class="fu">pdf</span>(<span class="at">file=</span><span class="st">&quot;Data/Figures/Fig5/Fig5.B.pdf&quot;</span>,<span class="at">width=</span><span class="dv">11</span>,<span class="at">height=</span><span class="dv">6</span>)</span>
+<span id="cb31-216"><a href="figure-5.html#cb31-216" tabindex="-1"></a>res3 <span class="ot">&lt;-</span> res_nonDM <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Type<span class="sc">==</span><span class="st">&quot;NonDMR.MHB.UP&quot;</span> <span class="sc">|</span> Type<span class="sc">==</span><span class="st">&quot;NonDMR.MHB.DN&quot;</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb31-217"><a href="figure-5.html#cb31-217" tabindex="-1"></a>                    <span class="fu">mutate</span>(<span class="at">logP=</span><span class="sc">-</span><span class="fu">log10</span>(p.value),</span>
+<span id="cb31-218"><a href="figure-5.html#cb31-218" tabindex="-1"></a>                            <span class="at">logFDR=</span><span class="sc">-</span><span class="fu">log10</span>(<span class="fu">p.adjust</span>(p.value,<span class="at">method=</span><span class="st">&quot;fdr&quot;</span>,<span class="fu">length</span>(p.value))),</span>
+<span id="cb31-219"><a href="figure-5.html#cb31-219" tabindex="-1"></a>                            <span class="at">logFDR =</span> <span class="fu">ifelse</span>(logFDR<span class="sc">&gt;</span><span class="dv">8</span>,<span class="dv">8</span>,logFDR),</span>
+<span id="cb31-220"><a href="figure-5.html#cb31-220" tabindex="-1"></a>                            <span class="at">DE =</span> <span class="fu">fct_inorder</span>(<span class="fu">str_split_i</span>(Type,<span class="st">&quot;</span><span class="sc">\\</span><span class="st">.&quot;</span>,<span class="at">i=</span><span class="dv">3</span>)),</span>
+<span id="cb31-221"><a href="figure-5.html#cb31-221" tabindex="-1"></a>                            <span class="at">signif =</span> <span class="fu">ifelse</span>(logP<span class="sc">&gt;</span><span class="fl">1.3</span>,<span class="st">&quot;1&quot;</span>,<span class="st">&quot;0&quot;</span>)) </span>
+<span id="cb31-222"><a href="figure-5.html#cb31-222" tabindex="-1"></a>p3<span class="ot">&lt;-</span> <span class="fu">ggplot</span>(res3,<span class="fu">aes</span>(<span class="at">x=</span>estimate,<span class="at">y=</span><span class="fu">fct_rev</span>(tissue),<span class="at">col=</span>signif)) <span class="sc">+</span> </span>
+<span id="cb31-223"><a href="figure-5.html#cb31-223" tabindex="-1"></a>        <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">size=</span><span class="dv">4</span>,<span class="at">col=</span>signif),<span class="at">shape=</span><span class="dv">18</span>) <span class="sc">+</span></span>
+<span id="cb31-224"><a href="figure-5.html#cb31-224" tabindex="-1"></a>        <span class="fu">geom_errorbarh</span>(<span class="fu">aes</span>(<span class="at">xmax =</span> conf.high, <span class="at">xmin =</span> conf.low), <span class="at">height =</span> <span class="dv">0</span>,<span class="at">size=</span><span class="dv">1</span>)<span class="sc">+</span></span>
+<span id="cb31-225"><a href="figure-5.html#cb31-225" tabindex="-1"></a>        <span class="fu">scale_color_brewer</span>(<span class="at">palette=</span><span class="st">&quot;Set1&quot;</span>,<span class="at">direction=</span><span class="sc">-</span><span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb31-226"><a href="figure-5.html#cb31-226" tabindex="-1"></a>        <span class="fu">geom_vline</span>(<span class="fu">aes</span>(<span class="at">xintercept =</span> <span class="dv">1</span>),<span class="at">color=</span><span class="st">&quot;gray&quot;</span>,<span class="at">linetype=</span><span class="st">&quot;dashed&quot;</span>, <span class="at">size =</span> <span class="fl">0.5</span>)<span class="sc">+</span></span>
+<span id="cb31-227"><a href="figure-5.html#cb31-227" tabindex="-1"></a>        <span class="fu">scale_x_continuous</span>(<span class="at">limits=</span><span class="fu">c</span>(<span class="fl">0.1</span>, <span class="fl">3.2</span>), <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="fl">3.5</span>, <span class="fl">0.5</span>))<span class="sc">+</span></span>
+<span id="cb31-228"><a href="figure-5.html#cb31-228" tabindex="-1"></a>        <span class="fu">xlab</span>(<span class="st">&#39;Odds Ratio&#39;</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">&quot; &quot;</span>) <span class="sc">+</span> </span>
+<span id="cb31-229"><a href="figure-5.html#cb31-229" tabindex="-1"></a>        <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb31-230"><a href="figure-5.html#cb31-230" tabindex="-1"></a>        <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;top&quot;</span>,</span>
+<span id="cb31-231"><a href="figure-5.html#cb31-231" tabindex="-1"></a>              <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">15</span>,<span class="at">color=</span><span class="st">&quot;black&quot;</span>),</span>
+<span id="cb31-232"><a href="figure-5.html#cb31-232" tabindex="-1"></a>              <span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">20</span>,<span class="at">color=</span><span class="st">&quot;black&quot;</span>),</span>
+<span id="cb31-233"><a href="figure-5.html#cb31-233" tabindex="-1"></a>              <span class="at">axis.ticks.length=</span><span class="fu">unit</span>(<span class="fl">0.2</span>, <span class="st">&quot;cm&quot;</span>) ) <span class="sc">+</span></span>
+<span id="cb31-234"><a href="figure-5.html#cb31-234" tabindex="-1"></a>        <span class="fu">facet_wrap</span>(<span class="sc">~</span>DE,<span class="at">scale=</span><span class="st">&quot;free_y&quot;</span>)</span>
+<span id="cb31-235"><a href="figure-5.html#cb31-235" tabindex="-1"></a><span class="fu">print</span>(p3)</span>
+<span id="cb31-236"><a href="figure-5.html#cb31-236" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-60"></span>
+<img src="Data/Figures/Fig5/Fig5.A.png" alt="Fig5.A-B" width="80%" id="fig-unnamed-chunk-60-1" /><img src="Data/Figures/Fig5/Fig5.B.png" alt="Fig5.A-B" width="80%" id="fig-unnamed-chunk-60-2" />
+<p class="caption">
+ 5.1: Fig5.A-B
+</p>
+</div>
+</div>
+<div id="c.-pathway-enrichment-of-mhb-associated-genes-in-pan-cancer" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> (C). Pathway enrichment of MHB-associated genes in pan-cancer<a href="figure-5.html#c.-pathway-enrichment-of-mhb-associated-genes-in-pan-cancer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="figure-5.html#cb32-1" tabindex="-1"></a><span class="co"># Network-based data integration for prioritizing MHB-related genes in pan-cancer</span></span>
+<span id="cb32-2"><a href="figure-5.html#cb32-2" tabindex="-1"></a><span class="co"># Input: Log2FC &amp; FDR of MHB-related genes in pan-cancer between normal and tumor.</span></span>
+<span id="cb32-3"><a href="figure-5.html#cb32-3" tabindex="-1"></a><span class="fu">library</span>(PIL)</span>
+<span id="cb32-4"><a href="figure-5.html#cb32-4" tabindex="-1"></a><span class="fu">library</span>(openxlsx)</span>
+<span id="cb32-5"><a href="figure-5.html#cb32-5" tabindex="-1"></a><span class="co"># specify built-in data placeholder</span></span>
+<span id="cb32-6"><a href="figure-5.html#cb32-6" tabindex="-1"></a>placeholder <span class="ot">&lt;-</span> <span class="st">&quot;http://www.comptransmed.pro/bigdata_ctm&quot;</span></span>
+<span id="cb32-7"><a href="figure-5.html#cb32-7" tabindex="-1"></a><span class="co"># load Preprocessed data and get summary data (2 column) </span></span>
+<span id="cb32-8"><a href="figure-5.html#cb32-8" tabindex="-1"></a><span class="do">## RNA-seq : Pan-cancer</span></span>
+<span id="cb32-9"><a href="figure-5.html#cb32-9" tabindex="-1"></a>RNA.files <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="at">pattern=</span><span class="st">&quot;_FC.txt&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">str_split_i</span>(<span class="st">&quot;_&quot;</span>,<span class="at">i=</span><span class="dv">1</span>)</span>
+<span id="cb32-10"><a href="figure-5.html#cb32-10" tabindex="-1"></a>ls_df_res  <span class="ot">&lt;-</span><span class="fu">lapply</span>(RNA.files,<span class="cf">function</span>(x){</span>
+<span id="cb32-11"><a href="figure-5.html#cb32-11" tabindex="-1"></a>              <span class="fu">fread</span>(<span class="fu">paste0</span>(x,<span class="st">&quot;_MHB_NonDMR_DEGs_FC.txt&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb32-12"><a href="figure-5.html#cb32-12" tabindex="-1"></a>                    <span class="fu">mutate</span>(<span class="at">wFC=</span><span class="sc">-</span><span class="fu">log10</span>(FDR)<span class="sc">*</span><span class="fu">abs</span>(logFC)) <span class="sc">%&gt;%</span> </span>
+<span id="cb32-13"><a href="figure-5.html#cb32-13" tabindex="-1"></a>                    <span class="fu">select</span>(V1,wFC) <span class="sc">%&gt;%</span> <span class="fu">rename</span>(<span class="at">gene=</span>V1) <span class="sc">%&gt;%</span> </span>
+<span id="cb32-14"><a href="figure-5.html#cb32-14" tabindex="-1"></a>                    <span class="fu">arrange</span>(<span class="sc">-</span>wFC) <span class="sc">%&gt;%</span> <span class="fu">as_tibble</span>()</span>
+<span id="cb32-15"><a href="figure-5.html#cb32-15" tabindex="-1"></a>            })</span>
+<span id="cb32-16"><a href="figure-5.html#cb32-16" tabindex="-1"></a><span class="fu">names</span>(ls_df_res) <span class="ot">&lt;-</span> RNA.files</span>
+<span id="cb32-17"><a href="figure-5.html#cb32-17" tabindex="-1"></a><span class="co"># define high-quality protein interaction network: KEGG or STRING</span></span>
+<span id="cb32-18"><a href="figure-5.html#cb32-18" tabindex="-1"></a>  <span class="cf">if</span>(<span class="dv">1</span>){</span>
+<span id="cb32-19"><a href="figure-5.html#cb32-19" tabindex="-1"></a>        network.customised <span class="ot">&lt;-</span> <span class="fu">oDefineNet</span>(<span class="at">network=</span><span class="st">&quot;KEGG&quot;</span>, </span>
+<span id="cb32-20"><a href="figure-5.html#cb32-20" tabindex="-1"></a>                                         <span class="at">placeholder=</span>placeholder) <span class="sc">%&gt;%</span></span>
+<span id="cb32-21"><a href="figure-5.html#cb32-21" tabindex="-1"></a>                              igraph<span class="sc">::</span><span class="fu">as.undirected</span>()</span>
+<span id="cb32-22"><a href="figure-5.html#cb32-22" tabindex="-1"></a>  }<span class="cf">else</span>{</span>
+<span id="cb32-23"><a href="figure-5.html#cb32-23" tabindex="-1"></a>        network.customised <span class="ot">&lt;-</span> <span class="fu">oDefineNet</span>(<span class="at">network=</span><span class="st">&quot;STRING_high&quot;</span>, </span>
+<span id="cb32-24"><a href="figure-5.html#cb32-24" tabindex="-1"></a>                                      <span class="at">STRING.only=</span><span class="fu">c</span>(<span class="st">&quot;experimental_score&quot;</span>,</span>
+<span id="cb32-25"><a href="figure-5.html#cb32-25" tabindex="-1"></a>                                                    <span class="st">&quot;database_score&quot;</span>),</span>
+<span id="cb32-26"><a href="figure-5.html#cb32-26" tabindex="-1"></a>                                      <span class="at">placeholder=</span>placeholder)</span>
+<span id="cb32-27"><a href="figure-5.html#cb32-27" tabindex="-1"></a>  }</span>
+<span id="cb32-28"><a href="figure-5.html#cb32-28" tabindex="-1"></a></span>
+<span id="cb32-29"><a href="figure-5.html#cb32-29" tabindex="-1"></a><span class="co"># All known genes (primarily sourced from UCSC)</span></span>
+<span id="cb32-30"><a href="figure-5.html#cb32-30" tabindex="-1"></a>guid <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb32-31"><a href="figure-5.html#cb32-31" tabindex="-1"></a>  <span class="cf">if</span>(<span class="dv">1</span>){</span>
+<span id="cb32-32"><a href="figure-5.html#cb32-32" tabindex="-1"></a>        GR.Gene <span class="ot">&lt;-</span> <span class="fu">oRDS</span>(<span class="st">&quot;UCSC_knownGene&quot;</span>, <span class="at">placeholder=</span>placeholder, <span class="at">guid=</span>guid)</span>
+<span id="cb32-33"><a href="figure-5.html#cb32-33" tabindex="-1"></a>        <span class="cf">if</span>(<span class="dv">1</span>){</span>
+<span id="cb32-34"><a href="figure-5.html#cb32-34" tabindex="-1"></a>                gene_info <span class="ot">&lt;-</span> <span class="fu">oRDS</span>(<span class="st">&quot;org.Hs.eg&quot;</span>,<span class="at">placeholder=</span>placeholder, <span class="at">guid=</span>guid)<span class="sc">$</span>info</span>
+<span id="cb32-35"><a href="figure-5.html#cb32-35" tabindex="-1"></a>                ind <span class="ot">&lt;-</span> <span class="fu">match</span>(<span class="fu">names</span>(GR.Gene), gene_info<span class="sc">$</span>Symbol)</span>
+<span id="cb32-36"><a href="figure-5.html#cb32-36" tabindex="-1"></a>                GR.Gene <span class="ot">&lt;-</span> GR.Gene[<span class="sc">!</span><span class="fu">is.na</span>(ind)]</span>
+<span id="cb32-37"><a href="figure-5.html#cb32-37" tabindex="-1"></a>            }</span>
+<span id="cb32-38"><a href="figure-5.html#cb32-38" tabindex="-1"></a>        <span class="do">## remove gene at chrX and chrY</span></span>
+<span id="cb32-39"><a href="figure-5.html#cb32-39" tabindex="-1"></a>        <span class="cf">if</span>(<span class="dv">0</span>){</span>
+<span id="cb32-40"><a href="figure-5.html#cb32-40" tabindex="-1"></a>            df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(GR.Gene) <span class="sc">%&gt;%</span> <span class="fu">as_tibble</span>()</span>
+<span id="cb32-41"><a href="figure-5.html#cb32-41" tabindex="-1"></a>            ind <span class="ot">&lt;-</span> <span class="fu">which</span>(<span class="sc">!</span>(df<span class="sc">$</span>seqnames <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&#39;chrX&#39;</span>,<span class="st">&#39;chrY&#39;</span>)))</span>
+<span id="cb32-42"><a href="figure-5.html#cb32-42" tabindex="-1"></a>            GR.Gene <span class="ot">&lt;-</span> GR.Gene[ind]</span>
+<span id="cb32-43"><a href="figure-5.html#cb32-43" tabindex="-1"></a>        }</span>
+<span id="cb32-44"><a href="figure-5.html#cb32-44" tabindex="-1"></a>        <span class="do">## restricted to GR.Gene filter the node</span></span>
+<span id="cb32-45"><a href="figure-5.html#cb32-45" tabindex="-1"></a>        network.customised <span class="ot">&lt;-</span> network.customised <span class="sc">%&gt;%</span></span>
+<span id="cb32-46"><a href="figure-5.html#cb32-46" tabindex="-1"></a>                              <span class="fu">oNetInduce</span>(<span class="at">nodes_query=</span><span class="fu">names</span>(GR.Gene),</span>
+<span id="cb32-47"><a href="figure-5.html#cb32-47" tabindex="-1"></a>                                         <span class="at">largest.comp=</span>F)</span>
+<span id="cb32-48"><a href="figure-5.html#cb32-48" tabindex="-1"></a>  }</span>
+<span id="cb32-49"><a href="figure-5.html#cb32-49" tabindex="-1"></a></span>
+<span id="cb32-50"><a href="figure-5.html#cb32-50" tabindex="-1"></a><span class="co"># ls_pNode: prepare predictors</span></span>
+<span id="cb32-51"><a href="figure-5.html#cb32-51" tabindex="-1"></a>ls_pNode <span class="ot">&lt;-</span> pbapply<span class="sc">::</span><span class="fu">pblapply</span>(ls_df_res, <span class="cf">function</span>(x){</span>
+<span id="cb32-52"><a href="figure-5.html#cb32-52" tabindex="-1"></a>                  pNode  <span class="ot">&lt;-</span> x <span class="sc">%&gt;%</span> <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb32-53"><a href="figure-5.html#cb32-53" tabindex="-1"></a>                                  <span class="fu">oPierAnno</span>(<span class="at">list_pNode=</span><span class="cn">NULL</span>, </span>
+<span id="cb32-54"><a href="figure-5.html#cb32-54" tabindex="-1"></a>                                  <span class="at">network.customised =</span> network.customised,</span>
+<span id="cb32-55"><a href="figure-5.html#cb32-55" tabindex="-1"></a>                                  <span class="at">placeholder=</span>placeholder, <span class="at">guid=</span>guid)</span>
+<span id="cb32-56"><a href="figure-5.html#cb32-56" tabindex="-1"></a>})</span>
+<span id="cb32-57"><a href="figure-5.html#cb32-57" tabindex="-1"></a><span class="co"># do prioritisation</span></span>
+<span id="cb32-58"><a href="figure-5.html#cb32-58" tabindex="-1"></a>dTarget <span class="ot">&lt;-</span> <span class="fu">oPierMatrix</span>(ls_pNode, <span class="at">displayBy=</span><span class="st">&quot;pvalue&quot;</span>, <span class="at">aggregateBy=</span><span class="st">&quot;fishers&quot;</span>,</span>
+<span id="cb32-59"><a href="figure-5.html#cb32-59" tabindex="-1"></a>                       <span class="at">placeholder=</span>placeholder, <span class="at">guid=</span>guid)</span>
+<span id="cb32-60"><a href="figure-5.html#cb32-60" tabindex="-1"></a><span class="co"># dT: restricted to GR.Gene and rating&gt;0</span></span>
+<span id="cb32-61"><a href="figure-5.html#cb32-61" tabindex="-1"></a>df_GR_gene <span class="ot">&lt;-</span> GR.Gene <span class="sc">%&gt;%</span> <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span> <span class="fu">as_tibble</span>()</span>
+<span id="cb32-62"><a href="figure-5.html#cb32-62" tabindex="-1"></a>dT <span class="ot">&lt;-</span> dTarget</span>
+<span id="cb32-63"><a href="figure-5.html#cb32-63" tabindex="-1"></a>dT<span class="sc">$</span>priority <span class="ot">&lt;-</span> dTarget<span class="sc">$</span>priority <span class="sc">%&gt;%</span> <span class="fu">filter</span>(rating<span class="sc">&gt;</span><span class="dv">0</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb32-64"><a href="figure-5.html#cb32-64" tabindex="-1"></a>                <span class="fu">semi_join</span>(df_GR_gene, <span class="at">by=</span><span class="fu">c</span>(<span class="st">&#39;name&#39;</span><span class="ot">=</span><span class="st">&#39;Symbol&#39;</span>))  <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">rank=</span><span class="fu">seq</span>(<span class="fu">n</span>()))</span>
+<span id="cb32-65"><a href="figure-5.html#cb32-65" tabindex="-1"></a>dT<span class="sc">$</span>predictor <span class="ot">&lt;-</span> dTarget<span class="sc">$</span>predictor[dT<span class="sc">$</span>priority <span class="sc">%&gt;%</span> <span class="fu">pull</span>(name),]</span>
+<span id="cb32-66"><a href="figure-5.html#cb32-66" tabindex="-1"></a><span class="co"># output</span></span>
+<span id="cb32-67"><a href="figure-5.html#cb32-67" tabindex="-1"></a>dT<span class="sc">$</span>priority <span class="sc">%&gt;%</span> openxlsx<span class="sc">::</span><span class="fu">write.xlsx</span>(<span class="st">&quot;PI_Priority_mhb.xlsx&quot;</span>)</span>
+<span id="cb32-68"><a href="figure-5.html#cb32-68" tabindex="-1"></a><span class="co"># 1. load MHB.DEG.NonDMR genes </span></span>
+<span id="cb32-69"><a href="figure-5.html#cb32-69" tabindex="-1"></a>rna_path <span class="ot">&lt;-</span> <span class="st">&quot;TCGA/Exp/res/&quot;</span></span>
+<span id="cb32-70"><a href="figure-5.html#cb32-70" tabindex="-1"></a>rna.files <span class="ot">&lt;-</span> <span class="fu">list.files</span>(rna_path,<span class="at">pattern=</span><span class="st">&quot;TCGA_DEG_&quot;</span>)</span>
+<span id="cb32-71"><a href="figure-5.html#cb32-71" tabindex="-1"></a>rna.log2fc <span class="ot">&lt;-</span> <span class="fu">lapply</span>(rna.files,<span class="cf">function</span>(x){<span class="fu">fread</span>(<span class="fu">paste0</span>(rna_path,x)) <span class="sc">%&gt;%</span> </span>
+<span id="cb32-72"><a href="figure-5.html#cb32-72" tabindex="-1"></a>                                            dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">4</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb32-73"><a href="figure-5.html#cb32-73" tabindex="-1"></a>                                            <span class="fu">mutate</span>(<span class="at">DE=</span><span class="fu">ifelse</span>(FDR<span class="sc">&lt;=</span><span class="fl">0.05</span> <span class="sc">&amp;</span> logFC <span class="sc">&gt;=</span><span class="dv">1</span>,<span class="st">&quot;up&quot;</span>,</span>
+<span id="cb32-74"><a href="figure-5.html#cb32-74" tabindex="-1"></a>                                                    <span class="fu">ifelse</span>(FDR<span class="sc">&lt;=</span><span class="fl">0.05</span> <span class="sc">&amp;</span> logFC <span class="sc">&lt;=</span> <span class="sc">-</span><span class="dv">1</span>, <span class="st">&quot;down&quot;</span>,<span class="st">&quot;NC&quot;</span>)))})</span>
+<span id="cb32-75"><a href="figure-5.html#cb32-75" tabindex="-1"></a><span class="fu">names</span>(rna.log2fc) <span class="ot">&lt;-</span> rna.files <span class="sc">%&gt;%</span> <span class="fu">str_split_i</span>(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">.&quot;</span>,<span class="at">i=</span><span class="dv">1</span>) <span class="sc">%&gt;%</span> <span class="fu">str_split_i</span>(<span class="st">&quot;_&quot;</span>,<span class="at">i=</span><span class="dv">3</span>)</span>
+<span id="cb32-76"><a href="figure-5.html#cb32-76" tabindex="-1"></a><span class="co"># MHB_NonDMR.DEG</span></span>
+<span id="cb32-77"><a href="figure-5.html#cb32-77" tabindex="-1"></a>MHB_NonDMR.DEG <span class="ot">&lt;-</span> <span class="fu">read_gmt</span>(<span class="st">&quot;TCGA_Pathway/DEG.MHB.NonDM.gmt&quot;</span>)</span>
+<span id="cb32-78"><a href="figure-5.html#cb32-78" tabindex="-1"></a>MHB_NonDMR.DEG.FC <span class="ot">&lt;-</span> <span class="fu">lapply</span>(<span class="fu">names</span>(MHB_NonDMR.DEG),<span class="cf">function</span>(x){</span>
+<span id="cb32-79"><a href="figure-5.html#cb32-79" tabindex="-1"></a>            <span class="cf">if</span>(x<span class="sc">==</span><span class="st">&quot;PDAC&quot;</span>){</span>
+<span id="cb32-80"><a href="figure-5.html#cb32-80" tabindex="-1"></a>                y<span class="ot">=</span><span class="st">&quot;PAAD&quot;</span></span>
+<span id="cb32-81"><a href="figure-5.html#cb32-81" tabindex="-1"></a>            }<span class="cf">else</span>{</span>
+<span id="cb32-82"><a href="figure-5.html#cb32-82" tabindex="-1"></a>                y<span class="ot">=</span>x</span>
+<span id="cb32-83"><a href="figure-5.html#cb32-83" tabindex="-1"></a>            }           </span>
+<span id="cb32-84"><a href="figure-5.html#cb32-84" tabindex="-1"></a>      rna.log2fc[[y]] <span class="sc">%&gt;%</span> <span class="fu">filter</span>(V1 <span class="sc">%in%</span> MHB_NonDMR.DEG[[x]]) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">DE=</span><span class="fu">ifelse</span>(logFC<span class="sc">&gt;</span><span class="dv">0</span>,<span class="st">&quot;up&quot;</span>,<span class="st">&quot;down&quot;</span>),<span class="at">tissue=</span>x)</span>
+<span id="cb32-85"><a href="figure-5.html#cb32-85" tabindex="-1"></a>    })</span>
+<span id="cb32-86"><a href="figure-5.html#cb32-86" tabindex="-1"></a><span class="fu">names</span>(MHB_NonDMR.DEG.FC) <span class="ot">&lt;-</span> <span class="fu">names</span>(MHB_NonDMR.DEG) <span class="sc">%&gt;%</span> <span class="fu">str_replace_all</span>(<span class="st">&quot;PDAC&quot;</span>,<span class="st">&quot;PAAD&quot;</span>)</span>
+<span id="cb32-87"><a href="figure-5.html#cb32-87" tabindex="-1"></a><span class="co"># 2. Load pi ranking results</span></span>
+<span id="cb32-88"><a href="figure-5.html#cb32-88" tabindex="-1"></a>seed.genes <span class="ot">&lt;-</span> <span class="fu">read.xlsx</span>(<span class="st">&quot;PI_Priority_mhb.xlsx&quot;</span>)</span>
+<span id="cb32-89"><a href="figure-5.html#cb32-89" tabindex="-1"></a>cancer_type <span class="ot">&lt;-</span> <span class="fu">names</span>(seed.genes)[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>)]</span>
+<span id="cb32-90"><a href="figure-5.html#cb32-90" tabindex="-1"></a>network_genes <span class="ot">&lt;-</span> <span class="fu">lapply</span>(cancer_type,<span class="cf">function</span>(x){</span>
+<span id="cb32-91"><a href="figure-5.html#cb32-91" tabindex="-1"></a>        seed.genes <span class="sc">%&gt;%</span> <span class="fu">select</span>(name,rank,x) <span class="sc">%&gt;%</span> <span class="fu">rename_with</span>(<span class="sc">~</span><span class="fu">c</span>(<span class="st">&quot;name&quot;</span>,<span class="st">&quot;rank&quot;</span>,<span class="st">&quot;seed&quot;</span>)) <span class="sc">%&gt;%</span> <span class="fu">filter</span>(seed<span class="sc">==</span><span class="dv">1</span>)    </span>
+<span id="cb32-92"><a href="figure-5.html#cb32-92" tabindex="-1"></a>})</span>
+<span id="cb32-93"><a href="figure-5.html#cb32-93" tabindex="-1"></a><span class="fu">names</span>(network_genes) <span class="ot">&lt;-</span> cancer_type <span class="sc">%&gt;%</span> <span class="fu">str_replace_all</span>(<span class="st">&quot;PDAC&quot;</span>,<span class="st">&quot;PAAD&quot;</span>)</span>
+<span id="cb32-94"><a href="figure-5.html#cb32-94" tabindex="-1"></a></span>
+<span id="cb32-95"><a href="figure-5.html#cb32-95" tabindex="-1"></a><span class="co"># RNA + NoMHB</span></span>
+<span id="cb32-96"><a href="figure-5.html#cb32-96" tabindex="-1"></a>rna.log2fc.pi <span class="ot">&lt;-</span> MHB_NonDMR.DEG.FC[<span class="fu">names</span>(network_genes)]</span>
+<span id="cb32-97"><a href="figure-5.html#cb32-97" tabindex="-1"></a>rna.log2fc.pi.rank <span class="ot">&lt;-</span> <span class="fu">lapply</span>(<span class="fu">names</span>(network_genes),<span class="cf">function</span>(x){ </span>
+<span id="cb32-98"><a href="figure-5.html#cb32-98" tabindex="-1"></a></span>
+<span id="cb32-99"><a href="figure-5.html#cb32-99" tabindex="-1"></a>                       rna.log2fc.pi[[x]] <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">name=</span>V1) <span class="sc">%&gt;%</span> </span>
+<span id="cb32-100"><a href="figure-5.html#cb32-100" tabindex="-1"></a>                       <span class="fu">inner_join</span>(network_genes[[x]],<span class="at">by=</span><span class="st">&quot;name&quot;</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb32-101"><a href="figure-5.html#cb32-101" tabindex="-1"></a>                       <span class="fu">arrange</span>(rank) </span>
+<span id="cb32-102"><a href="figure-5.html#cb32-102" tabindex="-1"></a>                       })</span>
+<span id="cb32-103"><a href="figure-5.html#cb32-103" tabindex="-1"></a></span>
+<span id="cb32-104"><a href="figure-5.html#cb32-104" tabindex="-1"></a><span class="fu">names</span>(rna.log2fc.pi.rank) <span class="ot">&lt;-</span> <span class="fu">names</span>(network_genes)</span>
+<span id="cb32-105"><a href="figure-5.html#cb32-105" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind,rna.log2fc.pi.rank) <span class="sc">%&gt;%</span> <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(name,rank) <span class="sc">%&gt;%</span> </span>
+<span id="cb32-106"><a href="figure-5.html#cb32-106" tabindex="-1"></a>                            <span class="fu">summarise</span>(<span class="at">tissue_count =</span> <span class="fu">n</span>(),</span>
+<span id="cb32-107"><a href="figure-5.html#cb32-107" tabindex="-1"></a>                                      <span class="at">tissue =</span> <span class="fu">paste0</span>(tissue,<span class="at">collapse=</span><span class="st">&quot;,&quot;</span>),</span>
+<span id="cb32-108"><a href="figure-5.html#cb32-108" tabindex="-1"></a>                                      <span class="at">FC =</span> <span class="fu">paste0</span>(DE,<span class="at">collapse=</span><span class="st">&quot;,&quot;</span>),</span>
+<span id="cb32-109"><a href="figure-5.html#cb32-109" tabindex="-1"></a>                                      <span class="at">DE =</span> <span class="fu">paste0</span>(<span class="fu">unique</span>(DE),<span class="at">collapse=</span><span class="st">&quot;,&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb32-110"><a href="figure-5.html#cb32-110" tabindex="-1"></a>                            <span class="fu">arrange</span>(rank,<span class="fu">desc</span>(tissue_count))</span>
+<span id="cb32-111"><a href="figure-5.html#cb32-111" tabindex="-1"></a><span class="fu">fwrite</span>(res,<span class="at">file=</span><span class="st">&quot;DEG.MHB.NoDMR.Pi.ranking.txt&quot;</span>,<span class="at">sep=</span><span class="st">&quot;</span><span class="sc">\t</span><span class="st">&quot;</span>,<span class="at">quote=</span> F,<span class="at">row.names=</span>F)</span>
+<span id="cb32-112"><a href="figure-5.html#cb32-112" tabindex="-1"></a><span class="co"># showing top 500 </span></span>
+<span id="cb32-113"><a href="figure-5.html#cb32-113" tabindex="-1"></a>up_rank <span class="ot">&lt;-</span> res <span class="sc">%&gt;%</span> <span class="fu">filter</span>(DE<span class="sc">==</span><span class="st">&quot;up&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">head</span>(<span class="dv">500</span>)</span>
+<span id="cb32-114"><a href="figure-5.html#cb32-114" tabindex="-1"></a>down_rank <span class="ot">&lt;-</span> res <span class="sc">%&gt;%</span> <span class="fu">filter</span>(DE<span class="sc">==</span><span class="st">&quot;down&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">head</span>(<span class="dv">500</span>)</span>
+<span id="cb32-115"><a href="figure-5.html#cb32-115" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb32-116"><a href="figure-5.html#cb32-116" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb32-117"><a href="figure-5.html#cb32-117" tabindex="-1"></a><span class="fu">pdf</span>(<span class="at">file=</span><span class="st">&quot;NoDMR.MHB.DEG.Pi.ranking.pdf&quot;</span>,<span class="at">width=</span><span class="dv">8</span>,<span class="at">height=</span><span class="dv">6</span>)</span>
+<span id="cb32-118"><a href="figure-5.html#cb32-118" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(up_rank,<span class="fu">aes</span>(<span class="at">x=</span><span class="fu">fct_inorder</span>(name),<span class="at">y=</span>tissue_count)) <span class="sc">+</span></span>
+<span id="cb32-119"><a href="figure-5.html#cb32-119" tabindex="-1"></a>      <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">fill=</span><span class="st">&quot;firebrick&quot;</span>) <span class="sc">+</span></span>
+<span id="cb32-120"><a href="figure-5.html#cb32-120" tabindex="-1"></a>      <span class="fu">scale_y_continuous</span>(<span class="at">expand=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>),<span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">12</span>)) <span class="sc">+</span></span>
+<span id="cb32-121"><a href="figure-5.html#cb32-121" tabindex="-1"></a>      <span class="fu">labs</span>(<span class="at">x=</span><span class="st">&quot;&quot;</span>,<span class="at">y=</span><span class="st">&quot;Number of tissue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb32-122"><a href="figure-5.html#cb32-122" tabindex="-1"></a>      <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb32-123"><a href="figure-5.html#cb32-123" tabindex="-1"></a>      <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>)) </span>
+<span id="cb32-124"><a href="figure-5.html#cb32-124" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(down_rank,<span class="fu">aes</span>(<span class="at">x=</span><span class="fu">fct_inorder</span>(name),<span class="at">y=</span>tissue_count)) <span class="sc">+</span></span>
+<span id="cb32-125"><a href="figure-5.html#cb32-125" tabindex="-1"></a>      <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">fill=</span><span class="st">&quot;steelblue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb32-126"><a href="figure-5.html#cb32-126" tabindex="-1"></a>      <span class="fu">scale_y_continuous</span>(<span class="at">expand=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>),<span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">12</span>)) <span class="sc">+</span></span>
+<span id="cb32-127"><a href="figure-5.html#cb32-127" tabindex="-1"></a>      <span class="fu">labs</span>(<span class="at">x=</span><span class="st">&quot;&quot;</span>,<span class="at">y=</span><span class="st">&quot;Number of tissue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb32-128"><a href="figure-5.html#cb32-128" tabindex="-1"></a>      <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb32-129"><a href="figure-5.html#cb32-129" tabindex="-1"></a>      <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>)) </span>
+<span id="cb32-130"><a href="figure-5.html#cb32-130" tabindex="-1"></a>p<span class="ot">&lt;-</span> <span class="fu">wrap_plots</span>(<span class="fu">list</span>(p1,p2),<span class="at">ncol=</span><span class="dv">1</span>,<span class="at">nrow=</span><span class="dv">2</span>) <span class="sc">+</span> <span class="fu">plot_layout</span>(<span class="at">guides =</span> <span class="st">&#39;collect&#39;</span>)</span>
+<span id="cb32-131"><a href="figure-5.html#cb32-131" tabindex="-1"></a><span class="fu">print</span>(p)</span>
+<span id="cb32-132"><a href="figure-5.html#cb32-132" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-62"></span>
+<img src="Data/Figures/Fig5/Fig5.S.png" alt="Fig5.S" width="80%" id="fig-unnamed-chunk-62-1" />
+<p class="caption">
+ 5.2: Fig5.S
+</p>
+</div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="figure-5.html#cb33-1" tabindex="-1"></a><span class="co"># 3. Enrichment</span></span>
+<span id="cb33-2"><a href="figure-5.html#cb33-2" tabindex="-1"></a><span class="fu">library</span>(clusterProfiler)</span>
+<span id="cb33-3"><a href="figure-5.html#cb33-3" tabindex="-1"></a><span class="fu">library</span>(msigdbr)</span>
+<span id="cb33-4"><a href="figure-5.html#cb33-4" tabindex="-1"></a><span class="do">## Here we use C2 &amp; H gene sets as an example:</span></span>
+<span id="cb33-5"><a href="figure-5.html#cb33-5" tabindex="-1"></a>        m_t2g <span class="ot">&lt;-</span> <span class="fu">msigdbr</span>(<span class="at">species =</span> <span class="st">&quot;Homo sapiens&quot;</span>, <span class="at">category =</span> <span class="st">&quot;C2&quot;</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb33-6"><a href="figure-5.html#cb33-6" tabindex="-1"></a>            <span class="fu">filter</span>(<span class="sc">!</span>(gs_subcat <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;CGP&quot;</span>,<span class="st">&quot;CP&quot;</span>))) <span class="sc">%&gt;%</span> </span>
+<span id="cb33-7"><a href="figure-5.html#cb33-7" tabindex="-1"></a>            dplyr<span class="sc">::</span><span class="fu">select</span>(gs_name, entrez_gene) </span>
+<span id="cb33-8"><a href="figure-5.html#cb33-8" tabindex="-1"></a>        m_t2g1 <span class="ot">&lt;-</span> <span class="fu">msigdbr</span>(<span class="at">species =</span> <span class="st">&quot;Homo sapiens&quot;</span>, <span class="at">category =</span> <span class="st">&quot;H&quot;</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb33-9"><a href="figure-5.html#cb33-9" tabindex="-1"></a>             dplyr<span class="sc">::</span><span class="fu">select</span>(gs_name, entrez_gene)</span>
+<span id="cb33-10"><a href="figure-5.html#cb33-10" tabindex="-1"></a>        <span class="co"># merging</span></span>
+<span id="cb33-11"><a href="figure-5.html#cb33-11" tabindex="-1"></a>        m_t2g <span class="ot">&lt;-</span> <span class="fu">rbind</span>(m_t2g1,m_t2g) </span>
+<span id="cb33-12"><a href="figure-5.html#cb33-12" tabindex="-1"></a><span class="co"># convert : the existence of genes more than 6 tissues. </span></span>
+<span id="cb33-13"><a href="figure-5.html#cb33-13" tabindex="-1"></a>up_freq <span class="ot">&lt;-</span> res <span class="sc">%&gt;%</span> <span class="fu">filter</span>(DE<span class="sc">==</span><span class="st">&quot;up&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">filter</span>(tissue_count<span class="sc">&gt;=</span><span class="dv">6</span>) </span>
+<span id="cb33-14"><a href="figure-5.html#cb33-14" tabindex="-1"></a>genes <span class="ot">=</span> <span class="fu">bitr</span>(up_freq<span class="sc">$</span>name,               </span>
+<span id="cb33-15"><a href="figure-5.html#cb33-15" tabindex="-1"></a>            <span class="at">fromType=</span><span class="st">&quot;SYMBOL&quot;</span>,             </span>
+<span id="cb33-16"><a href="figure-5.html#cb33-16" tabindex="-1"></a>            <span class="at">toType=</span><span class="st">&quot;ENTREZID&quot;</span>,              </span>
+<span id="cb33-17"><a href="figure-5.html#cb33-17" tabindex="-1"></a>            <span class="at">OrgDb=</span><span class="st">&quot;org.Hs.eg.db&quot;</span>)               </span>
+<span id="cb33-18"><a href="figure-5.html#cb33-18" tabindex="-1"></a>universe <span class="ot">=</span> <span class="fu">read_gmt</span>(<span class="st">&quot;KEGG_genes.gmt&quot;</span>,</span>
+<span id="cb33-19"><a href="figure-5.html#cb33-19" tabindex="-1"></a>                <span class="at">from=</span><span class="st">&quot;SYMBOL&quot;</span>,</span>
+<span id="cb33-20"><a href="figure-5.html#cb33-20" tabindex="-1"></a>                <span class="at">to =</span> <span class="st">&quot;ENTREZ&quot;</span>,</span>
+<span id="cb33-21"><a href="figure-5.html#cb33-21" tabindex="-1"></a>                <span class="at">orgdb=</span><span class="st">&quot;org.Hs.eg.db&quot;</span>)</span>
+<span id="cb33-22"><a href="figure-5.html#cb33-22" tabindex="-1"></a>em <span class="ot">&lt;-</span> <span class="fu">enricher</span>(genes<span class="sc">$</span>ENTREZID, <span class="at">TERM2GENE=</span>m_t2g,<span class="at">pAdjustMethod=</span> <span class="st">&quot;BH&quot;</span>,<span class="at">universe=</span>universe<span class="sc">$</span>KEGG,) <span class="sc">%&gt;%</span> <span class="fu">as.data.frame</span>() </span>
+<span id="cb33-23"><a href="figure-5.html#cb33-23" tabindex="-1"></a>p <span class="ot">&lt;-</span> em <span class="sc">%&gt;%</span> <span class="fu">filter</span>(ID <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;HALLMARK_E2F_TARGETS&quot;</span>,<span class="st">&quot;HALLMARK_G2M_CHECKPOINT&quot;</span>,<span class="st">&quot;PID_MYC_ACTIV_PATHWAY&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb33-24"><a href="figure-5.html#cb33-24" tabindex="-1"></a>        <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span><span class="sc">-</span><span class="fu">log10</span>(p.adjust),<span class="at">y=</span><span class="fu">fct_rev</span>(ID))) <span class="sc">+</span></span>
+<span id="cb33-25"><a href="figure-5.html#cb33-25" tabindex="-1"></a>            <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">fill=</span><span class="st">&quot;orange&quot;</span>) <span class="sc">+</span></span>
+<span id="cb33-26"><a href="figure-5.html#cb33-26" tabindex="-1"></a>            <span class="fu">scale_x_continuous</span>(<span class="at">expand=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>),<span class="at">position=</span><span class="st">&quot;top&quot;</span>,</span>
+<span id="cb33-27"><a href="figure-5.html#cb33-27" tabindex="-1"></a>                        <span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">25</span>),</span>
+<span id="cb33-28"><a href="figure-5.html#cb33-28" tabindex="-1"></a>                        <span class="at">breaks=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">25</span>,<span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb33-29"><a href="figure-5.html#cb33-29" tabindex="-1"></a>            <span class="fu">scale_y_discrete</span>(<span class="at">labels=</span> <span class="cf">function</span>(x) <span class="fu">str_wrap</span>(x,<span class="at">width=</span><span class="dv">45</span>)) <span class="sc">+</span></span>
+<span id="cb33-30"><a href="figure-5.html#cb33-30" tabindex="-1"></a>            <span class="fu">labs</span>(<span class="at">y=</span><span class="st">&quot;&quot;</span>,<span class="at">x=</span><span class="st">&quot;-log10(FDR)&quot;</span>) <span class="sc">+</span></span>
+<span id="cb33-31"><a href="figure-5.html#cb33-31" tabindex="-1"></a>            <span class="fu">geom_vline</span>(<span class="fu">aes</span>(<span class="at">xintercept =</span> <span class="dv">2</span>),<span class="at">color=</span><span class="st">&quot;gray&quot;</span>,<span class="at">linetype=</span><span class="st">&quot;dashed&quot;</span>, <span class="at">size =</span> <span class="fl">0.5</span>)<span class="sc">+</span></span>
+<span id="cb33-32"><a href="figure-5.html#cb33-32" tabindex="-1"></a>            <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb33-33"><a href="figure-5.html#cb33-33" tabindex="-1"></a>            <span class="fu">theme</span>(<span class="at">panel.background=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb33-34"><a href="figure-5.html#cb33-34" tabindex="-1"></a>                    <span class="at">panel.grid=</span><span class="fu">element_blank</span>())</span>
+<span id="cb33-35"><a href="figure-5.html#cb33-35" tabindex="-1"></a><span class="fu">ggsave</span>(p,<span class="at">file=</span><span class="st">&quot;Data/Figures/Fig5/Fig5.C1.pdf&quot;</span>,<span class="at">width=</span><span class="dv">5</span>,<span class="at">height=</span><span class="dv">2</span>)</span>
+<span id="cb33-36"><a href="figure-5.html#cb33-36" tabindex="-1"></a><span class="co"># 4. LogFC and delta beta value of target genes</span></span>
+<span id="cb33-37"><a href="figure-5.html#cb33-37" tabindex="-1"></a><span class="co"># RNA MHB_NonDMR.DEG</span></span>
+<span id="cb33-38"><a href="figure-5.html#cb33-38" tabindex="-1"></a><span class="do">## G2M </span></span>
+<span id="cb33-39"><a href="figure-5.html#cb33-39" tabindex="-1"></a>Genes.G2M <span class="ot">&lt;-</span>  em <span class="sc">%&gt;%</span> <span class="fu">filter</span>(ID <span class="sc">==</span><span class="st">&quot;HALLMARK_G2M_CHECKPOINT&quot;</span> ) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(geneID) <span class="sc">%&gt;%</span> <span class="fu">str_split_1</span>(<span class="st">&quot;/&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">bitr</span>(<span class="at">fromType=</span><span class="st">&quot;ENTREZID&quot;</span>,<span class="at">toType=</span><span class="st">&quot;SYMBOL&quot;</span>,<span class="at">OrgDb=</span><span class="st">&quot;org.Hs.eg.db&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(SYMBOL) <span class="sc">%&gt;%</span> <span class="fu">c</span>(<span class="st">&quot;MYC&quot;</span>)</span>
+<span id="cb33-40"><a href="figure-5.html#cb33-40" tabindex="-1"></a>Genes.MYC <span class="ot">&lt;-</span> em <span class="sc">%&gt;%</span> <span class="fu">filter</span>(ID <span class="sc">==</span><span class="st">&quot;PID_MYC_ACTIV_PATHWAY&quot;</span> ) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(geneID) <span class="sc">%&gt;%</span> <span class="fu">str_split_1</span>(<span class="st">&quot;/&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">bitr</span>(<span class="at">fromType=</span><span class="st">&quot;ENTREZID&quot;</span>,<span class="at">toType=</span><span class="st">&quot;SYMBOL&quot;</span>,<span class="at">OrgDb=</span><span class="st">&quot;org.Hs.eg.db&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(SYMBOL)</span>
+<span id="cb33-41"><a href="figure-5.html#cb33-41" tabindex="-1"></a>rna.log2FC.G2M <span class="ot">&lt;-</span> <span class="fu">lapply</span>(<span class="fu">names</span>(MHB_NonDMR.DEG.FC),<span class="cf">function</span>(x){ </span>
+<span id="cb33-42"><a href="figure-5.html#cb33-42" tabindex="-1"></a>                        MHB_NonDMR.DEG.FC[[x]] <span class="sc">%&gt;%</span> </span>
+<span id="cb33-43"><a href="figure-5.html#cb33-43" tabindex="-1"></a>                        <span class="fu">filter</span>(V1 <span class="sc">%in%</span> Genes.G2M) <span class="sc">%&gt;%</span></span>
+<span id="cb33-44"><a href="figure-5.html#cb33-44" tabindex="-1"></a>                        <span class="fu">mutate</span>(<span class="at">tissue=</span>x) })</span>
+<span id="cb33-45"><a href="figure-5.html#cb33-45" tabindex="-1"></a><span class="fu">names</span>(rna.log2FC.G2M) <span class="ot">&lt;-</span> <span class="fu">names</span>(MHB_NonDMR.DEG.FC)</span>
+<span id="cb33-46"><a href="figure-5.html#cb33-46" tabindex="-1"></a><span class="do">## MYC</span></span>
+<span id="cb33-47"><a href="figure-5.html#cb33-47" tabindex="-1"></a>rna.log2FC.MYC <span class="ot">&lt;-</span> <span class="fu">lapply</span>(<span class="fu">names</span>(MHB_NonDMR.DEG.FC),<span class="cf">function</span>(x){ </span>
+<span id="cb33-48"><a href="figure-5.html#cb33-48" tabindex="-1"></a>                        MHB_NonDMR.DEG.FC[[x]] <span class="sc">%&gt;%</span> </span>
+<span id="cb33-49"><a href="figure-5.html#cb33-49" tabindex="-1"></a>                        <span class="fu">filter</span>(V1 <span class="sc">%in%</span> Genes.MYC) <span class="sc">%&gt;%</span></span>
+<span id="cb33-50"><a href="figure-5.html#cb33-50" tabindex="-1"></a>                        <span class="fu">mutate</span>(<span class="at">tissue=</span>x) })</span>
+<span id="cb33-51"><a href="figure-5.html#cb33-51" tabindex="-1"></a><span class="fu">names</span>(rna.log2FC.MYC) <span class="ot">&lt;-</span> <span class="fu">names</span>(MHB_NonDMR.DEG.FC)</span>
+<span id="cb33-52"><a href="figure-5.html#cb33-52" tabindex="-1"></a><span class="co"># DNA methylation MHB_NonDMR.DEG</span></span>
+<span id="cb33-53"><a href="figure-5.html#cb33-53" tabindex="-1"></a><span class="fu">load</span>(<span class="st">&quot;TCGA/DNAm_Array/TCGA_TSS_UD1K_Methylation.RData&quot;</span>)</span>
+<span id="cb33-54"><a href="figure-5.html#cb33-54" tabindex="-1"></a>Mregion <span class="ot">&lt;-</span> <span class="fu">fread</span>(<span class="st">&quot;Data/Processed_data/GREATv4.genes.promoter_UD1000.hg19.bed&quot;</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb33-55"><a href="figure-5.html#cb33-55" tabindex="-1"></a>            dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="st">&quot;name&quot;</span><span class="ot">=</span><span class="st">&quot;V5&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">toGRanges</span>()</span>
+<span id="cb33-56"><a href="figure-5.html#cb33-56" tabindex="-1"></a>MP.TvN <span class="ot">&lt;-</span> pbapply<span class="sc">::</span><span class="fu">pblapply</span>(<span class="fu">names</span>(rList),<span class="cf">function</span>(x){</span>
+<span id="cb33-57"><a href="figure-5.html#cb33-57" tabindex="-1"></a>        <span class="do">##id </span></span>
+<span id="cb33-58"><a href="figure-5.html#cb33-58" tabindex="-1"></a>        sample <span class="ot">&lt;-</span> rList[[x]] <span class="sc">%&gt;%</span> <span class="fu">colnames</span>() <span class="sc">%&gt;%</span> <span class="fu">str_split_i</span>(<span class="st">&quot;-&quot;</span>,<span class="at">i=</span><span class="dv">4</span>) </span>
+<span id="cb33-59"><a href="figure-5.html#cb33-59" tabindex="-1"></a>        sample <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(<span class="fu">str_detect</span>(sample,<span class="st">&quot;11&quot;</span>),<span class="st">&quot;Normal&quot;</span>,<span class="st">&quot;Tumor&quot;</span>)</span>
+<span id="cb33-60"><a href="figure-5.html#cb33-60" tabindex="-1"></a>        <span class="do">## data table</span></span>
+<span id="cb33-61"><a href="figure-5.html#cb33-61" tabindex="-1"></a>        data <span class="ot">&lt;-</span> rList[[x]]  <span class="sc">%&gt;%</span> <span class="fu">as.data.frame</span>() </span>
+<span id="cb33-62"><a href="figure-5.html#cb33-62" tabindex="-1"></a>        <span class="fu">names</span>(data) <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="fu">names</span>(data),<span class="st">&quot;_&quot;</span>,sample)</span>
+<span id="cb33-63"><a href="figure-5.html#cb33-63" tabindex="-1"></a>        data <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">MP.T =</span> <span class="fu">rowMeans</span>(<span class="fu">across</span>(<span class="fu">contains</span>(<span class="st">&quot;Tumor&quot;</span>)),<span class="at">na.rm=</span>T),</span>
+<span id="cb33-64"><a href="figure-5.html#cb33-64" tabindex="-1"></a>                          <span class="at">MP.N =</span> <span class="fu">rowMeans</span>(<span class="fu">across</span>(<span class="fu">contains</span>(<span class="st">&quot;Normal&quot;</span>)),<span class="at">na.rm=</span>T)) <span class="sc">%&gt;%</span> </span>
+<span id="cb33-65"><a href="figure-5.html#cb33-65" tabindex="-1"></a>                                dplyr<span class="sc">::</span><span class="fu">select</span>(MP.T,MP.N) <span class="sc">%&gt;%</span> </span>
+<span id="cb33-66"><a href="figure-5.html#cb33-66" tabindex="-1"></a>                                <span class="fu">mutate</span>(<span class="at">SYMBOL =</span> Mregion<span class="sc">$</span>name)</span>
+<span id="cb33-67"><a href="figure-5.html#cb33-67" tabindex="-1"></a>    })</span>
+<span id="cb33-68"><a href="figure-5.html#cb33-68" tabindex="-1"></a><span class="fu">names</span>(MP.TvN) <span class="ot">&lt;-</span> <span class="fu">names</span>(rList)</span>
+<span id="cb33-69"><a href="figure-5.html#cb33-69" tabindex="-1"></a><span class="do">## G2M</span></span>
+<span id="cb33-70"><a href="figure-5.html#cb33-70" tabindex="-1"></a>DNAme.G2M <span class="ot">&lt;-</span> <span class="fu">lapply</span>(<span class="fu">names</span>(MHB_NonDMR.DEG.FC),<span class="cf">function</span>(x){ </span>
+<span id="cb33-71"><a href="figure-5.html#cb33-71" tabindex="-1"></a>                        MP.TvN[[x]] <span class="sc">%&gt;%</span> </span>
+<span id="cb33-72"><a href="figure-5.html#cb33-72" tabindex="-1"></a>                        <span class="fu">filter</span>(SYMBOL <span class="sc">%in%</span> rna.log2FC.G2M[[x]]<span class="sc">$</span>V1 ) <span class="sc">%&gt;%</span></span>
+<span id="cb33-73"><a href="figure-5.html#cb33-73" tabindex="-1"></a>                        <span class="fu">mutate</span>(<span class="at">tissue=</span>x)  })</span>
+<span id="cb33-74"><a href="figure-5.html#cb33-74" tabindex="-1"></a><span class="fu">names</span>(DNAme.G2M) <span class="ot">&lt;-</span> <span class="fu">names</span>(MHB_NonDMR.DEG.FC)</span>
+<span id="cb33-75"><a href="figure-5.html#cb33-75" tabindex="-1"></a><span class="do">## MYC</span></span>
+<span id="cb33-76"><a href="figure-5.html#cb33-76" tabindex="-1"></a>DNAme.MYC <span class="ot">&lt;-</span> <span class="fu">lapply</span>(<span class="fu">names</span>(MHB_NonDMR.DEG.FC),<span class="cf">function</span>(x){ </span>
+<span id="cb33-77"><a href="figure-5.html#cb33-77" tabindex="-1"></a>                        MP.TvN[[x]] <span class="sc">%&gt;%</span> </span>
+<span id="cb33-78"><a href="figure-5.html#cb33-78" tabindex="-1"></a>                        <span class="fu">filter</span>(SYMBOL <span class="sc">%in%</span> rna.log2FC.MYC[[x]]<span class="sc">$</span>V1 ) <span class="sc">%&gt;%</span></span>
+<span id="cb33-79"><a href="figure-5.html#cb33-79" tabindex="-1"></a>                        <span class="fu">mutate</span>(<span class="at">tissue=</span>x)  })</span>
+<span id="cb33-80"><a href="figure-5.html#cb33-80" tabindex="-1"></a><span class="fu">names</span>(DNAme.MYC) <span class="ot">&lt;-</span> <span class="fu">names</span>(MHB_NonDMR.DEG.FC)</span>
+<span id="cb33-81"><a href="figure-5.html#cb33-81" tabindex="-1"></a></span>
+<span id="cb33-82"><a href="figure-5.html#cb33-82" tabindex="-1"></a><span class="do">### RES</span></span>
+<span id="cb33-83"><a href="figure-5.html#cb33-83" tabindex="-1"></a>res_logfc.g2m <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind,rna.log2FC.G2M) <span class="sc">%&gt;%</span> <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb33-84"><a href="figure-5.html#cb33-84" tabindex="-1"></a>            <span class="fu">mutate</span>(<span class="at">V1=</span><span class="fu">factor</span>(V1,<span class="at">levels=</span>seed.genes<span class="sc">$</span>name)) </span>
+<span id="cb33-85"><a href="figure-5.html#cb33-85" tabindex="-1"></a>res_logfc.myc <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind,rna.log2FC.MYC) <span class="sc">%&gt;%</span> <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb33-86"><a href="figure-5.html#cb33-86" tabindex="-1"></a>            <span class="fu">mutate</span>(<span class="at">V1=</span><span class="fu">factor</span>(V1,<span class="at">levels=</span>seed.genes<span class="sc">$</span>name)) </span>
+<span id="cb33-87"><a href="figure-5.html#cb33-87" tabindex="-1"></a><span class="do">##</span></span>
+<span id="cb33-88"><a href="figure-5.html#cb33-88" tabindex="-1"></a>res_DNAme.g2m <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind,DNAme.G2M) <span class="sc">%&gt;%</span> <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb33-89"><a href="figure-5.html#cb33-89" tabindex="-1"></a>             <span class="fu">mutate</span>(<span class="at">SYMBOL=</span><span class="fu">factor</span>(SYMBOL,<span class="at">levels=</span>seed.genes<span class="sc">$</span>name)) </span>
+<span id="cb33-90"><a href="figure-5.html#cb33-90" tabindex="-1"></a>res_DNAme.myc <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind,DNAme.MYC) <span class="sc">%&gt;%</span> <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb33-91"><a href="figure-5.html#cb33-91" tabindex="-1"></a>             <span class="fu">mutate</span>(<span class="at">SYMBOL=</span><span class="fu">factor</span>(SYMBOL,<span class="at">levels=</span>seed.genes<span class="sc">$</span>name))</span>
+<span id="cb33-92"><a href="figure-5.html#cb33-92" tabindex="-1"></a><span class="co"># PLOT</span></span>
+<span id="cb33-93"><a href="figure-5.html#cb33-93" tabindex="-1"></a><span class="do">## RNA </span></span>
+<span id="cb33-94"><a href="figure-5.html#cb33-94" tabindex="-1"></a> p1 <span class="ot">&lt;-</span>  res_logfc.g2m <span class="sc">%&gt;%</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>V1,<span class="at">y=</span><span class="fu">fct_rev</span>(tissue))) <span class="sc">+</span></span>
+<span id="cb33-95"><a href="figure-5.html#cb33-95" tabindex="-1"></a>        <span class="fu">geom_tile</span>(<span class="fu">aes</span>(<span class="at">fill=</span>logFC)) <span class="sc">+</span></span>
+<span id="cb33-96"><a href="figure-5.html#cb33-96" tabindex="-1"></a>        <span class="fu">scale_fill_gradientn</span>(<span class="at">colours =</span> <span class="fu">c</span>(<span class="st">&quot;darkblue&quot;</span>,<span class="st">&quot;white&quot;</span>,<span class="st">&quot;darkred&quot;</span>),</span>
+<span id="cb33-97"><a href="figure-5.html#cb33-97" tabindex="-1"></a>                        <span class="at">limits=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">8</span>, <span class="dv">8</span>), <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">8</span>, <span class="dv">8</span>, <span class="dv">4</span>)) <span class="sc">+</span> </span>
+<span id="cb33-98"><a href="figure-5.html#cb33-98" tabindex="-1"></a>        <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb33-99"><a href="figure-5.html#cb33-99" tabindex="-1"></a>        <span class="fu">theme</span>( <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>,<span class="at">hjust=</span><span class="dv">1</span>,<span class="at">vjust=</span><span class="fl">0.5</span>),</span>
+<span id="cb33-100"><a href="figure-5.html#cb33-100" tabindex="-1"></a>        <span class="at">panel.background =</span><span class="fu">element_blank</span>())</span>
+<span id="cb33-101"><a href="figure-5.html#cb33-101" tabindex="-1"></a> p12 <span class="ot">&lt;-</span> res_logfc.myc <span class="sc">%&gt;%</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>V1,<span class="at">y=</span><span class="fu">fct_rev</span>(tissue))) <span class="sc">+</span></span>
+<span id="cb33-102"><a href="figure-5.html#cb33-102" tabindex="-1"></a>        <span class="fu">geom_tile</span>(<span class="fu">aes</span>(<span class="at">fill=</span>logFC)) <span class="sc">+</span></span>
+<span id="cb33-103"><a href="figure-5.html#cb33-103" tabindex="-1"></a>        <span class="fu">scale_fill_gradientn</span>(<span class="at">colours =</span> <span class="fu">c</span>(<span class="st">&quot;darkblue&quot;</span>,<span class="st">&quot;white&quot;</span>,<span class="st">&quot;darkred&quot;</span>),</span>
+<span id="cb33-104"><a href="figure-5.html#cb33-104" tabindex="-1"></a>                        <span class="at">limits=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">8</span>, <span class="dv">8</span>), <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">8</span>, <span class="dv">8</span>, <span class="dv">4</span>)) <span class="sc">+</span> </span>
+<span id="cb33-105"><a href="figure-5.html#cb33-105" tabindex="-1"></a>        <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb33-106"><a href="figure-5.html#cb33-106" tabindex="-1"></a>        <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>,<span class="at">hjust=</span><span class="dv">1</span>,<span class="at">vjust=</span><span class="fl">0.5</span>),</span>
+<span id="cb33-107"><a href="figure-5.html#cb33-107" tabindex="-1"></a>        <span class="at">panel.background =</span><span class="fu">element_blank</span>())</span>
+<span id="cb33-108"><a href="figure-5.html#cb33-108" tabindex="-1"></a><span class="do">## DNAme</span></span>
+<span id="cb33-109"><a href="figure-5.html#cb33-109" tabindex="-1"></a>data1 <span class="ot">&lt;-</span> res_DNAme.g2m <span class="sc">%&gt;%</span> </span>
+<span id="cb33-110"><a href="figure-5.html#cb33-110" tabindex="-1"></a>         <span class="fu">mutate</span>(<span class="at">delta =</span> MP.T <span class="sc">-</span> MP.N,<span class="at">tissue=</span><span class="fu">fct_rev</span>(tissue)) </span>
+<span id="cb33-111"><a href="figure-5.html#cb33-111" tabindex="-1"></a> p21 <span class="ot">&lt;-</span>  data1 <span class="sc">%&gt;%</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>SYMBOL,<span class="at">y=</span>tissue)) <span class="sc">+</span></span>
+<span id="cb33-112"><a href="figure-5.html#cb33-112" tabindex="-1"></a>        <span class="fu">geom_tile</span>(<span class="fu">aes</span>(<span class="at">fill=</span>delta)) <span class="sc">+</span></span>
+<span id="cb33-113"><a href="figure-5.html#cb33-113" tabindex="-1"></a>        <span class="fu">scale_fill_gradientn</span>(<span class="at">colours =</span> <span class="fu">c</span>(<span class="st">&#39;#7b3294&#39;</span>,<span class="st">&#39;grey&#39;</span>,<span class="st">&#39;#008837&#39;</span>),</span>
+<span id="cb33-114"><a href="figure-5.html#cb33-114" tabindex="-1"></a>                        <span class="at">limits=</span><span class="fu">c</span>(<span class="sc">-</span><span class="fl">0.2</span>, <span class="fl">0.2</span>), <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="fl">0.2</span>, <span class="fl">0.2</span>, <span class="fl">0.1</span>)) <span class="sc">+</span> </span>
+<span id="cb33-115"><a href="figure-5.html#cb33-115" tabindex="-1"></a>        <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb33-116"><a href="figure-5.html#cb33-116" tabindex="-1"></a>        <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>,<span class="at">hjust=</span><span class="dv">1</span>,<span class="at">vjust=</span><span class="fl">0.5</span>),</span>
+<span id="cb33-117"><a href="figure-5.html#cb33-117" tabindex="-1"></a>        <span class="at">panel.background =</span><span class="fu">element_blank</span>()) </span>
+<span id="cb33-118"><a href="figure-5.html#cb33-118" tabindex="-1"></a>data2 <span class="ot">&lt;-</span> res_DNAme.myc <span class="sc">%&gt;%</span> </span>
+<span id="cb33-119"><a href="figure-5.html#cb33-119" tabindex="-1"></a>         <span class="fu">mutate</span>(<span class="at">delta =</span> MP.T <span class="sc">-</span> MP.N,<span class="at">tissue=</span><span class="fu">fct_rev</span>(tissue)) </span>
+<span id="cb33-120"><a href="figure-5.html#cb33-120" tabindex="-1"></a> p22 <span class="ot">&lt;-</span>  data2 <span class="sc">%&gt;%</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>SYMBOL,<span class="at">y=</span>tissue)) <span class="sc">+</span></span>
+<span id="cb33-121"><a href="figure-5.html#cb33-121" tabindex="-1"></a>        <span class="fu">geom_tile</span>(<span class="fu">aes</span>(<span class="at">fill=</span>delta)) <span class="sc">+</span></span>
+<span id="cb33-122"><a href="figure-5.html#cb33-122" tabindex="-1"></a>        <span class="fu">scale_fill_gradientn</span>(<span class="at">colours =</span> <span class="fu">c</span>(<span class="st">&#39;#7b3294&#39;</span>,<span class="st">&#39;grey&#39;</span>,<span class="st">&#39;#008837&#39;</span>),</span>
+<span id="cb33-123"><a href="figure-5.html#cb33-123" tabindex="-1"></a>                        <span class="at">limits=</span><span class="fu">c</span>(<span class="sc">-</span><span class="fl">0.2</span>, <span class="fl">0.2</span>), <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="fl">0.2</span>, <span class="fl">0.2</span>, <span class="fl">0.1</span>)) <span class="sc">+</span> </span>
+<span id="cb33-124"><a href="figure-5.html#cb33-124" tabindex="-1"></a>        <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb33-125"><a href="figure-5.html#cb33-125" tabindex="-1"></a>        <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>,<span class="at">hjust=</span><span class="dv">1</span>,<span class="at">vjust=</span><span class="fl">0.5</span>),</span>
+<span id="cb33-126"><a href="figure-5.html#cb33-126" tabindex="-1"></a>        <span class="at">panel.background =</span><span class="fu">element_blank</span>())</span>
+<span id="cb33-127"><a href="figure-5.html#cb33-127" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb33-128"><a href="figure-5.html#cb33-128" tabindex="-1"></a>p<span class="ot">&lt;-</span> <span class="fu">wrap_plots</span>(<span class="fu">list</span>(p1,p12,p21,p22),<span class="at">ncol=</span><span class="dv">2</span>,<span class="at">nrow=</span><span class="dv">2</span>) <span class="sc">+</span> <span class="fu">plot_layout</span>(<span class="at">guides =</span> <span class="st">&#39;collect&#39;</span>)</span>
+<span id="cb33-129"><a href="figure-5.html#cb33-129" tabindex="-1"></a><span class="fu">ggsave</span>(p,<span class="at">file=</span><span class="st">&quot;Data/Figures/Fig5/Fig5.C.pdf&quot;</span>,<span class="at">width=</span><span class="fl">7.5</span>,<span class="at">height=</span><span class="dv">6</span>)</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-64"></span>
+<img src="Data/Figures/Fig5/Fig5.C1.png" alt="Fig5.C" width="33%" id="fig-unnamed-chunk-64-1" /><img src="Data/Figures/Fig5/Fig5.C2.png" alt="Fig5.C" width="33%" id="fig-unnamed-chunk-64-2" /><img src="Data/Figures/Fig5/Fig5.C3.png" alt="Fig5.C" width="33%" id="fig-unnamed-chunk-64-3" />
+<p class="caption">
+ 5.3: Fig5.C
+</p>
+</div>
+</div>
+<div id="e.-kegg-pathway-crosstalk-analysis-for-pan-cancer" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> (E). KEGG Pathway crosstalk analysis for pan-cancer<a href="figure-5.html#e.-kegg-pathway-crosstalk-analysis-for-pan-cancer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="figure-5.html#cb34-1" tabindex="-1"></a><span class="co"># define KEGG-merged gene interaction network</span></span>
+<span id="cb34-2"><a href="figure-5.html#cb34-2" tabindex="-1"></a>ig.KEGG.category <span class="ot">&lt;-</span> <span class="fu">oRDS</span>(<span class="st">&#39;ig.KEGG.category&#39;</span>, <span class="at">placeholder=</span>placeholder, <span class="at">guid=</span>guid)</span>
+<span id="cb34-3"><a href="figure-5.html#cb34-3" tabindex="-1"></a>vec_categories <span class="ot">&lt;-</span> ig.KEGG.category <span class="sc">%&gt;%</span> <span class="fu">pull</span>(category) <span class="sc">%&gt;%</span> <span class="fu">str_replace</span>(<span class="st">&#39; &#39;</span>,<span class="st">&#39;&#39;</span>) <span class="sc">%&gt;%</span> <span class="fu">str_c</span>(<span class="st">&#39;KEGGc_&#39;</span>,.)</span>
+<span id="cb34-4"><a href="figure-5.html#cb34-4" tabindex="-1"></a></span>
+<span id="cb34-5"><a href="figure-5.html#cb34-5" tabindex="-1"></a>ls_ig <span class="ot">&lt;-</span> <span class="fu">lapply</span>(vec_categories, <span class="cf">function</span>(network){</span>
+<span id="cb34-6"><a href="figure-5.html#cb34-6" tabindex="-1"></a>    g <span class="ot">&lt;-</span> <span class="fu">oDefineNet</span>(<span class="at">network=</span>network, <span class="at">placeholder=</span>placeholder, <span class="at">guid=</span>guid)</span>
+<span id="cb34-7"><a href="figure-5.html#cb34-7" tabindex="-1"></a>})</span>
+<span id="cb34-8"><a href="figure-5.html#cb34-8" tabindex="-1"></a></span>
+<span id="cb34-9"><a href="figure-5.html#cb34-9" tabindex="-1"></a>ig  <span class="ot">&lt;-</span> <span class="fu">oCombineNet</span>(ls_ig, <span class="at">combineBy=</span><span class="st">&#39;union&#39;</span>, <span class="at">attrBy=</span><span class="st">&quot;intersect&quot;</span>, <span class="at">verbose=</span><span class="cn">TRUE</span>)</span>
+<span id="cb34-10"><a href="figure-5.html#cb34-10" tabindex="-1"></a>ig2 <span class="ot">&lt;-</span> <span class="fu">oNetInduce</span>(ig, <span class="at">nodes_query=</span><span class="fu">V</span>(ig)<span class="sc">$</span>name, <span class="at">largest.comp=</span>T) <span class="sc">%&gt;%</span> <span class="fu">as.undirected</span>()</span>
+<span id="cb34-11"><a href="figure-5.html#cb34-11" tabindex="-1"></a></span>
+<span id="cb34-12"><a href="figure-5.html#cb34-12" tabindex="-1"></a><span class="co"># crosstalk identification</span></span>
+<span id="cb34-13"><a href="figure-5.html#cb34-13" tabindex="-1"></a>subg <span class="ot">&lt;-</span> <span class="fu">oPierSubnet</span>(dT, <span class="at">network.customised=</span>ig2, <span class="at">priority.quantile=</span> <span class="fl">0.1</span>,</span>
+<span id="cb34-14"><a href="figure-5.html#cb34-14" tabindex="-1"></a>                    <span class="at">subnet.size=</span><span class="dv">50</span>, <span class="at">placeholder=</span>placeholder, <span class="at">guid=</span>guid)</span>
+<span id="cb34-15"><a href="figure-5.html#cb34-15" tabindex="-1"></a></span>
+<span id="cb34-16"><a href="figure-5.html#cb34-16" tabindex="-1"></a>df_subg <span class="ot">&lt;-</span> dT<span class="sc">$</span>priority <span class="sc">%&gt;%</span> <span class="fu">inner_join</span>(<span class="fu">oIG2TB</span>(subg,<span class="st">&#39;nodes&#39;</span>) <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">select</span>(name), <span class="at">by=</span><span class="st">&#39;name&#39;</span>)</span>
+<span id="cb34-17"><a href="figure-5.html#cb34-17" tabindex="-1"></a>df_subg <span class="sc">%&gt;%</span> openxlsx<span class="sc">::</span><span class="fu">write.xlsx</span>(<span class="st">&#39;PI_subg_nodes_mhb.xlsx&#39;</span>)</span>
+<span id="cb34-18"><a href="figure-5.html#cb34-18" tabindex="-1"></a><span class="co"># output plot: oVisEvidenceAdv</span></span>
+<span id="cb34-19"><a href="figure-5.html#cb34-19" tabindex="-1"></a>subg <span class="ot">&lt;-</span> subg <span class="sc">%&gt;%</span> <span class="fu">oLayout</span>(<span class="fu">c</span>(<span class="st">&quot;layout_with_kk&quot;</span>,<span class="st">&quot;graphlayouts.layout_with_stress&quot;</span>)[<span class="dv">2</span>])</span>
+<span id="cb34-20"><a href="figure-5.html#cb34-20" tabindex="-1"></a>gp_rating_evidence <span class="ot">&lt;-</span> <span class="fu">oVisEvidenceAdv</span>(dT, <span class="at">nodes=</span><span class="fu">V</span>(subg)<span class="sc">$</span>name, <span class="at">g=</span>subg, </span>
+<span id="cb34-21"><a href="figure-5.html#cb34-21" tabindex="-1"></a>                                      <span class="at">node.info=</span><span class="st">&quot;smart&quot;</span>, <span class="at">colormap=</span><span class="st">&quot;spectral.top&quot;</span>, </span>
+<span id="cb34-22"><a href="figure-5.html#cb34-22" tabindex="-1"></a>                                      <span class="at">node.color.alpha=</span><span class="fl">0.8</span>, <span class="at">node.size.range=</span><span class="dv">7</span>, </span>
+<span id="cb34-23"><a href="figure-5.html#cb34-23" tabindex="-1"></a>                                      <span class="at">edge.color=</span><span class="st">&#39;black&#39;</span>, <span class="at">edge.color.alpha=</span><span class="fl">0.2</span>, <span class="at">edge.curve=</span><span class="fl">0.01</span>,</span>
+<span id="cb34-24"><a href="figure-5.html#cb34-24" tabindex="-1"></a>                                      <span class="at">node.label.size=</span><span class="fl">2.5</span>, <span class="at">node.label.color=</span><span class="st">&#39;black&#39;</span>,</span>
+<span id="cb34-25"><a href="figure-5.html#cb34-25" tabindex="-1"></a>                                      <span class="at">node.label.alpha=</span><span class="fl">0.8</span>, <span class="at">node.label.padding=</span><span class="fl">0.1</span>, </span>
+<span id="cb34-26"><a href="figure-5.html#cb34-26" tabindex="-1"></a>                                      <span class="at">node.label.arrow=</span><span class="dv">0</span>, <span class="at">node.label.force=</span><span class="dv">1</span>)</span>
+<span id="cb34-27"><a href="figure-5.html#cb34-27" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">&quot;Data/Figures/Fig5/Fig5.E.pdf&quot;</span>, gp_rating_evidence, <span class="at">width=</span><span class="dv">9</span>, <span class="at">height=</span><span class="fl">6.5</span>) </span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-66"></span>
+<img src="Data/Figures/Fig5/Fig5.E.png" alt="Fig5.E" width="80%" id="fig-unnamed-chunk-66-1" />
+<p class="caption">
+ 5.4: Fig5.E
+</p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="figure-4.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="figure-6.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-application.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

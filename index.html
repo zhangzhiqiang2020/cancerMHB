@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>CancerMHBs</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="CancerMHBs" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="CancerMHBs" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Zhiqiang Zhang,Yuyang Hong, Hai Fang, Jiantao Shi" />
+
+
+<meta name="date" content="2024-06-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="figure-2.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://jiantaoshi.github.io/cancermhaps/index.html">CancerMHBs</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Figure 1</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#cancer-mhb-calling"><i class="fa fa-check"></i><b>1.1</b> Cancer MHB Calling</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#c-e.-mhb-annotation"><i class="fa fa-check"></i><b>1.2</b> (C-E). MHB annotation</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#f.-mhb-map"><i class="fa fa-check"></i><b>1.3</b> (F). MHB Map</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#g.-cancer-mhbs-vs-normal-mhbs"><i class="fa fa-check"></i><b>1.4</b> (G). Cancer MHBs vs Normal MHBs</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#h.-correlation-of-methylation-on-the-same-mhb"><i class="fa fa-check"></i><b>1.5</b> (H). Correlation of methylation on the same MHB</a></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#i.-enrichment-of-mhbs-in-genomic-features."><i class="fa fa-check"></i><b>1.6</b> (I). Enrichment of MHBs in genomic features.</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="figure-2.html"><a href="figure-2.html"><i class="fa fa-check"></i><b>2</b> Figure 2</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="figure-2.html"><a href="figure-2.html#a.-cancer-mhbs-and-open-chromatin"><i class="fa fa-check"></i><b>2.1</b> (A). Cancer MHBs and open chromatin</a></li>
+<li class="chapter" data-level="2.2" data-path="figure-2.html"><a href="figure-2.html#b.-cancer-mhbs-and-dnam-features"><i class="fa fa-check"></i><b>2.2</b> (B). Cancer MHBs and DNAm features</a></li>
+<li class="chapter" data-level="2.3" data-path="figure-2.html"><a href="figure-2.html#c-d.-enrichment-of-cancer-mhbs-in-dnam-feature-lola"><i class="fa fa-check"></i><b>2.3</b> (C-D). Enrichment of Cancer MHBs in DNAm feature (LOLA)</a></li>
+<li class="chapter" data-level="2.4" data-path="figure-2.html"><a href="figure-2.html#e.-genomic-features-with-mhbs-in-open-chromatin"><i class="fa fa-check"></i><b>2.4</b> (E). Genomic features with MHBs in open chromatin</a></li>
+<li class="chapter" data-level="2.5" data-path="figure-2.html"><a href="figure-2.html#f.-enrichment-of-mhbs-in-chia-pet-in-a-disease-status-specific-manner."><i class="fa fa-check"></i><b>2.5</b> (F). Enrichment of MHBs in ChIA-PET in a disease status-specific manner.</a></li>
+<li class="chapter" data-level="2.6" data-path="figure-2.html"><a href="figure-2.html#g.-enrichment-of-chia-pet-tags-in-mhbs."><i class="fa fa-check"></i><b>2.6</b> (G). Enrichment of ChIA-PET tags in MHBs.</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="figure-3.html"><a href="figure-3.html"><i class="fa fa-check"></i><b>3</b> Figure 3</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="figure-3.html"><a href="figure-3.html#a.-mhb-vs-dmr"><i class="fa fa-check"></i><b>3.1</b> (A). MHB vs DMR</a></li>
+<li class="chapter" data-level="3.2" data-path="figure-3.html"><a href="figure-3.html#b-c.-enrichment-of-cancer-mhbs-in-dmr-lola"><i class="fa fa-check"></i><b>3.2</b> (B-C). Enrichment of Cancer MHBs in DMR (LOLA)</a></li>
+<li class="chapter" data-level="3.3" data-path="figure-3.html"><a href="figure-3.html#d-e.-escc-dnam-and-rna-profiles-gse149608"><i class="fa fa-check"></i><b>3.3</b> (D-E). ESCC DNAm and RNA profiles (GSE149608)</a></li>
+<li class="chapter" data-level="3.4" data-path="figure-3.html"><a href="figure-3.html#f-g.-tf-activities"><i class="fa fa-check"></i><b>3.4</b> (F-G). TF activities</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="figure-4.html"><a href="figure-4.html"><i class="fa fa-check"></i><b>4</b> Figure 4</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="figure-4.html"><a href="figure-4.html#b.-crc-single-cell-mhap"><i class="fa fa-check"></i><b>4.1</b> (B). CRC single-cell mHap</a></li>
+<li class="chapter" data-level="4.2" data-path="figure-4.html"><a href="figure-4.html#c.-crc-single-cell-mhbs"><i class="fa fa-check"></i><b>4.2</b> (C). CRC single-cell MHBs</a></li>
+<li class="chapter" data-level="4.3" data-path="figure-4.html"><a href="figure-4.html#d-single-cell-mhb-vs-bulk-mhb"><i class="fa fa-check"></i><b>4.3</b> (D) Single cell MHB vs bulk MHB</a></li>
+<li class="chapter" data-level="4.4" data-path="figure-4.html"><a href="figure-4.html#e.-association-between-gene-expression-and-the-present-of-mhbs-in-promoter-regions."><i class="fa fa-check"></i><b>4.4</b> (E). Association between gene expression and the present of MHBs in promoter regions.</a></li>
+<li class="chapter" data-level="4.5" data-path="figure-4.html"><a href="figure-4.html#f.-association-of-gene-expression-and-methylation-levels-of-mhb-regions"><i class="fa fa-check"></i><b>4.5</b> (F). Association of gene expression and methylation levels of MHB regions</a></li>
+<li class="chapter" data-level="4.6" data-path="figure-4.html"><a href="figure-4.html#i-j.-mhbs-and-dysregulation-of-gene-expression-in-crc."><i class="fa fa-check"></i><b>4.6</b> (I-J). MHBs and dysregulation of gene expression in CRC.</a></li>
+<li class="chapter" data-level="4.7" data-path="figure-4.html"><a href="figure-4.html#k.-tcga-coad-dataset-validation"><i class="fa fa-check"></i><b>4.7</b> (K). TCGA-COAD dataset Validation</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="figure-5.html"><a href="figure-5.html"><i class="fa fa-check"></i><b>5</b> Figure 5</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="figure-5.html"><a href="figure-5.html#a-b.-enrichment-of-dmr-or-mhb-associated-genes-in-degs"><i class="fa fa-check"></i><b>5.1</b> (A-B). Enrichment of DMR or MHB-associated genes in DEGs</a></li>
+<li class="chapter" data-level="5.2" data-path="figure-5.html"><a href="figure-5.html#c.-pathway-enrichment-of-mhb-associated-genes-in-pan-cancer"><i class="fa fa-check"></i><b>5.2</b> (C). Pathway enrichment of MHB-associated genes in pan-cancer</a></li>
+<li class="chapter" data-level="5.3" data-path="figure-5.html"><a href="figure-5.html#e.-kegg-pathway-crosstalk-analysis-for-pan-cancer"><i class="fa fa-check"></i><b>5.3</b> (E). KEGG Pathway crosstalk analysis for pan-cancer</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="figure-6.html"><a href="figure-6.html"><i class="fa fa-check"></i><b>6</b> Figure 6</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="figure-6.html"><a href="figure-6.html#a-b.-aging-associate-with-the-mhb"><i class="fa fa-check"></i><b>6.1</b> (A-B). Aging associate with the MHB</a></li>
+<li class="chapter" data-level="6.2" data-path="figure-6.html"><a href="figure-6.html#c.-aging-associated-mhb-in-tcga-dataset"><i class="fa fa-check"></i><b>6.2</b> (C). Aging associated mhb in TCGA dataset</a></li>
+<li class="chapter" data-level="6.3" data-path="figure-6.html"><a href="figure-6.html#d-m-aging-associated-mhb-functions-in-early-cancer-detection-hm450k"><i class="fa fa-check"></i><b>6.3</b> (D-M) Aging associated MHB functions in Early Cancer Detection (HM450K)</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://jiantaoshi.github.io/cancermhaps/index.html" target="blank"> The mHap map of cancers</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">CancerMHBs</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">CancerMHBs</h1>
+<p class="author"><em>Zhiqiang Zhang,Yuyang Hong, Hai Fang, Jiantao Shi</em></p>
+<p class="date"><em>2024-06-18</em></p>
+</div>
+<div id="figure-1" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number"> 1</span> Figure 1<a href="index.html#figure-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><img src="Data/Figures/Figure1.png" width="80%" style="display: block; margin: auto;" />
+<strong>Figure 1. Identification of DNA methylation haplotype blocks (MHBs) in cancers</strong>. (A) Cancer types included in this study. Abbreviations and numbers of sequenced WGBS samples were indicated. (B) Visualization of an example MHB in colon cancer (chrX: 47,510,119 − 47,510,733). The upper panel shows the DNA methylation status of the individual fragment, in which black and white represent methylated and unmethylated CpG sites, respectively. Statistical significance was assessed using a binomial test. N11 indicates the number of mHaps that are methylated at both CpG sites; the numbers of mHaps of the other three types are also shown. The middle panel shows mean signed linkage disequilibrium R2 scores of between two adjacent CpGs. The lower panel shows signed linkage disequilibrium R2 scores between pairs of covered CpG sites. (C) Number of MHBs identified in each cancer type. (D) The length distribution of the union of MHBs from all cancer types. (E) A Pie chart illustrates the proportion of MHBs annotated to promoter, exonic, intronic, and intergenic regions. (F) Assignment of MHBs into 16 non-overlapping clusters. The number of regions in each cluster was also shown. The MHBs derived from house data, our previous fresh frozen samples data (GSE230193) and other public tumor data were also exhibited. (G) A heatmap shows the enrichment of cancer-specific MHB clusters in matched normal tissue types. Enrichment tests was performed using the R package LOLA, with the union of MHBs from all tissues as the test background. The resulting adjusted P-values for significant enrichment (FDR &lt; 0.05) were ranked across all tissue types. The black rectangle highlights the top one. Nonsignificant (FDR &gt;0.05) results are shown in grey. (H) Correlation of mean methylation for CpGs on the same MHB in TCGA datasets. In-house cancer MHBs are shown in red and general MHBs that were previously reported [17] were shown in blue. (I) Enrichment of MHBs in regions of genomic features. Enrichment scores were defined as the ratio of observed and random overlapping counts between MHBs and genomic regions. Significance was assessed by permutation test (1000 times). ***, P &lt; 0.001.</p>
+<div id="cancer-mhb-calling" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Cancer MHB Calling<a href="index.html#cancer-mhb-calling" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The DNA Methylation haplotype blocks (MHBs) were identified by <a href="https://github.com/yoyoong/mHapSuite">mHapSuite</a></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="index.html#cb1-1" tabindex="-1"></a><span class="co"># ==========shell command ==========</span></span>
+<span id="cb1-2"><a href="index.html#cb1-2" tabindex="-1"></a><span class="co"># Here, we showed a demo on how to call MHB from breast cancers using mHapSuite.</span></span>
+<span id="cb1-3"><a href="index.html#cb1-3" tabindex="-1"></a><span class="co"># The other Cancer MHBs Calling are also as follows.</span></span>
+<span id="cb1-4"><a href="index.html#cb1-4" tabindex="-1"></a><span class="co"># The input data is the breast cancer DNA methylation haplotype (mHap) file with corresponding CpG annotations (1-based).</span></span>
+<span id="cb1-5"><a href="index.html#cb1-5" tabindex="-1"></a><span class="ex">java</span> <span class="at">-jar</span> mHapSuite-1.0-jar-with-dependencies.jar MHBDiscovery <span class="dt">\</span></span>
+<span id="cb1-6"><a href="index.html#cb1-6" tabindex="-1"></a>                                  <span class="at">-mhapPath</span> BRCA.mhap.gz <span class="dt">\</span></span>
+<span id="cb1-7"><a href="index.html#cb1-7" tabindex="-1"></a>                                  <span class="at">-cpgPath</span> hg19_CpG.gz <span class="dt">\</span></span>
+<span id="cb1-8"><a href="index.html#cb1-8" tabindex="-1"></a>                                  <span class="at">-tag</span> MHB_BRCA  <span class="dt">\</span></span>
+<span id="cb1-9"><a href="index.html#cb1-9" tabindex="-1"></a>                                  <span class="at">-outputDir</span> MHB/tumor </span></code></pre></div>
+</div>
+<div id="c-e.-mhb-annotation" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> (C-E). MHB annotation<a href="index.html#c-e.-mhb-annotation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="index.html#cb2-1" tabindex="-1"></a><span class="co"># load packages</span></span>
+<span id="cb2-2"><a href="index.html#cb2-2" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-3"><a href="index.html#cb2-3" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb2-4"><a href="index.html#cb2-4" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
+<span id="cb2-5"><a href="index.html#cb2-5" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb2-6"><a href="index.html#cb2-6" tabindex="-1"></a><span class="fu">library</span>(pheatmap)</span>
+<span id="cb2-7"><a href="index.html#cb2-7" tabindex="-1"></a><span class="co"># Create result folder</span></span>
+<span id="cb2-8"><a href="index.html#cb2-8" tabindex="-1"></a>Res_Folder <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;Data/Figures/Fig1/&quot;</span>)</span>
+<span id="cb2-9"><a href="index.html#cb2-9" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">dir.exists</span>(Res_Folder)) <span class="fu">dir.create</span>(Res_Folder)</span>
+<span id="cb2-10"><a href="index.html#cb2-10" tabindex="-1"></a><span class="co"># 1.Summary the Number of MHBs of 11 common cancer</span></span>
+<span id="cb2-11"><a href="index.html#cb2-11" tabindex="-1"></a><span class="co"># Read MHB</span></span>
+<span id="cb2-12"><a href="index.html#cb2-12" tabindex="-1"></a>cancer_type <span class="ot">=</span> <span class="fu">list.files</span>(<span class="st">&quot;Data/Processed_data/MHB/tumor/&quot;</span>,<span class="at">pattern=</span><span class="st">&quot;.bed&quot;</span>)</span>
+<span id="cb2-13"><a href="index.html#cb2-13" tabindex="-1"></a>counts <span class="ot">&lt;-</span> <span class="fu">lapply</span>(cancer_type,<span class="cf">function</span>(x) {</span>
+<span id="cb2-14"><a href="index.html#cb2-14" tabindex="-1"></a>            <span class="fu">fread</span>(<span class="fu">paste0</span>(<span class="st">&quot;Data/Processed_data/MHB/tumor/&quot;</span>,x),<span class="at">sep=</span><span class="st">&quot;</span><span class="sc">\t</span><span class="st">&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">nrow</span>()})</span>
+<span id="cb2-15"><a href="index.html#cb2-15" tabindex="-1"></a><span class="fu">names</span>(counts) <span class="ot">&lt;-</span> cancer_type <span class="sc">%&gt;%</span> <span class="fu">str_split_i</span>(<span class="st">&quot;[_.]&quot;</span>,<span class="at">i=</span><span class="dv">2</span>)</span>
+<span id="cb2-16"><a href="index.html#cb2-16" tabindex="-1"></a>Ncount<span class="ot">=</span><span class="fu">as.data.frame</span>(<span class="fu">do.call</span>(rbind,counts)) <span class="sc">%&gt;%</span> <span class="fu">rownames_to_column</span>(<span class="at">var=</span><span class="st">&quot;Type&quot;</span>)</span>
+<span id="cb2-17"><a href="index.html#cb2-17" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="index.html#cb2-18" tabindex="-1"></a><span class="fu">pdf</span>(<span class="at">file=</span><span class="st">&quot;Data/Figures/Fig1/Fig1.C.pdf&quot;</span>,<span class="at">width=</span><span class="fl">5.5</span>,<span class="at">height=</span><span class="dv">4</span>)</span>
+<span id="cb2-19"><a href="index.html#cb2-19" tabindex="-1"></a>p<span class="ot">&lt;-</span><span class="fu">ggplot</span>(Ncount,<span class="fu">aes</span>(Type,V1)) <span class="sc">+</span> </span>
+<span id="cb2-20"><a href="index.html#cb2-20" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">fill=</span><span class="st">&quot;steelblue&quot;</span>,<span class="at">width=</span><span class="fl">0.8</span>)<span class="sc">+</span></span>
+<span id="cb2-21"><a href="index.html#cb2-21" tabindex="-1"></a>    <span class="fu">scale_y_continuous</span>(<span class="at">expand=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>),<span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">30000</span>))<span class="sc">+</span></span>
+<span id="cb2-22"><a href="index.html#cb2-22" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">y=</span><span class="st">&quot;The Number of Cancer-type MHBs&quot;</span>)<span class="sc">+</span></span>
+<span id="cb2-23"><a href="index.html#cb2-23" tabindex="-1"></a>    <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb2-24"><a href="index.html#cb2-24" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">panel.grid=</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb2-25"><a href="index.html#cb2-25" tabindex="-1"></a>          <span class="at">panel.background=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb2-26"><a href="index.html#cb2-26" tabindex="-1"></a>          <span class="at">panel.border=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb2-27"><a href="index.html#cb2-27" tabindex="-1"></a>          <span class="at">axis.line=</span><span class="fu">element_line</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>),</span>
+<span id="cb2-28"><a href="index.html#cb2-28" tabindex="-1"></a>          <span class="at">axis.title.x=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb2-29"><a href="index.html#cb2-29" tabindex="-1"></a>          <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>,<span class="at">size=</span><span class="dv">10</span>,</span>
+<span id="cb2-30"><a href="index.html#cb2-30" tabindex="-1"></a>                                    <span class="at">angle=</span><span class="dv">45</span>,<span class="at">vjust=</span><span class="dv">1</span>,<span class="at">hjust=</span><span class="dv">1</span>),</span>
+<span id="cb2-31"><a href="index.html#cb2-31" tabindex="-1"></a>          <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>,<span class="at">size=</span><span class="dv">10</span>),</span>
+<span id="cb2-32"><a href="index.html#cb2-32" tabindex="-1"></a>          <span class="at">axis.ticks =</span> <span class="fu">element_line</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>),</span>
+<span id="cb2-33"><a href="index.html#cb2-33" tabindex="-1"></a>          <span class="at">axis.ticks.length =</span> <span class="fu">unit</span>(<span class="dv">5</span>, <span class="st">&quot;pt&quot;</span>) )<span class="sc">+</span></span>
+<span id="cb2-34"><a href="index.html#cb2-34" tabindex="-1"></a>    <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label=</span>V1), <span class="at">vjust=</span><span class="sc">-</span><span class="fl">0.3</span>, <span class="at">size=</span><span class="fl">3.5</span>,<span class="at">color=</span><span class="st">&quot;black&quot;</span>)</span>
+<span id="cb2-35"><a href="index.html#cb2-35" tabindex="-1"></a><span class="fu">print</span>(p)</span>
+<span id="cb2-36"><a href="index.html#cb2-36" tabindex="-1"></a><span class="fu">dev.off</span>()</span>
+<span id="cb2-37"><a href="index.html#cb2-37" tabindex="-1"></a><span class="co"># 2.Genomic annotation of cancer MHBs</span></span>
+<span id="cb2-38"><a href="index.html#cb2-38" tabindex="-1"></a><span class="fu">library</span>(ChIPseeker)</span>
+<span id="cb2-39"><a href="index.html#cb2-39" tabindex="-1"></a><span class="fu">library</span>(TxDb.Hsapiens.UCSC.hg19.knownGene)</span>
+<span id="cb2-40"><a href="index.html#cb2-40" tabindex="-1"></a>txdb <span class="ot">&lt;-</span> TxDb.Hsapiens.UCSC.hg19.knownGene</span>
+<span id="cb2-41"><a href="index.html#cb2-41" tabindex="-1"></a>mhb_clusters_Anno <span class="ot">&lt;-</span> <span class="fu">annotatePeak</span>(<span class="st">&quot;Data/Processed_data/MHB/MHB_11_cancers_clusters.bed&quot;</span>,</span>
+<span id="cb2-42"><a href="index.html#cb2-42" tabindex="-1"></a>                                  <span class="at">tssRegion=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">2000</span>, <span class="dv">2000</span>),</span>
+<span id="cb2-43"><a href="index.html#cb2-43" tabindex="-1"></a>                                  <span class="at">TxDb=</span>txdb, </span>
+<span id="cb2-44"><a href="index.html#cb2-44" tabindex="-1"></a>                                  <span class="at">annoDb=</span><span class="st">&quot;org.Hs.eg.db&quot;</span>)</span>
+<span id="cb2-45"><a href="index.html#cb2-45" tabindex="-1"></a></span>
+<span id="cb2-46"><a href="index.html#cb2-46" tabindex="-1"></a><span class="fu">pdf</span>(<span class="st">&quot;Data/Figures/Fig1/Fig1.E.pdf&quot;</span>,<span class="at">width=</span><span class="dv">8</span>,<span class="at">height=</span><span class="dv">8</span>)</span>
+<span id="cb2-47"><a href="index.html#cb2-47" tabindex="-1"></a>p<span class="ot">&lt;-</span> <span class="fu">plotAnnoPie</span>(mhb_clusters_Anno)</span>
+<span id="cb2-48"><a href="index.html#cb2-48" tabindex="-1"></a><span class="fu">print</span>(p)</span>
+<span id="cb2-49"><a href="index.html#cb2-49" tabindex="-1"></a><span class="fu">dev.off</span>()</span>
+<span id="cb2-50"><a href="index.html#cb2-50" tabindex="-1"></a><span class="co"># 3.Summary the length of merged cancer MHBs</span></span>
+<span id="cb2-51"><a href="index.html#cb2-51" tabindex="-1"></a>MHB_length <span class="ot">=</span> <span class="fu">as.data.frame</span>(mhb_clusters_Anno)<span class="sc">$</span>width</span>
+<span id="cb2-52"><a href="index.html#cb2-52" tabindex="-1"></a><span class="fu">pdf</span>(<span class="st">&quot;Data/Figures/Fig1/Fig1.D.pdf&quot;</span>,<span class="at">width=</span><span class="dv">5</span>,<span class="at">height=</span><span class="dv">5</span>)</span>
+<span id="cb2-53"><a href="index.html#cb2-53" tabindex="-1"></a>p<span class="ot">&lt;-</span> <span class="fu">hist</span>(MHB_length,</span>
+<span id="cb2-54"><a href="index.html#cb2-54" tabindex="-1"></a>            <span class="at">main =</span><span class="st">&quot;&quot;</span>,</span>
+<span id="cb2-55"><a href="index.html#cb2-55" tabindex="-1"></a>            <span class="at">xlab=</span><span class="st">&quot;The Length of MHB (bp)&quot;</span>,</span>
+<span id="cb2-56"><a href="index.html#cb2-56" tabindex="-1"></a>            <span class="at">ylab=</span><span class="st">&quot;Frequency&quot;</span>,<span class="at">col=</span><span class="st">&quot;steelblue&quot;</span>,</span>
+<span id="cb2-57"><a href="index.html#cb2-57" tabindex="-1"></a>            <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">60000</span>),</span>
+<span id="cb2-58"><a href="index.html#cb2-58" tabindex="-1"></a>           <span class="at">breaks=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">2500</span>,<span class="dv">100</span>))</span>
+<span id="cb2-59"><a href="index.html#cb2-59" tabindex="-1"></a>      <span class="fu">text</span>(<span class="dv">1500</span>,<span class="dv">40000</span>, <span class="fu">paste0</span>(<span class="st">&quot;mean = &quot;</span>,<span class="fu">round</span>(<span class="fu">mean</span>(MHB_length),<span class="dv">0</span>),<span class="st">&quot; bp&quot;</span>))</span>
+<span id="cb2-60"><a href="index.html#cb2-60" tabindex="-1"></a>      <span class="fu">text</span>(<span class="dv">1500</span>,<span class="dv">45000</span>, <span class="fu">paste0</span>(<span class="st">&quot;median = &quot;</span>,<span class="fu">round</span>(<span class="fu">median</span>(MHB_length),<span class="dv">0</span>),<span class="st">&quot; bp&quot;</span>))</span>
+<span id="cb2-61"><a href="index.html#cb2-61" tabindex="-1"></a><span class="fu">print</span>(p)</span>
+<span id="cb2-62"><a href="index.html#cb2-62" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-4"></span>
+<img src="Data/Figures/Fig1/Fig1.C.png" alt="Fig1.C-E" width="33%" id="fig-unnamed-chunk-4-1" /><img src="Data/Figures/Fig1/Fig1.D.png" alt="Fig1.C-E" width="33%" id="fig-unnamed-chunk-4-2" /><img src="Data/Figures/Fig1/Fig1.E.png" alt="Fig1.C-E" width="33%" id="fig-unnamed-chunk-4-3" />
+<p class="caption">
+ 1.1: Fig1.C-E
+</p>
+</div>
+</div>
+<div id="f.-mhb-map" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> (F). MHB Map<a href="index.html#f.-mhb-map" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="index.html#cb3-1" tabindex="-1"></a><span class="co"># Tumor MHB data  (In house data + Public data)</span></span>
+<span id="cb3-2"><a href="index.html#cb3-2" tabindex="-1"></a><span class="co"># We merge the cancer MHB from 11 common tumor into 81,567 regions, and then we divided the cancer MHBs </span></span>
+<span id="cb3-3"><a href="index.html#cb3-3" tabindex="-1"></a><span class="co"># into cancer type-specific MHBs and common shared MHBs by the appearance in one or more tissue types.</span></span>
+<span id="cb3-4"><a href="index.html#cb3-4" tabindex="-1"></a><span class="co"># the cancer mhbs were also validated through public data. </span></span>
+<span id="cb3-5"><a href="index.html#cb3-5" tabindex="-1"></a>mhb_CT_matrix <span class="ot">=</span> <span class="fu">read.table</span>(<span class="st">&quot;Data/Processed_data/MHB/MHB_11_cancers_CT_matrix.txt&quot;</span>,<span class="at">sep =</span> <span class="st">&quot;</span><span class="sc">\t</span><span class="st">&quot;</span>,<span class="at">header=</span>T)</span>
+<span id="cb3-6"><a href="index.html#cb3-6" tabindex="-1"></a><span class="fu">names</span>(mhb_CT_matrix) <span class="ot">=</span> <span class="fu">gsub</span>(<span class="st">&quot;MHB_&quot;</span>,<span class="st">&quot;&quot;</span>,<span class="fu">names</span>(mhb_CT_matrix))</span>
+<span id="cb3-7"><a href="index.html#cb3-7" tabindex="-1"></a>mhb_CT_matrix <span class="ot">=</span> mhb_CT_matrix[<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>,<span class="dv">11</span><span class="sc">:</span><span class="dv">31</span>,<span class="dv">8</span><span class="sc">:</span><span class="dv">10</span>,<span class="dv">7</span>)]</span>
+<span id="cb3-8"><a href="index.html#cb3-8" tabindex="-1"></a>mhb_CT_matrix<span class="ot">=</span>mhb_CT_matrix[<span class="fu">order</span>(mhb_CT_matrix<span class="sc">$</span>num,mhb_CT_matrix<span class="sc">$</span>cluster,<span class="at">decreasing=</span>F),]  </span>
+<span id="cb3-9"><a href="index.html#cb3-9" tabindex="-1"></a><span class="co"># transform 1-0 matrix</span></span>
+<span id="cb3-10"><a href="index.html#cb3-10" tabindex="-1"></a>mhb_CT_matrix[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)][mhb_CT_matrix[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)]<span class="sc">&gt;=</span><span class="dv">1</span>]<span class="ot">&lt;-</span><span class="dv">1</span></span>
+<span id="cb3-11"><a href="index.html#cb3-11" tabindex="-1"></a><span class="fu">rownames</span>(mhb_CT_matrix) <span class="ot">=</span> <span class="fu">paste</span>(mhb_CT_matrix<span class="sc">$</span>chr,mhb_CT_matrix<span class="sc">$</span>start,mhb_CT_matrix<span class="sc">$</span>end,<span class="at">sep=</span><span class="st">&quot;_&quot;</span>)</span>
+<span id="cb3-12"><a href="index.html#cb3-12" tabindex="-1"></a><span class="co"># Ordering function</span></span>
+<span id="cb3-13"><a href="index.html#cb3-13" tabindex="-1"></a>order_f <span class="ot">&lt;-</span><span class="cf">function</span>(x,Tag,cluster){</span>
+<span id="cb3-14"><a href="index.html#cb3-14" tabindex="-1"></a>    num <span class="ot">=</span> <span class="fu">table</span>(x[Tag][x<span class="sc">$</span>cluster<span class="sc">==</span><span class="fu">paste0</span>(cluster,<span class="st">&quot;_cluster&quot;</span>),])</span>
+<span id="cb3-15"><a href="index.html#cb3-15" tabindex="-1"></a>    x[Tag][x<span class="sc">$</span>cluster<span class="sc">==</span><span class="fu">paste0</span>(cluster,<span class="st">&quot;_cluster&quot;</span>),]<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">0</span>,num[<span class="st">&quot;0&quot;</span>]),<span class="fu">rep</span>(<span class="dv">1</span>,num[<span class="st">&quot;1&quot;</span>]))</span>
+<span id="cb3-16"><a href="index.html#cb3-16" tabindex="-1"></a>    data <span class="ot">=</span> x</span>
+<span id="cb3-17"><a href="index.html#cb3-17" tabindex="-1"></a>  <span class="fu">return</span>(data)</span>
+<span id="cb3-18"><a href="index.html#cb3-18" tabindex="-1"></a>}</span>
+<span id="cb3-19"><a href="index.html#cb3-19" tabindex="-1"></a><span class="co"># Public GEO data : CRC_P_RRBS ESCC_P LIHC_P</span></span>
+<span id="cb3-20"><a href="index.html#cb3-20" tabindex="-1"></a>mhb_CT_matrix <span class="ot">=</span> <span class="fu">order_f</span>(mhb_CT_matrix,<span class="st">&quot;CRC_P&quot;</span>,<span class="st">&quot;COAD&quot;</span>)</span>
+<span id="cb3-21"><a href="index.html#cb3-21" tabindex="-1"></a>mhb_CT_matrix <span class="ot">=</span> <span class="fu">order_f</span>(mhb_CT_matrix,<span class="st">&quot;ESCC_P&quot;</span>,<span class="st">&quot;ESCA&quot;</span>)</span>
+<span id="cb3-22"><a href="index.html#cb3-22" tabindex="-1"></a>mhb_CT_matrix <span class="ot">=</span> <span class="fu">order_f</span>(mhb_CT_matrix,<span class="st">&quot;LIHC_P&quot;</span>,<span class="st">&quot;LIHC&quot;</span>)</span>
+<span id="cb3-23"><a href="index.html#cb3-23" tabindex="-1"></a><span class="co"># Our previous data : Cancer of Unknown Primary data (CUP)</span></span>
+<span id="cb3-24"><a href="index.html#cb3-24" tabindex="-1"></a>cup<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">&quot;BRCA&quot;</span>,<span class="st">&quot;CESC&quot;</span>,<span class="st">&quot;COADREAD&quot;</span>,<span class="st">&quot;ESCA&quot;</span>,<span class="st">&quot;HNSC&quot;</span>,<span class="st">&quot;LIHC&quot;</span>,<span class="st">&quot;LUSCLUAD&quot;</span>,<span class="st">&quot;OV&quot;</span>,<span class="st">&quot;STAD&quot;</span>,<span class="st">&quot;THCA&quot;</span>)</span>
+<span id="cb3-25"><a href="index.html#cb3-25" tabindex="-1"></a><span class="cf">for</span> (tag <span class="cf">in</span> cup) {</span>
+<span id="cb3-26"><a href="index.html#cb3-26" tabindex="-1"></a>   <span class="cf">if</span> (tag <span class="sc">==</span> <span class="st">&quot;COADREAD&quot;</span> ) {</span>
+<span id="cb3-27"><a href="index.html#cb3-27" tabindex="-1"></a>         flag <span class="ot">&lt;-</span> <span class="st">&quot;COAD&quot;</span></span>
+<span id="cb3-28"><a href="index.html#cb3-28" tabindex="-1"></a>   }<span class="cf">else</span> <span class="cf">if</span> (tag <span class="sc">==</span> <span class="st">&quot;LUSCLUAD&quot;</span>) {</span>
+<span id="cb3-29"><a href="index.html#cb3-29" tabindex="-1"></a>         flag <span class="ot">&lt;-</span> <span class="st">&quot;NSCLC&quot;</span></span>
+<span id="cb3-30"><a href="index.html#cb3-30" tabindex="-1"></a>   }<span class="cf">else</span>{</span>
+<span id="cb3-31"><a href="index.html#cb3-31" tabindex="-1"></a>         flag <span class="ot">&lt;-</span> tag</span>
+<span id="cb3-32"><a href="index.html#cb3-32" tabindex="-1"></a>   }</span>
+<span id="cb3-33"><a href="index.html#cb3-33" tabindex="-1"></a>     mhb_CT_matrix <span class="ot">=</span> <span class="fu">order_f</span>(mhb_CT_matrix,<span class="fu">paste0</span>(<span class="st">&quot;CUP_&quot;</span>,tag),flag)</span>
+<span id="cb3-34"><a href="index.html#cb3-34" tabindex="-1"></a>}</span>
+<span id="cb3-35"><a href="index.html#cb3-35" tabindex="-1"></a><span class="co"># MHB Map plot</span></span>
+<span id="cb3-36"><a href="index.html#cb3-36" tabindex="-1"></a>annotation_row <span class="ot">=</span> mhb_CT_matrix[<span class="fu">c</span>(<span class="dv">6</span>)]</span>
+<span id="cb3-37"><a href="index.html#cb3-37" tabindex="-1"></a>annotation_col <span class="ot">=</span> <span class="fu">data.frame</span>(<span class="at">Assay =</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">&quot;WGBS&quot;</span>,<span class="dv">11</span>),<span class="fu">rep</span>(<span class="st">&quot;RRBS&quot;</span>,<span class="dv">11</span>),<span class="fu">rep</span>(<span class="st">&quot;WGBS&quot;</span>,<span class="dv">3</span>))), </span>
+<span id="cb3-38"><a href="index.html#cb3-38" tabindex="-1"></a>                                          <span class="at">Tissue_Type =</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">&quot;Tumor&quot;</span>,<span class="dv">24</span>),<span class="fu">rep</span>(<span class="st">&quot;Normal&quot;</span>,<span class="dv">1</span>))))</span>
+<span id="cb3-39"><a href="index.html#cb3-39" tabindex="-1"></a><span class="fu">rownames</span>(annotation_col) <span class="ot">=</span> <span class="fu">names</span>(mhb_CT_matrix[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)])</span>
+<span id="cb3-40"><a href="index.html#cb3-40" tabindex="-1"></a>annotation_colors <span class="ot">=</span> <span class="fu">list</span>(<span class="at">Assay=</span><span class="fu">c</span>(<span class="at">WGBS=</span><span class="st">&quot;#4DAF4A&quot;</span>,<span class="at">RRBS=</span><span class="st">&quot;#984EA3&quot;</span>),</span>
+<span id="cb3-41"><a href="index.html#cb3-41" tabindex="-1"></a>                        <span class="at">Tissue_Type=</span><span class="fu">c</span>(<span class="at">Tumor=</span><span class="st">&quot;#E41A1C&quot;</span>,<span class="at">Normal=</span><span class="st">&quot;#377EB8&quot;</span>),</span>
+<span id="cb3-42"><a href="index.html#cb3-42" tabindex="-1"></a>                        <span class="at">cluster=</span><span class="fu">c</span>(<span class="at">BRCA_cluster=</span><span class="st">&quot;#A6CEE3&quot;</span>,<span class="at">CESC_cluster=</span><span class="st">&quot;#1F78B4&quot;</span>,</span>
+<span id="cb3-43"><a href="index.html#cb3-43" tabindex="-1"></a>                        <span class="at">COAD_cluster=</span><span class="st">&quot;#B2DF8A&quot;</span>,<span class="at">ESCA_cluster=</span><span class="st">&quot;#FDBF6F&quot;</span>,</span>
+<span id="cb3-44"><a href="index.html#cb3-44" tabindex="-1"></a>                        <span class="at">HNSC_cluster=</span><span class="st">&quot;#33A02C&quot;</span>,<span class="at">LIHC_cluster=</span><span class="st">&quot;#FB9A99&quot;</span>,</span>
+<span id="cb3-45"><a href="index.html#cb3-45" tabindex="-1"></a>                        <span class="at">NSCLC_cluster=</span><span class="st">&quot;#E31A1C&quot;</span>,<span class="at">OV_cluster=</span><span class="st">&quot;#FF7F00&quot;</span>,</span>
+<span id="cb3-46"><a href="index.html#cb3-46" tabindex="-1"></a>                        <span class="at">PACA_cluster=</span><span class="st">&quot;#CAB2D6&quot;</span>, <span class="at">STAD_cluster=</span><span class="st">&quot;#6A3D9A&quot;</span>,</span>
+<span id="cb3-47"><a href="index.html#cb3-47" tabindex="-1"></a>                        <span class="at">THCA_cluster=</span><span class="st">&quot;#B15928&quot;</span>,<span class="at">cluster12=</span><span class="st">&quot;#1B9E77&quot;</span>,</span>
+<span id="cb3-48"><a href="index.html#cb3-48" tabindex="-1"></a>                        <span class="at">cluster13=</span><span class="st">&quot;#D95F02&quot;</span>,<span class="at">cluster14=</span><span class="st">&quot;#7570B3&quot;</span>,</span>
+<span id="cb3-49"><a href="index.html#cb3-49" tabindex="-1"></a>                        <span class="at">cluster15=</span><span class="st">&quot;#E7298A&quot;</span>,<span class="at">cluster16=</span><span class="st">&quot;#66A61E&quot;</span>))</span>
+<span id="cb3-50"><a href="index.html#cb3-50" tabindex="-1"></a>data <span class="ot">=</span> <span class="fu">as.data.frame</span>(mhb_CT_matrix[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)])</span>
+<span id="cb3-51"><a href="index.html#cb3-51" tabindex="-1"></a><span class="fu">tiff</span>(<span class="at">filename =</span> <span class="st">&quot;Data/Figures/Fig1/Fig1.F.tif&quot;</span>,<span class="at">width =</span> <span class="dv">7800</span>, <span class="at">height =</span> <span class="dv">6000</span>, <span class="at">compression =</span> <span class="st">&quot;lzw&quot;</span>,</span>
+<span id="cb3-52"><a href="index.html#cb3-52" tabindex="-1"></a>            <span class="at">bg =</span> <span class="st">&quot;white&quot;</span>,<span class="at">res=</span><span class="dv">1200</span>) <span class="do">## type = &quot;cairo&quot;</span></span>
+<span id="cb3-53"><a href="index.html#cb3-53" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">pheatmap</span>(data,<span class="at">show_rownames=</span>F,<span class="at">cluster_cols=</span> F,<span class="at">cluster_row=</span>F,</span>
+<span id="cb3-54"><a href="index.html#cb3-54" tabindex="-1"></a>                <span class="at">annotation_legend=</span>T,<span class="at">legend=</span>T,</span>
+<span id="cb3-55"><a href="index.html#cb3-55" tabindex="-1"></a>                <span class="at">annotation_row=</span>annotation_row,<span class="at">annotation_col=</span>annotation_col,</span>
+<span id="cb3-56"><a href="index.html#cb3-56" tabindex="-1"></a>                <span class="at">annotation_colors=</span>annotation_colors,</span>
+<span id="cb3-57"><a href="index.html#cb3-57" tabindex="-1"></a>                <span class="at">annotation_names_row=</span>T,<span class="at">border =</span> F,<span class="at">border_color =</span> F,</span>
+<span id="cb3-58"><a href="index.html#cb3-58" tabindex="-1"></a>                <span class="at">gaps_col =</span> <span class="fu">c</span>(<span class="dv">11</span>,<span class="dv">21</span>,<span class="dv">24</span>),<span class="at">scale =</span> <span class="st">&quot;none&quot;</span>,<span class="at">angle_col =</span> <span class="dv">45</span>,</span>
+<span id="cb3-59"><a href="index.html#cb3-59" tabindex="-1"></a>              <span class="at">color =</span> <span class="fu">colorRampPalette</span>(<span class="at">colors =</span> <span class="fu">c</span>(<span class="st">&quot;white&quot;</span>,<span class="st">&quot;red&quot;</span>))(<span class="dv">1000</span>)</span>
+<span id="cb3-60"><a href="index.html#cb3-60" tabindex="-1"></a>              )</span>
+<span id="cb3-61"><a href="index.html#cb3-61" tabindex="-1"></a><span class="fu">print</span>(p)</span>
+<span id="cb3-62"><a href="index.html#cb3-62" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-6"></span>
+<img src="Data/Figures/Fig1/Fig1.F.png" alt="Fig1.F" width="80%" id="fig-unnamed-chunk-6-1" />
+<p class="caption">
+ 1.2: Fig1.F
+</p>
+</div>
+</div>
+<div id="g.-cancer-mhbs-vs-normal-mhbs" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> (G). Cancer MHBs vs Normal MHBs<a href="index.html#g.-cancer-mhbs-vs-normal-mhbs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="index.html#cb4-1" tabindex="-1"></a><span class="co"># we show the region enrichment of cancer MHBs in normal MHBs with LOLA R packages.</span></span>
+<span id="cb4-2"><a href="index.html#cb4-2" tabindex="-1"></a><span class="co"># do LOLA; using the union of 11 common cancer MHBs as the background.</span></span>
+<span id="cb4-3"><a href="index.html#cb4-3" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;LOLA&quot;</span>)</span>
+<span id="cb4-4"><a href="index.html#cb4-4" tabindex="-1"></a><span class="fu">library</span>(GenomicRanges)</span>
+<span id="cb4-5"><a href="index.html#cb4-5" tabindex="-1"></a><span class="fu">library</span>(reshape2)</span>
+<span id="cb4-6"><a href="index.html#cb4-6" tabindex="-1"></a>mhb_T<span class="ot">=</span><span class="st">&quot;Data/Processed_data/MHB/mhb_clusters/&quot;</span></span>
+<span id="cb4-7"><a href="index.html#cb4-7" tabindex="-1"></a>background<span class="ot">=</span><span class="st">&quot;Data/Processed_data/MHB/MHB_11_cancers_clusters.bed&quot;</span></span>
+<span id="cb4-8"><a href="index.html#cb4-8" tabindex="-1"></a>files <span class="ot">=</span> <span class="fu">list.files</span>(mhb_T)</span>
+<span id="cb4-9"><a href="index.html#cb4-9" tabindex="-1"></a>locResults <span class="ot">=</span> <span class="fu">list</span>()</span>
+<span id="cb4-10"><a href="index.html#cb4-10" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="index.html#cb4-11" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> files){</span>
+<span id="cb4-12"><a href="index.html#cb4-12" tabindex="-1"></a><span class="co"># Read input</span></span>
+<span id="cb4-13"><a href="index.html#cb4-13" tabindex="-1"></a>    mhb<span class="ot">=</span><span class="fu">readBed</span>(<span class="fu">paste0</span>(mhb_T,i))</span>
+<span id="cb4-14"><a href="index.html#cb4-14" tabindex="-1"></a><span class="co"># Universe_Sets Background</span></span>
+<span id="cb4-15"><a href="index.html#cb4-15" tabindex="-1"></a>      universe_set<span class="ot">=</span><span class="fu">readBed</span>(background)</span>
+<span id="cb4-16"><a href="index.html#cb4-16" tabindex="-1"></a><span class="co"># Overlapped </span></span>
+<span id="cb4-17"><a href="index.html#cb4-17" tabindex="-1"></a>      states<span class="ot">=</span><span class="fu">loadRegionDB</span>(<span class="st">&quot;Data/Processed_data/MHB/LOLA_DB&quot;</span>)</span>
+<span id="cb4-18"><a href="index.html#cb4-18" tabindex="-1"></a><span class="co"># Runing LOLA</span></span>
+<span id="cb4-19"><a href="index.html#cb4-19" tabindex="-1"></a>      locResults[[i]] <span class="ot">=</span> <span class="fu">runLOLA</span>(mhb, universe_set, states, <span class="at">cores=</span><span class="dv">10</span>)</span>
+<span id="cb4-20"><a href="index.html#cb4-20" tabindex="-1"></a>}</span>
+<span id="cb4-21"><a href="index.html#cb4-21" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="index.html#cb4-22" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">lapply</span>(<span class="fu">names</span>(locResults),<span class="cf">function</span>(x){</span>
+<span id="cb4-23"><a href="index.html#cb4-23" tabindex="-1"></a>    locResults[[x]][,<span class="fu">c</span>(<span class="st">&quot;filename&quot;</span>,<span class="st">&quot;pValueLog&quot;</span>)] <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">Type=</span>x)</span>
+<span id="cb4-24"><a href="index.html#cb4-24" tabindex="-1"></a>})</span>
+<span id="cb4-25"><a href="index.html#cb4-25" tabindex="-1"></a>data <span class="ot">=</span> <span class="fu">as.data.frame</span>(<span class="fu">do.call</span>(rbind,data))</span>
+<span id="cb4-26"><a href="index.html#cb4-26" tabindex="-1"></a>dta <span class="ot">=</span> <span class="fu">dcast</span>(data,Type<span class="sc">~</span>filename,<span class="at">value.var =</span> <span class="st">&quot;pValueLog&quot;</span>)</span>
+<span id="cb4-27"><a href="index.html#cb4-27" tabindex="-1"></a><span class="fu">rownames</span>(dta) <span class="ot">=</span> dta<span class="sc">$</span>Type;dta<span class="sc">$</span>Type<span class="ot">=</span><span class="cn">NULL</span></span>
+<span id="cb4-28"><a href="index.html#cb4-28" tabindex="-1"></a>dta <span class="ot">=</span> dta[<span class="fu">c</span>(<span class="st">&quot;BRCA_cluster.bed&quot;</span>,<span class="st">&quot;CESC_cluster.bed&quot;</span>,<span class="st">&quot;COAD_cluster.bed&quot;</span>,</span>
+<span id="cb4-29"><a href="index.html#cb4-29" tabindex="-1"></a>            <span class="st">&quot;ESCA_cluster.bed&quot;</span>,<span class="st">&quot;HNSC_cluster.bed&quot;</span>,<span class="st">&quot;LIHC_cluster.bed&quot;</span>,</span>
+<span id="cb4-30"><a href="index.html#cb4-30" tabindex="-1"></a>            <span class="st">&quot;NSCLC_cluster.bed&quot;</span>,<span class="st">&quot;OV_cluster.bed&quot;</span>,<span class="st">&quot;PACA_cluster.bed&quot;</span>,</span>
+<span id="cb4-31"><a href="index.html#cb4-31" tabindex="-1"></a>            <span class="st">&quot;STAD_cluster.bed&quot;</span>, <span class="st">&quot;THCA_cluster.bed&quot;</span>,<span class="st">&quot;cluster12&quot;</span>,<span class="st">&quot;cluster13&quot;</span>,</span>
+<span id="cb4-32"><a href="index.html#cb4-32" tabindex="-1"></a>            <span class="st">&quot;cluster14&quot;</span>,<span class="st">&quot;cluster15&quot;</span>,<span class="st">&quot;cluster16&quot;</span>),]</span>
+<span id="cb4-33"><a href="index.html#cb4-33" tabindex="-1"></a><span class="co"># filter P value &lt; 0.05</span></span>
+<span id="cb4-34"><a href="index.html#cb4-34" tabindex="-1"></a>dta[dta<span class="sc">&lt;</span><span class="fl">1.30103</span>]<span class="ot">&lt;-</span><span class="cn">NA</span></span>
+<span id="cb4-35"><a href="index.html#cb4-35" tabindex="-1"></a>rank_t <span class="ot">=</span> <span class="cf">function</span>(x) {</span>
+<span id="cb4-36"><a href="index.html#cb4-36" tabindex="-1"></a>    m <span class="ot">=</span> <span class="fu">rank</span>(<span class="fu">array</span>(<span class="sc">-</span>x),<span class="at">na.last=</span><span class="st">&quot;keep&quot;</span>,<span class="at">ties.method =</span> <span class="st">&quot;min&quot;</span>)</span>
+<span id="cb4-37"><a href="index.html#cb4-37" tabindex="-1"></a>      <span class="fu">return</span>(m)</span>
+<span id="cb4-38"><a href="index.html#cb4-38" tabindex="-1"></a>  }</span>
+<span id="cb4-39"><a href="index.html#cb4-39" tabindex="-1"></a>data_rank<span class="ot">=</span> <span class="fu">as.data.frame</span>(<span class="fu">t</span>(<span class="fu">apply</span>(dta,<span class="dv">1</span>,rank_t)))</span>
+<span id="cb4-40"><a href="index.html#cb4-40" tabindex="-1"></a><span class="fu">names</span>(data_rank) <span class="ot">=</span> <span class="fu">names</span>(dta)</span>
+<span id="cb4-41"><a href="index.html#cb4-41" tabindex="-1"></a>tag<span class="ot">&lt;-</span><span class="fu">names</span>(data_rank)[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">9</span>)]</span>
+<span id="cb4-42"><a href="index.html#cb4-42" tabindex="-1"></a>data_rank<span class="ot">&lt;-</span> data_rank[<span class="fu">c</span>(tag,<span class="st">&quot;MHB_placenta_normal.bed&quot;</span>)]</span>
+<span id="cb4-43"><a href="index.html#cb4-43" tabindex="-1"></a></span>
+<span id="cb4-44"><a href="index.html#cb4-44" tabindex="-1"></a><span class="fu">pdf</span>(<span class="at">file=</span><span class="st">&quot;Data/Figures/Fig1/Fig1.G.pdf&quot;</span>,<span class="at">width=</span><span class="dv">5</span>,<span class="at">height=</span><span class="fl">5.5</span>)</span>
+<span id="cb4-45"><a href="index.html#cb4-45" tabindex="-1"></a>p<span class="ot">&lt;-</span> <span class="fu">pheatmap</span>(data_rank,</span>
+<span id="cb4-46"><a href="index.html#cb4-46" tabindex="-1"></a>                <span class="at">main=</span><span class="st">&quot;MHBs clusters vs Normal MHB&quot;</span>,</span>
+<span id="cb4-47"><a href="index.html#cb4-47" tabindex="-1"></a>                <span class="at">show_colnames=</span>T,<span class="at">show_rownames=</span>T,</span>
+<span id="cb4-48"><a href="index.html#cb4-48" tabindex="-1"></a>                <span class="at">cluster_rows=</span>F,<span class="at">cluster_cols=</span>F,</span>
+<span id="cb4-49"><a href="index.html#cb4-49" tabindex="-1"></a>                <span class="at">scale=</span><span class="st">&quot;none&quot;</span>,<span class="at">angle_col=</span><span class="dv">45</span>,</span>
+<span id="cb4-50"><a href="index.html#cb4-50" tabindex="-1"></a>                <span class="at">color=</span><span class="fu">colorRampPalette</span>(<span class="at">colors =</span> <span class="fu">c</span>(<span class="st">&quot;firebrick&quot;</span>,<span class="st">&quot;white&quot;</span>,<span class="st">&quot;darkblue&quot;</span>))(<span class="dv">1000</span>)</span>
+<span id="cb4-51"><a href="index.html#cb4-51" tabindex="-1"></a>                )</span>
+<span id="cb4-52"><a href="index.html#cb4-52" tabindex="-1"></a><span class="fu">print</span>(p)</span>
+<span id="cb4-53"><a href="index.html#cb4-53" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-8"></span>
+<img src="Data/Figures/Fig1/Fig1.G.png" alt="Fig1.G" width="80%" id="fig-unnamed-chunk-8-1" />
+<p class="caption">
+ 1.3: Fig1.G
+</p>
+</div>
+</div>
+<div id="h.-correlation-of-methylation-on-the-same-mhb" class="section level2 hasAnchor" number="1.5">
+<h2><span class="header-section-number">1.5</span> (H). Correlation of methylation on the same MHB<a href="index.html#h.-correlation-of-methylation-on-the-same-mhb" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="index.html#cb5-1" tabindex="-1"></a><span class="co"># Calculate the correlation of MHB from NG and in house cancer-specific MHB</span></span>
+<span id="cb5-2"><a href="index.html#cb5-2" tabindex="-1"></a><span class="fu">library</span>(regioneR)</span>
+<span id="cb5-3"><a href="index.html#cb5-3" tabindex="-1"></a><span class="fu">load</span>(<span class="st">&quot;RnBeads_450K_hg19_Probes_GR.RData&quot;</span>)</span>
+<span id="cb5-4"><a href="index.html#cb5-4" tabindex="-1"></a>RnBeads_450K_hg19_GR <span class="ot">=</span> RnBeads_450K_hg19_GR[RnBeads_450K_hg19_GR<span class="sc">$</span>QC]</span>
+<span id="cb5-5"><a href="index.html#cb5-5" tabindex="-1"></a>sourceFolder <span class="ot">=</span> <span class="st">&quot;/KnowledgeBase/Firehose_Methylation/raw_RData/&quot;</span></span>
+<span id="cb5-6"><a href="index.html#cb5-6" tabindex="-1"></a><span class="co"># CpG correlation</span></span>
+<span id="cb5-7"><a href="index.html#cb5-7" tabindex="-1"></a>ArrayIMCorrelation <span class="ot">&lt;-</span><span class="cf">function</span>(MM,IntervalGR,cpgGR,Tag){</span>
+<span id="cb5-8"><a href="index.html#cb5-8" tabindex="-1"></a>  <span class="co"># check seqlevels</span></span>
+<span id="cb5-9"><a href="index.html#cb5-9" tabindex="-1"></a>    <span class="cf">if</span>(<span class="fu">length</span>(<span class="fu">intersect</span>(<span class="fu">seqlevels</span>(IntervalGR), <span class="fu">seqlevels</span>(cpgGR))) <span class="sc">==</span> <span class="dv">0</span>)</span>
+<span id="cb5-10"><a href="index.html#cb5-10" tabindex="-1"></a>            <span class="fu">stop</span>(<span class="st">&quot;No shared seqlevels found.</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb5-11"><a href="index.html#cb5-11" tabindex="-1"></a>    <span class="co"># only keep CpGs that locate in intervals</span></span>
+<span id="cb5-12"><a href="index.html#cb5-12" tabindex="-1"></a>    Idx1 <span class="ot">=</span> <span class="fu">countOverlaps</span>(cpgGR, IntervalGR, <span class="at">type =</span> <span class="st">&quot;any&quot;</span>, <span class="at">ignore.strand =</span> <span class="cn">TRUE</span>) <span class="sc">&gt;</span> <span class="dv">0</span></span>
+<span id="cb5-13"><a href="index.html#cb5-13" tabindex="-1"></a>    Idx2 <span class="ot">=</span> <span class="fu">names</span>(cpgGR) <span class="sc">%in%</span> <span class="fu">rownames</span>(MM)</span>
+<span id="cb5-14"><a href="index.html#cb5-14" tabindex="-1"></a>    Idx  <span class="ot">=</span> Idx1 <span class="sc">&amp;</span> Idx2</span>
+<span id="cb5-15"><a href="index.html#cb5-15" tabindex="-1"></a>    <span class="cf">if</span>(<span class="fu">sum</span>(Idx) <span class="sc">==</span> <span class="dv">0</span>)</span>
+<span id="cb5-16"><a href="index.html#cb5-16" tabindex="-1"></a>        <span class="fu">stop</span>(<span class="st">&quot;No CpGs found in pre-defined regions.</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb5-17"><a href="index.html#cb5-17" tabindex="-1"></a>    cpgGR <span class="ot">=</span> cpgGR[Idx, ]</span>
+<span id="cb5-18"><a href="index.html#cb5-18" tabindex="-1"></a>    <span class="co"># keep shared CpGs</span></span>
+<span id="cb5-19"><a href="index.html#cb5-19" tabindex="-1"></a>    cNames <span class="ot">=</span> <span class="fu">intersect</span>(<span class="fu">rownames</span>(MM), <span class="fu">names</span>(cpgGR))</span>
+<span id="cb5-20"><a href="index.html#cb5-20" tabindex="-1"></a>    cpgGR  <span class="ot">=</span> cpgGR[cNames]</span>
+<span id="cb5-21"><a href="index.html#cb5-21" tabindex="-1"></a>    MM    <span class="ot">=</span> MM[cNames, ]</span>
+<span id="cb5-22"><a href="index.html#cb5-22" tabindex="-1"></a>    <span class="co"># Only select the tumor samples</span></span>
+<span id="cb5-23"><a href="index.html#cb5-23" tabindex="-1"></a>    MM <span class="ot">=</span> MM[,<span class="sc">!</span><span class="fu">grepl</span>(<span class="st">&quot;11&quot;</span>,<span class="fu">substr</span>(<span class="fu">colnames</span>(MM),<span class="dv">14</span>,<span class="dv">15</span>))]</span>
+<span id="cb5-24"><a href="index.html#cb5-24" tabindex="-1"></a>    <span class="co"># Sample-by-sample processing to control memory footprint</span></span>
+<span id="cb5-25"><a href="index.html#cb5-25" tabindex="-1"></a>    mergedM <span class="ot">=</span> <span class="fu">matrix</span>(<span class="cn">NA</span>, <span class="fu">length</span>(IntervalGR), <span class="dv">1</span>)</span>
+<span id="cb5-26"><a href="index.html#cb5-26" tabindex="-1"></a>    x <span class="ot">=</span> <span class="fu">findOverlaps</span>(cpgGR, IntervalGR, <span class="at">type =</span> <span class="st">&quot;any&quot;</span>, <span class="at">ignore.strand =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb5-27"><a href="index.html#cb5-27" tabindex="-1"></a>  cM <span class="ot">=</span> <span class="fu">list</span>()</span>
+<span id="cb5-28"><a href="index.html#cb5-28" tabindex="-1"></a>    <span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">unique</span>(<span class="fu">subjectHits</span>(x)) ){</span>
+<span id="cb5-29"><a href="index.html#cb5-29" tabindex="-1"></a>              a  <span class="ot">=</span> <span class="fu">which</span>(<span class="fu">subjectHits</span>(x) <span class="sc">==</span> i)</span>
+<span id="cb5-30"><a href="index.html#cb5-30" tabindex="-1"></a>            tag <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">&quot;S&quot;</span>,i)</span>
+<span id="cb5-31"><a href="index.html#cb5-31" tabindex="-1"></a>        <span class="cf">if</span> (<span class="fu">length</span>(a)<span class="sc">&lt;</span><span class="dv">2</span>){</span>
+<span id="cb5-32"><a href="index.html#cb5-32" tabindex="-1"></a>                cM[[tag]] <span class="ot">=</span> <span class="cn">NA</span></span>
+<span id="cb5-33"><a href="index.html#cb5-33" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span> (<span class="fu">nrow</span>(<span class="fu">na.omit</span>(MM[a,]))<span class="sc">&lt;</span><span class="dv">2</span>) {</span>
+<span id="cb5-34"><a href="index.html#cb5-34" tabindex="-1"></a>                cM[[tag]] <span class="ot">=</span> <span class="cn">NA</span></span>
+<span id="cb5-35"><a href="index.html#cb5-35" tabindex="-1"></a>          }<span class="cf">else</span> {</span>
+<span id="cb5-36"><a href="index.html#cb5-36" tabindex="-1"></a>                b <span class="ot">=</span> <span class="fu">as.vector</span>(<span class="fu">cor</span>(<span class="fu">t</span>(<span class="fu">na.omit</span>(MM[a,]))))</span>
+<span id="cb5-37"><a href="index.html#cb5-37" tabindex="-1"></a>                cM[[tag]]  <span class="ot">=</span> <span class="fu">median</span>(b[b<span class="sc">!=</span><span class="dv">1</span>])</span>
+<span id="cb5-38"><a href="index.html#cb5-38" tabindex="-1"></a>          }</span>
+<span id="cb5-39"><a href="index.html#cb5-39" tabindex="-1"></a>    }</span>
+<span id="cb5-40"><a href="index.html#cb5-40" tabindex="-1"></a>  aT <span class="ot">=</span> <span class="fu">do.call</span>(rbind,cM)</span>
+<span id="cb5-41"><a href="index.html#cb5-41" tabindex="-1"></a>  aID <span class="ot">=</span> <span class="fu">as.character</span>(<span class="fu">gsub</span>(<span class="st">&quot;S&quot;</span>,<span class="st">&quot;&quot;</span>,<span class="fu">rownames</span>(aT)))</span>
+<span id="cb5-42"><a href="index.html#cb5-42" tabindex="-1"></a>    aMM <span class="ot">=</span> <span class="fu">as.matrix</span>(aT[,<span class="dv">1</span>])</span>
+<span id="cb5-43"><a href="index.html#cb5-43" tabindex="-1"></a>    mergedM[<span class="fu">as.integer</span>(aID), ] <span class="ot">=</span> aMM</span>
+<span id="cb5-44"><a href="index.html#cb5-44" tabindex="-1"></a>    <span class="fu">colnames</span>(mergedM) <span class="ot">=</span> Tag</span>
+<span id="cb5-45"><a href="index.html#cb5-45" tabindex="-1"></a>    <span class="fu">return</span>(mergedM)</span>
+<span id="cb5-46"><a href="index.html#cb5-46" tabindex="-1"></a>}</span>
+<span id="cb5-47"><a href="index.html#cb5-47" tabindex="-1"></a><span class="co"># general MHBs from Guo.et al.2017 (Nature genetics:NG)</span></span>
+<span id="cb5-48"><a href="index.html#cb5-48" tabindex="-1"></a>NG_MHB <span class="ot">=</span> <span class="fu">toGRanges</span>(<span class="st">&quot;NG_MHB.bed&quot;</span>)</span>
+<span id="cb5-49"><a href="index.html#cb5-49" tabindex="-1"></a>vFiles <span class="ot">=</span> <span class="fu">list.files</span>(sourceFolder)</span>
+<span id="cb5-50"><a href="index.html#cb5-50" tabindex="-1"></a>Ns <span class="ot">=</span> <span class="fu">length</span>(vFiles)</span>
+<span id="cb5-51"><a href="index.html#cb5-51" tabindex="-1"></a>ngList <span class="ot">=</span> <span class="fu">list</span>()</span>
+<span id="cb5-52"><a href="index.html#cb5-52" tabindex="-1"></a></span>
+<span id="cb5-53"><a href="index.html#cb5-53" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>Ns){</span>
+<span id="cb5-54"><a href="index.html#cb5-54" tabindex="-1"></a>    Tag <span class="ot">=</span> <span class="fu">gsub</span>(<span class="st">&quot;.RData&quot;</span>, <span class="st">&quot;&quot;</span>, vFiles[i])</span>
+<span id="cb5-55"><a href="index.html#cb5-55" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">&quot;Processing&quot;</span>, Tag, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb5-56"><a href="index.html#cb5-56" tabindex="-1"></a>    fileIn <span class="ot">=</span> <span class="fu">paste0</span>(sourceFolder, <span class="st">&quot;/&quot;</span>, vFiles[i])</span>
+<span id="cb5-57"><a href="index.html#cb5-57" tabindex="-1"></a>    <span class="fu">load</span>(fileIn)</span>
+<span id="cb5-58"><a href="index.html#cb5-58" tabindex="-1"></a>    <span class="fu">assign</span>(<span class="st">&quot;MM&quot;</span>, <span class="fu">get</span>(Tag))</span>
+<span id="cb5-59"><a href="index.html#cb5-59" tabindex="-1"></a>    <span class="fu">rm</span>(<span class="at">list =</span> Tag)</span>
+<span id="cb5-60"><a href="index.html#cb5-60" tabindex="-1"></a>    ngList[[i]] <span class="ot">=</span> <span class="fu">ArrayIMCorrelation</span>(MM, NG_MHB, RnBeads_450K_hg19_GR,Tag)</span>
+<span id="cb5-61"><a href="index.html#cb5-61" tabindex="-1"></a>}</span>
+<span id="cb5-62"><a href="index.html#cb5-62" tabindex="-1"></a><span class="fu">names</span>(ngList) <span class="ot">=</span> <span class="fu">gsub</span>(<span class="st">&quot;.RData&quot;</span>, <span class="st">&quot;&quot;</span>, vFiles)</span>
+<span id="cb5-63"><a href="index.html#cb5-63" tabindex="-1"></a><span class="co"># Intra-MHB correlation</span></span>
+<span id="cb5-64"><a href="index.html#cb5-64" tabindex="-1"></a>NG_List <span class="ot">=</span> <span class="fu">do.call</span>(cbind,ngList)</span>
+<span id="cb5-65"><a href="index.html#cb5-65" tabindex="-1"></a><span class="fu">mcols</span>(NG_MHB) <span class="ot">=</span> NG_List</span>
+<span id="cb5-66"><a href="index.html#cb5-66" tabindex="-1"></a><span class="co"># Cancer MHBs from in house data</span></span>
+<span id="cb5-67"><a href="index.html#cb5-67" tabindex="-1"></a>path<span class="ot">=</span><span class="st">&quot;Data/Processed_data/MHB/tumor&quot;</span></span>
+<span id="cb5-68"><a href="index.html#cb5-68" tabindex="-1"></a>files <span class="ot">=</span> <span class="fu">list.files</span>(path)</span>
+<span id="cb5-69"><a href="index.html#cb5-69" tabindex="-1"></a>cTList<span class="ot">=</span><span class="fu">list</span>()</span>
+<span id="cb5-70"><a href="index.html#cb5-70" tabindex="-1"></a><span class="cf">for</span> (cT <span class="cf">in</span> files ){</span>
+<span id="cb5-71"><a href="index.html#cb5-71" tabindex="-1"></a>    <span class="co"># Read Cancer MHB</span></span>
+<span id="cb5-72"><a href="index.html#cb5-72" tabindex="-1"></a>    Cancer_MHB <span class="ot">=</span> <span class="fu">toGRanges</span>(<span class="fu">paste0</span>(path,<span class="st">&quot;/&quot;</span>,cT))</span>
+<span id="cb5-73"><a href="index.html#cb5-73" tabindex="-1"></a>    Type <span class="ot">=</span> <span class="fu">gsub</span>(<span class="st">&quot;MHB_&quot;</span>,<span class="st">&quot;&quot;</span>,<span class="fu">gsub</span>(<span class="st">&quot;.bed&quot;</span>,<span class="st">&quot;&quot;</span>,cT))</span>
+<span id="cb5-74"><a href="index.html#cb5-74" tabindex="-1"></a>    Ns <span class="ot">=</span> <span class="fu">length</span>(vFiles)</span>
+<span id="cb5-75"><a href="index.html#cb5-75" tabindex="-1"></a>    cList <span class="ot">=</span> <span class="fu">list</span>()</span>
+<span id="cb5-76"><a href="index.html#cb5-76" tabindex="-1"></a>    <span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>Ns){</span>
+<span id="cb5-77"><a href="index.html#cb5-77" tabindex="-1"></a>            Tag <span class="ot">=</span> <span class="fu">gsub</span>(<span class="st">&quot;.RData&quot;</span>, <span class="st">&quot;&quot;</span>, vFiles[i])</span>
+<span id="cb5-78"><a href="index.html#cb5-78" tabindex="-1"></a>            <span class="fu">cat</span>(<span class="st">&quot;Processing&quot;</span>, Tag, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb5-79"><a href="index.html#cb5-79" tabindex="-1"></a>            fileIn <span class="ot">=</span> <span class="fu">paste0</span>(sourceFolder, <span class="st">&quot;/&quot;</span>, vFiles[i])</span>
+<span id="cb5-80"><a href="index.html#cb5-80" tabindex="-1"></a>            <span class="fu">load</span>(fileIn)</span>
+<span id="cb5-81"><a href="index.html#cb5-81" tabindex="-1"></a>            <span class="fu">assign</span>(<span class="st">&quot;MM&quot;</span>, <span class="fu">get</span>(Tag))</span>
+<span id="cb5-82"><a href="index.html#cb5-82" tabindex="-1"></a>            <span class="fu">rm</span>(<span class="at">list =</span> Tag)</span>
+<span id="cb5-83"><a href="index.html#cb5-83" tabindex="-1"></a>            cList[[i]] <span class="ot">=</span> <span class="fu">ArrayIMCorrelation</span>(MM, Cancer_MHB, RnBeads_450K_hg19_GR,Tag)</span>
+<span id="cb5-84"><a href="index.html#cb5-84" tabindex="-1"></a>        }</span>
+<span id="cb5-85"><a href="index.html#cb5-85" tabindex="-1"></a>        <span class="fu">names</span>(cList) <span class="ot">=</span> <span class="fu">gsub</span>(<span class="st">&quot;.RData&quot;</span>, <span class="st">&quot;&quot;</span>, vFiles)</span>
+<span id="cb5-86"><a href="index.html#cb5-86" tabindex="-1"></a>        <span class="fu">mcols</span>(Cancer_MHB)<span class="ot">=</span> <span class="fu">do.call</span>(cbind,cList)</span>
+<span id="cb5-87"><a href="index.html#cb5-87" tabindex="-1"></a>        cTList[[Type]] <span class="ot">=</span> Cancer_MHB</span>
+<span id="cb5-88"><a href="index.html#cb5-88" tabindex="-1"></a>    }</span>
+<span id="cb5-89"><a href="index.html#cb5-89" tabindex="-1"></a><span class="fu">names</span>(cTList) <span class="ot">=</span> <span class="fu">gsub</span>(<span class="st">&quot;MHB_&quot;</span>,<span class="st">&quot;&quot;</span>,<span class="fu">gsub</span>(<span class="st">&quot;.bed&quot;</span>,<span class="st">&quot;&quot;</span>,files))</span>
+<span id="cb5-90"><a href="index.html#cb5-90" tabindex="-1"></a><span class="co"># plot intra-MHB correlation between general MHBs and in house MHBs</span></span>
+<span id="cb5-91"><a href="index.html#cb5-91" tabindex="-1"></a>vFiles<span class="ot">=</span><span class="fu">names</span>(cTList)</span>
+<span id="cb5-92"><a href="index.html#cb5-92" tabindex="-1"></a>data <span class="ot">=</span> <span class="fu">list</span>()</span>
+<span id="cb5-93"><a href="index.html#cb5-93" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> vFiles){</span>
+<span id="cb5-94"><a href="index.html#cb5-94" tabindex="-1"></a>        <span class="cf">if</span> ( i<span class="sc">==</span><span class="st">&quot;BRCA&quot;</span> ) {</span>
+<span id="cb5-95"><a href="index.html#cb5-95" tabindex="-1"></a>            tag <span class="ot">=</span> i</span>
+<span id="cb5-96"><a href="index.html#cb5-96" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span>(i<span class="sc">==</span><span class="st">&quot;CESC&quot;</span>){</span>
+<span id="cb5-97"><a href="index.html#cb5-97" tabindex="-1"></a>            tag <span class="ot">=</span> i</span>
+<span id="cb5-98"><a href="index.html#cb5-98" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span>(i<span class="sc">==</span><span class="st">&quot;COAD&quot;</span>) {</span>
+<span id="cb5-99"><a href="index.html#cb5-99" tabindex="-1"></a>            tag <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;COAD&quot;</span>,<span class="st">&quot;COADREAD&quot;</span>,<span class="st">&quot;READ&quot;</span>)</span>
+<span id="cb5-100"><a href="index.html#cb5-100" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span>(i<span class="sc">==</span><span class="st">&quot;ESCA&quot;</span>){</span>
+<span id="cb5-101"><a href="index.html#cb5-101" tabindex="-1"></a>            tag <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;ESCA&quot;</span>,<span class="st">&quot;STES&quot;</span>)</span>
+<span id="cb5-102"><a href="index.html#cb5-102" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span>(i<span class="sc">==</span><span class="st">&quot;HNSC&quot;</span>){</span>
+<span id="cb5-103"><a href="index.html#cb5-103" tabindex="-1"></a>            tag <span class="ot">=</span> <span class="st">&quot;HNSC&quot;</span></span>
+<span id="cb5-104"><a href="index.html#cb5-104" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span>( i<span class="sc">==</span><span class="st">&quot;LIHC&quot;</span>){</span>
+<span id="cb5-105"><a href="index.html#cb5-105" tabindex="-1"></a>            tag <span class="ot">=</span> <span class="st">&quot;LIHC&quot;</span></span>
+<span id="cb5-106"><a href="index.html#cb5-106" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span>(i<span class="sc">==</span><span class="st">&quot;NSCLC&quot;</span>){</span>
+<span id="cb5-107"><a href="index.html#cb5-107" tabindex="-1"></a>            tag <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;LUAD&quot;</span>,<span class="st">&quot;LUSC&quot;</span>)</span>
+<span id="cb5-108"><a href="index.html#cb5-108" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span> ( i<span class="sc">==</span><span class="st">&quot;OV&quot;</span>){</span>
+<span id="cb5-109"><a href="index.html#cb5-109" tabindex="-1"></a>            tag <span class="ot">=</span> <span class="st">&quot;OV&quot;</span></span>
+<span id="cb5-110"><a href="index.html#cb5-110" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span> (i<span class="sc">==</span><span class="st">&quot;PACA&quot;</span>){</span>
+<span id="cb5-111"><a href="index.html#cb5-111" tabindex="-1"></a>            tag <span class="ot">=</span> <span class="st">&quot;PAAD&quot;</span></span>
+<span id="cb5-112"><a href="index.html#cb5-112" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span>(i<span class="sc">==</span><span class="st">&quot;STAD&quot;</span>){</span>
+<span id="cb5-113"><a href="index.html#cb5-113" tabindex="-1"></a>            tag <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;STAD&quot;</span>,<span class="st">&quot;STES&quot;</span>)</span>
+<span id="cb5-114"><a href="index.html#cb5-114" tabindex="-1"></a>        }<span class="cf">else</span> <span class="cf">if</span>( i<span class="sc">==</span><span class="st">&quot;THCA&quot;</span>) {</span>
+<span id="cb5-115"><a href="index.html#cb5-115" tabindex="-1"></a>            tag <span class="ot">=</span> <span class="st">&quot;THCA&quot;</span></span>
+<span id="cb5-116"><a href="index.html#cb5-116" tabindex="-1"></a>        }</span>
+<span id="cb5-117"><a href="index.html#cb5-117" tabindex="-1"></a>    <span class="cf">for</span> (j <span class="cf">in</span> tag){</span>
+<span id="cb5-118"><a href="index.html#cb5-118" tabindex="-1"></a>      <span class="co"># Cancer-specific MHB</span></span>
+<span id="cb5-119"><a href="index.html#cb5-119" tabindex="-1"></a>        x <span class="ot">=</span> <span class="fu">na.omit</span>(<span class="fu">mcols</span>(cTList[[i]])[j])</span>
+<span id="cb5-120"><a href="index.html#cb5-120" tabindex="-1"></a>        x<span class="sc">$</span>Group <span class="ot">=</span> <span class="st">&quot;CT_MHB&quot;</span></span>
+<span id="cb5-121"><a href="index.html#cb5-121" tabindex="-1"></a>        <span class="co"># NG MHB</span></span>
+<span id="cb5-122"><a href="index.html#cb5-122" tabindex="-1"></a>        y<span class="ot">=</span> <span class="fu">na.omit</span>(<span class="fu">mcols</span>(NG_MHB)[j])</span>
+<span id="cb5-123"><a href="index.html#cb5-123" tabindex="-1"></a>        y<span class="sc">$</span>Group <span class="ot">=</span> <span class="st">&quot;NG_MHB&quot;</span></span>
+<span id="cb5-124"><a href="index.html#cb5-124" tabindex="-1"></a>        mat <span class="ot">=</span> <span class="fu">as.data.frame</span>(<span class="fu">rbind</span>(x,y))</span>
+<span id="cb5-125"><a href="index.html#cb5-125" tabindex="-1"></a>        data[[j]] <span class="ot">=</span> mat</span>
+<span id="cb5-126"><a href="index.html#cb5-126" tabindex="-1"></a>        <span class="co"># PLOT ECDF</span></span>
+<span id="cb5-127"><a href="index.html#cb5-127" tabindex="-1"></a>        <span class="fu">pdf</span>(<span class="at">file=</span><span class="fu">paste0</span>(<span class="st">&quot;PLOT/TCGA_&quot;</span>,i,<span class="st">&quot;_&quot;</span>,j,<span class="st">&quot;_Correlation_ECDF.pdf&quot;</span>),<span class="at">width=</span><span class="dv">5</span>,<span class="at">height=</span><span class="dv">5</span>)</span>
+<span id="cb5-128"><a href="index.html#cb5-128" tabindex="-1"></a>        p<span class="ot">&lt;-</span><span class="fu">ggplot</span>(mat, <span class="fu">aes</span>(<span class="fu">get</span>(j))) <span class="sc">+</span> <span class="fu">stat_ecdf</span>(<span class="fu">aes</span>(<span class="at">colour =</span> Group),<span class="at">geom =</span> <span class="st">&quot;step&quot;</span>,<span class="at">size=</span><span class="fl">0.8</span>)<span class="sc">+</span></span>
+<span id="cb5-129"><a href="index.html#cb5-129" tabindex="-1"></a>                <span class="fu">labs</span>(<span class="at">title=</span>j,</span>
+<span id="cb5-130"><a href="index.html#cb5-130" tabindex="-1"></a>                     <span class="at">y =</span> <span class="st">&quot;Frequency&quot;</span>, <span class="at">x=</span><span class="st">&quot;Pearson&#39;s Correlation Coefficience&quot;</span>)<span class="sc">+</span></span>
+<span id="cb5-131"><a href="index.html#cb5-131" tabindex="-1"></a>                <span class="fu">theme_base</span>() <span class="sc">+</span></span>
+<span id="cb5-132"><a href="index.html#cb5-132" tabindex="-1"></a>                <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust=</span><span class="fl">0.5</span>),</span>
+<span id="cb5-133"><a href="index.html#cb5-133" tabindex="-1"></a>                    <span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.25</span>,<span class="fl">0.85</span>),</span>
+<span id="cb5-134"><a href="index.html#cb5-134" tabindex="-1"></a>                    <span class="at">legend.title =</span><span class="fu">element_blank</span>(),</span>
+<span id="cb5-135"><a href="index.html#cb5-135" tabindex="-1"></a>                    <span class="at">axis.line=</span><span class="fu">element_line</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>),</span>
+<span id="cb5-136"><a href="index.html#cb5-136" tabindex="-1"></a>                    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>,<span class="at">size=</span><span class="dv">10</span>),</span>
+<span id="cb5-137"><a href="index.html#cb5-137" tabindex="-1"></a>                    <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>,<span class="at">size=</span><span class="dv">10</span>),</span>
+<span id="cb5-138"><a href="index.html#cb5-138" tabindex="-1"></a>                    <span class="at">axis.ticks.length =</span> <span class="fu">unit</span>(<span class="dv">5</span>, <span class="st">&quot;pt&quot;</span>),</span>
+<span id="cb5-139"><a href="index.html#cb5-139" tabindex="-1"></a>                    <span class="at">axis.ticks =</span> <span class="fu">element_line</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb5-140"><a href="index.html#cb5-140" tabindex="-1"></a>                <span class="fu">scale_colour_brewer</span>(<span class="at">palette =</span> <span class="st">&quot;Set1&quot;</span>)</span>
+<span id="cb5-141"><a href="index.html#cb5-141" tabindex="-1"></a>        <span class="fu">print</span>(p)</span>
+<span id="cb5-142"><a href="index.html#cb5-142" tabindex="-1"></a>        <span class="fu">dev.off</span>()</span>
+<span id="cb5-143"><a href="index.html#cb5-143" tabindex="-1"></a>    }</span>
+<span id="cb5-144"><a href="index.html#cb5-144" tabindex="-1"></a>}</span>
+<span id="cb5-145"><a href="index.html#cb5-145" tabindex="-1"></a><span class="co"># Merged data, showing in boxplot</span></span>
+<span id="cb5-146"><a href="index.html#cb5-146" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">names</span>(data)){</span>
+<span id="cb5-147"><a href="index.html#cb5-147" tabindex="-1"></a>    <span class="fu">names</span>(data[[i]]) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;r&quot;</span>,<span class="st">&quot;Group&quot;</span>)</span>
+<span id="cb5-148"><a href="index.html#cb5-148" tabindex="-1"></a>}</span>
+<span id="cb5-149"><a href="index.html#cb5-149" tabindex="-1"></a>MHB_Cor <span class="ot">=</span> <span class="fu">as.data.frame</span>(<span class="fu">do.call</span>(rbind,data))</span>
+<span id="cb5-150"><a href="index.html#cb5-150" tabindex="-1"></a>MHB_Cor<span class="sc">$</span>Tissue <span class="ot">=</span> <span class="fu">sapply</span>(<span class="fu">strsplit</span>(<span class="fu">rownames</span>(MHB_Cor),<span class="st">&quot;</span><span class="sc">\\</span><span class="st">.&quot;</span>),<span class="cf">function</span>(x) x[<span class="dv">1</span>])</span>
+<span id="cb5-151"><a href="index.html#cb5-151" tabindex="-1"></a>MHB_Cor<span class="sc">$</span>Group <span class="ot">=</span> <span class="fu">factor</span>(MHB_Cor<span class="sc">$</span>Group,<span class="at">levels=</span><span class="fu">c</span>(<span class="st">&quot;NG_MHB&quot;</span>,<span class="st">&quot;CT_MHB&quot;</span>))</span>
+<span id="cb5-152"><a href="index.html#cb5-152" tabindex="-1"></a><span class="fu">pdf</span>(<span class="st">&quot;Data/Figures/Fig1/Fig1.H.pdf&quot;</span>,<span class="at">width=</span><span class="dv">4</span>, <span class="at">height=</span><span class="dv">5</span>)</span>
+<span id="cb5-153"><a href="index.html#cb5-153" tabindex="-1"></a>    p<span class="ot">&lt;-</span><span class="fu">ggplot</span>(MHB_Cor, <span class="fu">aes</span>(<span class="at">x=</span>r, <span class="at">y=</span>Tissue, <span class="at">fill=</span> Group)) <span class="sc">+</span> </span>
+<span id="cb5-154"><a href="index.html#cb5-154" tabindex="-1"></a>        <span class="fu">geom_boxplot</span>(<span class="at">outlier.shape =</span> <span class="cn">NA</span>) <span class="sc">+</span></span>
+<span id="cb5-155"><a href="index.html#cb5-155" tabindex="-1"></a>        <span class="fu">labs</span>(<span class="at">x=</span><span class="st">&quot;Pearson&#39;s Correlation Coefficience (r)&quot;</span>) <span class="sc">+</span></span>
+<span id="cb5-156"><a href="index.html#cb5-156" tabindex="-1"></a>        <span class="fu">scale_x_continuous</span>(<span class="at">position =</span> <span class="st">&quot;top&quot;</span>) <span class="sc">+</span></span>
+<span id="cb5-157"><a href="index.html#cb5-157" tabindex="-1"></a>        <span class="fu">scale_fill_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">&quot;#377EB8&quot;</span>,<span class="st">&quot;#E41A1C&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb5-158"><a href="index.html#cb5-158" tabindex="-1"></a>        <span class="fu">scale_y_discrete</span>(<span class="at">limits=</span>rev) <span class="sc">+</span></span>
+<span id="cb5-159"><a href="index.html#cb5-159" tabindex="-1"></a>        <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb5-160"><a href="index.html#cb5-160" tabindex="-1"></a>        <span class="fu">theme</span>(<span class="at">panel.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb5-161"><a href="index.html#cb5-161" tabindex="-1"></a>              <span class="at">panel.border =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb5-162"><a href="index.html#cb5-162" tabindex="-1"></a>              <span class="at">panel.grid =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb5-163"><a href="index.html#cb5-163" tabindex="-1"></a>                <span class="at">axis.line=</span><span class="fu">element_line</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>),</span>
+<span id="cb5-164"><a href="index.html#cb5-164" tabindex="-1"></a>              <span class="at">axis.title.y=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb5-165"><a href="index.html#cb5-165" tabindex="-1"></a>              <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>,<span class="at">size=</span><span class="dv">10</span>),</span>
+<span id="cb5-166"><a href="index.html#cb5-166" tabindex="-1"></a>              <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>,<span class="at">size=</span><span class="dv">10</span>),</span>
+<span id="cb5-167"><a href="index.html#cb5-167" tabindex="-1"></a>              <span class="at">axis.ticks =</span> <span class="fu">element_line</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>),</span>
+<span id="cb5-168"><a href="index.html#cb5-168" tabindex="-1"></a>              <span class="at">axis.ticks.length =</span> <span class="fu">unit</span>(<span class="dv">5</span>, <span class="st">&quot;pt&quot;</span>),</span>
+<span id="cb5-169"><a href="index.html#cb5-169" tabindex="-1"></a>            <span class="at">legend.position=</span><span class="st">&quot;bottom&quot;</span>) </span>
+<span id="cb5-170"><a href="index.html#cb5-170" tabindex="-1"></a><span class="fu">print</span>(p)</span>
+<span id="cb5-171"><a href="index.html#cb5-171" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-10"></span>
+<img src="Data/Figures/Fig1/Fig1.H.png" alt="Fig1.H" width="60%" id="fig-unnamed-chunk-10-1" />
+<p class="caption">
+ 1.4: Fig1.H
+</p>
+</div>
+</div>
+<div id="i.-enrichment-of-mhbs-in-genomic-features." class="section level2 hasAnchor" number="1.6">
+<h2><span class="header-section-number">1.6</span> (I). Enrichment of MHBs in genomic features.<a href="index.html#i.-enrichment-of-mhbs-in-genomic-features." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="index.html#cb6-1" tabindex="-1"></a><span class="co"># ==============shell command =============</span></span>
+<span id="cb6-2"><a href="index.html#cb6-2" tabindex="-1"></a><span class="co"># We showed the enrichment of MHBs in genomic features (CGIs, promoters, enhancers  and et al.) by using permutation test.</span></span>
+<span id="cb6-3"><a href="index.html#cb6-3" tabindex="-1"></a><span class="va">CGI</span><span class="op">=</span><span class="st">&quot;hg19_cpgIsland.bed&quot;</span></span>
+<span id="cb6-4"><a href="index.html#cb6-4" tabindex="-1"></a><span class="va">shelf</span><span class="op">=</span><span class="st">&quot;/genome/CpG/hg19/hg19_cpg_shlves.bed&quot;</span></span>
+<span id="cb6-5"><a href="index.html#cb6-5" tabindex="-1"></a><span class="va">shore</span><span class="op">=</span><span class="st">&quot;/genome/CpG/hg19/hg19_cpg_shores.bed&quot;</span></span>
+<span id="cb6-6"><a href="index.html#cb6-6" tabindex="-1"></a><span class="va">LAD</span><span class="op">=</span><span class="st">&quot;/genome/hg19/laminB1Lads.bed&quot;</span></span>
+<span id="cb6-7"><a href="index.html#cb6-7" tabindex="-1"></a><span class="va">FANTOM5_enhancer</span><span class="op">=</span><span class="st">&quot;/genome/hg19/enhancer/FANTOM5/FANTOM5_enhancer.bed&quot;</span></span>
+<span id="cb6-8"><a href="index.html#cb6-8" tabindex="-1"></a><span class="va">UCSC_promoter</span><span class="op">=</span><span class="st">&quot;/genome/hg19/tss/UCSC_promoters_hg19.bed&quot;</span></span>
+<span id="cb6-9"><a href="index.html#cb6-9" tabindex="-1"></a><span class="va">TAD_IMR90</span><span class="op">=</span><span class="st">&quot;/genome/hg19//TAD/TAD_IMR90.bed&quot;</span></span>
+<span id="cb6-10"><a href="index.html#cb6-10" tabindex="-1"></a><span class="va">TAD_HMEC</span><span class="op">=</span><span class="st">&quot;/genome/hg19//TAD/TAD_HMEC.bed&quot;</span></span>
+<span id="cb6-11"><a href="index.html#cb6-11" tabindex="-1"></a><span class="va">TAD_A549</span><span class="op">=</span><span class="st">&quot;/genome/hg19//TAD/TAD_A549.bed&quot;</span></span>
+<span id="cb6-12"><a href="index.html#cb6-12" tabindex="-1"></a><span class="va">UCE</span><span class="op">=</span><span class="st">&quot;/genome/hg19/UCE/Ultraconserved_elements_hg19.bed&quot;</span></span>
+<span id="cb6-13"><a href="index.html#cb6-13" tabindex="-1"></a><span class="co"># MHB</span></span>
+<span id="cb6-14"><a href="index.html#cb6-14" tabindex="-1"></a><span class="va">MHB</span><span class="op">=</span><span class="st">&quot;Data/Processed_data/MHB/MHB_11_cancers.bed&quot;</span></span>
+<span id="cb6-15"><a href="index.html#cb6-15" tabindex="-1"></a><span class="co"># do Permutation</span></span>
+<span id="cb6-16"><a href="index.html#cb6-16" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="va">$CGI</span> <span class="va">$shelf</span> <span class="va">$shore</span> <span class="va">$LAD</span> <span class="va">$FANTOM5_enhancer</span> <span class="va">$UCSC_promoter</span> <span class="va">$TAD_IMR90</span> <span class="va">$TAD_HMEC</span> <span class="va">$TAD_A549</span> <span class="va">$UCE</span></span>
+<span id="cb6-17"><a href="index.html#cb6-17" tabindex="-1"></a><span class="cf">do</span></span>
+<span id="cb6-18"><a href="index.html#cb6-18" tabindex="-1"></a>    <span class="va">tag</span><span class="op">=</span><span class="va">${i</span><span class="op">##</span><span class="pp">*</span>/<span class="va">}</span></span>
+<span id="cb6-19"><a href="index.html#cb6-19" tabindex="-1"></a>    <span class="ex">Rscript</span> /sibcb2/bioinformatics2/zhangzhiqiang/script/DNAme_pipeline/ChIApet_enrichment.R  <span class="dt">\</span></span>
+<span id="cb6-20"><a href="index.html#cb6-20" tabindex="-1"></a>            <span class="at">--forward</span> <span class="va">${i}</span> <span class="dt">\</span></span>
+<span id="cb6-21"><a href="index.html#cb6-21" tabindex="-1"></a>            <span class="at">--reverse</span> <span class="va">${i}</span> <span class="dt">\</span></span>
+<span id="cb6-22"><a href="index.html#cb6-22" tabindex="-1"></a>            <span class="at">--genome</span> /sibcb2/bioinformatics2/zhangzhiqiang/genome/hg19/hg19.chrom.sizes <span class="dt">\</span></span>
+<span id="cb6-23"><a href="index.html#cb6-23" tabindex="-1"></a>            <span class="at">--testBED</span> <span class="va">${MHB}</span> <span class="dt">\</span></span>
+<span id="cb6-24"><a href="index.html#cb6-24" tabindex="-1"></a>            <span class="at">--nTimes</span>  1000 <span class="dt">\</span></span>
+<span id="cb6-25"><a href="index.html#cb6-25" tabindex="-1"></a>            <span class="at">--tmp</span> ./  <span class="dt">\</span></span>
+<span id="cb6-26"><a href="index.html#cb6-26" tabindex="-1"></a>            <span class="at">--outFile</span>  res/<span class="va">${tag</span><span class="op">%</span>.<span class="pp">*</span><span class="va">}</span>_MHB_enrichment.txt</span>
+<span id="cb6-27"><a href="index.html#cb6-27" tabindex="-1"></a><span class="cf">done</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="index.html#cb7-1" tabindex="-1"></a><span class="co"># plot</span></span>
+<span id="cb7-2"><a href="index.html#cb7-2" tabindex="-1"></a>data <span class="ot">=</span> <span class="fu">data.frame</span>(<span class="at">CGI=</span><span class="fl">20.752427184466</span>,<span class="at">shelf=</span><span class="fl">0.973238180196253</span>,</span>
+<span id="cb7-3"><a href="index.html#cb7-3" tabindex="-1"></a>                  <span class="at">shore=</span><span class="fl">3.43911719939117</span>,<span class="at">LAD=</span><span class="fl">0.92967542503864</span>,</span>
+<span id="cb7-4"><a href="index.html#cb7-4" tabindex="-1"></a>                  <span class="at">FANTOM5_enhancer=</span><span class="fl">6.38268792710706</span>,<span class="at">UCSC_promoter=</span><span class="fl">4.72724089635854</span>,</span>
+<span id="cb7-5"><a href="index.html#cb7-5" tabindex="-1"></a>                  <span class="at">TAD_IMR90=</span><span class="fl">0.952150607922604</span>,<span class="at">TAD_HMEC=</span><span class="fl">0.946503067484663</span>,</span>
+<span id="cb7-6"><a href="index.html#cb7-6" tabindex="-1"></a>                  <span class="at">TAD_A549=</span><span class="fl">0.981284285253307</span>,<span class="at">UCE=</span><span class="dv">5</span>)</span>
+<span id="cb7-7"><a href="index.html#cb7-7" tabindex="-1"></a>data <span class="ot">=</span> <span class="fu">as.data.frame</span>(<span class="fu">t</span>(data))</span>
+<span id="cb7-8"><a href="index.html#cb7-8" tabindex="-1"></a><span class="fu">names</span>(data) <span class="ot">=</span> <span class="st">&quot;Enrichment&quot;</span></span>
+<span id="cb7-9"><a href="index.html#cb7-9" tabindex="-1"></a>data<span class="sc">$</span>Type <span class="ot">=</span> <span class="fu">rownames</span>(data)</span>
+<span id="cb7-10"><a href="index.html#cb7-10" tabindex="-1"></a><span class="fu">pdf</span>(<span class="at">file=</span><span class="st">&quot;Data/Figures/Fig1/Fig1.I.pdf&quot;</span>,<span class="at">width=</span><span class="dv">4</span>,<span class="at">height=</span><span class="fl">4.5</span>)</span>
+<span id="cb7-11"><a href="index.html#cb7-11" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data,<span class="fu">aes</span>(<span class="at">y=</span><span class="fu">reorder</span>(Type,Enrichment),<span class="at">x=</span>Enrichment)) <span class="sc">+</span> </span>
+<span id="cb7-12"><a href="index.html#cb7-12" tabindex="-1"></a>        <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">fill=</span><span class="st">&quot;steelblue&quot;</span>,<span class="at">width=</span><span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb7-13"><a href="index.html#cb7-13" tabindex="-1"></a>        <span class="fu">scale_x_continuous</span>(<span class="at">expand=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>),<span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">30</span>),<span class="at">position =</span> <span class="st">&quot;top&quot;</span>)<span class="sc">+</span></span>
+<span id="cb7-14"><a href="index.html#cb7-14" tabindex="-1"></a>        <span class="fu">labs</span>(<span class="at">x=</span><span class="st">&quot;Enrichment Score&quot;</span>)<span class="sc">+</span></span>
+<span id="cb7-15"><a href="index.html#cb7-15" tabindex="-1"></a>        <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb7-16"><a href="index.html#cb7-16" tabindex="-1"></a>      <span class="fu">theme</span>(<span class="at">panel.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb7-17"><a href="index.html#cb7-17" tabindex="-1"></a>                  <span class="at">panel.border =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb7-18"><a href="index.html#cb7-18" tabindex="-1"></a>                  <span class="at">panel.grid =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb7-19"><a href="index.html#cb7-19" tabindex="-1"></a>                    <span class="at">axis.line=</span><span class="fu">element_line</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>),</span>
+<span id="cb7-20"><a href="index.html#cb7-20" tabindex="-1"></a>                  <span class="at">axis.title.y=</span><span class="fu">element_blank</span>(),</span>
+<span id="cb7-21"><a href="index.html#cb7-21" tabindex="-1"></a>                  <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>,<span class="at">size=</span><span class="dv">10</span>),</span>
+<span id="cb7-22"><a href="index.html#cb7-22" tabindex="-1"></a>                  <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>,<span class="at">size=</span><span class="dv">10</span>),</span>
+<span id="cb7-23"><a href="index.html#cb7-23" tabindex="-1"></a>                  <span class="at">axis.ticks =</span> <span class="fu">element_line</span>(<span class="at">color=</span><span class="st">&quot;black&quot;</span>),</span>
+<span id="cb7-24"><a href="index.html#cb7-24" tabindex="-1"></a>                  <span class="at">axis.ticks.length =</span> <span class="fu">unit</span>(<span class="dv">5</span>, <span class="st">&quot;pt&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb7-25"><a href="index.html#cb7-25" tabindex="-1"></a>        <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label=</span><span class="fu">round</span>(Enrichment,<span class="dv">2</span>)), <span class="at">vjust=</span><span class="fl">0.5</span>,<span class="at">hjust=</span><span class="dv">0</span>, <span class="at">size=</span><span class="fl">3.5</span>,<span class="at">color=</span><span class="st">&quot;black&quot;</span>)</span>
+<span id="cb7-26"><a href="index.html#cb7-26" tabindex="-1"></a><span class="fu">print</span>(p)</span>
+<span id="cb7-27"><a href="index.html#cb7-27" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-13"></span>
+<img src="Data/Figures/Fig1/Fig1.I.png" alt="Fig1.I" width="60%" id="fig-unnamed-chunk-13-1" />
+<p class="caption">
+ 1.5: Fig1.I
+</p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="figure-2.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/index.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
